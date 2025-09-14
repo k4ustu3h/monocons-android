@@ -922,6 +922,8 @@
     <item component="ComponentInfo{com.exteragram.messenger/org.telegram.ui.LaunchActivity}" drawable="exteragram" name="exteraGram" />
     <item component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.FDroid}" drawable="fdroid" name="F-Droid" />
     <item component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.views.main.MainActivity}" drawable="fdroid" name="F-Droid" />
+    <item component="ComponentInfo{io.faceapp/io.faceapp.MainActivity}" drawable="faceapp" name="FaceApp" />
+    <item component="ComponentInfo{io.faceapp/io.faceapp.MainActivityIconDefault}" drawable="faceapp" name="FaceApp" />
     <item component="ComponentInfo{com.facebook.katana/com.facebook.katana.activity.media.CameraLauncherActivity}" drawable="facebook" name="Facebook" />
     <item component="ComponentInfo{com.facebook.katana/com.facebook.katana.LoginActivity}" drawable="facebook" name="Facebook" />
     <item component="ComponentInfo{com.facebook.katana/com.facebook.katana.orca.ThreadListLauncherActivity}" drawable="facebook" name="Facebook" />
@@ -1319,6 +1321,11 @@
     <item component="ComponentInfo{com.aistra.hail/com.aistra.hail.ui.main.MainActivity}" drawable="hail" name="Hail" />
     <item component="ComponentInfo{com.simon.harmonichackernews/com.simon.harmonichackernews.MainActivity}" drawable="harmonic" name="Harmonic" />
     <item component="ComponentInfo{com.silicondust.view/com.silicondust.view.App}" drawable="hdhomerun" name="HDHomeRun" />
+    <item component="ComponentInfo{com.getsomeheadspace.android/com.getsomeheadspace.android.ui.intro.IntroActivity}" drawable="headspace" name="Headspace" />
+    <item component="ComponentInfo{com.getsomeheadspace.android/com.getsomeheadspace.android.ui.feature.splashscreen.SplashActivity}" drawable="headspace" name="Headspace" />
+    <item component="ComponentInfo{com.getsomeheadspace.android/com.getsomeheadspace.android.activities.SplashActivity}" drawable="headspace" name="Headspace" />
+    <item component="ComponentInfo{com.getsomeheadspace.android/com.getsomeheadspace.android._oldarchitecture.activities.SplashActivity}" drawable="headspace" name="Headspace" />
+    <item component="ComponentInfo{com.getsomeheadspace.android/com.getsomeheadspace.android.splash.SplashActivity}" drawable="headspace" name="Headspace" />
     <item component="ComponentInfo{nl.appyhapps.healthsync/nl.appyhapps.healthsync.MainActivity}" drawable="health_sync" name="Health Sync" />
     <item component="ComponentInfo{com.heytap.music/com.allsaints.music.ui.splash.SplashActivity}" drawable="heytap_music" name="HeyTap Music" />
     <item component="ComponentInfo{com.heytap.music/com.nearme.music.local.ui.LocalMusicActivity}" drawable="heytap_music" name="HeyTap Music" />
@@ -1489,6 +1496,7 @@
     <item component="ComponentInfo{com.amazon.kindle/com.amazon.kindle.NewsstandStartActivity}" drawable="kindle" name="Kindle" />
     <item component="ComponentInfo{com.amazon.kindle/com.amazon.kindle.TabletStartActivity}" drawable="kindle" name="Kindle" />
     <item component="ComponentInfo{com.amazon.kindle/com.amazon.kindle.UpgradePage}" drawable="kindle" name="Kindle" />
+    <item component="ComponentInfo{fr.neamar.kiss/fr.neamar.kiss.MainActivity}" drawable="kiss_launcher" name="KISS Launcher" />
     <item component="ComponentInfo{com.zerodha.kite3/com.zerodha.kite3.MainActivity}" drawable="zerodha_kite" name="Kite" />
     <item component="ComponentInfo{com.kiwibrowser.browser.dev/com.google.android.apps.chrome.Main}" drawable="kiwi_browser" name="Kiwi Browser" />
     <item component="ComponentInfo{com.kiwibrowser.browser/com.google.android.apps.chrome.Main}" drawable="kiwi_browser" name="Kiwi Browser" />
@@ -3496,7 +3504,7 @@
     <item component="ComponentInfo{com.waze/com.waze.FreeMapAppActivity}" drawable="waze" name="Waze" />
     <item component="ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.companion.launcher.LauncherActivity}" drawable="wear_os" name="Wear OS" />
     <item component="ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.companion.StatusActivity}" drawable="wear_os" name="Wear OS" />
-    <item component="ComponentInfo{com.google.android.apps.weather/com.google.android.apps.weather.home.HomeActivity}" drawable="weather" name="Weather" />
+    <item component="ComponentInfo{com.google.android.apps.weather/com.google.android.apps.weather.home.HomeActivity}" drawable="weather_google_shortcuts_launcher" name="Weather" />
     <item component="ComponentInfo{com.meizu.flyme.weather/com.meizu.flyme.weather.WeatherMainActivity}" drawable="weather" name="Weather" />
     <item component="ComponentInfo{com.meizu.flyme.weather/com.meizu.flyme.weather.modules.home.WeatherMainActivity}" drawable="weather" name="Weather" />
     <item component="ComponentInfo{com.rlk.weathers/com.rlk.weathers.ui.main.MainActivity}" drawable="weather" name="Weather" />
@@ -3506,6 +3514,9 @@
     <item component="ComponentInfo{com.miui.weather2/com.miui.weather2.ActivityWeatherCycle}" drawable="weather" name="Weather" />
     <item component="ComponentInfo{com.miui.weather2/com.miui.weather2.ActivityWeatherMain}" drawable="weather" name="Weather" />
     <item component="ComponentInfo{com.meizu.flyme.weather/com.hy.weather.mz.modules.home.WeatherMainActivity}" drawable="weather" name="Weather" />
+    <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcut.WeatherActivity}" drawable="weather_google_shortcuts_launcher" name="Weather (Google Shortcuts Launcher)" />
+    <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcuts.WeatherShortcut}" drawable="weather_google_shortcuts_launcher" name="Weather (Google Shortcuts Launcher)" />
+    <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.WeatherActivity}" drawable="weather_google_shortcuts_launcher" name="Weather (Google Shortcuts Launcher)" />
     <item component="ComponentInfo{org.secuso.privacyfriendlyweather/org.secuso.privacyfriendlyweather.activities.SplashActivity}" drawable="weather" name="Weather (PFA)" />
     <item component="ComponentInfo{com.what3words.android/com.what3words.android.ui.splash.SplashActivity}" drawable="what3words" name="what3words" />
     <item component="ComponentInfo{com.what3words.android/com.what3words.android.ui.main.MainActivity}" drawable="what3words" name="what3words" />
