@@ -8989,6 +8989,7 @@
   <item component="ComponentInfo{com.netflix.NGP.Mahjong/com.smokingguninc.engine.framework.SgiLauncherActivity}" drawable="generic_mahjong" name="Mahjong Solitaire NETFLIX" />
   <item component="ComponentInfo{com.tripledot.tile.dynasty/com.unity3d.player.UnityPlayerActivity}" drawable="generic_mahjong" name="Mahjong Tile Dynasty" />
   <item component="ComponentInfo{com.nebula.mahjongtile/com.unity3d.player.UnityPlayerActivity}" drawable="generic_mahjong" name="Mahjong Wonders" />
+  <item component="ComponentInfo{com.MahsaNet.MahsaNG/com.v2ray.ang.ui.MainActivity}" drawable="mahsang" name="MahsaNG" />
   <item component="ComponentInfo{md.maib.maibank/md.maib.app.maibank.splash.SplashActivity}" drawable="maibank" name="maibank" />
   <item component="ComponentInfo{foundation.e.mail/com.fsck.k9.activity.MessageList}" drawable="generic_email" name="Mail" />
   <item component="ComponentInfo{foundation.e.mail/foundation.e.mail.activity.Accounts}" drawable="generic_email" name="Mail" />
@@ -10530,6 +10531,7 @@
   <item component="ComponentInfo{me.nanoleaf.nanoleaf/me.nanoleaf.nanoleaf.activities.SplashActivity}" drawable="nanoleaf" name="Nanoleaf" />
   <item component="ComponentInfo{me.nanoleaf.nanoleaf/me.nanoleaf.nanoleaf.feature.launcher.LauncherActivity}" drawable="nanoleaf" name="Nanoleaf" />
   <item component="ComponentInfo{yash.naplarmuno/yash.naplarmuno.SplashActivity}" drawable="naplarm" name="Naplarm" />
+  <item component="ComponentInfo{com.napsternetlabs.napsternetv/com.napsternetlabs.napsternetv.kkAhtatwbwcyv}" drawable="napsternetv" name="NapsternetV" />
   <item component="ComponentInfo{com.franco.doze/a.a}" drawable="sleep" name="Naptime" />
   <item component="ComponentInfo{com.franco.doze/com.franco.doze.activities.MainActivity}" drawable="sleep" name="Naptime" />
   <item component="ComponentInfo{com.franco.doze/com.franco.doze.activities.SplashActivity}" drawable="sleep" name="Naptime" />
@@ -17989,8 +17991,8 @@
   <item component="ComponentInfo{com.fintechla.wink/com.fintechla.wink.MainActivity}" drawable="wink" name="Wink" />
   <item component="ComponentInfo{com.meitu.wink/com.meitu.wink.page.main.MainActivity}" drawable="wink_video_enhancing" name="Wink" />
   <item component="ComponentInfo{ru.rt.video.app.mobile/ru.rt.video.app.splash.SplashActivity}" drawable="wink_tv" name="Wink TV" />
-  <item component="ComponentInfo{com.meitu.wink/com.stub.stub01.StartActivity}" drawable="wink_video_enhancing" name="Wink — Video Enhancing" />
-  <item component="ComponentInfo{com.meitu.wink/com.meitu.wink.startup.StartupActivity}" drawable="wink_video_enhancing" name="Wink — Video Enhancing" />
+  <item component="ComponentInfo{com.meitu.wink/com.stub.stub01.StartActivity}" drawable="wink_video_enhancing" name="Wink — Video Enhancing" />
+  <item component="ComponentInfo{com.meitu.wink/com.meitu.wink.startup.StartupActivity}" drawable="wink_video_enhancing" name="Wink — Video Enhancing" />
   <item component="ComponentInfo{com.winlator/com.winlator.MainActivity}" drawable="winlator" name="Winlator" />
   <item component="ComponentInfo{il.talent.winner/il.talent.winner.MainActivity}" drawable="winner" name="Winner" />
   <item component="ComponentInfo{com.LordHonor.Windows10Simulator/com.unity3d.player.UnityPlayerActivity}" drawable="wins_10_simulator" name="Wins 10 Simulator" />
@@ -18969,6 +18971,7 @@
   <item component="ComponentInfo{com.digikala/com.digikala.SplashActivity}" drawable="digikala" name="دیجی‌کالا ~~ Digikala" />
   <item component="ComponentInfo{com.digikala/com.digikala.activities.SplashActivity}" drawable="digikala" name="دیجی‌کالا ~~ Digikala" />
   <item component="ComponentInfo{com.digikala/com.digikala.MainActivityDefault}" drawable="digikala" name="دیجی‌کالا ~~ Digikala" />
+  <item component="ComponentInfo{ir.rightel.myrightel/ir.rightel.myrightel.MainActivity}" drawable="my_rightel" name="رایتل من ~~ My RighTel" />
   <item component="ComponentInfo{com.jmeyte.app/com.example.circlys_v2.MainActivity}" drawable="circlys" name="سيركليز ~~ Circlys" />
   <item component="ComponentInfo{com.lean.sehhaty/com.lean.sehhaty.ui.splash.SplashActivity}" drawable="sehhaty" name="صحتي ~~ Sehhaty" />
   <item component="ComponentInfo{com.masarat.salati/com.masarat.salati.ui.activities.MainActivity}" drawable="salatuk" name="صلاتك ~~ Salatuk" />
@@ -18988,6 +18991,7 @@
   <item component="ComponentInfo{sa.gov.nic.myid/sa.gov.nic.myid.MainActivity}" drawable="nafath" name="نفاذ ~~ NAFATH" />
   <item component="ComponentInfo{com.noon.buyerapp/com.noon.buyerapp.MainActivity}" drawable="noon" name="نون ~~ noon" />
   <item component="ComponentInfo{com.ananinja.lava/com.ananinja.MainActivity}" drawable="ninja" name="نينجا ~~ Ninja" />
+  <item component="ComponentInfo{ir.mci.ecareapp/ir.mci.MainActivity}" drawable="my_mci" name="همراه من ~~ My MCI" />
   <item component="ComponentInfo{com.adpdigital.mbs.ayande/com.adpdigital.mbs.ayande.HamrahCardHomeActivity}" drawable="hamrahcard" name="همراه کارت ~~ HamrahCard" />
   <item component="ComponentInfo{com.adpdigital.mbs.ayande/com.adpdigital.mbs.authUI.SplashActivity}" drawable="hamrahcard" name="همراه کارت ~~ HamrahCard" />
   <item component="ComponentInfo{com.adpdigital.mbs.ayande/com.adpdigital.mbs.ayande.ui.startup.StartupActivity}" drawable="hamrahcard" name="همراه کارت ~~ HamrahCard" />
