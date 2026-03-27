@@ -1,90 +1,114 @@
 package k4ustu3h.forkicons.ui
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.rememberNavController
-import k4ustu3h.forkicons.model.IconInfo
-import k4ustu3h.forkicons.ui.destination.About
-import k4ustu3h.forkicons.ui.destination.Acknowledgement
-import k4ustu3h.forkicons.ui.destination.Acknowledgements
-import k4ustu3h.forkicons.ui.destination.Contributors
-import k4ustu3h.forkicons.ui.destination.Home
-import k4ustu3h.forkicons.ui.destination.NewIcons
-import k4ustu3h.forkicons.ui.destination.aboutDestination
-import k4ustu3h.forkicons.ui.destination.acknowledgementDestination
-import k4ustu3h.forkicons.ui.destination.acknowledgementsDestination
-import k4ustu3h.forkicons.ui.destination.contributorsDestination
-import k4ustu3h.forkicons.ui.destination.homeDestination
-import k4ustu3h.forkicons.ui.destination.newIconsDestination
-import soup.compose.material.motion.animation.materialSharedAxisXIn
-import soup.compose.material.motion.animation.materialSharedAxisXOut
+import androidx.navigation3.runtime.entryProvider
+import androidx.navigation3.ui.NavDisplay
+import dev.zacsweers.metrox.viewmodel.LocalMetroViewModelFactory
+import dev.zacsweers.metrox.viewmodel.MetroViewModelFactory
+import k4ustu3h.forkicons.data.model.IconInfo
+import k4ustu3h.forkicons.ui.destination.about.About
+import k4ustu3h.forkicons.ui.destination.about.aboutDestination
+import k4ustu3h.forkicons.ui.destination.acknowledgements.Acknowledgements
+import k4ustu3h.forkicons.ui.destination.acknowledgements.acknowledgementsDestination
+import k4ustu3h.forkicons.ui.destination.contributors.Contributors
+import k4ustu3h.forkicons.ui.destination.contributors.contributorsDestination
+import k4ustu3h.forkicons.ui.destination.debugmenu.DebugMenu
+import k4ustu3h.forkicons.ui.destination.debugmenu.debugMenuDestination
+import k4ustu3h.forkicons.ui.destination.home.Home
+import k4ustu3h.forkicons.ui.destination.home.homeDestination
+import k4ustu3h.forkicons.ui.destination.iconrequest.IconRequest
+import k4ustu3h.forkicons.ui.destination.iconrequest.iconRequestDestination
+import k4ustu3h.forkicons.ui.destination.newicons.NewIcons
+import k4ustu3h.forkicons.ui.destination.newicons.newIconsDestination
+import soup.compose.material.motion.animation.materialSharedAxisX
 import soup.compose.material.motion.animation.rememberSlideDistance
 
+data class LawniconsActions(
+    val isIconPicker: Boolean = false,
+    val onSendResult: (IconInfo) -> Unit = {},
+)
+
+val LocalLawniconsActions = staticCompositionLocalOf { LawniconsActions() }
+
 @Composable
-@ExperimentalFoundationApi
 fun Lawnicons(
+    metroVmf: MetroViewModelFactory,
     isExpandedScreen: Boolean,
     onSendResult: (IconInfo) -> Unit,
     modifier: Modifier = Modifier,
     isIconPicker: Boolean = false,
 ) {
-    val navController = rememberNavController()
-    val isRtl = LocalLayoutDirection.current == LayoutDirection.Rtl
-    val slideDistance = rememberSlideDistance()
-    Surface(
-        modifier = modifier.fillMaxSize(),
-        color = MaterialTheme.colorScheme.background,
+    CompositionLocalProvider(
+        LocalMetroViewModelFactory provides metroVmf,
+        LocalLawniconsActions provides LawniconsActions(isIconPicker, onSendResult),
     ) {
-        NavHost(
-            navController = navController,
-            startDestination = Home,
-            enterTransition = { materialSharedAxisXIn(!isRtl, slideDistance) },
-            exitTransition = { materialSharedAxisXOut(!isRtl, slideDistance) },
-            popEnterTransition = { materialSharedAxisXIn(isRtl, slideDistance) },
-            popExitTransition = { materialSharedAxisXOut(isRtl, slideDistance) },
-        ) {
+        val navigationState = rememberNavigationState(
+            startRoute = Home,
+            topLevelRoutes = setOf(Home, About, NewIcons, IconRequest, DebugMenu),
+        )
+        val navigator = remember { Navigator(navigationState) }
+        val isRtl = LocalLayoutDirection.current == LayoutDirection.Rtl
+        val slideDistance = rememberSlideDistance()
+
+        val entryProvider = entryProvider {
             homeDestination(
-                onNavigateToAbout = { navController.navigate(About) },
-                onNavigateToNewIcons = { navController.navigate(NewIcons) },
+                onNavigateToAbout = { navigator.navigate(About) },
+                onNavigateToNewIcons = { navigator.navigate(NewIcons) },
+                onNavigateToIconRequest = { navigator.navigate(IconRequest) },
+                onNavigateToDebugMenu = { navigator.navigate(DebugMenu) },
                 isExpandedScreen = isExpandedScreen,
-                isIconPicker = isIconPicker,
-                onSendResult = onSendResult,
+            )
+            debugMenuDestination(
+                isExpandedScreen = isExpandedScreen,
+                onBack = navigator::goBack,
+            )
+            iconRequestDestination(
+                isExpandedScreen = isExpandedScreen,
+                onBack = navigator::goBack,
             )
             acknowledgementsDestination(
-                onBack = navController::popBackStack,
-                onNavigate = {
-                    navController.navigate(Acknowledgement(it))
-                },
-                isExpandedScreen = isExpandedScreen,
-            )
-            acknowledgementDestination(
-                onBack = navController::popBackStack,
+                onBack = navigator::goBack,
                 isExpandedScreen = isExpandedScreen,
             )
             aboutDestination(
-                onBack = navController::popBackStack,
+                onBack = navigator::goBack,
                 onNavigateToContributors = {
-                    navController.navigate(Contributors)
+                    navigator.navigate(Contributors)
                 },
                 onNavigateToAcknowledgements = {
-                    navController.navigate(Acknowledgements)
+                    navigator.navigate(Acknowledgements)
                 },
                 isExpandedScreen = isExpandedScreen,
             )
             contributorsDestination(
-                onBack = navController::popBackStack,
+                onBack = navigator::goBack,
                 isExpandedScreen = isExpandedScreen,
             )
             newIconsDestination(
-                onBack = navController::popBackStack,
+                onBack = navigator::goBack,
                 isExpandedScreen = isExpandedScreen,
+            )
+        }
+
+        Surface(
+            modifier = modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.background,
+        ) {
+            NavDisplay(
+                entries = navigationState.toEntries(entryProvider),
+                onBack = navigator::goBack,
+                transitionSpec = { materialSharedAxisX(!isRtl, slideDistance) },
+                popTransitionSpec = { materialSharedAxisX(isRtl, slideDistance) },
+                predictivePopTransitionSpec = { materialSharedAxisX(isRtl, slideDistance) },
             )
         }
     }

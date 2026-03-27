@@ -3,20 +3,14 @@
     extends: ["config:recommended"],
     labels: ["dependencies"],
     packageRules: [
+        // Enable auto-merge for minor/patch updates.
         {
-            groupName: "Kotlin and KSP",
-            matchPackageNames: [
-                "com.google.devtools.ksp{/,}**",
-                "/org.jetbrains.kotlin.*/",
-            ],
+            matchUpdateTypes: ["minor", "patch"],
+            automerge: true,
         },
         {
             groupName: "AGP",
             matchPackageNames: ["/com.android.*/"],
-        },
-        {
-            groupName: "Hilt",
-            matchPackageNames: ["com.google.dagger{/,}**"],
         },
     ],
 }

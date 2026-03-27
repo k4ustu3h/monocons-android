@@ -1,48 +1,55 @@
 package k4ustu3h.forkicons.ui.components.home
 
-import android.content.Context
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.requiredSize
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.FloatingToolbarDefaults
 import androidx.compose.material3.FloatingToolbarDefaults.ScreenOffset
+import androidx.compose.material3.FloatingToolbarExitDirection
 import androidx.compose.material3.FloatingToolbarScrollBehavior
 import androidx.compose.material3.HorizontalFloatingToolbar
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.PlainTooltip
-import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
+import androidx.compose.material3.TooltipAnchorPosition
 import androidx.compose.material3.TooltipBox
 import androidx.compose.material3.TooltipDefaults.rememberTooltipPositionProvider
 import androidx.compose.material3.rememberTooltipState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import k4ustu3h.forkicons.R
-import k4ustu3h.forkicons.model.IconRequestModel
+import k4ustu3h.forkicons.ui.theme.icon.About
+import k4ustu3h.forkicons.ui.theme.icon.Forkicons
+import k4ustu3h.forkicons.ui.theme.icon.Github
+import k4ustu3h.forkicons.ui.theme.icon.IconRequest
+import k4ustu3h.forkicons.ui.theme.icon.Search
 import k4ustu3h.forkicons.ui.util.Constants
+import k4ustu3h.forkicons.ui.util.PreviewLawnicons
+import k4ustu3h.forkicons.ui.util.PreviewProviders
 import k4ustu3h.forkicons.ui.util.visitUrl
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun BoxScope.HomeBottomToolbar(
-    context: Context,
-    iconRequestsEnabled: Boolean,
-    iconRequestModel: IconRequestModel?,
-    snackbarHostState: SnackbarHostState,
-    onNavigate: () -> Unit,
+    showIconRequests: Boolean,
+    onNavigateToAbout: () -> Unit,
+    onNavigateToIconRequest: () -> Unit,
+    onIconRequestUnavailable: () -> Unit,
     onExpandSearch: () -> Unit,
     scrollBehavior: FloatingToolbarScrollBehavior,
     modifier: Modifier = Modifier,
 ) {
+    val context = LocalContext.current
+
     HorizontalFloatingToolbar(
         expanded = true,
         scrollBehavior = scrollBehavior,
@@ -54,7 +61,7 @@ fun BoxScope.HomeBottomToolbar(
                     onClick = onExpandSearch,
                 ) {
                     Icon(
-                        imageVector = Icons.Rounded.Search,
+                        imageVector = Forkicons.Search,
                         contentDescription = stringResource(id = R.string.search),
                     )
                 }
@@ -70,25 +77,39 @@ fun BoxScope.HomeBottomToolbar(
                     },
                 ) {
                     Icon(
-                        painter = painterResource(id = R.drawable.github_foreground),
+                        imageVector = Forkicons.Github,
                         contentDescription = stringResource(id = R.string.github),
                         modifier = Modifier.requiredSize(24.dp),
                     )
                 }
             }
 
-            IconRequestIconButton(
-                snackbarHostState = snackbarHostState,
-                iconRequestsEnabled = iconRequestsEnabled,
-                iconRequestModel = iconRequestModel,
-            )
+            SimpleTooltipBox(
+                label = stringResource(R.string.request_icons),
+            ) {
+                IconButton(
+                    onClick = {
+                        if (showIconRequests) {
+                            onNavigateToIconRequest()
+                        } else {
+                            onIconRequestUnavailable()
+                        }
+                    },
+                ) {
+                    Icon(
+                        imageVector = Forkicons.IconRequest,
+                        contentDescription = stringResource(id = R.string.request_icons),
+                        modifier = Modifier.requiredSize(24.dp),
+                    )
+                }
+            }
 
             SimpleTooltipBox(
                 label = stringResource(id = R.string.about),
             ) {
-                IconButton(onClick = onNavigate) {
+                IconButton(onClick = onNavigateToAbout) {
                     Icon(
-                        painter = painterResource(id = R.drawable.about_icon),
+                        imageVector = Forkicons.About,
                         contentDescription = stringResource(id = R.string.about),
                         modifier = Modifier.requiredSize(24.dp),
                     )
@@ -97,7 +118,8 @@ fun BoxScope.HomeBottomToolbar(
         },
         modifier = modifier
             .align(Alignment.BottomCenter)
-            .offset(y = -ScreenOffset),
+            .offset(y = -ScreenOffset)
+            .navigationBarsPadding(),
     )
 }
 
@@ -109,7 +131,7 @@ private fun SimpleTooltipBox(
     content: @Composable (() -> Unit),
 ) {
     TooltipBox(
-        positionProvider = rememberTooltipPositionProvider(),
+        positionProvider = rememberTooltipPositionProvider(TooltipAnchorPosition.Above, 4.dp),
         tooltip = {
             PlainTooltip {
                 Text(label)
@@ -119,5 +141,40 @@ private fun SimpleTooltipBox(
         modifier = modifier,
     ) {
         content()
+    }
+}
+
+@PreviewLawnicons
+@Composable
+private fun SimpleTooltipBoxPreview() {
+    PreviewProviders {
+        SimpleTooltipBox(
+            label = "Example",
+        ) {
+            Icon(
+                Forkicons.About,
+                contentDescription = null,
+            )
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
+@PreviewLawnicons
+@Composable
+private fun HomeBottomToolbarPreview() {
+    PreviewProviders {
+        Box {
+            HomeBottomToolbar(
+                showIconRequests = true,
+                onNavigateToAbout = {},
+                onNavigateToIconRequest = {},
+                onIconRequestUnavailable = {},
+                onExpandSearch = {},
+                scrollBehavior = FloatingToolbarDefaults.exitAlwaysScrollBehavior(
+                    FloatingToolbarExitDirection.Bottom,
+                ),
+            )
+        }
     }
 }

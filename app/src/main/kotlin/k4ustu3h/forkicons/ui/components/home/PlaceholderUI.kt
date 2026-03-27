@@ -40,13 +40,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import k4ustu3h.forkicons.ui.components.core.placeholder.PlaceholderHighlight
 import k4ustu3h.forkicons.ui.components.core.placeholder.fade
 import k4ustu3h.forkicons.ui.components.core.placeholder.placeholder
 import k4ustu3h.forkicons.ui.components.core.placeholder.shimmer
-import k4ustu3h.forkicons.ui.components.home.iconpreview.IconPreviewGridPadding
+import k4ustu3h.forkicons.ui.components.home.iconpreview.IconPreviewGridPaddings
 import k4ustu3h.forkicons.ui.components.home.iconpreview.iconColor
+import k4ustu3h.forkicons.ui.util.PreviewLawnicons
+import k4ustu3h.forkicons.ui.util.PreviewProviders
 import k4ustu3h.forkicons.ui.util.toPaddingValues
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -54,8 +57,8 @@ import k4ustu3h.forkicons.ui.util.toPaddingValues
 @Composable
 fun PlaceholderUI(
     modifier: Modifier = Modifier,
+    horizontalPadding: Dp = IconPreviewGridPaddings.Default,
 ) {
-    val contentPadding = IconPreviewGridPadding.Defaults
     Scaffold(
         modifier = modifier,
     ) {
@@ -63,9 +66,8 @@ fun PlaceholderUI(
             columns = GridCells.Adaptive(80.dp),
             userScrollEnabled = false,
             contentPadding = WindowInsets.navigationBars.toPaddingValues(
-                additionalStart = contentPadding.horizontalPadding,
-                additionalTop = contentPadding.topPadding,
-                additionalEnd = contentPadding.horizontalPadding,
+                additionalStart = horizontalPadding,
+                additionalEnd = horizontalPadding,
             ),
         ) {
             item(
@@ -136,5 +138,13 @@ fun PlaceholderUI(
                 ) {}
             }
         }
+    }
+}
+
+@PreviewLawnicons
+@Composable
+private fun PlaceholderUIPreview() {
+    PreviewProviders {
+        PlaceholderUI()
     }
 }

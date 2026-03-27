@@ -1,8 +1,9 @@
-<!-- Please open the `Preview` tab to select a template. -->
-<!-- Note that we will ask you for a minimum description if there is none. -->
-
 ## Click on the template that fits your PR
 
--   [**Icon addition**](?expand=1&template=icon_addition.md)
--   [General or miscellaneous change](?expand=1&template=general_change.md)
--   _[Blank](?expand=1&body=+) (not recommended)_
+<!-- Use the `Preview` tab. -->
+
+[Icon addition](?expand=1&template=icon_addition.md)  
+[Bug fix](?expand=1&template=bug_fix.md)  
+[General change](?expand=1&template=general_change.md) (non-breaking change, such as copyediting)
+
+<!-- Delete the text for a blank template. A short summary is needed anyway. -->

@@ -37,8 +37,8 @@ object SvgFilesProcessor {
     private lateinit var sourceSvgPath: Path
     private lateinit var destinationVectorPath: Path
     fun process(sourceDirectory: String, destDirectory: String) {
-        sourceSvgPath = Paths.get(sourceDirectory)
-        destinationVectorPath = Paths.get(destDirectory)
+        this.sourceSvgPath = Paths.get(sourceDirectory)
+        this.destinationVectorPath = Paths.get(destDirectory)
         try {
             val options = EnumSet.of(FileVisitOption.FOLLOW_LINKS)
             // check first if source is a directory
@@ -53,7 +53,8 @@ object SvgFilesProcessor {
     }
 
     private val fileVisitor = object : FileVisitor<Path> {
-        override fun postVisitDirectory(dir: Path, exc: IOException?): FileVisitResult = FileVisitResult.CONTINUE
+        override fun postVisitDirectory(dir: Path, exc: IOException?): FileVisitResult =
+            FileVisitResult.CONTINUE
 
         override fun preVisitDirectory(dir: Path, attrs: BasicFileAttributes?): FileVisitResult {
             // Skip folder which is processing svgs to xml
@@ -77,7 +78,8 @@ object SvgFilesProcessor {
             return FileVisitResult.CONTINUE
         }
 
-        override fun visitFileFailed(file: Path, exc: IOException?): FileVisitResult = FileVisitResult.CONTINUE
+        override fun visitFileFailed(file: Path, exc: IOException?): FileVisitResult =
+            FileVisitResult.CONTINUE
     }
 
     private fun convertToVector(svgSource: Path, vectorTargetPath: Path) {
@@ -115,16 +117,13 @@ object SvgFilesProcessor {
         val document = DocumentHelper.createDocument()
         val root = document.addElement("adaptive-icon")
             .addAttribute("xmlns:android", "http://schemas.android.com/apk/res/android")
-        root.addElement("background")
-            .addAttribute("android:drawable", bgColor)
-        root.addElement("foreground").addElement("inset")
-            .addAttribute("android:inset", "32%")
+        root.addElement("background").addAttribute("android:drawable", bgColor)
+        root.addElement("foreground").addElement("inset").addAttribute("android:inset", "32%")
             .addAttribute(
                 "android:drawable",
                 "@drawable/" + FilenameUtils.getBaseName(foregroundXml),
             )
-        root.addElement("monochrome").addElement("inset")
-            .addAttribute("android:inset", "28%")
+        root.addElement("monochrome").addElement("inset").addAttribute("android:inset", "28%")
             .addAttribute(
                 "android:drawable",
                 "@drawable/" + FilenameUtils.getBaseName(foregroundXml),

@@ -1,69 +1,74 @@
 package k4ustu3h.forkicons.ui.components
 
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
+import androidx.compose.material3.ListItemDefaults
+import androidx.compose.material3.ListItemShapes
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.SegmentedListItem
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import k4ustu3h.forkicons.ui.components.core.ListRow
+import k4ustu3h.forkicons.ui.components.core.ListRowDefaults
 import k4ustu3h.forkicons.ui.components.core.placeholder.PlaceholderHighlight
 import k4ustu3h.forkicons.ui.components.core.placeholder.fade
 import k4ustu3h.forkicons.ui.components.core.placeholder.placeholder
-import k4ustu3h.forkicons.ui.theme.LawniconsTheme
+import k4ustu3h.forkicons.ui.theme.adaptiveSurfaceContainerColor
 import k4ustu3h.forkicons.ui.util.PreviewLawnicons
+import k4ustu3h.forkicons.ui.util.PreviewProviders
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun ContributorRowPlaceholder(
     modifier: Modifier = Modifier,
-    first: Boolean = false,
-    last: Boolean = false,
-    divider: Boolean = true,
+    shapes: ListItemShapes = ListRowDefaults.singleItemShapes,
 ) {
-    Row(
-        modifier = modifier,
-    ) {
-        ListRow(
-            divider = divider,
-            background = true,
-            first = first,
-            last = last,
-            startIcon = {
-                Box(
-                    modifier = Modifier
-                        .size(32.dp)
-                        .placeholder(
-                            visible = true,
-                            shape = CircleShape,
-                            color = MaterialTheme.colorScheme.surfaceContainerHighest,
-                            highlight = PlaceholderHighlight.fade(),
-                        ),
-                )
-            },
-            label = {
-                Box(
-                    modifier = Modifier
-                        .width(96.dp)
-                        .height(18.dp)
-                        .placeholder(
-                            visible = true,
-                            color = MaterialTheme.colorScheme.surfaceContainerHighest,
-                            highlight = PlaceholderHighlight.fade(),
-                        ),
-                )
-            },
-        )
-    }
+    SegmentedListItem(
+        onClick = { },
+        shapes = shapes,
+        colors = ListItemDefaults.colors(
+            containerColor = adaptiveSurfaceContainerColor,
+        ),
+        modifier = modifier.padding(
+            horizontal = ListRowDefaults.basePadding,
+        ),
+        content = {
+            Box(
+                modifier = Modifier
+                    .width(96.dp)
+                    .height(18.dp)
+                    .placeholder(
+                        visible = true,
+                        color = MaterialTheme.colorScheme.surfaceContainerHighest,
+                        highlight = PlaceholderHighlight.fade(),
+                    ),
+            )
+        },
+        leadingContent = {
+            Box(
+                modifier = Modifier
+                    .size(32.dp)
+                    .placeholder(
+                        visible = true,
+                        shape = CircleShape,
+                        color = MaterialTheme.colorScheme.surfaceContainerHighest,
+                        highlight = PlaceholderHighlight.fade(),
+                    ),
+            )
+        },
+    )
 }
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @PreviewLawnicons
 @Composable
 private fun ContributorRowPlaceholderPreview() {
-    LawniconsTheme {
+    PreviewProviders {
         ContributorRowPlaceholder()
     }
 }

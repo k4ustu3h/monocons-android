@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -12,18 +13,16 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.WindowHeightSizeClass
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
-import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import dagger.hilt.android.AndroidEntryPoint
-import k4ustu3h.forkicons.model.IconInfo
+import k4ustu3h.forkicons.data.model.IconInfo
 import k4ustu3h.forkicons.ui.Lawnicons
 import k4ustu3h.forkicons.ui.components.SetupEdgeToEdge
 import k4ustu3h.forkicons.ui.theme.LawniconsTheme
@@ -31,13 +30,20 @@ import k4ustu3h.forkicons.ui.util.Constants
 
 @ExperimentalFoundationApi
 @ExperimentalMaterial3Api
-@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        val app = application as LawniconsApplication
+        val metroVmf = app.lawniconsGraph.viewModelFactory
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            @Suppress("DEPRECATION") window.setDecorFitsSystemWindows(false)
+            window.setNavigationBarContrastEnforced(false)
+        }
 
         val isIconPicker = intent?.action == Constants.ICON_PICKER_INTENT_ACTION
 
@@ -46,16 +52,10 @@ class MainActivity : ComponentActivity() {
             val windowSizeClass = calculateWindowSizeClass(this)
             LawniconsTheme {
                 val isExpandedScreen =
-                    windowSizeClass.widthSizeClass == WindowWidthSizeClass.Expanded
+                    windowSizeClass.widthSizeClass == WindowWidthSizeClass.Expanded && (windowSizeClass.heightSizeClass == WindowHeightSizeClass.Medium || windowSizeClass.heightSizeClass == WindowHeightSizeClass.Expanded)
 
-                val navBarColor = if (isExpandedScreen) {
-                    MaterialTheme.colorScheme.background.copy(alpha = 0.95f)
-                } else {
-                    MaterialTheme.colorScheme.surfaceContainer
-                }
-
-                SetupEdgeToEdge(navBarColor.toArgb())
                 Lawnicons(
+                    metroVmf = metroVmf,
                     isExpandedScreen = isExpandedScreen,
                     onSendResult = { iconInfo ->
                         setIntentResult(context, iconInfo)
@@ -63,6 +63,7 @@ class MainActivity : ComponentActivity() {
                     },
                     isIconPicker = isIconPicker,
                 )
+                SetupEdgeToEdge(isExpandedScreen)
             }
         }
     }
@@ -78,11 +79,12 @@ class MainActivity : ComponentActivity() {
         val primaryBackgroundColor = context.getColor(R.color.primaryBackground)
 
         val drawable: Drawable? =
-            ResourcesCompat.getDrawable(context.resources, iconInfo.id, theme)?.mutate()?.let {
-                DrawableCompat.wrap(
-                    it,
-                )
-            }
+            ResourcesCompat.getDrawable(context.resources, iconInfo.drawableId, theme)?.mutate()
+                ?.let {
+                    DrawableCompat.wrap(
+                        it,
+                    )
+                }
 
         if (drawable != null) {
             val targetBitmapSize = 192
@@ -123,7 +125,7 @@ class MainActivity : ComponentActivity() {
             } catch (e: Exception) {
                 Log.d("SetIntentResult", e.toString())
             }
-            val iconRes = Intent.ShortcutIconResource.fromContext(this, iconInfo.id)
+            val iconRes = Intent.ShortcutIconResource.fromContext(this, iconInfo.drawableId)
 
             if (BuildConfig.DEBUG) {
                 Log.d(

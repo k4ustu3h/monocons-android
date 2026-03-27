@@ -3,65 +3,89 @@
     <!-- General -->
     <!-- Application name -->
     <!-- Version name, with %s as the version code -->
-    <string name="version_x">Version %s</string>
+    <string name="version_x">Versie %s</string>
     <!-- Search bar -->
     <!-- The hint shown in the search bar, with %d as the number of icons. -->
     <!-- We don't currently provide a singular form, because it's always guaranteed that there will be atleast 2 or more icons. -->
-    <string name="search_bar_hint">Search through %d icons</string>
-    <string name="search_bar_icon_picker">Pick an icon</string>
+    <string name="search_bar_hint">Zoeken door %d pictogrammen</string>
+    <string name="search_bar_icon_picker">Kies een pictogram</string>
     <!-- Search tooltip -->
     <string name="search">Zoeken</string>
+    <!-- Clear accessibility action -->
+    <string name="clear">Verwijderen</string>
     <!-- Text shown when there are no search results-->
-    <string name="no_items_found">%s not found</string>
+    <string name="no_items_found">%s niet gevonden</string>
     <!-- About page -->
     <string name="about">Over</string>
     <!-- External Links -->
     <!-- GitHub repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Icon request form</string>
+    <string name="request_form">Pictogram aanvraagformulier</string>
+    <!-- Send feedback form link -->
+    <string name="send_feedback">Feedback sturen</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
-    <string name="contributors">Contributors</string>
+    <string name="contributors">Bijdragen</string>
     <!-- Core Contributors label -->
-    <string name="core_contributors">Core contributors</string>
+    <string name="core_contributors">Belangrijke bijdragen</string>
     <!-- Item that links to the Contributors page -->
-    <string name="see_all_contributors">See all contributors</string>
+    <string name="see_all_contributors">Alle bijdragen weergeven</string>
     <!-- View on GitHub link -->
-    <string name="view_on_github">View on GitHub</string>
+    <string name="view_on_github">Bekijken op GitHub</string>
     <!-- Share button on icon info popup -->
-    <string name="share">Share details</string>
-    <!-- Contribution -->
-    <string name="contribution_core">Core app</string>
+    <string name="share">Details delen</string>
+    <!-- Contributions -->
+    <string name="contribution_core">Basis-app</string>
     <string name="contribution_icons">Pictogrammen</string>
-    <string name="contribution_infra">Infrastructure</string>
+    <string name="contribution_infra">Infrastructuur</string>
     <!-- Special Thanks section of About page -->
     <!-- Special Thanks label -->
-    <string name="special_thanks">Special thanks</string>
+    <string name="special_thanks">Bijzondere dank</string>
+    <!-- Subtitle displayed below the user who first restored the original icons. -->
+    <string name="special_thanks_restoration">Voor het restaureren van de originele iconen.</string>
     <!-- List item that links to the Acknowledgements page -->
-    <string name="acknowledgements">Open-source licenses</string>
+    <string name="acknowledgements">Open-source licenties</string>
     <!-- Icon Information Popup window -->
     <!-- Name -->
-    <string name="name">Name</string>
+    <string name="name">Naam</string>
     <!-- Drawable prefix -->
-    <string name="drawable">Drawable</string>
-    <!-- Package prefix -->
-    <string name="component">Component name</string>
+    <string name="drawable">Tekenbaar</string>
+    <!-- Component -->
+    <string name="component">ID</string>
     <!-- Mapped components -->
-    <string name="mapped_components">Mapped components</string>
+    <string name="mapped_components">Mapped IDs</string>
     <!-- Outdated icon info -->
-    <string name="icon_info_outdated_warning">If the icon is outdated due to rebranding, create an issue on GitHub.</string>
+    <string name="icon_info_outdated_warning">Als het pictogram verouderd is, meld dan een probleem op GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Toggle visibility of contents</string>
+    <string name="toggle_visibility_of_contents">Zichtbaarheid van inhoud in-/uitschakelen</string>
     <!-- Request icons button -->
-    <string name="request_icons">Request icons</string>
-    <string name="copy_to_clipboard">Copy to clipboard</string>
-    <string name="copied_text">Copied text</string>
+    <string name="request_icons">Pictogrammen aanvragen</string>
+    <string name="copy_to_clipboard">Kopiëren naar klembord</string>
+    <string name="copied_text">Tekst gekopieerd</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Request missing icons from the bottom bar</string>
-    <string name="snackbar_request_too_large">Copied icon request details to clipboard. To request them, submit the details into the form.</string>
-    <string name="snackbar_use_fallback_link">Open form</string>
-    <string name="clear">Verwijderen</string>
-    <string name="new_icons_in_version">New icons in v%1$s</string>
-    <string name="new_icons">New icons (%1$s)</string>
-    <string name="special_thanks_restoration">Voor het restaureren van de originele iconen.</string>
+    <string name="snackbar_request_icons_hint">Ontbrekende pictogrammen op onderste balk aanvragen</string>
+    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Forkicons release.</string>
+    <string name="snackbar_request_too_large">Gegevens voor pictogramaanvraag gekopieerd naar klembord. Plak de gegevens in het aanvraagformulier.</string>
+    <string name="snackbar_use_fallback_link">Formulier openen</string>
+    <!-- Missing icons screen -->
+    <string name="missing_icons">Ontbrekende pictogrammen</string>
+    <string name="clear_all">Selectie wissen</string>
+    <string name="select_all">Alles selecteren</string>
+    <string name="request_icons_button">Aanvragen</string>
+    <string name="show_options_sheet">Optieblad weergeven</string>
+    <string name="toggle_button_expanded">Uitgebreid</string>
+    <string name="toggle_button_collapsed">Ingeklapt</string>
+    <string name="toggle_button_content_description">Aan/uit-knop</string>
+    <string name="icon_request_mail_hint">Mail een verzoekbestand naar\u0020</string>
+    <string name="share_file">Bestand delen</string>
+    <string name="save_file">Bestand opslaan</string>
+    <string name="copy_components">Copy app IDs</string>
+    <string name="toast_file_saved_successful">Bestand met succes opgeslagen</string>
+    <string name="toast_file_save_error">Fout bij opslaan bestand</string>
+    <string name="toast_file_zip_error">Kan het aanvraagbestand niet aanmaken</string>
+    <string name="toast_no_app_available">Geen app om deze actie af te handelen</string>
+    <!-- New icons screen -->
+    <string name="new_icons_in_version">Nieuwe pictogrammen in v%1$s</string>
+    <string name="new_icons">Nieuwe pictogrammen (%1$s)</string>
 </resources>

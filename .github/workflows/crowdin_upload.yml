@@ -4,17 +4,17 @@ on:
   push:
     branches:
       - "develop"
+    paths:
+      - app/src/main/res # Trigger only when there are changes in the res directory.
   workflow_dispatch:
 
 jobs:
   synchronize-with-crowdin:
     name: Upload strings to Crowdin
-    if: github.repository_owner == 'LawnchairLauncher'
+    if: github.event.repository.fork == false
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v6
       - name: Upload Strings
         uses: crowdin/github-action@v2
         with:

@@ -1,8 +1,6 @@
 package k4ustu3h.forkicons.ui.components.core
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.LargeFlexibleTopAppBar
@@ -16,9 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import k4ustu3h.forkicons.ui.components.home.NavigationIconButton
-import k4ustu3h.forkicons.ui.theme.LawniconsTheme
 import k4ustu3h.forkicons.ui.theme.adaptiveSurfaceColor
+import k4ustu3h.forkicons.ui.theme.icon.Back
+import k4ustu3h.forkicons.ui.theme.icon.Forkicons
 import k4ustu3h.forkicons.ui.util.PreviewLawnicons
+import k4ustu3h.forkicons.ui.util.PreviewProviders
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
@@ -62,12 +62,12 @@ fun TopAppBar(
 @PreviewLawnicons
 @Composable
 private fun SmallTopAppBarPreview() {
-    LawniconsTheme {
+    PreviewProviders {
         TopAppBar(
             navigationIcon = {
                 NavigationIconButton(
+                    imageVector = Forkicons.Back,
                     onClick = {},
-                    imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
                     size = 40.dp,
                     modifier = Modifier.padding(horizontal = 4.dp),
                 )
@@ -83,12 +83,12 @@ private fun SmallTopAppBarPreview() {
 @PreviewLawnicons
 @Composable
 private fun LargeTopAppBarPreview() {
-    LawniconsTheme {
+    PreviewProviders {
         TopAppBar(
             navigationIcon = {
                 NavigationIconButton(
+                    imageVector = Forkicons.Back,
                     onClick = {},
-                    imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
                     size = 40.dp,
                     modifier = Modifier.padding(horizontal = 4.dp),
                 )

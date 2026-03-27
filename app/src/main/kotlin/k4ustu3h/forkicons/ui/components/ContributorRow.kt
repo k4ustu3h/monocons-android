@@ -2,9 +2,9 @@ package k4ustu3h.forkicons.ui.components
 
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Star
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
+import androidx.compose.material3.ListItemShapes
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -13,23 +13,25 @@ import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
+import k4ustu3h.forkicons.ui.components.core.ListRowDefaults
 import k4ustu3h.forkicons.ui.components.core.SimpleListRow
-import k4ustu3h.forkicons.ui.theme.LawniconsTheme
+import k4ustu3h.forkicons.ui.theme.icon.Check
+import k4ustu3h.forkicons.ui.theme.icon.Forkicons
 import k4ustu3h.forkicons.ui.util.PreviewLawnicons
+import k4ustu3h.forkicons.ui.util.PreviewProviders
 import k4ustu3h.forkicons.ui.util.visitUrl
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun ContributorRow(
     name: String,
     photoUrl: String,
+    shapes: ListItemShapes,
     modifier: Modifier = Modifier,
     profileUrl: String? = null,
     socialUrl: String? = null,
     description: String? = null,
     divider: Boolean = true,
-    background: Boolean = false,
-    first: Boolean = false,
-    last: Boolean = false,
 ) {
     val context = LocalContext.current
     val url = profileUrl ?: socialUrl
@@ -40,41 +42,40 @@ fun ContributorRow(
     }
 
     SimpleListRow(
-        modifier = modifier,
-        background = background,
-        first = first,
-        last = last,
-        divider = divider,
         label = name,
+        modifier = modifier,
         description = description,
-        onClick = onClick,
         startIcon = {
             if (LocalInspectionMode.current) {
-                Icon(Icons.Rounded.Star, contentDescription = null)
+                Icon(imageVector = Forkicons.Check, contentDescription = null)
             } else {
                 AsyncImage(
                     contentDescription = name,
                     model = ImageRequest.Builder(context = LocalContext.current)
-                        .data(data = photoUrl)
-                        .crossfade(enable = true)
-                        .build(),
+                        .data(data = photoUrl).crossfade(enable = true).build(),
                     modifier = Modifier
                         .size(32.dp)
                         .clip(CircleShape),
                 )
             }
         },
+        divider = divider,
+        background = true,
+        shapes = shapes,
+        onClick = onClick,
     )
 }
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @PreviewLawnicons
 @Composable
 private fun ContributorRowPreview() {
-    LawniconsTheme {
+    PreviewProviders {
         ContributorRow(
             name = "User",
             photoUrl = "https://lawnchair.app/images/lawnchair.png",
             description = "The Lawnchair Logo",
+            shapes = ListRowDefaults.singleItemShapes,
         )
     }
 }
