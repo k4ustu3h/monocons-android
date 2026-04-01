@@ -66,10 +66,11 @@ private fun SmallTopAppBarPreview() {
         TopAppBar(
             navigationIcon = {
                 NavigationIconButton(
-                    imageVector = LawnIcons.Back,
+                    label = "Back",
                     onClick = {},
-                    size = 40.dp,
+                    imageVector = LawnIcons.Back,
                     modifier = Modifier.padding(horizontal = 4.dp),
+                    size = 40.dp,
                 )
             },
             scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(),
@@ -87,10 +88,11 @@ private fun LargeTopAppBarPreview() {
         TopAppBar(
             navigationIcon = {
                 NavigationIconButton(
-                    imageVector = LawnIcons.Back,
+                    label = "Back",
                     onClick = {},
-                    size = 40.dp,
+                    imageVector = LawnIcons.Back,
                     modifier = Modifier.padding(horizontal = 4.dp),
+                    size = 40.dp,
                 )
             },
             scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior(),

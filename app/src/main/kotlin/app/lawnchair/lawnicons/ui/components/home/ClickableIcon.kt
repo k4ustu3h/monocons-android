@@ -6,6 +6,12 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.PlainTooltip
+import androidx.compose.material3.Text
+import androidx.compose.material3.TooltipAnchorPosition
+import androidx.compose.material3.TooltipBox
+import androidx.compose.material3.TooltipDefaults.rememberTooltipPositionProvider
+import androidx.compose.material3.rememberTooltipState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,24 +27,36 @@ import app.lawnchair.lawnicons.ui.util.PreviewProviders
 
 @Composable
 fun NavigationIconButton(
+    label: String,
     onClick: () -> Unit,
     imageVector: ImageVector,
     modifier: Modifier = Modifier,
     size: Dp = 48.dp,
     tint: Color = MaterialTheme.colorScheme.onSurface,
 ) {
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = modifier
-            .size(size)
-            .clip(CircleShape)
-            .clickable(onClick = onClick),
+    TooltipBox(
+        positionProvider = rememberTooltipPositionProvider(TooltipAnchorPosition.Below, 4.dp),
+        tooltip = {
+            PlainTooltip {
+                Text(label)
+            }
+        },
+        state = rememberTooltipState(),
+        modifier = modifier,
     ) {
-        Icon(
-            imageVector = imageVector,
-            contentDescription = null,
-            tint = tint,
-        )
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = modifier
+                .size(size)
+                .clip(CircleShape)
+                .clickable(onClick = onClick),
+        ) {
+            Icon(
+                imageVector = imageVector,
+                contentDescription = label,
+                tint = tint,
+            )
+        }
     }
 }
 
@@ -47,9 +65,10 @@ fun NavigationIconButton(
 private fun NavigationIconButtonPreview() {
     PreviewProviders {
         NavigationIconButton(
+            onClick = {},
             imageVector = LawnIcons.Close,
             size = 52.dp,
-            onClick = {},
+            label = "Close",
         )
     }
 }
