@@ -1,4 +1,4 @@
-package app.lawnchair.lawnicons.ui.components.home
+package app.lawnchair.lawnicons.ui.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -46,7 +46,7 @@ fun NavigationIconButton(
     ) {
         Box(
             contentAlignment = Alignment.Center,
-            modifier = modifier
+            modifier = Modifier
                 .size(size)
                 .clip(CircleShape)
                 .clickable(onClick = onClick),
