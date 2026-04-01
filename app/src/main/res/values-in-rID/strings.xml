@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Formulir permintaan ikon</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Kirim masukan</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Kontributor</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Jika ikon sudah usang karena rebranding, buatlah masalah di GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Ubah visibilitas konten</string>
     <!-- Request icons button -->
     <string name="request_icons">Minta ikon</string>
-    <string name="copy_to_clipboard">Salin ke papan klip</string>
     <string name="copied_text">Teks yang disalin</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Minta ikon yang hilang dari bilah bawah</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">Detail permintaan ikon disalin ke papan klip. Untuk memintanya, kirimkan detailnya ke dalam formulir.</string>
-    <string name="snackbar_use_fallback_link">Buka formulir</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Ikon hilang</string>
     <string name="clear_all">Bersihkan pilihan</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Diperluas</string>
     <string name="toggle_button_collapsed">Runtuh</string>
     <string name="toggle_button_content_description">Tombol alih</string>
-    <string name="icon_request_mail_hint">Kirimkan file permintaan ke\u0020</string>
     <string name="share_file">Bagikan berkas</string>
     <string name="save_file">Simpan berkas</string>
     <string name="copy_components">Copy app IDs</string>

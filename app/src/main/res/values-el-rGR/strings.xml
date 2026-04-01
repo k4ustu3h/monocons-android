@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Φόρμα αιτήματος εικονιδίων</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Στείλτε σχόλια</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Συντελεστές</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Αν το εικονίδιο είναι ξεπερασμένο λόγω επανασχεδιασμού από τον προγραμματιστή του, δημιουργήστε ένα νέο ζήτημα στο GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Εναλλαγή ορατότητας των περιεχομένων</string>
     <!-- Request icons button -->
     <string name="request_icons">Αίτηση εικονιδίων</string>
-    <string name="copy_to_clipboard">Αντιγραφή στο πρόχειρο</string>
     <string name="copied_text">Αντιγραμμένο κείμενο</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Αίτηση εικονιδίων που λείπουν από την κάτω γραμμή</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">Αντιγράφηκαν λεπτομέρειες αιτήματος εικονιδίου στο πρόχειρο. Για να τα ζητήσετε, υποβάλετε τα στοιχεία στη φόρμα.</string>
-    <string name="snackbar_use_fallback_link">Άνοιγμα φόρμας</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Εικονίδια που λείπουν</string>
     <string name="clear_all">Εκκαθάριση επιλογής</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Εκτεταμένο</string>
     <string name="toggle_button_collapsed">Συμπτυγμένο</string>
     <string name="toggle_button_content_description">Κουμπί εναλλαγής</string>
-    <string name="icon_request_mail_hint">Αποστολή αρχείου αιτήματος μέσω ταχυδρομείου στη διεύθυνση\u0020</string>
     <string name="share_file">Κοινή χρήση αρχείου</string>
     <string name="save_file">Αποθήκευση αρχείου</string>
     <string name="copy_components">Copy app IDs</string>

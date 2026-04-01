@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Modulo di richiesta icone</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Invia feedback</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Contributori</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Se l\'icona è obsoleta a causa di un rebranding, crea un\'issue su GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Attiva/Disattiva la visibilità dei contenuti</string>
     <!-- Request icons button -->
     <string name="request_icons">Richiedi icone</string>
-    <string name="copy_to_clipboard">Copia negli appunti</string>
     <string name="copied_text">Testo copiato</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Richiedi icone mancanti dalla barra inferiore</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">Dettagli della richiesta delle icone copiati negli appunti. Per richiederle, inviali nel modulo.</string>
-    <string name="snackbar_use_fallback_link">Apri il modulo</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Icone mancanti</string>
     <string name="clear_all">Cancella selezione</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Espanso</string>
     <string name="toggle_button_collapsed">Compresso</string>
     <string name="toggle_button_content_description">Attiva/Disattiva pulsante</string>
-    <string name="icon_request_mail_hint">Invia un file di richiesta a\u0020</string>
     <string name="share_file">Condividi file</string>
     <string name="save_file">Salva file</string>
     <string name="copy_components">Copia ID delle app</string>

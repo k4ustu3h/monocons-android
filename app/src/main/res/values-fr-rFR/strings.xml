@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Formulaire de demande d\'icône</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Envoyer des commentaires</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Contributeurs</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Si l\'icône est obsolète en raison d\'un rebranding, créez une Issue sur GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Activer/Désactiver la visibilité des contenus</string>
     <!-- Request icons button -->
     <string name="request_icons">Demander des icônes</string>
-    <string name="copy_to_clipboard">Copier dans le presse-papiers</string>
     <string name="copied_text">Texte copié</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Demandez l\'ajout d\'autres icônes à partir de la barre inférieure</string>
-    <string name="icon_requests_furfilled">Toutes les icônes sont prises en charge. Signalez les rebrandings via GitHub Issues.</string>
+    <string name="icon_requests_fulfilled">Toutes les icônes sont prises en charge. Signalez les rebrandings via GitHub Issues.</string>
     <string name="icon_requests_suspended">Les demandes d\'icônes sont ouvertes pour une durée limitée à chaque nouvelle version de Lawnicons.</string>
-    <string name="snackbar_request_too_large">Détails de la demande d\'icône copiés dans le presse-papiers. Pour les demander, entrez les détails dans le formulaire.</string>
-    <string name="snackbar_use_fallback_link">Ouvrir le formulaire</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Icônes manquantes</string>
     <string name="clear_all">Annuler la sélection</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Développé</string>
     <string name="toggle_button_collapsed">Réduit</string>
     <string name="toggle_button_content_description">Bouton d\'activation</string>
-    <string name="icon_request_mail_hint">Envoyer par e-mail un fichier de requête à\u0020</string>
     <string name="share_file">Partager le fichier</string>
     <string name="save_file">Enregistrer le fichier</string>
     <string name="copy_components">Copier les ID d\'application</string>

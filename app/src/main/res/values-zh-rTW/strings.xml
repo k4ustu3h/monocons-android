@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">申請圖示表單</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">傳送意見</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">貢獻者</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">若圖示因重塑導致失效，請在 GitHub 張貼問題。</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">切換內容顯示</string>
     <!-- Request icons button -->
     <string name="request_icons">申請圖示</string>
-    <string name="copy_to_clipboard">已複製到剪貼簿</string>
     <string name="copied_text">已複製文字</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">透過底部操作列要求遺失的圖示</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">已將申請圖示詳細資訊複製到剪貼簿。請將內容提交至表單以便回報。</string>
-    <string name="snackbar_use_fallback_link">開啟表單</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Missing icons</string>
     <string name="clear_all">Clear selection</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Expanded</string>
     <string name="toggle_button_collapsed">Collapsed</string>
     <string name="toggle_button_content_description">Toggle button</string>
-    <string name="icon_request_mail_hint">Mail a request file to\u0020</string>
     <string name="share_file">Share file</string>
     <string name="save_file">Save file</string>
     <string name="copy_components">Copy app IDs</string>

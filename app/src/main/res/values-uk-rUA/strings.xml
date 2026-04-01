@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Форма запиту значків</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Send feedback</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Автори</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Якщо значок застарів через ребрендинг, створіть проблему на GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Перемикання видимості вмісту</string>
     <!-- Request icons button -->
     <string name="request_icons">Запит значків</string>
-    <string name="copy_to_clipboard">Скопіювати до буфера обміну</string>
     <string name="copied_text">Скопійований текст</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Запросіть відсутні значки з нижньої панелі</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">Скопійовано подробиці до буферу обміну. Щоб зробити запит, додайте деталі у форму.</string>
-    <string name="snackbar_use_fallback_link">Відкрити форму</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Missing icons</string>
     <string name="clear_all">Clear selection</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Expanded</string>
     <string name="toggle_button_collapsed">Collapsed</string>
     <string name="toggle_button_content_description">Toggle button</string>
-    <string name="icon_request_mail_hint">Mail a request file to\u0020</string>
     <string name="share_file">Share file</string>
     <string name="save_file">Save file</string>
     <string name="copy_components">Copy app IDs</string>

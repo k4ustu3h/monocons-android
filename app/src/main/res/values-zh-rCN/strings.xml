@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">图标申请表</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">发送反馈</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">贡献者</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">如果图标设计已更改，请在 GitHub 上提交 issue</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">切换内容可见性</string>
     <!-- Request icons button -->
     <string name="request_icons">请求图标</string>
-    <string name="copy_to_clipboard">复制到剪贴板</string>
     <string name="copied_text">已复制文本</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">从底栏请求缺失的图标</string>
-    <string name="icon_requests_furfilled">所有图标均受支持。通过 GitHub issues 报告品牌更新。</string>
+    <string name="icon_requests_fulfilled">所有图标均受支持。通过 GitHub issues 报告品牌更新。</string>
     <string name="icon_requests_suspended">每次发布新版Lawnicons时，图标申请通道将限时开放。</string>
-    <string name="snackbar_request_too_large">图标申请详情已复制到剪贴板，请将这些详情填写到申请表单中以完成申请。</string>
-    <string name="snackbar_use_fallback_link">打开表单</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">缺少图标</string>
     <string name="clear_all">清除选择</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">扩展</string>
     <string name="toggle_button_collapsed">崩溃</string>
     <string name="toggle_button_content_description">切换按钮</string>
-    <string name="icon_request_mail_hint">邮件发送请求文件至\u0020</string>
     <string name="share_file">Share file</string>
     <string name="save_file">Save file</string>
     <string name="copy_components">Copy app IDs</string>

@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Formulário de solicitação de ícone</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Send feedback</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Contribuidores</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Se o ícone estiver desatualizado devido a uma renovação da marca, registre um problema no GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Alternar visibilidade dos conteúdos</string>
     <!-- Request icons button -->
     <string name="request_icons">Solicitar ícones</string>
-    <string name="copy_to_clipboard">Copiar para a área de transferência</string>
     <string name="copied_text">Texto copiado</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Solicitar ícones ausentes na barra inferior</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">Detalhes da solicitação de ícone copiados para a área de transferência. Para solicitá-los, envie os detalhes no formulário.</string>
-    <string name="snackbar_use_fallback_link">Abrir formulário</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Missing icons</string>
     <string name="clear_all">Clear selection</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Expanded</string>
     <string name="toggle_button_collapsed">Collapsed</string>
     <string name="toggle_button_content_description">Toggle button</string>
-    <string name="icon_request_mail_hint">Mail a request file to\u0020</string>
     <string name="share_file">Share file</string>
     <string name="save_file">Save file</string>
     <string name="copy_components">Copy app IDs</string>

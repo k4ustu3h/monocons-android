@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">アイコンリクエストフォーム</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">フィードバックを送信</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">寄付者</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">アイコンが再設計により古くなっている場合は、GitHubでIssueを作成してください。</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">コンテンツの表示を切り替える</string>
     <!-- Request icons button -->
     <string name="request_icons">アイコンをリクエストする</string>
-    <string name="copy_to_clipboard">クリップボードにコピーする</string>
     <string name="copied_text">テキストをコピーしました</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">下部バーから不足しているアイコンをリクエストする</string>
-    <string name="icon_requests_furfilled">すべてのアイコンがサポートされています。GitHubのIssueを経由して再設計を報告します。</string>
+    <string name="icon_requests_fulfilled">すべてのアイコンがサポートされています。GitHubのIssueを経由して再設計を報告します。</string>
     <string name="icon_requests_suspended">アイコンリクエストは、すべての新しいLawniconsリリースで限られた時間のために開きます。</string>
-    <string name="snackbar_request_too_large">アイコンリクエストの詳細をクリップボードにコピーしました。リクエストするには、詳細をフォームに送信してください。</string>
-    <string name="snackbar_use_fallback_link">フォームを開く</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">不足しているアイコン</string>
     <string name="clear_all">選択をクリア</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">展開済み</string>
     <string name="toggle_button_collapsed">折りたたむ</string>
     <string name="toggle_button_content_description">切り替えボタン</string>
-    <string name="icon_request_mail_hint">リクエストファイルを\u0020に送信する</string>
     <string name="share_file">ファイルを共有</string>
     <string name="save_file">ファイルを保存</string>
     <string name="copy_components">アプリIDをコピー</string>

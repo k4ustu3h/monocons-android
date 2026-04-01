@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Form sa paghiling ng icons</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Magpadala ng feedback</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Mga nag-aambag</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Kung ang icon ay luma na dahil sa rebranding, gumawa ng isyu sa GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">I-toggle ang bisibilidad ng mga content</string>
     <!-- Request icons button -->
     <string name="request_icons">Maghiling ng icons</string>
-    <string name="copy_to_clipboard">Kopyahin sa clipboard</string>
     <string name="copied_text">Kinopya ang teksto</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Hilingin ang mga hindi supportadong icons sa baba</string>
-    <string name="icon_requests_furfilled">Sinusuportahan ng app ang lahat ng icons. I-report ang mga pagbabago sa GitHub.</string>
+    <string name="icon_requests_fulfilled">Sinusuportahan ng app ang lahat ng icons. I-report ang mga pagbabago sa GitHub.</string>
     <string name="icon_requests_suspended">Bukas ang icon requests sa limitadong panahon kasabay ng bagong release ng Lawnicons.</string>
-    <string name="snackbar_request_too_large">Nakopya na ang mga detalye tungkol sa ihihiling na icons sa clipboard. Upang hilingin ang mga ito, isumite ang mga detalye sa form.</string>
-    <string name="snackbar_use_fallback_link">Buksan ang form</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Mga icon na hindi suportado</string>
     <string name="clear_all">I-clear ang napili</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Naka-expand</string>
     <string name="toggle_button_collapsed">Naka-collapse</string>
     <string name="toggle_button_content_description">Buksan ang menu</string>
-    <string name="icon_request_mail_hint">Ipadala ang request file kay\u0020</string>
     <string name="share_file">Ibahagi ang file</string>
     <string name="save_file">I-save ang file</string>
     <string name="copy_components">Kopyahin ang app IDs</string>

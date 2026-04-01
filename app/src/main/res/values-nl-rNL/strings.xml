@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Pictogram aanvraagformulier</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Feedback sturen</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Bijdragen</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Als het pictogram verouderd is, meld dan een probleem op GitHub.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Zichtbaarheid van inhoud in-/uitschakelen</string>
     <!-- Request icons button -->
     <string name="request_icons">Pictogrammen aanvragen</string>
-    <string name="copy_to_clipboard">Kopiëren naar klembord</string>
     <string name="copied_text">Tekst gekopieerd</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Ontbrekende pictogrammen op onderste balk aanvragen</string>
-    <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
+    <string name="icon_requests_fulfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
     <string name="icon_requests_suspended">Icon requests open for a limited time with every new Lawnicons release.</string>
-    <string name="snackbar_request_too_large">Gegevens voor pictogramaanvraag gekopieerd naar klembord. Plak de gegevens in het aanvraagformulier.</string>
-    <string name="snackbar_use_fallback_link">Formulier openen</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Ontbrekende pictogrammen</string>
     <string name="clear_all">Selectie wissen</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Uitgebreid</string>
     <string name="toggle_button_collapsed">Ingeklapt</string>
     <string name="toggle_button_content_description">Aan/uit-knop</string>
-    <string name="icon_request_mail_hint">Mail een verzoekbestand naar\u0020</string>
     <string name="share_file">Bestand delen</string>
     <string name="save_file">Bestand opslaan</string>
     <string name="copy_components">Copy app IDs</string>

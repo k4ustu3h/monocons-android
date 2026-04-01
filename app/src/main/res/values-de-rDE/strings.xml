@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Symbol-Anfrageformular</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Feedback senden</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Mitwirkende</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Wenn das Symbol aufgrund eines Rebranding veraltet ist, bitte ein Issue auf GitHub eröffnen.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">Inhalte ein-/ausblenden</string>
     <!-- Request icons button -->
     <string name="request_icons">Symbole anfragen</string>
-    <string name="copy_to_clipboard">In Zwischenablage kopieren</string>
     <string name="copied_text">Text kopiert</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Fehlende Symbole von der unteren Leiste anfordern</string>
-    <string name="icon_requests_furfilled">Alle Symbole werden unterstützt. Melden Sie Rebrandings über GitHub-Issues.</string>
+    <string name="icon_requests_fulfilled">Alle Symbole werden unterstützt. Melden Sie Rebrandings über GitHub-Issues.</string>
     <string name="icon_requests_suspended">Mit jeder neuen Lawnicons-Version werden Symbolanfragen für eine begrenzte Zeit geöffnet.</string>
-    <string name="snackbar_request_too_large">Details der Symbolanfrage in die Zwischenablage kopiert. Um sie anzufragen, die Details in das Formular übertragen.</string>
-    <string name="snackbar_use_fallback_link">Formular öffnen</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Fehlende Symbole</string>
     <string name="clear_all">Auswahl löschen</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Erweitert</string>
     <string name="toggle_button_collapsed">Minimiert</string>
     <string name="toggle_button_content_description">Umschalten</string>
-    <string name="icon_request_mail_hint">Eine Anfrage-Datei an\u0020 senden</string>
     <string name="share_file">Datei teilen</string>
     <string name="save_file">Datei speichern</string>
     <string name="copy_components">App-IDs kopieren</string>

@@ -22,9 +22,7 @@
     <!-- GitHub repository link-->
     <!-- Open Collective repository link-->
     <!-- Icon Request form link -->
-    <string name="request_form">Simge istek formu</string>
     <!-- Send feedback form link -->
-    <string name="send_feedback">Geri bildirim yolla</string>
     <!-- Contributors section of About page -->
     <!-- Contributors label -->
     <string name="contributors">Katkıda bulunanlar</string>
@@ -61,17 +59,12 @@
     <!-- Outdated icon info -->
     <string name="icon_info_outdated_warning">Simge, marka yenileme nedeniyle güncelliğini yitirmişse GitHub\'da bir issue oluşturun.</string>
     <!-- Chevron a11y description -->
-    <string name="toggle_visibility_of_contents">İçeriklerin görünürlüğünü değiştir</string>
     <!-- Request icons button -->
     <string name="request_icons">Simge talep et</string>
-    <string name="copy_to_clipboard">Panoya kopyala</string>
     <string name="copied_text">Kopyalanmış metin</string>
     <!-- Snackbar content -->
-    <string name="snackbar_request_icons_hint">Alt çubuktan eksik ikonları isteyin</string>
-    <string name="icon_requests_furfilled">Tüm simgeler desteklenmektedir. Logo ve marka değişimlerini GitHub Issues üzerinden bildirin.</string>
+    <string name="icon_requests_fulfilled">Tüm simgeler desteklenmektedir. Logo ve marka değişimlerini GitHub Issues üzerinden bildirin.</string>
     <string name="icon_requests_suspended">Simge istekleri, her yeni Lawnicons sürümüyle birlikte sınırlı bir süre için açılır.</string>
-    <string name="snackbar_request_too_large">Simge isteği ayrıntıları panoya kopyalandı. İsteği göndermek için ayrıntıları forma girin.</string>
-    <string name="snackbar_use_fallback_link">Formu aç</string>
     <!-- Missing icons screen -->
     <string name="missing_icons">Eksik simgeler</string>
     <string name="clear_all">Seçimi temizle</string>
@@ -81,7 +74,6 @@
     <string name="toggle_button_expanded">Genişletilmiş</string>
     <string name="toggle_button_collapsed">Daraltılmış</string>
     <string name="toggle_button_content_description">Aç/Kapa düğmesi</string>
-    <string name="icon_request_mail_hint">İstek dosyasını şu adrese e-postayla gönderin:\u0020</string>
     <string name="share_file">Dosyayı paylaş</string>
     <string name="save_file">Dosyayı kaydet</string>
     <string name="copy_components">Uygulama ID\'lerini kopyala</string>
