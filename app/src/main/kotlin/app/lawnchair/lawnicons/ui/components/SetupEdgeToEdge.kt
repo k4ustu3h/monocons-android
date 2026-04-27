@@ -77,4 +77,11 @@ enum class SystemNavigation {
     GESTURE,
 }
 
-private fun Context.getSystemNavigationMode() = SystemNavigation.entries[Settings.Secure.getInt(contentResolver, "navigation_mode", -1)]
+private fun Context.getSystemNavigationMode(): SystemNavigation {
+    val mode = Settings.Secure.getInt(contentResolver, "navigation_mode", -1)
+    return when (mode) {
+        0 -> SystemNavigation.THREE_BUTTON
+        1 -> SystemNavigation.TWO_BUTTON
+        else -> SystemNavigation.GESTURE
+    }
+}
