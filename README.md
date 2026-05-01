@@ -73,10 +73,10 @@ You're welcome to work on our issues. Contributors can get a priority icon reque
 ### Icons
 It's required to follow the Lawnicons design guidelines. Accepted contributions include: new icons capped at 5 per pull request, missing app IDs, rebranding reports, and updates for outdated icons. 
 
-[Lawnicons design guidelines](https://github.com/LawnchairLauncher/lawnicons/blob/develop/CONTRIBUTING.md#contributing-icons-tldr) • [Report outdated icons](https://github.com/LawnchairLauncher/lawnicons/issues/new?template=icon_redesign.yml)
+[Lawnicons design guidelines](https://github.com/LawnchairLauncher/lawnicons/blob/develop/CONTRIBUTING.md#contributing-icons-tldr) • [Report outdated and low-quality icons](https://github.com/LawnchairLauncher/lawnicons/issues/new?template=icon_redesign.yml)
 
 ### Icon requests
 
 `Open Lawnicons → Tap "Request icons" → Select and request icons`
 
-Icon requests become available on the Lawnicons release day and stay open for a short while. That said, anyone can become a contributor and add icons. It takes some learning, but it's doable.
+Icon requests become available on the Lawnicons release day and stay open for a short while.
