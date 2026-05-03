@@ -88,9 +88,9 @@ import k4ustu3h.forkicons.ui.components.core.SimpleListRow
 import k4ustu3h.forkicons.ui.theme.adaptiveSurfaceColor
 import k4ustu3h.forkicons.ui.theme.adaptiveSurfaceContainerColor
 import k4ustu3h.forkicons.ui.theme.icon.Copy
+import k4ustu3h.forkicons.ui.theme.icon.Forkicons
 import k4ustu3h.forkicons.ui.theme.icon.IconRequest
 import k4ustu3h.forkicons.ui.theme.icon.KeyboardArrowDown
-import k4ustu3h.forkicons.ui.theme.icon.Forkicons
 import k4ustu3h.forkicons.ui.theme.icon.Save
 import k4ustu3h.forkicons.ui.theme.icon.Share
 import kotlinx.coroutines.launch
@@ -201,9 +201,9 @@ private fun IconRequest(
                         } else {
                             coroutineScope.launch {
                                 val result = snackbarHostState.showSnackbar(
-                                        message = string,
-                                        duration = SnackbarDuration.Short,
-                                    )
+                                    message = string,
+                                    duration = SnackbarDuration.Short,
+                                )
                                 if (result == SnackbarResult.Dismissed) {
                                     snackbarHostState.currentSnackbarData?.dismiss()
                                 }

@@ -40,7 +40,7 @@ fun BaseIconInfo.getFirstLabelAndComponent(): LabelAndComponent {
     val firstComponent = componentNames.firstOrNull()?.componentName ?: ComponentName("", "")
     return _root_ide_package_.k4ustu3h.forkicons.data.model.LabelAndComponent(
         firstLabel,
-        firstComponent
+        firstComponent,
     )
 }
 

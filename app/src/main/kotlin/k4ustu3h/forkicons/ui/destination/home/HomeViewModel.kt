@@ -68,7 +68,8 @@ class HomeViewModelImpl(
     private val newIconsRepository: NewIconsRepository,
     private val iconRequestRepository: IconRequestRepository,
     private val announcementsRepository: AnnouncementsRepository,
-) : ViewModel(), HomeViewModel {
+) : ViewModel(),
+    HomeViewModel {
 
     private val _searchMode = MutableStateFlow(SearchMode.LABEL)
     override val searchMode = _searchMode.stateIn(
@@ -111,10 +112,10 @@ class HomeViewModelImpl(
 
     override val searchResults: StateFlow<IconInfoModel> =
         iconRepository.searchedIconInfoModel.stateIn(
-                viewModelScope,
-                SharingStarted.WhileSubscribed(5000),
-                IconInfoModel(emptyList(), 0),
-            )
+            viewModelScope,
+            SharingStarted.WhileSubscribed(5000),
+            IconInfoModel(emptyList(), 0),
+        )
 
     override fun searchIcons(query: String) {
         viewModelScope.launch {

@@ -72,8 +72,9 @@ fun ComponentActivity.SetupEdgeToEdge(
 }
 
 enum class SystemNavigation {
-    THREE_BUTTON, TWO_BUTTON, GESTURE,
+    THREE_BUTTON,
+    TWO_BUTTON,
+    GESTURE,
 }
 
-private fun Context.getSystemNavigationMode() =
-    SystemNavigation.entries[Settings.Secure.getInt(contentResolver, "navigation_mode", -1)]
+private fun Context.getSystemNavigationMode() = SystemNavigation.entries[Settings.Secure.getInt(contentResolver, "navigation_mode", -1)]

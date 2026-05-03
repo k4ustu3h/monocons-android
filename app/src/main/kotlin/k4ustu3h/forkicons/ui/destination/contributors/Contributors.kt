@@ -53,8 +53,8 @@ import k4ustu3h.forkicons.ui.components.ContributorRow
 import k4ustu3h.forkicons.ui.components.ContributorRowPlaceholder
 import k4ustu3h.forkicons.ui.components.core.LawniconsScaffold
 import k4ustu3h.forkicons.ui.components.core.SimpleListRow
-import k4ustu3h.forkicons.ui.theme.icon.Github
 import k4ustu3h.forkicons.ui.theme.icon.Forkicons
+import k4ustu3h.forkicons.ui.theme.icon.Github
 import k4ustu3h.forkicons.ui.util.Constants
 import k4ustu3h.forkicons.ui.util.PreviewLawnicons
 import k4ustu3h.forkicons.ui.util.PreviewProviders

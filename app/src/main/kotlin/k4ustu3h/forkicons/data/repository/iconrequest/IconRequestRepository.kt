@@ -20,6 +20,7 @@ import android.app.Application
 import android.util.Log
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
+import java.io.File
 import k4ustu3h.forkicons.LawniconsScope
 import k4ustu3h.forkicons.data.api.IconRequestSettingsAPI
 import k4ustu3h.forkicons.data.model.IconInfo
@@ -35,7 +36,6 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.io.File
 
 interface IconRequestRepository {
     val iconRequestList: StateFlow<IconRequestModel?>
@@ -96,8 +96,8 @@ class IconRequestRepositoryImpl(
             .map { it.componentName.flattenToString() }.toSet()
 
         val unthemedApps = systemPackageList.filter { systemApp ->
-                systemApp.componentName.flattenToString() !in themedComponentStrings
-            }
+            systemApp.componentName.flattenToString() !in themedComponentStrings
+        }
 
         _iconRequestList.value = IconRequestModel(
             list = unthemedApps,

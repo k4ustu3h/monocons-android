@@ -64,7 +64,10 @@ import k4ustu3h.forkicons.ui.util.visitUrl
 import kotlinx.serialization.Serializable
 
 enum class ColumnTypes {
-    SPACER, HEADER, NAVIGATION_ITEM, LIST_ITEM,
+    SPACER,
+    HEADER,
+    NAVIGATION_ITEM,
+    LIST_ITEM,
 }
 
 @Serializable

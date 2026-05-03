@@ -45,16 +45,16 @@ object AppfilterDiffCreator {
         val previousAppFilterItems = previousAppFilterDocument.rootElement.elements(ITEM)
 
         val previousDrawables = previousAppFilterItems.map {
-                it.attribute(DRAWABLE).value
-            }
+            it.attribute(DRAWABLE).value
+        }
 
         val filteredSvgs = currentAppFilterItems
             // step 1: filter svgs from the previous version
             .filterNot { previousDrawables.contains(it.attributeValue(DRAWABLE)) }
 
         val filteredComponents = previousAppFilterItems.map {
-                getPackageName(it.attribute(COMPONENT).value)
-            }.toSet()
+            getPackageName(it.attribute(COMPONENT).value)
+        }.toSet()
 
         val filteredElements = filteredSvgs
             // step 2: filter component names that exist from the previous version
@@ -68,10 +68,10 @@ object AppfilterDiffCreator {
 
         filteredElements.forEach {
             iconsDocument.rootElement.addElement(ITEM).apply {
-                    addAttribute(DRAWABLE, it.attributeValue(DRAWABLE))
-                    addAttribute(COMPONENT, it.attributeValue(COMPONENT))
-                    addAttribute(NAME, it.attributeValue(NAME))
-                }
+                addAttribute(DRAWABLE, it.attributeValue(DRAWABLE))
+                addAttribute(COMPONENT, it.attributeValue(COMPONENT))
+                addAttribute(NAME, it.attributeValue(NAME))
+            }
         }
 
         outputFile.parentFile.mkdirs()

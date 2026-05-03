@@ -53,8 +53,8 @@ import k4ustu3h.forkicons.R
 import k4ustu3h.forkicons.data.model.IconInfo
 import k4ustu3h.forkicons.ui.components.IconLink
 import k4ustu3h.forkicons.ui.components.core.ListRow
-import k4ustu3h.forkicons.ui.theme.icon.Github
 import k4ustu3h.forkicons.ui.theme.icon.Forkicons
+import k4ustu3h.forkicons.ui.theme.icon.Github
 import k4ustu3h.forkicons.ui.theme.icon.ShareIcon
 import k4ustu3h.forkicons.ui.util.Constants
 import k4ustu3h.forkicons.ui.util.PreviewLawnicons
@@ -76,8 +76,8 @@ fun IconInfoSheet(
 
     val groupedComponents = remember {
         iconInfo.componentNames.groupBy { it.label }.map { (label, components) ->
-                label to components.map { it.componentName }
-            }
+            label to components.map { it.componentName }
+        }
     }
 
     val githubName = iconInfo.drawableName.replace(

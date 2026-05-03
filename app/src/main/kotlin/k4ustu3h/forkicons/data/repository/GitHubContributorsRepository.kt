@@ -31,7 +31,6 @@ val coreContributorIds = listOf(
 class GitHubContributorsRepository(
     private val api: GitHubContributorsAPI,
 ) {
-    suspend fun getTopContributors() =
-        api.getContributors().filterNot { coreContributorIds.contains(it.id) }
-            .sortedByDescending { it.contributions }
+    suspend fun getTopContributors() = api.getContributors().filterNot { coreContributorIds.contains(it.id) }
+        .sortedByDescending { it.contributions }
 }

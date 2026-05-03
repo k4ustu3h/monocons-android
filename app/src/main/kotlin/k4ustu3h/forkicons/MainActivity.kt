@@ -41,7 +41,8 @@ class MainActivity : ComponentActivity() {
         val metroVmf = app.lawniconsGraph.viewModelFactory
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            @Suppress("DEPRECATION") window.setDecorFitsSystemWindows(false)
+            @Suppress("DEPRECATION")
+            window.setDecorFitsSystemWindows(false)
             window.setNavigationBarContrastEnforced(false)
         }
 

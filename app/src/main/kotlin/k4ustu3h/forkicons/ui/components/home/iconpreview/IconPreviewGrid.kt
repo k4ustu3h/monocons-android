@@ -157,8 +157,8 @@ private fun ScrollbarLayout(
     Box(
         contentAlignment = Alignment.CenterEnd,
         modifier = Modifier.padding(
-                bottom = WindowInsets.navigationBars.toPaddingValues().calculateBottomPadding(),
-            ),
+            bottom = WindowInsets.navigationBars.toPaddingValues().calculateBottomPadding(),
+        ),
     ) {
         Spacer(
             Modifier

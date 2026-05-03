@@ -19,11 +19,11 @@ package k4ustu3h.forkicons.ui.destination.contributors
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dev.zacsweers.metro.ContributesIntoMap
+import dev.zacsweers.metrox.viewmodel.ViewModelKey
 import k4ustu3h.forkicons.LawniconsScope
 import k4ustu3h.forkicons.data.model.GitHubContributor
 import k4ustu3h.forkicons.data.repository.GitHubContributorsRepository
-import dev.zacsweers.metro.ContributesIntoMap
-import dev.zacsweers.metrox.viewmodel.ViewModelKey
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.map

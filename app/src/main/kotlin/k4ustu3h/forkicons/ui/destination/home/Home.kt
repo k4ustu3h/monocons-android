@@ -242,9 +242,9 @@ private fun HomeScreen(
                         onIconRequestUnavailable = {
                             coroutineScope.launch {
                                 val result = snackbarHostState.showSnackbar(
-                                        message = string,
-                                        duration = SnackbarDuration.Short,
-                                    )
+                                    message = string,
+                                    duration = SnackbarDuration.Short,
+                                )
                                 if (result == SnackbarResult.Dismissed) {
                                     snackbarHostState.currentSnackbarData?.dismiss()
                                 }

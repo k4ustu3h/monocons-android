@@ -59,10 +59,10 @@ class IconRequestViewModel(
 ) : ViewModel() {
     val availableIcons =
         iconRequestRepository.iconRequestList.map { it?.list ?: emptyList() }.stateIn(
-                scope = viewModelScope,
-                started = SharingStarted.WhileSubscribed(5000),
-                initialValue = emptyList(),
-            )
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = emptyList(),
+        )
 
     val isEnabled = iconRequestRepository.isEnabled
 
