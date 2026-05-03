@@ -317,6 +317,7 @@
     <item component="ComponentInfo{com.brave.browser/com.google.android.apps.chrome.Main}" drawable="brave_browser" name="Brave" />
     <item component="ComponentInfo{com.brave.browser_beta/com.google.android.apps.chrome.Main}" drawable="brave_browser" name="Brave Beta" />
     <item component="ComponentInfo{com.brave.browser_nightly/com.google.android.apps.chrome.Main}" drawable="brave_browser" name="Brave Nightly" />
+    <item component="ComponentInfo{com.tencent.tmgp.supercell.brawlstars/com.supercell.titan.tencent.GameAppTencent}" drawable="brawl_stars" name="Brawl Stars" />
     <item component="ComponentInfo{com.supercell.brawlstars/com.supercell.brawlstars.GameApp}" drawable="brawl_stars" name="Brawl Stars" />
     <item component="ComponentInfo{org.briarproject.briar.android/org.briarproject.briar.android.splash.SplashScreenActivity}" drawable="briar" name="Briar" />
     <item component="ComponentInfo{org.bromite.bromite/com.google.android.apps.chrome.Main}" drawable="bromite" name="Bromite" />
@@ -1150,10 +1151,18 @@
     <item component="ComponentInfo{com.globe.gcash.android/com.globe.gcash.android.MerryGCash2022}" drawable="gcash" name="GCash" />
     <item component="ComponentInfo{com.globe.gcash.android/com.globe.gcash.android.MerryGCash2023}" drawable="gcash" name="GCash" />
     <item component="ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity}" drawable="gcash" name="GCash" />
+    <item component="ComponentInfo{com.genius.android/com.genius.android.MainActivity}" drawable="genius" name="Genius" />
     <item component="ComponentInfo{com.genius.android/com.genius.android.flow.main.MainActivity}" drawable="genius" name="Genius" />
+    <item component="ComponentInfo{com.miHoYo.ys.bilibili/com.miHoYo.GetMobileInfo.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
     <item component="ComponentInfo{com.miHoYo.GenshinImpact/com.miHoYo.GenshinImpact.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
     <item component="ComponentInfo{com.miHoYo.GenshinImpact/com.miHoYo.GetMobileInfo.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
     <item component="ComponentInfo{com.miHoYo.Yuanshen/com.miHoYo.GetMobileInfo.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
+    <item component="ComponentInfo{com.miHoYo.Yuanshen/org.citron.citron_emu.ui.main.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
+    <item component="ComponentInfo{com.miHoYo.GenshinImpact.vn/com.miHoYo.GetMobileInfo.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
+    <item component="ComponentInfo{com.miHoYo.GI.samsung/com.miHoYo.GetMobileInfo.MainActivity}" drawable="genshin_impact" name="Genshin Impact" />
+    <item component="ComponentInfo{com.miHoYo.cloudgames.ys/com.mihoyo.cloudgame.ui.SplashActivity}" drawable="genshin_impact_cloud" name="Genshin Impact · Cloud" />
+    <item component="ComponentInfo{com.hoyoverse.cloudgames.GenshinImpact/com.mihoyo.cloudgame.ui.SplashActivity}" drawable="genshin_impact_cloud" name="Genshin Impact · Cloud" />
+    <item component="ComponentInfo{com.voc.genshin_spirit_gp/com.voc.genshin_helper.ui.SplashActivity}" drawable="genshin_spirit" name="Genshin Spirit" />
     <item component="ComponentInfo{wangdaye.com.geometricweather/wangdaye.com.geometricweather.main.MainActivity}" drawable="geometric_weather" name="Geometric Weather" />
     <item component="ComponentInfo{wangdaye.com.geometricweather/wangdaye.com.geometricweather.ui.activity.main.MainActivity}" drawable="geometric_weather" name="Geometric Weather" />
     <item component="ComponentInfo{wangdaye.com.geometricweather/wangdaye.com.geometricweather.ui.activity.MainActivity}" drawable="geometric_weather" name="Geometric Weather" />
@@ -1225,9 +1234,10 @@
     <item component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="google_drive" name="Google Drive" />
     <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivity}" drawable="google_meet" name="Google Duo" />
     <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivitySecondLauncher}" drawable="google_meet" name="Google Duo" />
-    <item component="ComponentInfo{com.google.earth/com.google.android.apps.earth.EarthActivity}" drawable="google_earth" name="Google Earth" />
     <item component="ComponentInfo{com.google.earth/com.google.android.apps.earth.flutter.EarthFlutterActivity}" drawable="google_earth" name="Google Earth" />
+    <item component="ComponentInfo{com.google.earth/com.google.android.apps.earth.EarthActivity}" drawable="google_earth" name="Google Earth" />
     <item component="ComponentInfo{com.google.earth/com.google.earth.EarthActivity}" drawable="google_earth" name="Google Earth" />
+    <item component="ComponentInfo{com.google.earth/com.google.earth.MainActivity}" drawable="google_earth" name="Google Earth" />
     <item component="ComponentInfo{com.google.android.apps.tycho/com.google.android.apps.tycho.AccountDetailsActivity}" drawable="google_fi" name="Google Fi" />
     <item component="ComponentInfo{com.google.android.apps.fitness/com.google.android.apps.fitness.welcome.WelcomeActivity}" drawable="google_fit" name="Google Fit" />
     <item component="ComponentInfo{com.google.android.apps.bard/com.google.android.apps.bard.shellapp.BardEntryPointActivity}" drawable="google_gemini" name="Google Gemini" />
@@ -1902,6 +1912,8 @@
     <item component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.SplashActivity}" drawable="myjio" name="MyJio" />
     <item component="ComponentInfo{com.myntra.android/com.myntra.android.activities.react.ReactActivity}" drawable="myntra" name="Myntra" />
     <item component="ComponentInfo{com.myntra.android/com.myntra.android.SplashActivity}" drawable="myntra" name="Myntra" />
+    <item component="ComponentInfo{com.acmeaom.android.myradar/com.acmeaom.android.myradar.app.activity.LaunchActivity}" drawable="myradar" name="MyRadar" />
+    <item component="ComponentInfo{com.acmeaom.android.myradarpro/com.acmeaom.android.myradar.app.activity.LaunchActivity}" drawable="myradar_pro" name="MyRadar Pro" />
     <item component="ComponentInfo{com.solaredge.homeowner/com.solaredge.homeowner.ui.SplashScreenActivity}" drawable="mysolaredge" name="mySolarEdge" />
     <item component="ComponentInfo{today.mystory.app/today.mystory.app.MainActivity}" drawable="mystory" name="MyStory" />
     <item component="ComponentInfo{com.telkomsel.telkomselcm/com.telkomsel.mytelkomsel.view.splash.SplashActivity}" drawable="mytelkomsel" name="MyTelkomsel" />
@@ -2486,6 +2498,8 @@
     <item component="ComponentInfo{org.ppsspp.ppsspp/org.ppsspp.ppsspp.PpssppActivity}" drawable="ppsspp" name="PPSSPP" />
     <item component="ComponentInfo{org.ppsspp.ppssppgold/org.ppsspp.ppsspp.PpssppActivity}" drawable="ppsspp" name="PPSSPP" />
     <item component="ComponentInfo{org.ppsspp.ppssppgold/org.ppsspp.ppssppgold.PpssppActivity}" drawable="ppsspp" name="PPSSPP" />
+    <item component="ComponentInfo{com.pl.premierleague/com.pl.premierleague.LaunchActivity}" drawable="premier_league" name="Premier League" />
+    <item component="ComponentInfo{com.pl.premierleague/com.pulselive.premierleague25.main.MainActivity}" drawable="premier_league" name="Premier League" />
     <item component="ComponentInfo{com.brother.mfc.brprint/com.brother.mfc.brprint.SplashActivity}" drawable="printer" name="Printer" />
     <item component="ComponentInfo{com.brother.mfc.brprint/com.brother.mfc.brprint.v2.ui.SplashActivity}" drawable="printer" name="Printer" />
     <item component="ComponentInfo{com.brother.mfc.brprint/com.brother.mfc.brprint.v2.ui.top.SplashActivity}" drawable="printer" name="Printer" />
@@ -3230,7 +3244,9 @@
     <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.activity.MainActivity}" drawable="steam" name="Steam" />
     <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.activity.SteamGuardActivity}" drawable="steam" name="Steam" />
     <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.MainActivity}" drawable="steam" name="Steam" />
+    <item component="ComponentInfo{com.noctuasoftware.stellarium_free/com.stellariumlabs.stellarium.mobile.StellariumFree}" drawable="stellarium" name="Stellarium" />
     <item component="ComponentInfo{com.noctuasoftware.stellarium_free/com.noctuasoftware.stellarium_free.Stellarium}" drawable="stellarium" name="Stellarium" />
+    <item component="ComponentInfo{com.noctuasoftware.stellarium_plus/com.stellariumlabs.stellarium.mobile.StellariumPlus}" drawable="stellarium_plus" name="Stellarium Plus" />
     <item component="ComponentInfo{com.noctuasoftware.stellarium_plus/com.noctuasoftware.stellarium_plus.Stellarium}" drawable="stellarium_plus" name="Stellarium Plus" />
     <item component="ComponentInfo{io.stellio.music/air.stellio.player.MainActivity}" drawable="stellio" name="Stellio" />
     <item component="ComponentInfo{com.mwm.stems/com.mwm.stems.main_activity.MainActivity}" drawable="stemz" name="Stemz" />
