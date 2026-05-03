@@ -34,11 +34,11 @@ Visit the Lawnicons developer wiki for developer information regarding Lawnicons
 
 ## Forkicons design guidelines
 
-The contributors who laid the foundations: [GrabsterTV](https://github.com/Grabstertv) and [Chefski](https://github.com/Chefski).
+The Lawnicons contributors who laid the foundations: [GrabsterTV](https://github.com/Grabstertv) and [Chefski](https://github.com/Chefski).
 
 > [!TIP]
-> The Lawnicons design guidelines are also available in Figma, you can practice there.  
-> [View in Figma](https://www.figma.com/community/file/1544976260626797886)
+> The Forkicons design guidelines are also available in Figma, you can practice there.  
+> [View in Figma](https://www.figma.com/community/file/1632857392429740665)
 
 [Common issues](https://github.com/k4ustu3h/forkicons/blob/main/docs/images/common-issues-to-fix.png)
 
