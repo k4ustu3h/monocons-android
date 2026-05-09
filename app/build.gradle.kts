@@ -16,10 +16,10 @@ val buildCommit = providers.exec {
 val ciBuild = providers.environmentVariable("CI").isPresent
 val ciRef = providers.environmentVariable("GITHUB_REF").orNull.orEmpty()
 val ciRunNumber = providers.environmentVariable("GITHUB_RUN_NUMBER").orNull.orEmpty()
-val isReleaseBuild = ciBuild && ciRef.contains("main")
+val isReleaseBuild = ciBuild && (ciRef.contains("main") || ciRef.startsWith("refs/tags/"))
 val devReleaseName = if (ciBuild) "(Dev #$ciRunNumber)" else "($buildCommit)"
 
-val version = "0.1.1"
+val version = "0.2.0"
 val versionDisplayName = version + if (!isReleaseBuild) " $devReleaseName" else ""
 
 android {
@@ -30,7 +30,7 @@ android {
         applicationId = "k4ustu3h.forkicons"
         minSdk = 26
         targetSdk = compileSdk
-        versionCode = 3
+        versionCode = 4
         versionName = versionDisplayName
         vectorDrawables.useSupportLibrary = true
     }
