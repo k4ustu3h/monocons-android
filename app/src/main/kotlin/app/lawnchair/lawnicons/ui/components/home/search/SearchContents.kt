@@ -201,7 +201,7 @@ private fun IconInfoListItem(
             headlineContent = { Text(iconInfo.getFirstLabelAndComponent().label) },
             supportingContent = {
                 Text(
-                    iconInfo.getFirstLabelAndComponent().componentName.flattenToString(),
+                    iconInfo.getFirstLabelAndComponent().component.flattenToString(),
                 )
             },
             leadingContent = {

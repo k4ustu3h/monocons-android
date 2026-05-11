@@ -16,7 +16,6 @@
 
 package app.lawnchair.lawnicons.ui.components.home.iconpreview
 
-import android.content.ComponentName
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -50,6 +49,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import app.lawnchair.lawnicons.R
+import app.lawnchair.lawnicons.data.model.Component
 import app.lawnchair.lawnicons.data.model.IconInfo
 import app.lawnchair.lawnicons.ui.components.IconLink
 import app.lawnchair.lawnicons.ui.components.core.ListRow
@@ -78,7 +78,7 @@ fun IconInfoSheet(
         iconInfo.componentNames
             .groupBy { it.label }
             .map { (label, components) ->
-                label to components.map { it.componentName }
+                label to components.map { it.component }
             }
     }
 
@@ -195,7 +195,7 @@ fun IconInfoSheet(
 
 private fun getShareContents(
     githubName: String,
-    groupedComponents: List<Pair<String, List<ComponentName>>>,
+    groupedComponents: List<Pair<String, List<Component>>>,
 ): String {
     val formattedComponents =
         groupedComponents.joinToString(separator = "\n") { (group, components) ->
@@ -223,7 +223,7 @@ private fun LinkHeader(
 @Composable
 private fun IconInfoListRow(
     label: String,
-    componentNames: List<ComponentName>,
+    componentNames: List<Component>,
 ) {
     SelectionContainer {
         ListRow(

@@ -24,6 +24,7 @@ import android.content.pm.ResolveInfo
 import android.content.res.Resources
 import android.graphics.drawable.Drawable
 import android.util.Log
+import app.lawnchair.lawnicons.data.model.Component
 import app.lawnchair.lawnicons.data.model.SystemIconInfo
 
 fun Context.getPackagesList(): List<ResolveInfo> {
@@ -49,7 +50,7 @@ fun Context.getSystemIconInfo(): List<SystemIconInfo> {
             SystemIconInfo(
                 drawable = drawable,
                 label = name,
-                componentName = ComponentName.unflattenFromString(component)!!,
+                component = Component.unflattenFromString(component)!!,
             )
         }
     }

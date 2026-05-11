@@ -16,7 +16,6 @@
 
 package app.lawnchair.lawnicons.data.model
 
-import android.content.ComponentName
 import android.graphics.drawable.Drawable
 
 /**
@@ -24,15 +23,15 @@ import android.graphics.drawable.Drawable
  *
  * @property drawable The [Drawable] for the icon.
  * @property label The label or name of the icon. Defaults to an empty string.
- * @property componentName The [ComponentName] associated with the icon.
+ * @property component The [Component] associated with the icon.
  */
 data class SystemIconInfo(
     val drawable: Drawable,
     override val label: String = "",
-    val componentName: ComponentName,
+    val component: Component,
 ) : BaseIconInfo {
 
     override val componentNames: List<LabelAndComponent> = listOf(
-        LabelAndComponent(label, componentName),
+        LabelAndComponent(label, component),
     )
 }

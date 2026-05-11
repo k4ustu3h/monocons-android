@@ -190,7 +190,7 @@ internal object IconRequestBundler {
         serializer.startTag(null, "resources")
 
         this.forEach { (iconInfo, drawableName) ->
-            val componentNameString = iconInfo.componentName.flattenToString()
+            val componentNameString = iconInfo.component.flattenToString()
 
             serializer.startTag(null, "item")
             serializer.attribute(null, "component", "ComponentInfo{$componentNameString}")
@@ -222,6 +222,6 @@ internal object IconRequestBundler {
 }
 
 fun formatIconRequestList(iconRequestList: List<SystemIconInfo>): String = iconRequestList
-    .joinToString(separator = "\n\n") { "${it.label}\n${it.componentName.flattenToString()}" }
+    .joinToString(separator = "\n\n") { "${it.label}\n${it.component.flattenToString()}" }
 
 private const val TAG = "IconRequestBundler"

@@ -72,7 +72,7 @@ class IconRepositoryImpl(application: Application) : IconRepository {
         val filteredIcons = _iconInfoModel.value.iconInfo.mapNotNull { candidate ->
             val searchIn = when (mode) {
                 SearchMode.LABEL -> candidate.componentNames.map { it.label }
-                SearchMode.COMPONENT -> candidate.componentNames.map { it.componentName.flattenToString() }
+                SearchMode.COMPONENT -> candidate.componentNames.map { it.component.flattenToString() }
                 SearchMode.DRAWABLE -> listOf(candidate.drawableName)
             }
             val indexOfMatch = searchIn.map {

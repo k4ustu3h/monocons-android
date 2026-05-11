@@ -451,7 +451,7 @@ fun IconRequestRow(
         },
         supportingContent = {
             Text(
-                text = systemIconInfo.componentName.flattenToString(),
+                text = systemIconInfo.component.flattenToString(),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
                 style = MaterialTheme.typography.bodyMedium,

@@ -95,12 +95,12 @@ class IconRequestRepositoryImpl(
     ) = withContext(Dispatchers.Default) {
         val themedComponentStrings = lawniconsIconList
             .flatMap { it.componentNames }
-            .map { it.componentName.flattenToString() }
+            .map { it.component.flattenToString() }
             .toSet()
 
         val unthemedApps = systemPackageList
             .filter { systemApp ->
-                systemApp.componentName.flattenToString() !in themedComponentStrings
+                systemApp.component.flattenToString() !in themedComponentStrings
             }
 
         _iconRequestList.value = IconRequestModel(

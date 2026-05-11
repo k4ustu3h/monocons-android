@@ -193,7 +193,7 @@ private fun DebugMenuScreen(
                 ListRow(
                     label = {
                         Text(
-                            text = "${it.label}\n${it.componentName.flattenToString()}",
+                            text = "${it.label}\n${it.component.flattenToString()}",
                             fontFamily = FontFamily.Monospace,
                         )
                     },
@@ -218,7 +218,7 @@ private fun DebugMenuScreen(
                 ListRow(
                     label = {
                         Text(
-                            text = "${labelAndComponent.label}\n${labelAndComponent.componentName.flattenToString()}",
+                            text = "${labelAndComponent.label}\n${labelAndComponent.component.flattenToString()}",
                             fontFamily = FontFamily.Monospace,
                         )
                     },
