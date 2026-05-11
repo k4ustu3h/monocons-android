@@ -40,6 +40,11 @@ commons-io = "commons-io:commons-io:2.22.0"
 ktlint = "com.pinterest.ktlint:ktlint-cli:1.8.0"
 composeRules = "io.nlopez.compose.rules:ktlint:0.5.9"
 
+# Test frameworks
+junit = "junit:junit:4.13.2"
+mockito = "org.mockito:mockito-core:5.23.0"
+mockito-kotlin = "org.mockito.kotlin:mockito-kotlin:6.3.0"
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

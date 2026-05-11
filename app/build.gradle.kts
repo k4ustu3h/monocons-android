@@ -99,6 +99,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 androidComponents {
@@ -157,6 +161,11 @@ dependencies {
     implementation(libs.coil.svg)
     implementation(libs.lazycolumn.scrollbar)
     implementation(libs.material.motion.compose.core)
+
+    // Unit tests
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito)
+    testImplementation(libs.mockito.kotlin)
 }
 
 tasks.preBuild {
