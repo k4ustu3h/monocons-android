@@ -17,6 +17,7 @@
 package app.lawnchair.lawnicons.data.repository.home
 
 import android.annotation.SuppressLint
+import android.app.Application
 import android.content.Context
 import android.util.Log
 import androidx.annotation.XmlRes
@@ -25,7 +26,18 @@ import app.lawnchair.lawnicons.data.model.Component
 import app.lawnchair.lawnicons.data.model.IconInfo
 import app.lawnchair.lawnicons.data.model.LabelAndComponent
 import app.lawnchair.lawnicons.data.model.mergeByDrawableName
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.xmlpull.v1.XmlPullParser
+
+interface IconDataSource {
+    fun getIconInfo(): List<IconInfo>
+}
+
+@ContributesBinding(AppScope::class)
+class XmlIconDataSource(private val application: Application) : IconDataSource {
+    override fun getIconInfo(): List<IconInfo> = application.getIconInfo()
+}
 
 @SuppressLint("DiscouragedApi")
 fun Context.getIconInfo(

@@ -16,7 +16,6 @@
 
 package app.lawnchair.lawnicons.data.repository.home
 
-import android.app.Application
 import app.lawnchair.lawnicons.data.model.IconInfoModel
 import app.lawnchair.lawnicons.data.model.SearchInfo
 import app.lawnchair.lawnicons.data.model.SearchMode
@@ -41,7 +40,9 @@ interface IconRepository {
 
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
-class IconRepositoryImpl(application: Application) : IconRepository {
+class IconRepositoryImpl(
+    iconDataSource: IconDataSource,
+) : IconRepository {
 
     private val coroutineScope = CoroutineScope(Dispatchers.IO)
 
@@ -53,7 +54,7 @@ class IconRepositoryImpl(application: Application) : IconRepository {
 
     init {
         coroutineScope.launch {
-            val iconList = application.getIconInfo().sortedBy { it.label.lowercase() }
+            val iconList = iconDataSource.getIconInfo().sortedBy { it.label.lowercase() }
             val groupedIcons = iconList.associateBy { it.label }.values
             val iconCount = groupedIcons.size
 
