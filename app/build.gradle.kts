@@ -166,6 +166,7 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.mockito)
     testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 tasks.preBuild {

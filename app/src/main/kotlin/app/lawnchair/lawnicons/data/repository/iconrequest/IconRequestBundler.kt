@@ -21,6 +21,7 @@ import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable
 import android.util.Log
 import android.util.Xml
+import androidx.annotation.VisibleForTesting
 import androidx.core.graphics.drawable.toBitmap
 import app.lawnchair.lawnicons.data.model.SystemIconInfo
 import java.io.ByteArrayOutputStream
@@ -147,10 +148,12 @@ internal object IconRequestBundler {
      * @param label The input string to normalize.
      * @return The normalized string suitable for use as a filename.
      */
-    private fun normalizeFileName(label: String): String {
+    @VisibleForTesting
+    internal fun normalizeFileName(label: String): String {
         val nfdNormalizedString = Normalizer.normalize(label, Normalizer.Form.NFD)
         val asciiApproximation = Regex("\\p{Mn}+").replace(nfdNormalizedString, "")
 
+        // TODO: also trim duplicate underscores
         val normalized = asciiApproximation
             .lowercase()
             .replace(Regex("[^a-z0-9_]"), "_")
@@ -203,7 +206,8 @@ internal object IconRequestBundler {
         serializer.endDocument()
     }
 
-    private fun createUniqueIconInfoList(iconRequestList: List<SystemIconInfo>): List<UniqueIconInfo> {
+    @VisibleForTesting
+    internal fun createUniqueIconInfoList(iconRequestList: List<SystemIconInfo>): List<UniqueIconInfo> {
         val usedFileNames = mutableMapOf<String, Int>()
 
         return iconRequestList.map { iconInfo ->
@@ -215,7 +219,8 @@ internal object IconRequestBundler {
         }
     }
 
-    private data class UniqueIconInfo(
+    @VisibleForTesting
+    internal data class UniqueIconInfo(
         val iconInfo: SystemIconInfo,
         val drawableName: String,
     )
