@@ -47,7 +47,7 @@ import app.lawnchair.lawnicons.data.model.IconRequestModel
 import app.lawnchair.lawnicons.data.model.getFirstLabelAndComponent
 import app.lawnchair.lawnicons.data.model.splitByComponentName
 import app.lawnchair.lawnicons.data.repository.BasePreferenceManager
-import app.lawnchair.lawnicons.data.repository.DummySharedPreferences
+import app.lawnchair.lawnicons.data.repository.InMemoryPreferenceStore
 import app.lawnchair.lawnicons.data.repository.PreferenceManager
 import app.lawnchair.lawnicons.ui.components.core.LawniconsScaffold
 import app.lawnchair.lawnicons.ui.components.core.ListRow
@@ -265,7 +265,7 @@ private fun ListHeader(
 @Composable
 private fun DebugMenuScreenPreview() {
     PreviewProviders {
-        val prefs = PreferenceManager(DummySharedPreferences())
+        val prefs = PreferenceManager(InMemoryPreferenceStore())
 
         DebugMenuScreen(
             newIconsModel = IconInfoModel(

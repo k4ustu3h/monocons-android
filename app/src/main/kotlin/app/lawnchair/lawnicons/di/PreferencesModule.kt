@@ -19,6 +19,8 @@ package app.lawnchair.lawnicons.di
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import app.lawnchair.lawnicons.data.repository.PreferenceStore
+import app.lawnchair.lawnicons.data.repository.SharedPreferencesStore
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
@@ -33,5 +35,11 @@ interface PreferencesModule {
         // Note: We request 'Application' because we bound it in the Graph Factory earlier.
         // Application is a Context.
         return app.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+    }
+
+    @Provides
+    @SingleIn(AppScope::class)
+    fun providePreferenceStore(prefs: SharedPreferences): PreferenceStore {
+        return SharedPreferencesStore(prefs)
     }
 }
