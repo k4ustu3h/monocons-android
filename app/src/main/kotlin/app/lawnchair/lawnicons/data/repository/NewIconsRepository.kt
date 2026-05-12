@@ -16,10 +16,7 @@
 
 package app.lawnchair.lawnicons.data.repository
 
-import android.app.Application
-import app.lawnchair.lawnicons.R
 import app.lawnchair.lawnicons.data.model.IconInfoModel
-import app.lawnchair.lawnicons.data.repository.home.getIconInfo
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
@@ -36,7 +33,9 @@ interface NewIconsRepository {
 
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
-class NewIconsRepositoryImpl(application: Application) : NewIconsRepository {
+class NewIconsRepositoryImpl(
+    @AppFilterDiff iconDataSource: IconDataSource,
+) : NewIconsRepository {
 
     private val coroutineScope = CoroutineScope(Dispatchers.IO)
 
@@ -45,7 +44,7 @@ class NewIconsRepositoryImpl(application: Application) : NewIconsRepository {
 
     init {
         coroutineScope.launch {
-            val iconInfo = application.getIconInfo(R.xml.appfilter_diff).sortedBy { it.label.lowercase() }
+            val iconInfo = iconDataSource.getIconInfo().sortedBy { it.label.lowercase() }
             _newIconsInfoModel.value = IconInfoModel(
                 iconInfo,
                 iconInfo.size,

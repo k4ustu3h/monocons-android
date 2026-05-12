@@ -16,9 +16,9 @@
 
 package app.lawnchair.lawnicons.data.repository.home
 
-import app.lawnchair.lawnicons.data.model.IconInfo
-import app.lawnchair.lawnicons.data.model.LabelAndComponent
 import app.lawnchair.lawnicons.data.model.SearchMode
+import app.lawnchair.lawnicons.data.repository.FakeIconDataSource
+import app.lawnchair.lawnicons.data.repository.FakeIconDataSource.Companion.defaultIcons
 import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.test.runTest
@@ -31,10 +31,10 @@ class IconRepositoryImplTest {
     @Test
     fun `init loads sorted icon list and unique label count`() = runTest {
         val repository = IconRepositoryImpl(
-            iconDataSource = FakeIconDataSource(iconFixtures),
+            iconDataSource = FakeIconDataSource(defaultIcons),
         )
 
-        awaitLoaded(repository, expectedSize = iconFixtures.size)
+        awaitLoaded(repository, expectedSize = defaultIcons.size)
 
         val model = repository.iconInfoModel.value
         assertEquals(
@@ -48,9 +48,9 @@ class IconRepositoryImplTest {
     @Test
     fun `search in label mode prioritizes word-start then lower index`() = runTest {
         val repository = IconRepositoryImpl(
-            iconDataSource = FakeIconDataSource(iconFixtures),
+            iconDataSource = FakeIconDataSource(defaultIcons),
         )
-        awaitLoaded(repository, expectedSize = iconFixtures.size)
+        awaitLoaded(repository, expectedSize = defaultIcons.size)
 
         repository.search(SearchMode.LABEL, "alpha")
 
@@ -61,9 +61,9 @@ class IconRepositoryImplTest {
     @Test
     fun `search in component mode finds matching component strings`() = runTest {
         val repository = IconRepositoryImpl(
-            iconDataSource = FakeIconDataSource(iconFixtures),
+            iconDataSource = FakeIconDataSource(defaultIcons),
         )
-        awaitLoaded(repository, expectedSize = iconFixtures.size)
+        awaitLoaded(repository, expectedSize = defaultIcons.size)
 
         repository.search(SearchMode.COMPONENT, "settings")
 
@@ -74,9 +74,9 @@ class IconRepositoryImplTest {
     @Test
     fun `search in drawable mode filters by drawable name`() = runTest {
         val repository = IconRepositoryImpl(
-            iconDataSource = FakeIconDataSource(iconFixtures),
+            iconDataSource = FakeIconDataSource(defaultIcons),
         )
-        awaitLoaded(repository, expectedSize = iconFixtures.size)
+        awaitLoaded(repository, expectedSize = defaultIcons.size)
 
         repository.search(SearchMode.DRAWABLE, "alpha")
 
@@ -90,9 +90,9 @@ class IconRepositoryImplTest {
     @Test
     fun `clearSearch restores full list after filtering`() = runTest {
         val repository = IconRepositoryImpl(
-            iconDataSource = FakeIconDataSource(iconFixtures),
+            iconDataSource = FakeIconDataSource(defaultIcons),
         )
-        awaitLoaded(repository, expectedSize = iconFixtures.size)
+        awaitLoaded(repository, expectedSize = defaultIcons.size)
 
         repository.search(SearchMode.COMPONENT, "settings")
         assertEquals(1, repository.searchedIconInfoModel.value.iconInfo.size)
@@ -108,9 +108,9 @@ class IconRepositoryImplTest {
     @Test
     fun `search with empty query returns all icons`() = runTest {
         val repository = IconRepositoryImpl(
-            iconDataSource = FakeIconDataSource(iconFixtures),
+            iconDataSource = FakeIconDataSource(defaultIcons),
         )
-        awaitLoaded(repository, expectedSize = iconFixtures.size)
+        awaitLoaded(repository, expectedSize = defaultIcons.size)
 
         repository.search(SearchMode.LABEL, "")
 
@@ -130,45 +130,6 @@ class IconRepositoryImplTest {
         assertTrue(
             "Timed out waiting for repository init",
             repository.iconInfoModel.value.iconInfo.size == expectedSize,
-        )
-    }
-
-    private class FakeIconDataSource(
-        private val icons: List<IconInfo>,
-    ) : IconDataSource {
-        override fun getIconInfo(): List<IconInfo> = icons
-    }
-
-    private companion object {
-        val iconFixtures = listOf(
-            IconInfo(
-                drawableName = "zalpha_notes",
-                componentNames = listOf(
-                    LabelAndComponent("Zalpha", "com.example.notes/.MainActivity"),
-                ),
-                drawableId = 10,
-            ),
-            IconInfo(
-                drawableName = "my_alpha_tools",
-                componentNames = listOf(
-                    LabelAndComponent("My Alpha", "com.example.tools/.MainActivity"),
-                ),
-                drawableId = 11,
-            ),
-            IconInfo(
-                drawableName = "alpha_mail",
-                componentNames = listOf(
-                    LabelAndComponent("Alpha", "com.example.mail/.MainActivity"),
-                ),
-                drawableId = 12,
-            ),
-            IconInfo(
-                drawableName = "alpha_settings",
-                componentNames = listOf(
-                    LabelAndComponent("Alpha", "com.example.settings/.MainActivity"),
-                ),
-                drawableId = 13,
-            ),
         )
     }
 }

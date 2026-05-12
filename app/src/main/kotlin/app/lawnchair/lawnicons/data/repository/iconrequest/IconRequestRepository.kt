@@ -22,8 +22,9 @@ import app.lawnchair.lawnicons.data.api.IconRequestSettingsAPI
 import app.lawnchair.lawnicons.data.model.IconInfo
 import app.lawnchair.lawnicons.data.model.IconRequestModel
 import app.lawnchair.lawnicons.data.model.SystemIconInfo
+import app.lawnchair.lawnicons.data.repository.AppFilter
+import app.lawnchair.lawnicons.data.repository.IconDataSource
 import app.lawnchair.lawnicons.data.repository.PreferenceManager
-import app.lawnchair.lawnicons.data.repository.home.getIconInfo
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
@@ -48,6 +49,7 @@ interface IconRequestRepository {
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
 class IconRequestRepositoryImpl(
+    @param:AppFilter val iconDataSource: IconDataSource,
     val application: Application,
     private val api: IconRequestSettingsAPI,
     private val preferenceManager: PreferenceManager,
@@ -78,7 +80,7 @@ class IconRequestRepositoryImpl(
                 apiEnabled || forceEnabled
             }
 
-            val iconList = application.getIconInfo()
+            val iconList = iconDataSource.getIconInfo()
                 .sortedBy { it.label.lowercase() }
             val systemPackageList = application.getSystemIconInfo()
                 .sortedBy { it.label.lowercase() }

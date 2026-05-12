@@ -19,6 +19,8 @@ package app.lawnchair.lawnicons.data.repository.home
 import app.lawnchair.lawnicons.data.model.IconInfoModel
 import app.lawnchair.lawnicons.data.model.SearchInfo
 import app.lawnchair.lawnicons.data.model.SearchMode
+import app.lawnchair.lawnicons.data.repository.AppFilter
+import app.lawnchair.lawnicons.data.repository.IconDataSource
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
@@ -41,7 +43,7 @@ interface IconRepository {
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
 class IconRepositoryImpl(
-    iconDataSource: IconDataSource,
+    @AppFilter iconDataSource: IconDataSource,
 ) : IconRepository {
 
     private val coroutineScope = CoroutineScope(Dispatchers.IO)

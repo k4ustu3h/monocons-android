@@ -19,8 +19,10 @@ package app.lawnchair.lawnicons.data.repository.iconrequest
 import android.app.Application
 import app.lawnchair.lawnicons.data.api.IconRequestSettingsAPI
 import app.lawnchair.lawnicons.data.model.IconRequestSettings
+import app.lawnchair.lawnicons.data.repository.FakeIconDataSource
 import app.lawnchair.lawnicons.data.repository.InMemoryPreferenceStore
 import app.lawnchair.lawnicons.data.repository.PreferenceManager
+import app.lawnchair.lawnicons.data.repository.defaultIcons
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -100,6 +102,7 @@ class IconRequestRepositoryImplTest {
         }
 
         return IconRequestRepositoryImpl(
+            iconDataSource = FakeIconDataSource(defaultIcons),
             application = mock(Application::class.java),
             api = api,
             preferenceManager = preferenceManager,
