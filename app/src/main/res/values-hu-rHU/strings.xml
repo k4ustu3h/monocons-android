@@ -65,7 +65,7 @@
     <!-- Snackbar content -->
     <string name="snackbar_request_icons_hint">A hiányzó ikonokat az alsó sávról kérje</string>
     <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
-    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Forkicons release.</string>
+    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Monocons release.</string>
     <string name="snackbar_request_too_large">Az ikonkérelem részletei a vágólapra másolva. Kéréséhez adja meg a részleteket az űrlapon.</string>
     <string name="snackbar_use_fallback_link">Az űrlap megnyitása</string>
     <!-- Missing icons screen -->

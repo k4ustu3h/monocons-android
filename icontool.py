@@ -14,8 +14,8 @@ PATTERN = re.compile(
 )
 APPFILTER_PATH = "./app/assets/appfilter.xml"
 SVGS_FOLDER = "./svgs/"
-CALENDARS_PATTERN = r"(  <!-- Dynamic Calendars -->.*?<!-- Forkicons -->)"
-FORKICONS_PATTERN = r"<!-- Forkicons -->\s*(.*?)\s*</resources>"
+CALENDARS_PATTERN = r"(  <!-- Dynamic Calendars -->.*?<!-- Monocons -->)"
+MONOCONS_PATTERN = r"<!-- Monocons -->\s*(.*?)\s*</resources>"
 
 
 #####
@@ -53,7 +53,7 @@ def sort_xml_file(file, new_item):
     else:
         x = ""
 
-    lawnicons_section = re.search(FORKICONS_PATTERN, file, re.DOTALL)
+    lawnicons_section = re.search(MONOCONS_PATTERN, file, re.DOTALL)
     lawnicons_items = (
         lawnicons_section.group(1).strip().splitlines() if lawnicons_section else []
     )

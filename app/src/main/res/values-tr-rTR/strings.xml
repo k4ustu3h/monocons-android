@@ -65,7 +65,7 @@
     <!-- Snackbar content -->
     <string name="snackbar_request_icons_hint">Alt çubuktan eksik ikonları isteyin</string>
     <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
-    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Forkicons release.</string>
+    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Monocons release.</string>
     <string name="snackbar_request_too_large">Simge isteği ayrıntıları panoya kopyalandı. İsteği göndermek için ayrıntıları forma girin.</string>
     <string name="snackbar_use_fallback_link">Formu aç</string>
     <!-- Missing icons screen -->

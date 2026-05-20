@@ -41,7 +41,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Forkicons"
+rootProject.name = "Monocons"
 
 enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

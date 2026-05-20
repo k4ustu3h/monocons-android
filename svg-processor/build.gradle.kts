@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass = "k4ustu3h.forkicons.helper.MainKt"
+    mainClass = "k4ustu3h.monocons.helper.MainKt"
 }
 
 dependencies {

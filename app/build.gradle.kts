@@ -24,10 +24,10 @@ val versionDisplayName = version + if (!isReleaseBuild) " $devReleaseName" else 
 
 android {
     compileSdk = 36
-    namespace = "k4ustu3h.forkicons"
+    namespace = "k4ustu3h.monocons"
 
     defaultConfig {
-        applicationId = "k4ustu3h.forkicons"
+        applicationId = "k4ustu3h.monocons"
         minSdk = 26
         targetSdk = compileSdk
         versionCode = 4
@@ -72,7 +72,7 @@ android {
     productFlavors {
         create("app") {
             dimension = "product"
-            resValue("string", "apps_name", "Forkicons")
+            resValue("string", "apps_name", "Monocons")
         }
     }
     sourceSets.getByName("app") {
@@ -107,7 +107,7 @@ androidComponents {
             // TODO: https://github.com/android/gradle-recipes/blob/cbe7c7dea2a3f5b1764756f24bf453d1235c80e2/listenToArtifacts/README.md
             with(output as com.android.build.api.variant.impl.VariantOutputImpl) {
                 val newApkName =
-                    "Forkicons ${versionName.get()} v${versionCode.get()}_${variant.buildType}.apk"
+                    "Monocons ${versionName.get()} v${versionCode.get()}_${variant.buildType}.apk"
                 outputFileName = newApkName
             }
         }

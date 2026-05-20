@@ -65,7 +65,7 @@
     <!-- Snackbar content -->
     <string name="snackbar_request_icons_hint">Request missing icons from the bottom bar</string>
     <string name="icon_requests_furfilled">All icons are supported. Report rebrandings via GitHub issues.</string>
-    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Forkicons release.</string>
+    <string name="icon_requests_suspended">Icon requests open for a limited time with every new Monocons release.</string>
     <string name="snackbar_request_too_large">Nakopya na ang mga detalye tungkol sa ihihiling na icons sa clipboard. Upang hilingin ang mga ito, isumite ang mga detalye sa form.</string>
     <string name="snackbar_use_fallback_link">Buksan ang form</string>
     <!-- Missing icons screen -->
