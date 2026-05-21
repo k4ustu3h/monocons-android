@@ -39,7 +39,7 @@ internal object IconRequestBundler {
     suspend fun createIconRequestZip(
         context: Context,
         iconRequestList: List<SystemIconInfo>,
-        zipFileName: String = "forkicons_request.zip",
+        zipFileName: String = "monocons_request.zip",
     ): File? {
         if (iconRequestList.isEmpty()) {
             Log.d(TAG, "Icon request list is empty. No ZIP file created.")

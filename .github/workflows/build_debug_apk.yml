@@ -109,7 +109,7 @@ jobs:
           name: Debug APK
           path: artifacts/debug-apk
       - name: Export APK_NAME for later use
-        run: echo "APK_NAME=Forkicons.Nightly.$(echo ${{ github.sha }} | cut -c1-7).apk" >> $GITHUB_ENV
+        run: echo "APK_NAME=Monocons.Nightly.$(echo ${{ github.sha }} | cut -c1-7).apk" >> $GITHUB_ENV
       - name: Rename .apk file
         run: |
           mv artifacts/debug-apk/*.apk $APK_NAME
@@ -118,4 +118,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release view "nightly" && gh release delete "nightly" -y --cleanup-tag
-          gh release create "nightly" "$APK_NAME" -p -t "Forkicons Nightly" --generate-notes
+          gh release create "nightly" "$APK_NAME" -p -t "Monocons Nightly" --generate-notes

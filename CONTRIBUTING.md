@@ -1,6 +1,6 @@
-# Forkicons contributing guide
+# Monocons contributing guide
 
-Welcome to the Forkicons contributing guide!
+Welcome to the Monocons contributing guide!
 
 If you find errors or want to suggest improvements in the guide itself, create an issue.
 
@@ -8,43 +8,43 @@ If you find errors or want to suggest improvements in the guide itself, create a
 
 **Contributors**
 
-The development of the core app is not done here. Forkicons focuses on providing a curated set of icons and adapting the base project to our needs. The Lawnicons community (which includes everyone who wants to contribute) handles the core app development. The primary focus is on managing icons and the specific features that Forkicons offers.
+The development of the core app is not done here. Monocons focuses on providing a curated set of icons and adapting the base project to our needs. The Lawnicons community (which includes everyone who wants to contribute) handles the core app development. The primary focus is on managing icons and the specific features that Monocons offers.
 
-[Lawnicons contributors](https://github.com/LawnchairLauncher/lawnicons/graphs/contributors) • [Forkicons contributors](https://github.com/k4ustu3h/forkicons/graphs/contributors) • [Lawnchair](https://github.com/k4ustu3h/lawnchair)
+[Lawnicons contributors](https://github.com/LawnchairLauncher/lawnicons/graphs/contributors) • [Monocons contributors](https://github.com/k4ustu3h/monocons/graphs/contributors) • [Lawnchair](https://github.com/LawnchairLauncher/lawnchair)
 
 **Development**
 
-The main tasks are to maintain Forkicons and interaction with launchers, fix bugs, add new features and automate organizational processes. Please see our issues for more details.
+The main tasks are to maintain Monocons and interaction with launchers, fix bugs, add new features and automate organizational processes. Please see our issues for more details.
 
 **Icons**
 
-You can contribute your icons, fulfill icon requests, add missing app IDs, refine and update existing icons, clean up dead apps and duplicates. Mastering the Forkicons design guidelines in practice will allow you to do icon reviews.
+You can contribute your icons, fulfill icon requests, add missing app IDs, refine and update existing icons, clean up dead apps and duplicates. Mastering the Monocons design guidelines in practice will allow you to do icon reviews.
 
 ## Contributing code
 
 Code-related contributions are welcome, but please note a crucial distinction: **the core application code is maintained upstream in the Lawnicons repository**.
 
-If you discover a bug or issue with the app’s core functionality, please check the Lawnicons repository first. If the issue exists there, you should report it to Lawnicons and track its progress on their issues page. Once they release a stable version with a fix, it will be merged into Forkicons.
+If you discover a bug or issue with the app’s core functionality, please check the Lawnicons repository first. If the issue exists there, you should report it to Lawnicons and track its progress on their issues page. Once they release a stable version with a fix, it will be merged into Monocons.
 
-If your code contribution is specific to Forkicons (e.g., adding a new feature that doesn't exist in the upstream Lawnicons), please discuss it by creating an issue.
+If your code contribution is specific to Monocons (e.g., adding a new feature that doesn't exist in the upstream Lawnicons), please discuss it by creating an issue.
 
 Visit the Lawnicons developer wiki for developer information regarding Lawnicons.
 
 [Lawnicons developer wiki](https://github.com/LawnchairLauncher/lawnicons/wiki)
 
-## Forkicons design guidelines
+## Monocons design guidelines
 
 The Lawnicons contributors who laid the foundations: [GrabsterTV](https://github.com/Grabstertv) and [Chefski](https://github.com/Chefski).
 
 > [!TIP]
-> The Forkicons design guidelines are also available in Figma, you can practice there.  
+> The Monocons design guidelines are also available in Figma, you can practice there.  
 > [View in Figma](https://www.figma.com/community/file/1632857392429740665)
 
-[Common issues](https://github.com/k4ustu3h/forkicons/blob/main/docs/images/common-issues-to-fix.png)
+[Common issues](https://github.com/k4ustu3h/monocons/blob/main/docs/images/common-issues-to-fix.png)
 
 ### Approach
 
-The Forkicons style is built on strong fundamentals and a commitment to quality. To minimize the need for rework, please read these guidelines carefully. Our main goal is to create high-quality icons that clearly represent their respective apps. To achieve this goal, you may sometimes need to redesign an icon from scratch.
+The Monocons style is built on strong fundamentals and a commitment to quality. To minimize the need for rework, please read these guidelines carefully. Our main goal is to create high-quality icons that clearly represent their respective apps. To achieve this goal, you may sometimes need to redesign an icon from scratch.
 
 Tips
 
@@ -54,7 +54,7 @@ Tips
 - Practice on easy-to-make icons to understand the whole process.
 - See how other contributors have made pull requests (PRs).
 
-[Merged PRs](https://github.com/k4ustu3h/forkicons/pulls?q=is%3Apr+is%3Amerged+label%3Aicons)
+[Merged PRs](https://github.com/k4ustu3h/monocons/pulls?q=is%3Apr+is%3Amerged+label%3Aicons)
 
 ### Naming
 
@@ -246,22 +246,22 @@ You can use it to find app IDs. If you fulfill icon requests from our table, all
 
 An app ID is a record consisting of a package and an activity, separated by `/`. App IDs allow you to link icons and apps.
 
-Sample (Forkicons)  
-Package: `k4ustu3h.forkicons`  
-Activity: `k4ustu3h.forkicons.MainActivity`  
-App component: `k4ustu3h.forkicons/k4ustu3h.forkicons.MainActivity`
+Sample (Monocons)  
+Package: `k4ustu3h.monocons`  
+Activity: `k4ustu3h.monocons.MainActivity`  
+App component: `k4ustu3h.monocons/k4ustu3h.monocons.MainActivity`
 
-**Forkicons**
+**Monocons**
 
-This method is suitable if you are interested in installed apps that aren't supported in Forkicons.
+This method is suitable if you are interested in installed apps that aren't supported in Monocons.
 
-1. Install and open Forkicons.
+1. Install and open Monocons.
 2. Long press our logo.
 3. Swipe down.
 4. Copy missing app IDs to clipboard.
 5. Save it wherever it's convenient.
 
-[Download Forkicons](https://github.com/k4ustu3h/forkicons#download)
+[Download Monocons](https://github.com/k4ustu3h/monocons#download)
 
 **Icon Request**
 
@@ -308,7 +308,7 @@ adb shell dumpsys window | findstr "mCurrentFocus"
 
 ![](docs/images/contributing-image-3.png)
 
-## Adding icons and missing app IDs to Forkicons
+## Adding icons and missing app IDs to Monocons
 
 You need to link SVGs and app IDs correctly, create a PR to our repository through your fork, and wait for it to be reviewed.
 
@@ -318,25 +318,25 @@ Tips
 - Add missing app IDs to icons that are identical to the originals.
 - Make sure your icons or missing app IDs haven't been added earlier: search the `appfilter.xml` and check PRs.
 
-[How to find app IDs](#how-to-find-app-ids) • [Icon contribution tools](#icon-contribution-tools) • [appfilter.xml](app/assets/appfilter.xml) • [PRs](https://github.com/k4ustu3h/forkicons/pulls)
+[How to find app IDs](#how-to-find-app-ids) • [Icon contribution tools](#icon-contribution-tools) • [appfilter.xml](app/assets/appfilter.xml) • [PRs](https://github.com/k4ustu3h/monocons/pulls)
 
 ### Manual process
 
 Let's imagine that you have an icon in SVG format, an app name and an app ID.
 
-Icon: `forkicons.svg`  
-App name: `Forkicons`  
-App ID: `k4ustu3h.forkicons/k4ustu3h.forkicons.MainActivity`
+Icon: `monocons.svg`  
+App name: `Monocons`  
+App ID: `k4ustu3h.monocons/k4ustu3h.monocons.MainActivity`
 
-1. Fork the Forkicons repository.
+1. Fork the Monocons repository.
 2. Clone the fork via GitHub Desktop.
 3. Open it with a file explorer. This is your local copy.
-4. Сopy `forkicons.svg` to the `svgs/` folder. Note the icon name.
+4. Сopy `monocons.svg` to the `svgs/` folder. Note the icon name.
 5. Open `app/assets/appfilter.xml` and add a new line using the same template as the existing lines.
 
 ```
 Do
-<item component="ComponentInfo{k4ustu3h.forkicons/k4ustu3h.forkicons.MainActivity}" drawable="forkicons" name="Forkicons" />
+<item component="ComponentInfo{k4ustu3h.monocons/k4ustu3h.monocons.MainActivity}" drawable="monocons" name="Monocons" />
 
 Template
 <item component="ComponentInfo{APP_ID}" drawable="ICON_NAME" name="APP_NAME" />

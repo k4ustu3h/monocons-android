@@ -177,14 +177,14 @@ private fun About(
                 ListHeader(stringResource(id = R.string.app_name) + " " + stringResource(id = R.string.core_contributors).lowercase())
             }
             itemsIndexed(
-                forkiconsContributors,
+                monoconsContributors,
                 contentType = { _, _ -> ColumnTypes.LIST_ITEM },
             ) { index, it ->
                 ContributorRow(
                     name = it.name,
                     photoUrl = it.photoUrl,
                     profileUrl = it.socialUrl,
-                    divider = index != forkiconsContributors.lastIndex,
+                    divider = index != monoconsContributors.lastIndex,
                     description = it.descriptionRes?.let { stringResource(id = it) },
                     shapes = ListRowDefaults.singleItemShapes,
                 )
@@ -309,7 +309,7 @@ private val coreContributors = listOf(
     ),
 )
 
-private val forkiconsContributors = listOf(
+private val monoconsContributors = listOf(
     Contributor(
         name = "Kaustubh Ladiya",
         username = "k4ustu3h",
