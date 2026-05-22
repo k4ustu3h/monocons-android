@@ -88,9 +88,9 @@ import k4ustu3h.monocons.ui.components.core.SimpleListRow
 import k4ustu3h.monocons.ui.theme.adaptiveSurfaceColor
 import k4ustu3h.monocons.ui.theme.adaptiveSurfaceContainerColor
 import k4ustu3h.monocons.ui.theme.icon.Copy
-import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.IconRequest
 import k4ustu3h.monocons.ui.theme.icon.KeyboardArrowDown
+import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.Save
 import k4ustu3h.monocons.ui.theme.icon.Share
 import kotlinx.coroutines.launch

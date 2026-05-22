@@ -53,8 +53,8 @@ import k4ustu3h.monocons.R
 import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.ui.components.IconLink
 import k4ustu3h.monocons.ui.components.core.ListRow
-import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.Github
+import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.ShareIcon
 import k4ustu3h.monocons.ui.util.Constants
 import k4ustu3h.monocons.ui.util.PreviewLawnicons

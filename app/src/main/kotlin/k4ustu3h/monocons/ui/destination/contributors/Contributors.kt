@@ -53,8 +53,8 @@ import k4ustu3h.monocons.ui.components.ContributorRow
 import k4ustu3h.monocons.ui.components.ContributorRowPlaceholder
 import k4ustu3h.monocons.ui.components.core.LawniconsScaffold
 import k4ustu3h.monocons.ui.components.core.SimpleListRow
-import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.Github
+import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.util.Constants
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders

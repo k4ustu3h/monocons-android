@@ -55,8 +55,8 @@ import k4ustu3h.monocons.ui.components.core.ListRowDefaults
 import k4ustu3h.monocons.ui.components.core.SimpleListRow
 import k4ustu3h.monocons.ui.theme.icon.AppIcon
 import k4ustu3h.monocons.ui.theme.icon.Check
-import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.Lawnicons
+import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.util.Constants
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders

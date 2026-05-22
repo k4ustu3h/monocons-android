@@ -28,9 +28,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import k4ustu3h.monocons.R
 import k4ustu3h.monocons.ui.theme.icon.About
-import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.Github
 import k4ustu3h.monocons.ui.theme.icon.IconRequest
+import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.theme.icon.Search
 import k4ustu3h.monocons.ui.util.Constants
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
