@@ -1,0 +1,1 @@
+<p>Monocons is an open-source icon pack with brand icons for Android launchers. The icons are based on on either the brand's guidelines or Material You (aka Material Design 3) guidelines, featuring a monochrome design.</p>
