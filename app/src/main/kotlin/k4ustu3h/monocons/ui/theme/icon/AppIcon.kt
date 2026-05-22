@@ -12,178 +12,130 @@ val Monocons.AppIcon: ImageVector
             return _AppIcon!!
         }
         _AppIcon = ImageVector.Builder(
-            name = "Forkicons",
+            name = "Monocons",
             defaultWidth = 108.dp,
             defaultHeight = 108.dp,
             viewportWidth = 108f,
             viewportHeight = 108f,
         ).apply {
             path(fill = SolidColor(Color(0xFFFFD600))) {
-                moveToRelative(39.23f, 0f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    -3.23f,
-                    18f,
-                )
-                arcToRelative(54f, 54f, 0f, isMoreThanHalf = false, isPositiveArc = false, 54f, 54f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    18f,
-                    -3.21f,
-                )
-                verticalLineToRelative(-68.79f)
-                horizontalLineToRelative(-68.77f)
-                close()
+                moveTo(108f, 0f)
+                moveToRelative(-81f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, 162f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, -162f, 0f)
             }
             path(fill = SolidColor(Color(0xFFD50000))) {
-                moveToRelative(90f, 36f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    -54f,
-                    54f,
-                )
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    3.21f,
-                    18f,
-                )
-                horizontalLineToRelative(68.79f)
-                verticalLineToRelative(-68.91f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    -18f,
-                    -3.09f,
-                )
-                close()
+                moveTo(108f, 108f)
+                moveToRelative(-81f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, 162f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, -162f, 0f)
             }
             path(fill = SolidColor(Color(0xFF00C853))) {
-                moveToRelative(18f, 36f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    -18f,
-                    3.23f,
-                )
-                verticalLineToRelative(68.77f)
-                horizontalLineToRelative(68.79f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    3.21f,
-                    -18f,
-                )
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    -54f,
-                    -54f,
-                )
-                close()
+                moveTo(0f, 108f)
+                moveToRelative(-81f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, 162f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, -162f, 0f)
             }
             path(fill = SolidColor(Color(0xFF2962FF))) {
-                moveToRelative(0f, 0f)
-                verticalLineToRelative(68.77f)
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    18f,
-                    3.23f,
-                )
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    54f,
-                    -54f,
-                )
-                arcToRelative(
-                    54f,
-                    54f,
-                    0f,
-                    isMoreThanHalf = false,
-                    isPositiveArc = false,
-                    -3.1f,
-                    -18f,
-                )
-                horizontalLineToRelative(-68.9f)
-                close()
+                moveTo(0f, 0f)
+                moveToRelative(-81f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, 162f, 0f)
+                arcToRelative(81f, 81f, 0f, isMoreThanHalf = true, isPositiveArc = true, -162f, 0f)
             }
             path(fill = SolidColor(Color.White)) {
-                moveToRelative(58.21f, 57.75f)
-                horizontalLineToRelative(16.58f)
-                curveToRelative(0.95f, 0f, 1.71f, 0.76f, 1.71f, 1.71f)
-                verticalLineToRelative(16.58f)
-                curveToRelative(0f, 0.95f, -0.76f, 1.71f, -1.71f, 1.71f)
-                horizontalLineToRelative(-16.58f)
-                curveToRelative(-0.95f, 0f, -1.71f, -0.76f, -1.71f, -1.71f)
-                verticalLineToRelative(-16.58f)
-                curveToRelative(0f, -0.95f, 0.76f, -1.71f, 1.71f, -1.71f)
+                moveToRelative(28.99f, 48.16f)
+                lineToRelative(8.66f, -15.62f)
+                quadToRelative(0.39f, -0.72f, 0.98f, -1.05f)
+                quadToRelative(0.59f, -0.33f, 1.31f, -0.33f)
+                quadToRelative(0.72f, 0f, 1.31f, 0.33f)
+                quadToRelative(0.59f, 0.33f, 0.98f, 1.05f)
+                lineToRelative(8.66f, 15.62f)
+                quadToRelative(0.33f, 0.66f, 0.3f, 1.31f)
+                quadToRelative(-0.03f, 0.66f, -0.36f, 1.25f)
+                quadToRelative(-0.33f, 0.59f, -0.92f, 0.95f)
+                quadToRelative(-0.59f, 0.36f, -1.31f, 0.36f)
+                horizontalLineToRelative(-17.32f)
+                quadToRelative(-0.72f, 0f, -1.31f, -0.36f)
+                quadToRelative(-0.59f, -0.36f, -0.92f, -0.95f)
+                quadToRelative(-0.33f, -0.59f, -0.36f, -1.25f)
+                quadToRelative(-0.03f, -0.66f, 0.3f, -1.31f)
                 close()
-                moveTo(29f, 52.75f)
-                lineTo(41.5f, 30.25f)
-                lineTo(54f, 52.75f)
+                moveTo(32.53f, 75.19f)
+                quadToRelative(-3.08f, -3.08f, -3.08f, -7.41f)
+                quadToRelative(0f, -4.4f, 3.08f, -7.45f)
+                quadToRelative(3.08f, -3.05f, 7.41f, -3.05f)
+                quadToRelative(4.33f, 0f, 7.41f, 3.08f)
+                quadToRelative(3.08f, 3.08f, 3.08f, 7.41f)
+                quadToRelative(0f, 4.33f, -3.08f, 7.41f)
+                quadToRelative(-3.08f, 3.08f, -7.41f, 3.08f)
+                quadToRelative(-4.33f, 0f, -7.41f, -3.08f)
                 close()
-                moveTo(60.88f, 31.5f)
-                curveToRelative(-1.96f, 0f, -3.59f, 0.65f, -4.91f, 1.94f)
-                curveToRelative(-1.31f, 1.29f, -1.97f, 2.88f, -1.97f, 4.75f)
-                curveToRelative(0f, 1.04f, 0.21f, 2.02f, 0.63f, 2.94f)
-                curveToRelative(0.42f, 0.92f, 1.1f, 1.9f, 2.06f, 2.94f)
-                curveToRelative(0.96f, 1.04f, 2.24f, 2.25f, 3.84f, 3.63f)
-                curveToRelative(1.6f, 1.38f, 3.59f, 3.06f, 5.97f, 5.06f)
-                curveToRelative(2.38f, -2f, 4.36f, -3.69f, 5.97f, -5.06f)
-                curveToRelative(1.6f, -1.38f, 2.89f, -2.58f, 3.84f, -3.63f)
-                curveToRelative(0.96f, -1.04f, 1.65f, -2.02f, 2.06f, -2.94f)
-                curveToRelative(0.42f, -0.92f, 0.63f, -1.9f, 0.63f, -2.94f)
-                curveToRelative(0f, -1.88f, -0.66f, -3.46f, -1.97f, -4.75f)
-                curveToRelative(-1.31f, -1.29f, -2.95f, -1.94f, -4.91f, -1.94f)
-                curveToRelative(-1.13f, 0f, -2.18f, 0.26f, -3.16f, 0.78f)
-                curveToRelative(-0.98f, 0.52f, -1.8f, 1.24f, -2.47f, 2.16f)
-                curveToRelative(-0.67f, -0.92f, -1.49f, -1.64f, -2.47f, -2.16f)
-                curveToRelative(-0.98f, -0.52f, -2.03f, -0.78f, -3.16f, -0.78f)
+                moveTo(43.65f, 71.49f)
+                quadToRelative(1.54f, -1.54f, 1.54f, -3.71f)
+                quadToRelative(0f, -2.17f, -1.54f, -3.71f)
+                quadToRelative(-1.54f, -1.54f, -3.71f, -1.54f)
+                reflectiveQuadToRelative(-3.71f, 1.54f)
+                quadToRelative(-1.54f, 1.54f, -1.54f, 3.71f)
+                quadToRelative(0f, 2.17f, 1.54f, 3.71f)
+                quadToRelative(1.54f, 1.54f, 3.71f, 1.54f)
+                reflectiveQuadToRelative(3.71f, -1.54f)
                 close()
-                moveTo(41.5f, 57.75f)
-                curveToRelative(-2.75f, 0f, -5.1f, 0.98f, -7.06f, 2.94f)
-                curveToRelative(-1.96f, 1.96f, -2.94f, 4.31f, -2.94f, 7.06f)
-                curveToRelative(0f, 2.75f, 0.98f, 5.1f, 2.94f, 7.06f)
-                curveToRelative(1.96f, 1.96f, 4.31f, 2.94f, 7.06f, 2.94f)
-                curveToRelative(2.75f, 0f, 5.1f, -0.98f, 7.06f, -2.94f)
-                curveToRelative(1.96f, -1.96f, 2.94f, -4.31f, 2.94f, -7.06f)
-                curveToRelative(0f, -2.75f, -0.98f, -5.1f, -2.94f, -7.06f)
-                curveToRelative(-1.96f, -1.96f, -4.31f, -2.94f, -7.06f, -2.94f)
+                moveTo(35.74f, 46.78f)
+                horizontalLineToRelative(8.4f)
+                lineToRelative(-4.2f, -7.55f)
+                close()
+                moveTo(55.69f, 75.65f)
+                verticalLineToRelative(-15.75f)
+                quadToRelative(0f, -1.12f, 0.75f, -1.87f)
+                quadToRelative(0.75f, -0.75f, 1.87f, -0.75f)
+                horizontalLineToRelative(15.75f)
+                quadToRelative(1.12f, 0f, 1.87f, 0.75f)
+                quadToRelative(0.75f, 0.75f, 0.75f, 1.87f)
+                verticalLineToRelative(15.75f)
+                quadToRelative(0f, 1.12f, -0.75f, 1.87f)
+                quadToRelative(-0.75f, 0.75f, -1.87f, 0.75f)
+                horizontalLineToRelative(-15.75f)
+                quadToRelative(-1.12f, 0f, -1.87f, -0.75f)
+                quadToRelative(-0.75f, -0.75f, -0.75f, -1.87f)
+                close()
+                moveTo(60.94f, 73.03f)
+                horizontalLineToRelative(10.5f)
+                verticalLineToRelative(-10.5f)
+                horizontalLineToRelative(-10.5f)
+                close()
+                moveTo(64.48f, 50.59f)
+                lineTo(61.01f, 47.64f)
+                quadToRelative(-4.53f, -3.81f, -6.23f, -6f)
+                quadToRelative(-1.71f, -2.2f, -1.71f, -4.89f)
+                quadToRelative(0f, -2.95f, 2.07f, -4.99f)
+                reflectiveQuadToRelative(5.15f, -2.03f)
+                quadToRelative(1.77f, 0f, 3.31f, 0.82f)
+                quadToRelative(1.54f, 0.82f, 2.59f, 2.26f)
+                quadToRelative(1.05f, -1.44f, 2.59f, -2.26f)
+                reflectiveQuadToRelative(3.31f, -0.82f)
+                quadToRelative(3.08f, 0f, 5.15f, 2.03f)
+                quadToRelative(2.07f, 2.03f, 2.07f, 4.99f)
+                quadToRelative(0f, 2.69f, -1.71f, 4.89f)
+                quadToRelative(-1.71f, 2.2f, -6.23f, 6f)
+                lineToRelative(-3.48f, 2.95f)
+                quadToRelative(-0.72f, 0.66f, -1.71f, 0.66f)
+                quadToRelative(-0.98f, 0f, -1.71f, -0.66f)
+                close()
+                moveTo(66.19f, 45.14f)
+                quadToRelative(4.72f, -3.94f, 6.3f, -5.58f)
+                quadToRelative(1.57f, -1.64f, 1.57f, -2.69f)
+                quadToRelative(0f, -0.85f, -0.49f, -1.38f)
+                quadToRelative(-0.49f, -0.52f, -1.35f, -0.52f)
+                quadToRelative(-0.66f, 0f, -1.28f, 0.36f)
+                quadToRelative(-0.62f, 0.36f, -1.54f, 1.28f)
+                lineToRelative(-3.22f, 3.08f)
+                lineToRelative(-3.22f, -3.08f)
+                quadToRelative(-0.92f, -0.92f, -1.54f, -1.28f)
+                quadToRelative(-0.62f, -0.36f, -1.28f, -0.36f)
+                quadToRelative(-0.85f, 0f, -1.35f, 0.52f)
+                quadToRelative(-0.49f, 0.52f, -0.49f, 1.38f)
+                quadToRelative(0f, 1.05f, 1.57f, 2.69f)
+                quadToRelative(1.57f, 1.64f, 6.3f, 5.58f)
                 close()
             }
         }.build()
