@@ -1135,7 +1135,14 @@
   <item component="ComponentInfo{com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity}" drawable="disneyplus" name="Disney+" />
   <item component="ComponentInfo{com.disneyplus.mea/com.hotstar.MainActivity}" drawable="disneyplus" name="Disney+" />
   <item component="ComponentInfo{com.application.zomato.district/com.application.zomato.gooutandroid.MainActivity}" drawable="district" name="District" />
+  <item component="ComponentInfo{ru.androidtools.djvureaderdocviewer/ru.androidtools.djvureaderdocviewer.activity.MainActivity}" drawable="google_docs" name="DjVu Reader &amp; Viewer" />
   <item component="ComponentInfo{in.dmart/in.dmart.splash.SplashActivity}" drawable="dmart_ready" name="DMart Ready" />
+  <item component="ComponentInfo{com.docx.reader.word.docx.document.office.free.viewer/com.trustedapp.pdfreader.ui.splash.SplashActivity}" drawable="google_docs" name="Doc Reader" />
+  <item component="ComponentInfo{com.docx.reader.word.docx.document.office.free.viewer/com.trustedapp.pdfreader.view.activity.SplashActivity}" drawable="google_docs" name="Doc Reader" />
+  <item component="ComponentInfo{docsreader.fileopener.word.office.offlineviewer/docsreader.fileopener.word.office.offlineviewer.Activities.WelcomeScreen}" drawable="google_docs" name="Docs Reader" />
+  <item component="ComponentInfo{word.office.docxviewer.document.docx.reader/word.office.docxviewer.document.docx.reader.ui.WelcomeAct}" drawable="google_docs" name="Docx Reader" />
+  <item component="ComponentInfo{com.skydot.docxreader.docx.docxviewer.document.doc.office.viewer.reader.word/com.skydot.docxreader.ui.ActivityMain}" drawable="google_docs" name="Docx Reader" />
+  <item component="ComponentInfo{com.skydot.docxreader.docx.docxviewer.document.doc.office.viewer.reader.word/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity}" drawable="google_docs" name="Docx Reader" />
   <item component="ComponentInfo{com.candywriter.doglife/com.unity3d.player.UnityPlayerActivity}" drawable="doglife" name="DogLife" />
   <item component="ComponentInfo{app.dogo.com.dogo_android/app.dogo.com.dogo_android.splashscreen.SplashActivity}" drawable="dogo" name="Dogo" />
   <item component="ComponentInfo{com.dolby/com.dolby.ds1appUI.MainActivity}" drawable="dolby" name="Dolby" />
@@ -1299,6 +1306,7 @@
   <item component="ComponentInfo{com.epicgames.portal/com.epicgames.portal.activities.main.MainActivity}" drawable="epic_games" name="Epic Games" />
   <item component="ComponentInfo{com.epicgames.portal/com.epicgames.portal.ui.MainActivity}" drawable="epic_games" name="Epic Games" />
   <item component="ComponentInfo{epson.print/epson.print.WellcomeScreenActivity}" drawable="generic_printer" name="Epson iPrint" />
+  <item component="ComponentInfo{de.jepfa.personaltasklogger/de.jepfa.personaltasklogger.MainActivity}" drawable="google_tasks" name="Everyday Tasks" />
   <item component="ComponentInfo{com.coolkit/com.coolkit.SplashActivity}" drawable="ewelink" name="eWeLink" />
   <item component="ComponentInfo{com.none.tom.exiferaser/com.none.tom.exiferaser.ExifEraserActivity}" drawable="exiferaser" name="ExifEraser" />
   <item component="ComponentInfo{exodusmovement.exodus/exodusmovement.exodus.MainActivity}" drawable="exodus" name="Exodus" />
@@ -1815,11 +1823,10 @@
   <item component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="google_docs" name="Google Docs" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.editors.kix.KixDocumentCreatorActivity}" drawable="google_docs" name="Google Docs" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.editors.kix.KixEditorActivity}" drawable="google_docs" name="Google Docs" />
+  <item component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.archive.ReactivateActivity}" drawable="google_docs" name="Google Docs" />
   <item component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.HomeScreenActivity}" drawable="google_drive" name="Google Drive" />
   <item component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.MainProxyActivity}" drawable="google_drive" name="Google Drive" />
   <item component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="google_drive" name="Google Drive" />
-  <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivity}" drawable="google_meet" name="Google Duo" />
-  <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivitySecondLauncher}" drawable="google_meet" name="Google Duo" />
   <item component="ComponentInfo{com.google.earth/com.google.android.apps.earth.flutter.EarthFlutterActivity}" drawable="google_earth" name="Google Earth" />
   <item component="ComponentInfo{com.google.earth/com.google.android.apps.earth.EarthActivity}" drawable="google_earth" name="Google Earth" />
   <item component="ComponentInfo{com.google.earth/com.google.earth.EarthActivity}" drawable="google_earth" name="Google Earth" />
@@ -1851,7 +1858,11 @@
   <item component="ComponentInfo{com.google.android.apps.mapslite/com.google.maps.lite.twa.MapsLiteTwaLauncherActivity}" drawable="maps" name="Google Maps" />
   <item component="ComponentInfo{com.google.android.apps.mapslite/org.chromium.webapk.shell_apk.MainActivity}" drawable="maps" name="Google Maps" />
   <item component="ComponentInfo{com.google.android.apps.meetings/com.google.android.apps.meetings.splash.SplashActivity}" drawable="google_meet" name="Google Meet" />
+  <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.archive.ReactivateActivity}" drawable="google_meet" name="Google Meet" />
+  <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivity}" drawable="google_meet" name="Google Meet" />
+  <item component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivitySecondLauncher}" drawable="google_meet" name="Google Meet" />
   <item component="ComponentInfo{com.google.android.apps.magazines/com.google.apps.dots.android.app.activity.CurrentsStartActivity}" drawable="google_news" name="Google News" />
+  <item component="ComponentInfo{com.google.android.apps.magazines/com.google.android.archive.ReactivateActivity}" drawable="google_news" name="Google News" />
   <item component="ComponentInfo{com.google.android.apps.subscriptions.red/com.google.android.apps.subscriptions.red.LauncherActivity}" drawable="google_one" name="Google One" />
   <item component="ComponentInfo{com.google.android.apps.paidtasks/com.google.android.apps.paidtasks.activity.LaunchActivity}" drawable="google_opinion_rewards" name="Google Opinion Rewards" />
   <item component="ComponentInfo{com.google.android.apps.paidtasks/com.google.android.apps.paidtasks.LaunchActivity}" drawable="google_opinion_rewards" name="Google Opinion Rewards" />
@@ -1876,13 +1887,20 @@
   <item component="ComponentInfo{com.google.android.play.games/com.google.android.gms.games.ui.destination.main.MainActivity}" drawable="google_play_games" name="Google Play Games" />
   <item component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}" drawable="google_play_store" name="Google Play Store" />
   <item component="ComponentInfo{com.android.vending/com.google.android.finsky.activities.PlayLauncherActivity}" drawable="google_play_store" name="Google Play Store" />
+  <item component="ComponentInfo{com.android.vending/org.lighthouseex.MainActivity}" drawable="google_play_store" name="Google Play Store" />
+  <item component="ComponentInfo{com.android.vending/com.squareup.leakcanary.internal.DisplayLeakActivity}" drawable="google_play_store" name="Google Play Store" />
+  <item component="ComponentInfo{com.android.vending/org.microg.vending.ui.MainActivity}" drawable="google_play_store" name="Google Play Store" />
+  <item component="ComponentInfo{com.android.vending/com.google.android.finsky.tvmainactivity.TvMainActivity}" drawable="google_play_store" name="Google Play Store" />
   <item component="ComponentInfo{com.google.android.apps.podcasts/com.google.android.apps.podcasts.PodcastsActivity}" drawable="google_podcasts" name="Google Podcasts" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.DocumentOpenerActivityProxy}" drawable="google_sheets" name="Google Sheets" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="google_sheets" name="Google Sheets" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.editors.kix.KixDocumentCreatorActivity}" drawable="google_sheets" name="Google Sheets" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.editors.kix.KixEditorActivity}" drawable="google_sheets" name="Google Sheets" />
+  <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.archive.ReactivateActivity}" drawable="google_sheets" name="Google Sheets" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.slides/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="google_slides" name="Google Slides" />
   <item component="ComponentInfo{com.google.android.apps.docs.editors.slides/com.google.android.apps.docs.editors.punch.PunchActivity}" drawable="google_slides" name="Google Slides" />
+  <item component="ComponentInfo{com.google.android.apps.docs.editors.slides/com.google.android.archive.ReactivateActivity}" drawable="google_slides" name="Google Slides" />
+  <item component="ComponentInfo{com.google.android.apps.tasks/com.google.android.archive.ReactivateActivity}" drawable="google_tasks" name="Google Tasks" />
   <item component="ComponentInfo{com.google.android.apps.tasks/com.google.android.apps.tasks.ui.TaskListsActivity}" drawable="google_tasks" name="Google Tasks" />
   <item component="ComponentInfo{com.google.android.apps.translate/.TranslateActivity}" drawable="google_translate" name="Google Translate" />
   <item component="ComponentInfo{com.google.android.apps.translate/com.google.android.apps.translate.HomeActivity}" drawable="google_translate" name="Google Translate" />
@@ -4428,6 +4446,7 @@
   <item component="ComponentInfo{com.google.android.apps.nbu.tinytask/com.google.android.apps.nbu.tinytask.MainActivity}" drawable="task_mate" name="Task Mate" />
   <item component="ComponentInfo{net.dinglisch.android.taskerm/com.joaomgcd.taskerm.util.ActivitySecondaryApp}" drawable="tasker" name="Tasker" />
   <item component="ComponentInfo{net.dinglisch.android.taskerm/net.dinglisch.android.taskerm.Tasker}" drawable="tasker" name="Tasker" />
+  <item component="ComponentInfo{com.vintia.taskflow/com.vintia.taskflow.MainActivity}" drawable="google_tasks" name="TaskFlow" />
   <item component="ComponentInfo{org.tasks/com.todoroo.astrid.activity.ShortcutActivity}" drawable="tasks" name="Tasks" />
   <item component="ComponentInfo{org.tasks/com.todoroo.astrid.activity.TaskListActivity.Amber}" drawable="tasks" name="Tasks" />
   <item component="ComponentInfo{org.tasks/com.todoroo.astrid.activity.TaskListActivity.BlueGrey}" drawable="tasks" name="Tasks" />
@@ -4526,6 +4545,7 @@
   <item component="ComponentInfo{com.appxy.tinyscanner/com.appxy.tinyscanfree.Activity_Start}" drawable="generic_scanner" name="Tiny Scanner" />
   <item component="ComponentInfo{ch.tkb.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="TKB TWINT" />
   <item component="ComponentInfo{com.tcl.android.video/com.tct.video.View.activities.VideoMainActivity}" drawable="generic_player" name="TLC Video" />
+  <item component="ComponentInfo{cn.super12138.todo/cn.super12138.todo.ui.activities.MainActivity}" drawable="google_tasks" name="To Do" />
   <item component="ComponentInfo{com.todoist/com.todoist.activity.HomeActivity}" drawable="todoist" name="Todoist" />
   <item component="ComponentInfo{com.todoist/com.todoist.alias.HomeActivityBlack}" drawable="todoist" name="Todoist" />
   <item component="ComponentInfo{com.todoist/com.todoist.alias.HomeActivityClover}" drawable="todoist" name="Todoist" />
