@@ -2125,6 +2125,8 @@
   <item component="ComponentInfo{at.nk.tools.iTranslate/com.sonicomobile.itranslate.app.activities.LaunchActivity}" drawable="generic_browser" name="iTranslate" />
   <item component="ComponentInfo{be.bmid.itsme/be.bmid.itsme.activities.application.Main}" drawable="itsme" name="Itsme" />
   <item component="ComponentInfo{com.ivoox.app/com.ivoox.app.ui.login.activity.LoginMainActivity}" drawable="ivoox" name="iVoox" />
+  <item component="ComponentInfo{com.ixigo/com.ixigo.DefaultSplashScreenActivity}" drawable="ixigo" name="ixigo" />
+  <item component="ComponentInfo{com.ixigo.train.ixitrain/com.ixigo.train.ixitrain.SplashScreenActivity}" drawable="ixigo_trains" name="ixigo Trains" />
   <item component="ComponentInfo{serakont.android.js/serakont.android.js.EditorActivity}" drawable="generic_braces" name="JavaScript For Android" />
   <item component="ComponentInfo{com.evenma.jbl/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="je_bois_local" name="Je Bois Local" />
   <item component="ComponentInfo{org.jellyfin.mobile/org.jellyfin.mobile.MainActivity}" drawable="jellyfin" name="Jellyfin" />
@@ -2862,8 +2864,11 @@
   <item component="ComponentInfo{com.nothing.games/com.nothing.games.MainActivity}" drawable="nothing_games" name="Nothing Games" />
   <item component="ComponentInfo{com.nothing.soundrecorder/com.android.soundrecorder.view.MainActivity}" drawable="nothing_recorder" name="Nothing Recorder" />
   <item component="ComponentInfo{com.nothing.soundrecorder/com.nothing.soundrecorder.ui.NewMainActivity}" drawable="nothing_recorder" name="Nothing Recorder" />
+  <item component="ComponentInfo{com.nothing.soundrecorder/com.nothing.soundrecorder.MainActivity}" drawable="nothing_recorder" name="Nothing Recorder" />
   <item component="ComponentInfo{com.nothing.soundrecorder/com.nothing.soundrecorder.view.MainActivity}" drawable="nothing_recorder" name="Nothing Recorder" />
   <item component="ComponentInfo{com.nothing.soundrecorder/com.nothing.ui.NewMainActivity}" drawable="nothing_recorder" name="Nothing Recorder" />
+  <item component="ComponentInfo{com.nothing.weather/com.nothing.weather.ui.main.MainActivity}" drawable="nothing_weather" name="Nothing Weather" />
+  <item component="ComponentInfo{com.nothing.weather/com.nothing.weather.main.ui.MainActivity}" drawable="nothing_weather" name="Nothing Weather" />
   <item component="ComponentInfo{com.nothing.smartcenter/com.nothing.smart.index.activity.WelcomeActivity}" drawable="nothing_x" name="Nothing X" />
   <item component="ComponentInfo{com.nothing.smartcenter/com.nothing.home.activity.WelcomeActivity}" drawable="nothing_x" name="Nothing X" />
   <item component="ComponentInfo{com.nothing.smartcenter/com.nothing.smartcenter.host.MainActivity}" drawable="nothing_x" name="Nothing X" />
@@ -3832,6 +3837,7 @@
   <item component="ComponentInfo{com.junkfood.seal.preview/com.junkfood.seal.MainActivity}" drawable="seal" name="Seal Preview" />
   <item component="ComponentInfo{rk.android.app.searchbarwidget/rk.android.app.searchbarwidget.activity.HomeActivity}" drawable="search_widget_material_you" name="Search Widget (Material You)" />
   <item component="ComponentInfo{com.companyname.andriodapp1/crc64c9fbd4a1c52464df.MainActivity}" drawable="seeker" name="Seeker" />
+  <item component="ComponentInfo{com.yablio.sendfilestotv/com.yablio.sendfilestotv.ui.MainActivity}" drawable="send_files_to_tv" name="Send Files To TV" />
   <item component="ComponentInfo{de.kai_morich.serial_bluetooth_terminal/de.kai_morich.serial_bluetooth_terminal.MainActivity}" drawable="generic_bluetooth" name="Serial Bluetooth Terminal" />
   <item component="ComponentInfo{network.loki.messenger.fdroid/network.loki.messenger.RoutingActivity}" drawable="session" name="Session" />
   <item component="ComponentInfo{network.loki.messenger/network.loki.messenger.RoutingActivity}" drawable="session" name="Session" />
@@ -4749,6 +4755,7 @@
   <item component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.gui.SendCrashActivity}" drawable="vlc" name="VLC" />
   <item component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.gui.tv.MainTvActivity}" drawable="vlc" name="VLC" />
   <item component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.StartActivity}" drawable="vlc" name="VLC" />
+  <item component="ComponentInfo{com.frontrow.vlog/com.frontrow.vlog.ui.splash.SplashActivity}" drawable="vn" name="VN" />
   <item component="ComponentInfo{com.first75.voicerecorder2/com.first75.voicerecorder2.ui.MainActivity}" drawable="generic_voice_recorder_waves" name="Voice Recorder" />
   <item component="ComponentInfo{com.first75.voicerecorder2/com.first75.voicerecorder2.ui.main.MainActivity}" drawable="generic_voice_recorder_waves" name="Voice Recorder" />
   <item component="ComponentInfo{com.splendapps.voicerec/com.splendapps.voicerec.MainActivity}" drawable="generic_microphone" name="Voice Recorder" />
