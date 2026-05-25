@@ -10,7 +10,7 @@ If you find errors or want to suggest improvements in the guide itself, create a
 
 The development of the core app is not done here. Monocons focuses on providing a curated set of icons and adapting the base project to our needs. The Lawnicons community (which includes everyone who wants to contribute) handles the core app development. The primary focus is on managing icons and the specific features that Monocons offers.
 
-[Lawnicons contributors](https://github.com/LawnchairLauncher/lawnicons/graphs/contributors) • [Monocons contributors](https://github.com/k4ustu3h/monocons/graphs/contributors) • [Lawnchair](https://github.com/LawnchairLauncher/lawnchair)
+[Lawnicons contributors](https://github.com/LawnchairLauncher/lawnicons/graphs/contributors) • [Monocons contributors](https://github.com/k4ustu3h/monocons-android/graphs/contributors) • [Lawnchair](https://github.com/LawnchairLauncher/lawnchair)
 
 **Development**
 
@@ -40,7 +40,7 @@ The Lawnicons contributors who laid the foundations: [GrabsterTV](https://github
 > The Monocons design guidelines are also available in Figma, you can practice there.  
 > [View in Figma](https://www.figma.com/community/file/1632857392429740665)
 
-[Common issues](https://github.com/k4ustu3h/monocons/blob/main/docs/images/common-issues-to-fix.png)
+[Common issues](https://github.com/k4ustu3h/monocons-android/blob/main/docs/images/common-issues-to-fix.png)
 
 ### Approach
 
@@ -54,7 +54,7 @@ Tips
 - Practice on easy-to-make icons to understand the whole process.
 - See how other contributors have made pull requests (PRs).
 
-[Merged PRs](https://github.com/k4ustu3h/monocons/pulls?q=is%3Apr+is%3Amerged+label%3Aicons)
+[Merged PRs](https://github.com/k4ustu3h/monocons-android/pulls?q=is%3Apr+is%3Amerged+label%3Aicons)
 
 ### Naming
 
@@ -261,7 +261,7 @@ This method is suitable if you are interested in installed apps that aren't supp
 4. Copy missing app IDs to clipboard.
 5. Save it wherever it's convenient.
 
-[Download Monocons](https://github.com/k4ustu3h/monocons#download)
+[Download Monocons](https://github.com/k4ustu3h/monocons-android#download)
 
 **Icon Request**
 
@@ -318,7 +318,7 @@ Tips
 - Add missing app IDs to icons that are identical to the originals.
 - Make sure your icons or missing app IDs haven't been added earlier: search the `appfilter.xml` and check PRs.
 
-[How to find app IDs](#how-to-find-app-ids) • [Icon contribution tools](#icon-contribution-tools) • [appfilter.xml](app/assets/appfilter.xml) • [PRs](https://github.com/k4ustu3h/monocons/pulls)
+[How to find app IDs](#how-to-find-app-ids) • [Icon contribution tools](#icon-contribution-tools) • [appfilter.xml](app/assets/appfilter.xml) • [PRs](https://github.com/k4ustu3h/monocons-android/pulls)
 
 ### Manual process
 

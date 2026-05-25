@@ -5,7 +5,7 @@ Thanks for your contribution!
 - You'll get a review within 2 weeks.
 - First-timers receive a brief review to confirm commitment.
 
-[Monocons design guidelines](https://github.com/k4ustu3h/monocons/blob/main/CONTRIBUTING.md#lawnicons-design-guidelines)
+[Monocons design guidelines](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#lawnicons-design-guidelines)
 
 ```
 Naming TL;DR
@@ -16,4 +16,4 @@ beijing_card.svg | 北京一卡通 ~~ Beijing Card
 a_and_w.svg | A&amp;W
 ```
 
-![](https://raw.githubusercontent.com/k4ustu3h/monocons/refs/heads/main/docs/images/common-issues-to-fix.png)
+![](https://raw.githubusercontent.com/k4ustu3h/monocons-android/refs/heads/main/docs/images/common-issues-to-fix.png)

@@ -21,6 +21,6 @@ import retrofit2.http.GET
 
 interface GitHubContributorsAPI {
 
-    @GET("repos/k4ustu3h/monocons/contributors")
+    @GET("repos/k4ustu3h/monocons-android/contributors")
     suspend fun getContributors(): List<GitHubContributor>
 }
