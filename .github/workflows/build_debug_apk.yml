@@ -32,7 +32,7 @@ jobs:
               - 'gradlew.bat'
               - 'svg-processor/**'
               - 'svgs/**'
-              
+
   build-debug-apk:
     runs-on: ubuntu-latest
     needs: check-paths
@@ -67,6 +67,29 @@ jobs:
           name: Debug APK
           path: app/build/outputs/apk/app/debug/*.apk
 
+  run-unit-tests:
+    runs-on: ubuntu-latest
+    needs: check-paths
+    if: needs.check-paths.outputs.skip_steps != 'true'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          cache-encryption-key: Da25KUVSE5jbGds2zXmfXw==
+      - name: Run unit tests
+        run: ./gradlew app:testDebugUnitTest
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Unit tests
+
   check-style:
     runs-on: ubuntu-latest
     needs: check-paths
@@ -84,7 +107,7 @@ jobs:
 
   send-notifications:
     runs-on: ubuntu-latest
-    needs: [ build-debug-apk, check-style, check-paths ]
+    needs: [ build-debug-apk, run-unit-tests, check-style, check-paths ]
     if: always() && needs.check-paths.result == 'success'
     steps:
       - uses: actions/checkout@v6
