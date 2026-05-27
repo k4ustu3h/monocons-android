@@ -10,8 +10,9 @@ import dev.zacsweers.metro.SingleIn
 @Inject
 class GitHubContributorsRepository(
     private val api: GitHubContributorsAPI,
+    private val contributorIds: List<Long> = coreContributorIds,
 ) {
     suspend fun getTopContributors() = api.getContributors()
-        .filterNot { coreContributorIds.contains(it.id) }
+        .filterNot { contributorIds.contains(it.id) }
         .sortedByDescending { it.contributions }
 }

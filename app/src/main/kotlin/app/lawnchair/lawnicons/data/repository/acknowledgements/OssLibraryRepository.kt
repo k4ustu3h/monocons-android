@@ -1,7 +1,21 @@
-package app.lawnchair.lawnicons.data.repository
+/*
+ * Copyright 2026 Lawnchair Launcher
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-import android.app.Application
-import app.lawnchair.lawnicons.data.kotlinxJson
+package app.lawnchair.lawnicons.data.repository.acknowledgements
+
 import app.lawnchair.lawnicons.data.model.OssLibrary
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
@@ -20,20 +34,14 @@ interface OssLibraryRepository {
 
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
-class OssLibraryRepositoryImpl(private val application: Application) : OssLibraryRepository {
+class OssLibraryRepositoryImpl(
+    private val dataSource: OssLibraryDataSource,
+) : OssLibraryRepository {
 
     private val coroutineScope = MainScope()
 
     override val ossLibraries: StateFlow<List<OssLibrary>> = flow {
-        val jsonString = application.resources.assets.open("licenses.json")
-            .bufferedReader().use { it.readText() }
-        val ossLibraries = kotlinxJson.decodeFromString<List<OssLibrary>>(jsonString)
-            .asSequence()
-            .distinctBy { "${it.groupId}:${it.artifactId}" }
-            .distinctBy { "${it.groupId}:${it.name}" } // Handle cases with same name but different artifactId.
-            .sortedBy { it.name }
-            .toList()
-        emit(ossLibraries)
+        emit(dataSource.getOssLibraries())
     }
         .flowOn(Dispatchers.IO)
         .stateIn(coroutineScope, SharingStarted.Lazily, emptyList())

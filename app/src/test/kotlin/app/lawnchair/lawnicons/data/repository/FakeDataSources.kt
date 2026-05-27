@@ -18,6 +18,8 @@ package app.lawnchair.lawnicons.data.repository
 
 import app.lawnchair.lawnicons.data.model.IconInfo
 import app.lawnchair.lawnicons.data.model.LabelAndComponent
+import app.lawnchair.lawnicons.data.model.OssLibrary
+import app.lawnchair.lawnicons.data.repository.acknowledgements.OssLibraryDataSource
 
 class FakeIconDataSource(
     private val icons: List<IconInfo> = defaultIcons,
@@ -53,6 +55,51 @@ class FakeIconDataSource(
                     LabelAndComponent("Alpha", "com.example.settings/.MainActivity"),
                 ),
                 drawableId = 13,
+            ),
+        )
+    }
+}
+
+
+class FakeOssLibraryDataSource(
+    private val libraries: List<OssLibrary> = defaultLibraries,
+) : OssLibraryDataSource {
+    override suspend fun getOssLibraries(): List<OssLibrary> = libraries
+
+    companion object {
+        val defaultLibraries = listOf(
+            OssLibrary(
+                groupId = "com.squareup.okhttp3",
+                artifactId = "okhttp",
+                version = "4.12.0",
+                name = "OkHttp",
+                scm = OssLibrary.Scm(url = "https://github.com/square/okhttp"),
+                spdxLicenses = listOf(OssLibrary.License(name = "Apache-2.0")),
+            ),
+            OssLibrary(
+                groupId = "org.jetbrains.kotlinx",
+                artifactId = "kotlinx-coroutines-core",
+                version = "1.8.0",
+                name = "Kotlinx Coroutines",
+                scm = OssLibrary.Scm(url = "https://github.com/Kotlin/kotlinx.coroutines"),
+                spdxLicenses = listOf(OssLibrary.License(name = "Apache-2.0")),
+            ),
+            OssLibrary(
+                groupId = "com.google.code.gson",
+                artifactId = "gson",
+                version = "2.10.1",
+                name = "Gson",
+                scm = OssLibrary.Scm(url = "https://github.com/google/gson"),
+                spdxLicenses = listOf(OssLibrary.License(name = "Apache-2.0")),
+            ),
+            // Duplicate groupId:artifactId — should be deduplicated by AssetOssLibraryDataSource.
+            OssLibrary(
+                groupId = "com.squareup.okhttp3",
+                artifactId = "okhttp",
+                version = "5.0.0-alpha",
+                name = "OkHttp",
+                scm = OssLibrary.Scm(url = "https://github.com/square/okhttp"),
+                spdxLicenses = listOf(OssLibrary.License(name = "Apache-2.0")),
             ),
         )
     }

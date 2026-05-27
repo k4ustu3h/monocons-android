@@ -20,9 +20,9 @@ import android.app.Application
 import app.lawnchair.lawnicons.data.api.IconRequestSettingsAPI
 import app.lawnchair.lawnicons.data.model.IconRequestSettings
 import app.lawnchair.lawnicons.data.repository.FakeIconDataSource
+import app.lawnchair.lawnicons.data.repository.FakeIconDataSource.Companion.defaultIcons
 import app.lawnchair.lawnicons.data.repository.InMemoryPreferenceStore
 import app.lawnchair.lawnicons.data.repository.PreferenceManager
-import app.lawnchair.lawnicons.data.repository.defaultIcons
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
