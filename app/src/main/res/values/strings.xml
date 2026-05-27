@@ -106,8 +106,8 @@
 
     <!-- Split button -->
 
-    <!-- Button to request icons -->
-    <string name="request_icons_button">Request</string>
+    <!-- Button to send email -->
+    <string name="send_email">Send email</string>
     <!-- Accessibility action to show the options sheet -->
     <string name="show_options_sheet">Show options sheet</string>
 

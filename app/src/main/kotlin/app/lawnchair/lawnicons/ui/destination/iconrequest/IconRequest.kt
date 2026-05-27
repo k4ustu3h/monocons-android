@@ -33,7 +33,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.BottomAppBarDefaults
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
@@ -86,7 +85,6 @@ import app.lawnchair.lawnicons.ui.components.core.SimpleListRow
 import app.lawnchair.lawnicons.ui.theme.adaptiveSurfaceColor
 import app.lawnchair.lawnicons.ui.theme.adaptiveSurfaceContainerColor
 import app.lawnchair.lawnicons.ui.theme.icon.Copy
-import app.lawnchair.lawnicons.ui.theme.icon.IconRequest
 import app.lawnchair.lawnicons.ui.theme.icon.KeyboardArrowDown
 import app.lawnchair.lawnicons.ui.theme.icon.LawnIcons
 import app.lawnchair.lawnicons.ui.theme.icon.Save
@@ -284,13 +282,7 @@ private fun IconRequestButton(
                     onClick = onRequest,
                     enabled = enabled,
                 ) {
-                    Icon(
-                        imageVector = LawnIcons.IconRequest,
-                        modifier = Modifier.size(SplitButtonDefaults.LeadingIconSize),
-                        contentDescription = null,
-                    )
-                    Spacer(Modifier.size(ButtonDefaults.IconSpacing))
-                    Text(stringResource(R.string.request_icons_button))
+                    Text(stringResource(R.string.send_email))
                 }
             },
             trailingButton = {
