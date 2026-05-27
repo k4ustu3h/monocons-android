@@ -23,6 +23,7 @@ import androidx.compose.material3.rememberTooltipState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -39,9 +40,16 @@ import app.lawnchair.lawnicons.ui.util.PreviewLawnicons
 import app.lawnchair.lawnicons.ui.util.PreviewProviders
 import app.lawnchair.lawnicons.ui.util.visitUrl
 
+private data class ToolbarItem(
+    val icon: ImageVector,
+    val labelRes: Int,
+    val contentDescriptionRes: Int = labelRes,
+    val onClick: () -> Unit,
+)
+
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-fun BoxScope.HomeBottomToolbar(
+fun BoxScope.HomeBottomBar(
     showIconRequests: Boolean,
     onNavigateToAbout: () -> Unit,
     onNavigateToIconRequest: () -> Unit,
@@ -51,6 +59,40 @@ fun BoxScope.HomeBottomToolbar(
     modifier: Modifier = Modifier,
 ) {
     val context = LocalContext.current
+
+    val toolbarItems = listOf(
+        ToolbarItem(
+            icon = LawnIcons.Discord,
+            labelRes = R.string.discord,
+            onClick = { context.visitUrl(Constants.DISCORD) },
+        ),
+        ToolbarItem(
+            icon = LawnIcons.Github,
+            labelRes = R.string.github,
+            onClick = { context.visitUrl(Constants.GITHUB) },
+        ),
+        ToolbarItem(
+            icon = LawnIcons.OpenCollective,
+            labelRes = R.string.open_collective,
+            onClick = { context.visitUrl(Constants.OPEN_COLLECTIVE) },
+        ),
+        ToolbarItem(
+            icon = LawnIcons.IconRequest,
+            labelRes = R.string.request_icons,
+            onClick = {
+                if (showIconRequests) {
+                    onNavigateToIconRequest()
+                } else {
+                    onIconRequestUnavailable()
+                }
+            },
+        ),
+        ToolbarItem(
+            icon = LawnIcons.About,
+            labelRes = R.string.about,
+            onClick = onNavigateToAbout,
+        ),
+    )
 
     HorizontalFloatingToolbar(
         expanded = true,
@@ -70,83 +112,17 @@ fun BoxScope.HomeBottomToolbar(
             }
         },
         content = {
-            SimpleTooltipBox(
-                label = stringResource(id = R.string.discord),
-            ) {
-                IconButton(
-                    onClick = {
-                        context.visitUrl(Constants.DISCORD)
-                    },
+            toolbarItems.forEach { item ->
+                SimpleTooltipBox(
+                    label = stringResource(id = item.labelRes),
                 ) {
-                    Icon(
-                        imageVector = LawnIcons.Discord,
-                        contentDescription = stringResource(id = R.string.github),
-                        modifier = Modifier.requiredSize(24.dp),
-                    )
-                }
-            }
-
-            SimpleTooltipBox(
-                label = stringResource(id = R.string.github),
-            ) {
-                IconButton(
-                    onClick = {
-                        context.visitUrl(Constants.GITHUB)
-                    },
-                ) {
-                    Icon(
-                        imageVector = LawnIcons.Github,
-                        contentDescription = stringResource(id = R.string.github),
-                        modifier = Modifier.requiredSize(24.dp),
-                    )
-                }
-            }
-
-            SimpleTooltipBox(
-                label = stringResource(id = R.string.open_collective),
-            ) {
-                IconButton(
-                    onClick = {
-                        context.visitUrl(Constants.OPEN_COLLECTIVE)
-                    },
-                ) {
-                    Icon(
-                        imageVector = LawnIcons.OpenCollective,
-                        contentDescription = stringResource(id = R.string.github),
-                        modifier = Modifier.requiredSize(24.dp),
-                    )
-                }
-            }
-
-            SimpleTooltipBox(
-                label = stringResource(R.string.request_icons),
-            ) {
-                IconButton(
-                    onClick = {
-                        if (showIconRequests) {
-                            onNavigateToIconRequest()
-                        } else {
-                            onIconRequestUnavailable()
-                        }
-                    },
-                ) {
-                    Icon(
-                        imageVector = LawnIcons.IconRequest,
-                        contentDescription = stringResource(id = R.string.request_icons),
-                        modifier = Modifier.requiredSize(24.dp),
-                    )
-                }
-            }
-
-            SimpleTooltipBox(
-                label = stringResource(id = R.string.about),
-            ) {
-                IconButton(onClick = onNavigateToAbout) {
-                    Icon(
-                        imageVector = LawnIcons.About,
-                        contentDescription = stringResource(id = R.string.about),
-                        modifier = Modifier.requiredSize(24.dp),
-                    )
+                    IconButton(onClick = item.onClick) {
+                        Icon(
+                            imageVector = item.icon,
+                            contentDescription = stringResource(id = item.contentDescriptionRes),
+                            modifier = Modifier.requiredSize(24.dp),
+                        )
+                    }
                 }
             }
         },
@@ -196,10 +172,10 @@ private fun SimpleTooltipBoxPreview() {
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @PreviewLawnicons
 @Composable
-private fun HomeBottomToolbarPreview() {
+private fun HomeBottomBarPreview() {
     PreviewProviders {
         Box {
-            HomeBottomToolbar(
+            HomeBottomBar(
                 showIconRequests = true,
                 onNavigateToAbout = {},
                 onNavigateToIconRequest = {},

@@ -58,7 +58,7 @@ import app.lawnchair.lawnicons.R
 import app.lawnchair.lawnicons.data.model.IconInfoModel
 import app.lawnchair.lawnicons.data.model.SearchMode
 import app.lawnchair.lawnicons.ui.components.AnnouncementList
-import app.lawnchair.lawnicons.ui.components.home.HomeBottomToolbar
+import app.lawnchair.lawnicons.ui.components.home.HomeBottomBar
 import app.lawnchair.lawnicons.ui.components.home.HomeTopBar
 import app.lawnchair.lawnicons.ui.components.home.NewIconsCard
 import app.lawnchair.lawnicons.ui.components.home.PlaceholderUI
@@ -70,6 +70,7 @@ import app.lawnchair.lawnicons.ui.util.PreviewLawnicons
 import app.lawnchair.lawnicons.ui.util.PreviewProviders
 import app.lawnchair.lawnicons.ui.util.SampleData
 import dev.zacsweers.metrox.viewmodel.metroViewModel
+import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
@@ -234,7 +235,7 @@ private fun HomeScreen(
 
                     val string = stringResource(R.string.icon_requests_fulfilled)
 
-                    HomeBottomToolbar(
+                    HomeBottomBar(
                         scrollBehavior = scrollBehavior,
                         showIconRequests = uiState.hasIconRequests,
                         onNavigateToAbout = navigateActions.toAbout,
@@ -261,7 +262,7 @@ private fun HomeScreen(
             }
 
             LaunchedEffect(homeSearchUiState.textFieldState.text) {
-                delay(300)
+                delay(300.milliseconds)
                 actions.searchIcons(homeSearchUiState.textFieldState.text.toString())
             }
         } else {
