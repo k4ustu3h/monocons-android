@@ -84,11 +84,6 @@ jobs:
           cache-encryption-key: Da25KUVSE5jbGds2zXmfXw==
       - name: Run unit tests
         run: ./gradlew app:testDebugUnitTest
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          name: Unit tests
 
   check-style:
     runs-on: ubuntu-latest
