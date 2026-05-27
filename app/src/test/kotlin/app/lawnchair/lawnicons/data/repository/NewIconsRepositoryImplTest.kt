@@ -90,12 +90,10 @@ class NewIconsRepositoryImplTest {
             return icons
         }
 
-        fun awaitStarted(timeoutMs: Long = 2_000L): Boolean =
-            started.await(timeoutMs, TimeUnit.MILLISECONDS)
+        fun awaitStarted(timeoutMs: Long = 2_000L): Boolean = started.await(timeoutMs, TimeUnit.MILLISECONDS)
 
         fun unblock() {
             unblock.countDown()
         }
     }
 }
-

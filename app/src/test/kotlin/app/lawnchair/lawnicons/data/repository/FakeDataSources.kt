@@ -60,7 +60,6 @@ class FakeIconDataSource(
     }
 }
 
-
 class FakeOssLibraryDataSource(
     private val libraries: List<OssLibrary> = defaultLibraries,
 ) : OssLibraryDataSource {

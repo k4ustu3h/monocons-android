@@ -41,17 +41,16 @@ class IconRequestRepositoryImplTest {
     }
 
     @Test
-    fun `refresh sets isEnabled true when force preference is enabled and api is disabled`() =
-        runTest {
-            val repository = createRepository(
-                forceEnable = true,
-                api = StaticIconRequestSettingsApi(enabled = false),
-            )
+    fun `refresh sets isEnabled true when force preference is enabled and api is disabled`() = runTest {
+        val repository = createRepository(
+            forceEnable = true,
+            api = StaticIconRequestSettingsApi(enabled = false),
+        )
 
-            repository.refresh()
+        repository.refresh()
 
-            assertTrue(repository.isEnabled.value)
-        }
+        assertTrue(repository.isEnabled.value)
+    }
 
     @Test
     fun `refresh sets isEnabled true when api fails and force preference is enabled`() = runTest {
@@ -66,32 +65,30 @@ class IconRequestRepositoryImplTest {
     }
 
     @Test
-    fun `refresh sets isEnabled false when api is disabled and force preference is disabled`() =
-        runTest {
-            val repository = createRepository(
-                forceEnable = false,
-                api = StaticIconRequestSettingsApi(enabled = false),
-            )
+    fun `refresh sets isEnabled false when api is disabled and force preference is disabled`() = runTest {
+        val repository = createRepository(
+            forceEnable = false,
+            api = StaticIconRequestSettingsApi(enabled = false),
+        )
 
-            repository.refresh()
+        repository.refresh()
 
-            assertFalse(repository.isEnabled.value)
-        }
+        assertFalse(repository.isEnabled.value)
+    }
 
     @Test
-    fun `refresh sets empty iconRequestList when icon sources fail in JVM unit test environment`() =
-        runTest {
-            val repository = createRepository(
-                forceEnable = false,
-                api = StaticIconRequestSettingsApi(enabled = false),
-            )
+    fun `refresh sets empty iconRequestList when icon sources fail in JVM unit test environment`() = runTest {
+        val repository = createRepository(
+            forceEnable = false,
+            api = StaticIconRequestSettingsApi(enabled = false),
+        )
 
-            repository.refresh()
+        repository.refresh()
 
-            val model = repository.iconRequestList.value
-            assertEquals(0, model?.iconCount)
-            assertTrue(model?.list?.isEmpty() == true)
-        }
+        val model = repository.iconRequestList.value
+        assertEquals(0, model?.iconCount)
+        assertTrue(model?.list?.isEmpty() == true)
+    }
 
     private fun createRepository(
         forceEnable: Boolean,

@@ -41,18 +41,17 @@ class GitHubContributorsRepositoryTest {
     // Ids that simulate coreContributorIds in production without importing Compose/R sources.
     private val coreIds = listOf(10L, 20L, 30L)
 
-    private fun repository(contributors: List<GitHubContributor>) =
-        GitHubContributorsRepository(
-            api = FakeGitHubContributorsApi(contributors),
-            contributorIds = coreIds,
-        )
+    private fun repository(contributors: List<GitHubContributor>) = GitHubContributorsRepository(
+        api = FakeGitHubContributorsApi(contributors),
+        contributorIds = coreIds,
+    )
 
     @Test
     fun `getTopContributors filters out core contributor ids`() = runTest {
         val contributors = listOf(
             contributor(id = 10L, contributions = 100), // core, should be excluded
-            contributor(id = 20L, contributions = 90),  // core, should be excluded
-            contributor(id = 99L, contributions = 50),  // community, should be included
+            contributor(id = 20L, contributions = 90), // core, should be excluded
+            contributor(id = 99L, contributions = 50), // community, should be included
         )
 
         val result = repository(contributors).getTopContributors()
@@ -103,19 +102,18 @@ class GitHubContributorsRepositoryTest {
     }
 
     @Test
-    fun `getTopContributors includes contributors with equal contribution counts in stable order`() =
-        runTest {
-            val contributors = listOf(
-                contributor(id = 1L, login = "alice", contributions = 10),
-                contributor(id = 2L, login = "bob", contributions = 10),
-                contributor(id = 3L, login = "carol", contributions = 10),
-            )
+    fun `getTopContributors includes contributors with equal contribution counts in stable order`() = runTest {
+        val contributors = listOf(
+            contributor(id = 1L, login = "alice", contributions = 10),
+            contributor(id = 2L, login = "bob", contributions = 10),
+            contributor(id = 3L, login = "carol", contributions = 10),
+        )
 
-            val result = repository(contributors).getTopContributors()
+        val result = repository(contributors).getTopContributors()
 
-            assertEquals(3, result.size)
-            assertEquals(listOf(10, 10, 10), result.map { it.contributions })
-        }
+        assertEquals(3, result.size)
+        assertEquals(listOf(10, 10, 10), result.map { it.contributions })
+    }
 
     private class FakeGitHubContributorsApi(
         private val contributors: List<GitHubContributor>,
@@ -129,4 +127,3 @@ class GitHubContributorsRepositoryTest {
         }
     }
 }
-

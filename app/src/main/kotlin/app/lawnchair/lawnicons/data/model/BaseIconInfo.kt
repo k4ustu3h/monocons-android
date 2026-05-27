@@ -71,8 +71,7 @@ data class Component(
 
     override fun hashCode() = packageName.hashCode() + className.hashCode()
 
-    override fun compareTo(other: Component) =
-        compareValuesBy(this, other, Component::packageName, Component::className)
+    override fun compareTo(other: Component) = compareValuesBy(this, other, Component::packageName, Component::className)
 
     companion object {
         fun unflattenFromString(str: String): Component? {
