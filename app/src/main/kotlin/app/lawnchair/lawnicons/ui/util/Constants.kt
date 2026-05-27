@@ -6,6 +6,7 @@ object Constants {
     const val GITHUB = WEBSITE + "lawnicons/"
     const val DISCORD = WEBSITE + "discord/"
     const val OPEN_COLLECTIVE = WEBSITE + "open-collective/"
+    const val ICON_REQUEST_DASHBOARD = WEBSITE + "lawnicons-dashboard/"
 
     const val ICON_PICKER_INTENT_ACTION = "com.novalauncher.THEME"
 }

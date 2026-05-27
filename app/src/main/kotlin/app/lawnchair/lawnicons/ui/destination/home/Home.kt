@@ -60,7 +60,6 @@ import app.lawnchair.lawnicons.data.model.SearchMode
 import app.lawnchair.lawnicons.ui.components.AnnouncementList
 import app.lawnchair.lawnicons.ui.components.home.HomeBottomBar
 import app.lawnchair.lawnicons.ui.components.home.HomeTopBar
-import app.lawnchair.lawnicons.ui.components.home.NewIconsCard
 import app.lawnchair.lawnicons.ui.components.home.PlaceholderUI
 import app.lawnchair.lawnicons.ui.components.home.iconpreview.AppBarListItem
 import app.lawnchair.lawnicons.ui.components.home.iconpreview.IconPreviewGrid
@@ -217,13 +216,6 @@ private fun HomeScreen(
                                 onLongClick = navigateActions.toDebugMenu,
                             )
                         }
-                        if (uiState.hasNewIcons) {
-                            item(
-                                span = { GridItemSpan(maxLineSpan) },
-                            ) {
-                                NewIconsCard(navigateActions.toNewIcons)
-                            }
-                        }
                         if (uiState.announcements.isNotEmpty()) {
                             item(
                                 span = { GridItemSpan(maxLineSpan) },
@@ -238,6 +230,8 @@ private fun HomeScreen(
                     HomeBottomBar(
                         scrollBehavior = scrollBehavior,
                         showIconRequests = uiState.hasIconRequests,
+                        showNewIcons = uiState.hasNewIcons,
+                        onNavigateToNewIcons = navigateActions.toNewIcons,
                         onNavigateToAbout = navigateActions.toAbout,
                         onNavigateToIconRequest = navigateActions.toIconRequest,
                         onIconRequestUnavailable = {
