@@ -76,3 +76,5 @@ You can help with issues. Please refer to our guidelines.
 
 - [Lawnicons](https://github.com/LawnchairLauncher/lawnicons)
 - [RKicons](https://github.com/RadekBledowski/rkicons) - The first Lawnicons fork that restored the original icons.
+- [Material Symbols](https://fonts.google.com/icons)
+- [Simple Icons](https://simpleicons.org/)

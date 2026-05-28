@@ -169,8 +169,10 @@
   <item component="ComponentInfo{com.google.android.projection.gearhead/com.google.android.gearhead.vanagon.VnLaunchPadActivity}" drawable="android_auto" name="Android Auto" />
   <item component="ComponentInfo{com.google.android.projection.gearhead/com.google.android.projection.gearhead.companion.SplashScreenActivity}" drawable="android_auto" name="Android Auto" />
   <item component="ComponentInfo{com.google.android.apps.betterbug/com.google.android.apps.betterbug.bugslist.BugsListActivity}" drawable="android_beta_feedback" name="Android Beta Feedback" />
+  <item component="ComponentInfo{com.arumcomm.settingsshortcut/com.common.ad.cmp.CmpMainActivity}" drawable="settings" name="Android Hidden Settings" />
   <item component="ComponentInfo{com.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.framework.core.LauncherActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
   <item component="ComponentInfo{com.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
+  <item component="ComponentInfo{com.frandro.quicksettings/com.common.ad.cmp.CmpMainActivity}" drawable="settings" name="Android Quick Settings" />
   <item component="ComponentInfo{com.github.mueller_ma.viewandroidversion/com.github.mueller_ma.viewandroidversion.MainActivity}" drawable="generic_shell" name="Android version" />
   <item component="ComponentInfo{com.rovio.baba/rovio.baba.facebook.AbbaUnityActivity}" drawable="angry_birds_2" name="Angry Birds 2" />
   <item component="ComponentInfo{com.rovio.baba/com.unity3d.player.UnityPlayerActivity}" drawable="angry_birds_2" name="Angry Birds 2" />
@@ -188,9 +190,11 @@
   <item component="ComponentInfo{de.aok.digen/de.aok.digen.auth.AokRamenEHealthIdAuthActivity}" drawable="generic_heart" name="AOK Mein Leben" />
   <item component="ComponentInfo{com.android.diales/com.android.diales.main.impl.MainActivity}" drawable="generic_dialer" name="AOSP Dialer" />
   <item component="ComponentInfo{com.iamnbty.apkextractor/com.iamnbty.apkextractor.activity.MainActivity}" drawable="generic_shell" name="APK Extractor" />
+  <item component="ComponentInfo{com.haibison.apksigner/app.activities.MainActivity}" drawable="settings" name="apk-signer" />
   <item component="ComponentInfo{com.apkmirror.helper.prod/com.apkmirror.presentation.start.StartActivity}" drawable="apkmirror_installer" name="APKMirror Installer" />
   <item component="ComponentInfo{com.apkupdater/com.apkupdater.ui.activity.MainActivity}" drawable="apkupdater" name="APKUpdater" />
   <item component="ComponentInfo{com.apollo.patientapp/com.apollopatient.MainActivity}" drawable="apollo_247" name="Apollo 247" />
+  <item component="ComponentInfo{com.bluckapps.appinfomanager/com.bluckapps.appinfomanager.ui.MainActivity}" drawable="settings" name="App Info Manager" />
   <item component="ComponentInfo{foundation.e.apps/foundation.e.apps.MainActivity}" drawable="app_lounge" name="App Lounge" />
   <item component="ComponentInfo{io.github.muntashirakon.AppManager/io.github.muntashirakon.AppManager.main.MainActivity}" drawable="app_manager" name="App Manager" />
   <item component="ComponentInfo{io.github.muntashirakon.AppManager/io.github.muntashirakon.AppManager.main.SplashActivity}" drawable="app_manager" name="App Manager" />
@@ -1296,6 +1300,7 @@
   <item component="ComponentInfo{im.vector.app/im.vector.app.features.MainActivity}" drawable="element" name="Element" />
   <item component="ComponentInfo{im.vector.app/im.vector.application.features.Alias}" drawable="element" name="Element" />
   <item component="ComponentInfo{im.vector.app/im.vector.riotx.features.Alias}" drawable="element" name="Element" />
+  <item component="ComponentInfo{io.element.enterprise/io.element.android.x.MainActivity}" drawable="element_x" name="Element Pro" />
   <item component="ComponentInfo{io.element.android.x.debug/io.element.android.x.MainActivity}" drawable="element_x" name="Element X" />
   <item component="ComponentInfo{io.element.android.x/io.element.android.x.MainActivity}" drawable="element_x" name="Element X" />
   <item component="ComponentInfo{com.android.email/com.wps.multiwindow.main.HomeActivity}" drawable="generic_email" name="Email" />
@@ -1986,6 +1991,8 @@
   <item component="ComponentInfo{com.heytap.music/com.allsaints.music.ui.splash.SplashActivity}" drawable="heytap_music" name="HeyTap Music" />
   <item component="ComponentInfo{com.heytap.music/com.nearme.music.local.ui.LocalMusicActivity}" drawable="heytap_music" name="HeyTap Music" />
   <item component="ComponentInfo{com.heytap.music/com.nearme.music.splash.SplashActivity}" drawable="heytap_music" name="HeyTap Music" />
+  <item component="ComponentInfo{com.jami.tool.hiddensetting/com.xiaopandream.hiddensetting.MainActivity}" drawable="settings" name="Hidden Settings" />
+  <item component="ComponentInfo{com.jami.tool.hiddensetting/com.mobileandroid.tools.hidden.settings.features.access.master.SplashActivity}" drawable="settings" name="Hidden Settings" />
   <item component="ComponentInfo{com.calculator.hideu/com.calculator.hideu.SplashActivity}" drawable="generic_calculator_minus_multi_plus_equal" name="HideU" />
   <item component="ComponentInfo{com.calculator.hideu/com.calculator.hideu.SplashActivity9}" drawable="generic_calculator_minus_multi_plus_equal" name="HideU" />
   <item component="ComponentInfo{com.calculator.hideu/com.calculator.hideu.SplashActivity2}" drawable="generic_calculator_minus_multi_plus_equal" name="HideU" />
@@ -2727,6 +2734,7 @@
   <item component="ComponentInfo{net.omobio.airtelsc/net.omobio.airtelsc.activities.HomeActivity}" drawable="myairtel" name="My Airtel" />
   <item component="ComponentInfo{net.omobio.airtelsc/net.omobio.airtelsc.activity.splash.SplashScreen}" drawable="myairtel" name="My Airtel" />
   <item component="ComponentInfo{net.omobio.airtelsc/net.omobio.airtelsc.ui.splash.SplashActivity}" drawable="myairtel" name="My Airtel" />
+  <item component="ComponentInfo{devicesettings.deviceinfo.compass.qibla.testmydevice/devicesettings.deviceinfo.compass.qibla.testmydevice.activity.SplashActivity}" drawable="settings" name="My Device Setting" />
   <item component="ComponentInfo{com.mitsubishimotors.mymitsubishiconnect/com.mitsubishimotors.mymitsubishiconnect.MainActivity2}" drawable="my_mitsubishi_connect" name="My Mitsubishi Connect" />
   <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.base}" drawable="my_pixel" name="My Pixel" />
   <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7}" drawable="my_pixel" name="My Pixel" />
@@ -3839,19 +3847,25 @@
   <item component="ComponentInfo{com.companyname.andriodapp1/crc64c9fbd4a1c52464df.MainActivity}" drawable="seeker" name="Seeker" />
   <item component="ComponentInfo{com.yablio.sendfilestotv/com.yablio.sendfilestotv.ui.MainActivity}" drawable="send_files_to_tv" name="Send Files To TV" />
   <item component="ComponentInfo{de.kai_morich.serial_bluetooth_terminal/de.kai_morich.serial_bluetooth_terminal.MainActivity}" drawable="generic_bluetooth" name="Serial Bluetooth Terminal" />
+  <item component="ComponentInfo{com.weberdo.apps.serviceinfo/com.weberdo.apps.serviceinfo.MainActivity}" drawable="settings" name="Services Info" />
   <item component="ComponentInfo{network.loki.messenger.fdroid/network.loki.messenger.RoutingActivity}" drawable="session" name="Session" />
   <item component="ComponentInfo{network.loki.messenger/network.loki.messenger.RoutingActivity}" drawable="session" name="Session" />
   <item component="ComponentInfo{iu.mwzaewevvr/wC.x}" drawable="generic_shell" name="Settings" />
+  <item component="ComponentInfo{app.wizyemm.settings/app.wizyemm.settings.MainActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{ayfsuu.vc.rzd/s.V.t96}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.framework.activity.HtcSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.HWSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.MainSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.Settings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com_android_settings_applicationsettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.internal.app.ResolverActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.kc_settings.common.LauncherActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.kc_settings.LauncherActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.ApplicationSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.bluetooth.BluetoothSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.DisplaySettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.dual.DualManagerAppActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.FaceUnlockSettingActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.fingerprint.FingerprintSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.fingerprint.YLFingerprintMainActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.FireFlyMobile}" drawable="settings" name="Settings" />
@@ -3861,6 +3875,7 @@
   <item component="ComponentInfo{com.android.settings/com.android.settings.GridSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.HotspotSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.HWSettings}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.jrdTethering.JrdTetherSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.KeypadActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.KstFaceLockActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.LavaOtaActivity}" drawable="settings" name="Settings" />
@@ -3875,6 +3890,7 @@
   <item component="ComponentInfo{com.android.settings/com.android.settings.MiuiPasswordGuardActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.MiuiSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.MlehoySettings}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.mokee.helper.activities.MoKeeForum}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.mokee.helper.activities.TipsHelp}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.MySettingsActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.OntimSettingsActivity}" drawable="settings" name="Settings" />
@@ -3915,6 +3931,7 @@
   <item component="ComponentInfo{com.android.settings/com.android.settings.SettingsTabStyle}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.SimCardManagement}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.sudamod.LocationLookup}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.SugarKeyStart}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.SystemActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.TabbedSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.TabSettings}" drawable="settings" name="Settings" />
@@ -3927,8 +3944,10 @@
   <item component="ComponentInfo{com.android.settings/com.android.settings.usagemanager.UsageManagerActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.UsageManager}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.wfd.WifiDisplayEnableActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.wfd.WifiDisplaySettingsActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.wifi.hotspot.TetherWifiSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.magcomm.powersave.SurperPowerLauncher}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.meizu.settings.ContainerActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.miui.securitycenter.Main}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.oppo.settings.SettingsActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.transsion.faq.activity.MainActivity}" drawable="settings" name="Settings" />
@@ -4683,6 +4702,7 @@
   <item component="ComponentInfo{uno.platform.calculator/crc6426eaf249022d8948.MainActivity}" drawable="generic_calculator_plus_minus_multi_equal" name="Uno Calculator" />
   <item component="ComponentInfo{com.uphold.wallet/com.uphold.wallet.MainActivity}" drawable="uphold" name="Uphold" />
   <item component="ComponentInfo{me.arianb.usb_hid_client/me.arianb.usb_hid_client.MainActivity}" drawable="generic_keyboard" name="USB HID Client" />
+  <item component="ComponentInfo{com.android.wantjoin.settings/com.android.wantjoin.settings.childmodel.users.KIDOZActivity}" drawable="settings" name="UserSettings" />
   <item component="ComponentInfo{com.vancedapp.huawei/io.awesome.gagtube.activities.SplashActivity}" drawable="generic_player" name="V" />
   <item component="ComponentInfo{org.kde.vakzination/org.qtproject.qt.android.bindings.QtActivity}" drawable="generic_shell" name="Vakzination" />
   <item component="ComponentInfo{ch.vab.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="Valiant TWINT" />
@@ -4745,6 +4765,7 @@
   <item component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadio}" drawable="generic_fm_radio" name="vivo FM Radio" />
   <item component="ComponentInfo{com.vivo.gallery/com.android.gallery3d.vivo.GalleryTabActivity}" drawable="generic_gallery" name="vivo Gallery" />
   <item component="ComponentInfo{com.vivo.notes/com.vivo.notes.Notes}" drawable="generic_notes" name="vivo Notes" />
+  <item component="ComponentInfo{com.vivo.setting.android/com.iapp.app.logoActivity}" drawable="settings" name="vivo Settings" />
   <item component="ComponentInfo{com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.DefaultIcon}" drawable="vkontakte" name="VK" />
   <item component="ComponentInfo{com.vkontakte.android/com.vkontakte.android.activities.LaunchActivity}" drawable="vkontakte" name="VK" />
   <item component="ComponentInfo{com.vkontakte.android/com.vkontakte.android.MainActivity}" drawable="vkontakte" name="VK" />
