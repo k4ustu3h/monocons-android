@@ -1259,6 +1259,7 @@
   <item component="ComponentInfo{com.duckduckgo.mobile.android/com.duckduckgo.app.onboarding.ui.OnboardingActivity}" drawable="duckduckgo" name="DuckDuckGo" />
   <item component="ComponentInfo{com.duckduckgo.mobile.android/com.duckduckgo.mobile.android.activity.DuckDuckGo}" drawable="duckduckgo" name="DuckDuckGo" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.LaunchActivity}" drawable="duolingo" name="Duolingo" />
+  <item component="ComponentInfo{com.duolingo/com.duolingo.app.SeasonalLauncher2}" drawable="duolingo" name="Duolingo" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.LoginActivity}" drawable="duolingo" name="Duolingo" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakSocietyLauncher}" drawable="duolingo_streak" name="Duolingo" />
   <item component="ComponentInfo{com.duolingo/com.google.android.archive.ReactivateActivity}" drawable="duolingo" name="Duolingo" />
@@ -2196,6 +2197,7 @@
   <item component="ComponentInfo{com.kunzisoft.keepass.libre/com.kunzisoft.keepass.fileselect.FileSelectActivity}" drawable="keepassdx" name="KeePassDX" />
   <item component="ComponentInfo{com.kunzisoft.keepass.libre/com.kunzisoft.keepass.KeePass}" drawable="keepassdx" name="KeePassDX" />
   <item component="ComponentInfo{com.kunzisoft.keepass.libre/com.kunzisoft.keepass.password.PasswordActivity}" drawable="keepassdx" name="KeePassDX" />
+  <item component="ComponentInfo{com.github.capntrips.kernelflasher/com.github.capntrips.kernelflasher.MainActivity}" drawable="kernel_flasher" name="Kernel Flasher" />
   <item component="ComponentInfo{me.weishu.kernelsu/me.weishu.kernelsu.ui.MainActivity}" drawable="kernelsu" name="KernelSU" />
   <item component="ComponentInfo{dilwda.oeqtnt.oumigs/dilwda.oeqtnt.oumigs.ui.MainActivity}" drawable="kernelsu" name="KernelSU" />
   <item component="ComponentInfo{com.rifsxd.ksunext/com.rifsxd.ksunext.ui.MainActivity}" drawable="kernelsu_next" name="KernelSU Next" />
@@ -2384,6 +2386,8 @@
   <item component="ComponentInfo{net.blumia.pineapple.lockscreen.oss/net.blumia.pineapple.lockscreen.shortcuts.LockScreenShortcut}" drawable="generic_lock" name="Lock (Pineapple Lock Screen)" />
   <item component="ComponentInfo{com.olalab.lockscreen/com.olalab.lockscreen.MainActivity}" drawable="generic_lock" name="Lock Screen" />
   <item component="ComponentInfo{com.iodkols.onekeylockscreen/com.iodkols.onekeylockscreen.LockScreen}" drawable="generic_power" name="Lock Screen" />
+  <item component="ComponentInfo{com.dp.logcatapp/com.dp.logcatapp.activities.SplashActivity}" drawable="logcat_reader" name="Logcat Reader" />
+  <item component="ComponentInfo{com.dp.logcatapp/com.dp.logcatapp.activities.MainActivity}" drawable="logcat_reader" name="Logcat Reader" />
   <item component="ComponentInfo{com.longint.lomag.scanner.pay/com.longint.lomag.scanner.MainActivity}" drawable="generic_qr_reader" name="LoMag Data Scanner" />
   <item component="ComponentInfo{loopring.defi.wallet/loopring.defi.wallet.activity.wallet.SplashActivity}" drawable="loopring_wallet" name="Loopring Wallet" />
   <item component="ComponentInfo{st.soundboard.sirenpranksound/st.soundboard.sirenpranksound.MainActivity}" drawable="loud_horns_and_sirens" name="Loud Horns and Sirens" />
