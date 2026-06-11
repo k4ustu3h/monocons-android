@@ -16,7 +16,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     # Only run on user for testing
-    if: github.event.pull_request.user.name == 'x9136'
+    if: ${{ github.event.pull_request.user.login == 'x9136' }}
     steps:
       - name: Wait for checklist comment
         id: wait_checklist
