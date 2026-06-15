@@ -439,9 +439,12 @@ class ConsoleOutput(OutputHandler):
 
         # 3. Printing Logic
         print(f"\n{report.file_path}", file=self.dest)
+        for r in report.results:
             if not self.verbose and r.status == Status.PASS:
                 continue
 
+            color = self.COLORS.get(r.status, "")
+            timing = f" ({r.duration_ms:.1f} ms)" if self.verbose else ""
             print(
                 f"  [{color}{r.status.name:6}{self.RESET}] [{r.category}: {r.id}] {r.message}{timing}",
                 file=self.dest,

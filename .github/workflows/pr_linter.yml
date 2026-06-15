@@ -1,7 +1,7 @@
 name: Icon Linter
 
 on:
-  pull_request:
+  pull_request_target:
     branches: [ develop ]
     types: [ opened, synchronize, reopened ]
     paths:
@@ -21,11 +21,13 @@ jobs:
       - name: Wait for checklist comment
         id: wait_checklist
         uses: actions/github-script@v9
+        env:
+          EXCLUDED_USERS: ${{ vars.EXCLUDED_USERS }}    
         with:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const issue_number = context.issue.number;
+            const issue_number = context.payload.pull_request.number;
             const marker = "<!-- icon-checklist-posted -->";
             const maxAttempts = 24;  // 24 * 5s = 2 minutes
             const sleepMs = 5000;
@@ -53,9 +55,18 @@ jobs:
             core.setOutput("checklist_found", String(found));
             if (!found) core.warning("Checklist comment not found before timeout; continuing anyway.");
 
-      - name: Checkout Repository
+      - name: Checkout trusted base code
         uses: actions/checkout@v6
         with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted
+          fetch-depth: 0 # Needed to compare with base branch
+
+      - name: Checkout PR merge snapshot
+        uses: actions/checkout@v6
+        with:
+          ref: refs/pull/${{ github.event.pull_request.number }}/merge
+          path: pr
           fetch-depth: 0 # Needed to compare with base branch
 
       - name: Set up Python
@@ -64,10 +75,10 @@ jobs:
           python-version: '3.14'
 
       - name: Install Dependencies
-        run: pip install -r .github/scripts/requirements.txt
+        run: pip install -r trusted/.github/scripts/requirements.txt
 
       - name: Run Linter and Post Comment
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: python .github/scripts/bot_orchestrator.py
+        run: python trusted/.github/scripts/bot_orchestrator.py --repo-dir pr
