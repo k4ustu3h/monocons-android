@@ -1,5 +1,5 @@
 # TODO: Add signing key and build app bundle
-name: Build release APK
+name: Build release APKs
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
         required: false
 
 jobs:
-  build-release-apk:
+  build-release-apks:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -36,10 +36,23 @@ jobs:
           fi
       - name: Assign needed environment variables
         run: echo "CUSTOM_TAG=${{ github.event.inputs.customTag }}" >> $GITHUB_ENV
-      - name: Build release APK
-        run: ./gradlew clean app:assembleRelease
-      - name: Upload artifact
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Prepare Offline Data for Izzy
+        run: |
+          pip install Pillow
+          python download_contributor_data.py
+      - name: Build release APKs
+        run: ./gradlew clean assembleAppRelease assembleIzzyRelease
+      - name: Upload artifacts
         uses: actions/upload-artifact@v6
         with:
-          name: Release APK
+          name: App Release APK
           path: app/build/outputs/apk/app/release/*.apk
+      - name: Upload Izzy Artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: Izzy Release APK
+          path: app/build/outputs/apk/izzy/release/*.apk
