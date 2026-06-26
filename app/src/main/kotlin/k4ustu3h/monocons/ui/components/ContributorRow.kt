@@ -6,6 +6,7 @@ import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItemShapes
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
@@ -17,6 +18,7 @@ import k4ustu3h.monocons.ui.components.core.ListRowDefaults
 import k4ustu3h.monocons.ui.components.core.SimpleListRow
 import k4ustu3h.monocons.ui.theme.icon.Check
 import k4ustu3h.monocons.ui.theme.icon.Monocons
+import k4ustu3h.monocons.ui.util.AvatarLoader
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders
 import k4ustu3h.monocons.ui.util.visitUrl
@@ -25,6 +27,7 @@ import k4ustu3h.monocons.ui.util.visitUrl
 @Composable
 fun ContributorRow(
     name: String,
+    id: Long,
     photoUrl: String,
     shapes: ListItemShapes,
     modifier: Modifier = Modifier,
@@ -49,10 +52,13 @@ fun ContributorRow(
             if (LocalInspectionMode.current) {
                 Icon(imageVector = Monocons.Check, contentDescription = null)
             } else {
+                val imageModel = remember(id, photoUrl, context) {
+                    AvatarLoader.getAvatarModel(context, id, photoUrl)
+                }
                 AsyncImage(
                     contentDescription = name,
                     model = ImageRequest.Builder(context = LocalContext.current)
-                        .data(data = photoUrl).crossfade(enable = true).build(),
+                        .data(data = imageModel).crossfade(enable = true).build(),
                     modifier = Modifier
                         .size(32.dp)
                         .clip(CircleShape),
@@ -73,6 +79,7 @@ private fun ContributorRowPreview() {
     PreviewProviders {
         ContributorRow(
             name = "User",
+            id = 49553711,
             photoUrl = "https://lawnchair.app/images/lawnchair.png",
             description = "The Lawnchair Logo",
             shapes = ListRowDefaults.singleItemShapes,

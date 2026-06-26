@@ -22,6 +22,8 @@ import dev.zacsweers.metro.SingleIn
 import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.api.GitHubContributorsAPI
 import k4ustu3h.monocons.data.kotlinxJson
+import k4ustu3h.monocons.data.model.GitHubContributor
+import k4ustu3h.monocons.util.isIzzyBuild
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
@@ -33,10 +35,14 @@ interface GithubApiModule {
     @Provides
     @SingleIn(LawniconsScope::class)
     fun providesGitHubContributorsApi(): GitHubContributorsAPI {
-        return Retrofit.Builder()
-            .baseUrl("https://api.github.com/")
-            .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
-            .build()
-            .create()
+        return if (!isIzzyBuild) {
+            Retrofit.Builder().baseUrl("https://api.github.com/")
+                .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
+                .build().create()
+        } else {
+            object : GitHubContributorsAPI {
+                override suspend fun getContributors(): List<GitHubContributor> = emptyList()
+            }
+        }
     }
 }

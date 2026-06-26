@@ -19,6 +19,7 @@ package k4ustu3h.monocons.ui.destination.about
 data class Contributor(
     val name: String,
     val username: String? = null,
+    val id: Long,
     val photoUrl: String,
     val socialUrl: String? = null,
     val descriptionRes: Int? = null,

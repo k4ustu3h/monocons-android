@@ -25,7 +25,10 @@ import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.api.AnnouncementsAPI
 import k4ustu3h.monocons.data.api.IconRequestSettingsAPI
 import k4ustu3h.monocons.data.kotlinxJson
+import k4ustu3h.monocons.data.model.Announcements
+import k4ustu3h.monocons.data.model.IconRequestSettings
 import k4ustu3h.monocons.ui.util.Constants
+import k4ustu3h.monocons.util.isIzzyBuild
 import okhttp3.Cache
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
@@ -43,22 +46,38 @@ interface WebsiteApiModule {
         val cacheSize = 5L * 1024 * 1024 // 5 MB
         val cache = Cache(File(application.cacheDir, "http_cache"), cacheSize)
 
-        return OkHttpClient.Builder().cache(cache).build()
+        return if (!isIzzyBuild) {
+            OkHttpClient.Builder().cache(cache).build()
+        } else {
+            OkHttpClient.Builder().build()
+        }
     }
 
     @Provides
     @SingleIn(LawniconsScope::class)
     fun providesWebsiteIconRequestApi(client: OkHttpClient): IconRequestSettingsAPI {
-        return Retrofit.Builder().baseUrl(Constants.WEBSITE).client(client)
-            .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
-            .build().create()
+        return if (!isIzzyBuild) {
+            Retrofit.Builder().baseUrl(Constants.WEBSITE).client(client)
+                .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
+                .build().create()
+        } else {
+            object : IconRequestSettingsAPI {
+                override suspend fun getIconRequestSettings() = IconRequestSettings(enabled = false)
+            }
+        }
     }
 
     @Provides
     @SingleIn(LawniconsScope::class)
     fun providesWebsiteAnnouncementsApi(client: OkHttpClient): AnnouncementsAPI {
-        return Retrofit.Builder().baseUrl(Constants.WEBSITE).client(client)
-            .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
-            .build().create()
+        return if (!isIzzyBuild) {
+            Retrofit.Builder().baseUrl(Constants.WEBSITE).client(client)
+                .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
+                .build().create()
+        } else {
+            object : AnnouncementsAPI {
+                override suspend fun getAnnouncements(cacheControl: String) = Announcements(announcements = emptyList())
+            }
+        }
     }
 }

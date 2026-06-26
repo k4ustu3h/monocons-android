@@ -28,6 +28,7 @@ import k4ustu3h.monocons.data.model.IconRequestModel
 import k4ustu3h.monocons.data.model.SystemIconInfo
 import k4ustu3h.monocons.data.repository.PreferenceManager
 import k4ustu3h.monocons.data.repository.home.getIconInfo
+import k4ustu3h.monocons.util.isIzzyBuild
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -69,11 +70,16 @@ class IconRequestRepositoryImpl(
     override suspend fun refresh() {
         withContext(Dispatchers.IO) {
             val enabledDeferred = async {
-                val apiEnabled = try {
-                    api.getIconRequestSettings().enabled
-                } catch (_: Exception) {
+                val apiEnabled = if (!isIzzyBuild) {
+                    try {
+                        api.getIconRequestSettings().enabled
+                    } catch (_: Exception) {
+                        false
+                    }
+                } else {
                     false
                 }
+
                 val forceEnabled = preferenceManager.forceEnableIconRequest.get()
                 apiEnabled || forceEnabled
             }

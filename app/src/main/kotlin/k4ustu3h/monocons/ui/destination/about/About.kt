@@ -163,6 +163,7 @@ private fun About(
             ) { index, it ->
                 ContributorRow(
                     name = it.name,
+                    id = it.id,
                     photoUrl = it.photoUrl,
                     profileUrl = it.socialUrl,
                     divider = index != coreContributors.lastIndex,
@@ -182,6 +183,7 @@ private fun About(
             ) { index, it ->
                 ContributorRow(
                     name = it.name,
+                    id = it.id,
                     photoUrl = it.photoUrl,
                     profileUrl = it.socialUrl,
                     divider = index != monoconsContributors.lastIndex,
@@ -211,6 +213,7 @@ private fun About(
             ) { index, it ->
                 ContributorRow(
                     name = it.name,
+                    id = it.id,
                     photoUrl = it.photoUrl,
                     profileUrl = it.username?.let { "https://github.com/$it" },
                     description = it.descriptionRes?.let { stringResource(id = it) },
@@ -268,6 +271,7 @@ private val coreContributors = listOf(
     Contributor(
         name = "Suphon T.",
         username = "paphonb",
+        id = 8080853,
         photoUrl = "https://avatars.githubusercontent.com/u/8080853",
         socialUrl = "https://x.com/paphonb",
         descriptionRes = R.string.contribution_core,
@@ -275,6 +279,7 @@ private val coreContributors = listOf(
     Contributor(
         name = "SuperDragonXD",
         username = "SuperDragonXD",
+        id = 70206496,
         photoUrl = "https://avatars.githubusercontent.com/u/70206496",
         socialUrl = "https://github.com/SuperDragonXD",
         descriptionRes = R.string.contribution_core,
@@ -282,6 +287,7 @@ private val coreContributors = listOf(
     Contributor(
         name = "Patryk Radziszewski",
         username = "Chefski",
+        id = 100310118,
         photoUrl = "https://avatars.githubusercontent.com/u/100310118",
         socialUrl = "https://github.com/Chefski",
         descriptionRes = R.string.contribution_icons,
@@ -289,6 +295,7 @@ private val coreContributors = listOf(
     Contributor(
         name = "Gleb",
         username = "x9136",
+        id = 60105060,
         photoUrl = "https://avatars.githubusercontent.com/u/60105060",
         socialUrl = "https://github.com/x9136",
         descriptionRes = R.string.contribution_icons,
@@ -296,6 +303,7 @@ private val coreContributors = listOf(
     Contributor(
         name = "Grabster",
         username = "Grabstertv",
+        id = 49114212,
         photoUrl = "https://avatars.githubusercontent.com/u/49114212",
         socialUrl = "https://x.com/grabstertv",
         descriptionRes = R.string.contribution_icons,
@@ -303,6 +311,7 @@ private val coreContributors = listOf(
     Contributor(
         name = "Zongle Wang",
         username = "Goooler",
+        id = 10363352,
         photoUrl = "https://avatars.githubusercontent.com/u/10363352",
         socialUrl = "https://github.com/Goooler",
         descriptionRes = R.string.contribution_infra,
@@ -313,6 +322,7 @@ private val monoconsContributors = listOf(
     Contributor(
         name = "Kaustubh Ladiya",
         username = "k4ustu3h",
+        id = 49553711,
         photoUrl = "https://avatars.githubusercontent.com/u/49553711",
         socialUrl = "https://k4ustu3h.vercel.app/",
         descriptionRes = R.string.contribution_core,
@@ -322,6 +332,8 @@ private val monoconsContributors = listOf(
 private val specialThanks = listOf(
     Contributor(
         name = "Radek Bledowski",
+        username = "RadekBledowski",
+        id = 22264125,
         photoUrl = "https://avatars.githubusercontent.com/u/22264125",
         socialUrl = "https://x.com/rkbdi",
         descriptionRes = R.string.special_thanks_restoration,

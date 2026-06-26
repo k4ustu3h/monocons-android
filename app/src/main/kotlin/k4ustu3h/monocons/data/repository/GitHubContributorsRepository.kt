@@ -1,9 +1,14 @@
 package k4ustu3h.monocons.data.repository
 
+import android.app.Application
 import dev.zacsweers.metro.Inject
 import dev.zacsweers.metro.SingleIn
 import k4ustu3h.monocons.LawniconsScope
+import k4ustu3h.monocons.R
 import k4ustu3h.monocons.data.api.GitHubContributorsAPI
+import k4ustu3h.monocons.data.model.GitHubContributor
+import k4ustu3h.monocons.util.isIzzyBuild
+import kotlinx.serialization.json.Json
 
 val coreContributorIds = listOf(
     // Remove Patryk from contributors list, as per https://t.me/lawnchairci/1557
@@ -30,7 +35,25 @@ val coreContributorIds = listOf(
 @Inject
 class GitHubContributorsRepository(
     private val api: GitHubContributorsAPI,
+    private val application: Application,
 ) {
-    suspend fun getTopContributors() = api.getContributors().filterNot { coreContributorIds.contains(it.id) }
-        .sortedByDescending { it.contributions }
+    private val jsonParser = Json { ignoreUnknownKeys = true }
+
+    suspend fun getTopContributors(): List<GitHubContributor> {
+        return if (isIzzyBuild) {
+            val jsonString =
+                application.resources.openRawResource(R.raw.contributors).bufferedReader()
+                    .use { it.readText() }
+
+            if (jsonString.isBlank() || jsonString.trim() == "[]") {
+                emptyList()
+            } else {
+                jsonParser.decodeFromString<List<GitHubContributor>>(jsonString)
+                    .filter { it.id !in coreContributorIds }.sortedByDescending { it.contributions }
+            }
+        } else {
+            api.getContributors().filter { it.id !in coreContributorIds }
+                .sortedByDescending { it.contributions }
+        }
+    }
 }

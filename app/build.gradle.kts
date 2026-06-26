@@ -74,8 +74,18 @@ android {
             dimension = "product"
             resValue("string", "apps_name", "Monocons")
         }
+        create("izzy") {
+            dimension = "product"
+            resValue("string", "apps_name", "Monocons")
+            applicationIdSuffix = ".izzy"
+        }
     }
+
     sourceSets.getByName("app") {
+        res.directories.add("src/runtime/res")
+    }
+
+    sourceSets.getByName("izzy") {
         res.directories.add("src/runtime/res")
     }
 
@@ -98,6 +108,17 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+androidComponents {
+    beforeVariants(selector().all()) { variantBuilder ->
+        val flavorName = variantBuilder.productFlavors.firstOrNull()?.second
+        val buildTypeName = variantBuilder.buildType
+
+        if (flavorName == "izzy" && buildTypeName != "release") {
+            variantBuilder.enable = false
+        }
     }
 }
 
