@@ -20,6 +20,6 @@ __pycache__/
 .vscode/
 .vsc/
 
-# Contributors' avatars
-/app/src/izzy/res
-app/src/izzy/res/raw/contributors.json
+# Contributors' data
+app/assets/contributors.json
+app/src/izzy/res

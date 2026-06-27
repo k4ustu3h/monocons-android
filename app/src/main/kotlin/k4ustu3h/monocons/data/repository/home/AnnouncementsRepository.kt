@@ -20,16 +20,11 @@ import dev.zacsweers.metro.Inject
 import dev.zacsweers.metro.SingleIn
 import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.api.AnnouncementsAPI
-import k4ustu3h.monocons.util.isIzzyBuild
 
 @SingleIn(LawniconsScope::class)
 @Inject
 class AnnouncementsRepository(
     private val api: AnnouncementsAPI,
 ) {
-    suspend fun getAnnouncements() = if (!isIzzyBuild) {
-        api.getAnnouncements().announcements
-    } else {
-        emptyList()
-    }
+    suspend fun getAnnouncements() = api.getAnnouncements().announcements
 }

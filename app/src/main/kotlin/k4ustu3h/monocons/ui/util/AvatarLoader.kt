@@ -8,11 +8,11 @@ import k4ustu3h.monocons.util.isIzzyBuild
 @SuppressLint("DiscouragedApi")
 object AvatarLoader {
     fun getAvatarModel(context: Context, id: Long, remoteUrl: String): Any {
-        if (!isIzzyBuild) {
+        if (isIzzyBuild) {
             val safeName = "avatar_u$id"
             val resId = context.resources.getIdentifier(safeName, "drawable", context.packageName)
 
-            return if (resId != 0) resId else R.drawable.ic_launcher_foreground
+            return if (resId != 0) resId else R.drawable.ic_launcher_monochrome
         }
         return remoteUrl
     }

@@ -4,7 +4,7 @@ import urllib.request
 from PIL import Image
 
 API_URL = "https://api.github.com/repos/k4ustu3h/monocons-android/contributors"
-RAW_DIR = "app/src/izzy/res/raw"
+RAW_DIR = "app/assets"
 DRAWABLE_DIR = "app/src/izzy/res/drawable"
 
 EXTRA_AVATARS = [

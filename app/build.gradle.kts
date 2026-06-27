@@ -86,6 +86,7 @@ android {
     }
 
     sourceSets.getByName("izzy") {
+        assets.directories.add("assets")
         res.directories.add("src/runtime/res")
     }
 
@@ -120,9 +121,7 @@ androidComponents {
             variantBuilder.enable = false
         }
     }
-}
 
-androidComponents {
     onVariants { variant ->
         variant.outputs.forEach { output ->
             // TODO: https://github.com/android/gradle-recipes/blob/cbe7c7dea2a3f5b1764756f24bf453d1235c80e2/listenToArtifacts/README.md
