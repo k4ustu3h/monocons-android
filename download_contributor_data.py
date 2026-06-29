@@ -44,7 +44,7 @@ def download_offline_data():
 
         safe_name = f"avatar_u{user_id}"
         temp_path = os.path.join(DRAWABLE_DIR, f"{safe_name}.tmp")
-        final_path = os.path.join(DRAWABLE_DIR, f"{safe_name}.png")
+        final_path = os.path.join(DRAWABLE_DIR, f"{safe_name}.webp")
 
         try:
             print(f"Downloading ID {user_id}...")
@@ -54,7 +54,13 @@ def download_offline_data():
                     f.write(img_response.read())
 
             with Image.open(temp_path) as img:
-                img.save(final_path, "PNG")
+                if img.mode in ("RGBA", "P"):
+                    img = img.convert("RGBA")
+
+                img.thumbnail((128, 128), Image.Resampling.LANCZOS)
+
+                img.save(final_path, "WEBP", quality=80)
+
             os.remove(temp_path)
 
         except Exception as e:
