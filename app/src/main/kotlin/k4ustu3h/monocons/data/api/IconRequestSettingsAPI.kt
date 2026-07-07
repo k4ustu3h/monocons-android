@@ -20,6 +20,6 @@ import k4ustu3h.monocons.data.model.IconRequestSettings
 import retrofit2.http.GET
 
 interface IconRequestSettingsAPI {
-    @GET("monocons-request/settings.json")
+    @GET("request/settings.json")
     suspend fun getIconRequestSettings(): IconRequestSettings
 }

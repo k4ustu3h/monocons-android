@@ -2,8 +2,8 @@ package k4ustu3h.monocons.ui.util
 
 object Constants {
 
-    const val ICON_REQUEST_EMAIL = "lawnrequest@gmail.com"
-    const val WEBSITE = "https://lawnchair.app/"
+    const val ICON_REQUEST_EMAIL = "monoconsrequest@gmail.com"
+    const val WEBSITE = "https://monocons.vercel.app/"
     const val GITHUB = "https://github.com/k4ustu3h/monocons-android"
     const val LAWNICONS_VERSION = "2.17.1"
 
