@@ -77,7 +77,7 @@ class IconRequestRepositoryImpl(
                         false
                     }
                 } else {
-                    false
+                    true
                 }
 
                 val forceEnabled = preferenceManager.forceEnableIconRequest.get()
