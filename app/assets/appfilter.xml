@@ -213,6 +213,13 @@
   <item component="ComponentInfo{io.github.muntashirakon.AppManager/io.github.muntashirakon.AppManager.main.SplashActivity}" drawable="app_manager" name="App Manager" />
   <item component="ComponentInfo{net.pnhdroid.appsearch/net.pnhdroid.appsearch.search.SearchActivity}" drawable="generic_search" name="App Search" />
   <item component="ComponentInfo{com.a0soft.gphone.uninstaller/com.a0soft.gphone.uninstaller.free.MainWnd}" drawable="app_usage" name="App Usage" />
+  <item component="ComponentInfo{com.mi.android.globalminusscreen/com.mi.android.globalminusscreen.tab.MainActivity_icon_1}" drawable="app_vault" name="App Vault" />
+  <item component="ComponentInfo{com.mi.globalminusscreen/com.mi.globalminusscreen.LauncherAlias}" drawable="app_vault" name="App Vault" />
+  <item component="ComponentInfo{com.mi.android.globalminusscreen/com.mi.android.globalminusscreen.tab.MainActivity_icon_4}" drawable="app_vault" name="App Vault" />
+  <item component="ComponentInfo{com.mi.android.globalminusscreen/com.mi.android.globalminusscreen.tab.MainActivity_icon_6}" drawable="app_vault" name="App Vault" />
+  <item component="ComponentInfo{com.mi.globalminusscreen/com.mi.globalminusscreen.MainActivity}" drawable="app_vault" name="App Vault" />
+  <item component="ComponentInfo{com.mi.android.globalminusscreen/com.mi.android.globalminusscreen.tab.MainActivity_icon_31}" drawable="app_vault" name="App Vault" />
+  <item component="ComponentInfo{com.mi.android.globalminusscreen/com.mi.android.globalminusscreen.tab.MainActivity}" drawable="app_vault" name="App Vault" />
   <item component="ComponentInfo{com.huawei.appmarket/com.huawei.appmarket.MainActivity}" drawable="app_gallery" name="AppGallery" />
   <item component="ComponentInfo{com.appkb.android.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="APPKB TWINT" />
   <item component="ComponentInfo{com.apple.android.music/.onboarding.activities.SplashActivity}" drawable="apple_music" name="Apple Music" />
@@ -1098,6 +1105,7 @@
   <item component="ComponentInfo{com.dashlane/com.dashlane.ui.activities.SplashScreenActivity}" drawable="dashlane" name="Dashlane" />
   <item component="ComponentInfo{com.drnoob.datamonitor/com.drnoob.datamonitor.ui.activities.SetupActivity}" drawable="data_monitor" name="Data Monitor" />
   <item component="ComponentInfo{com.dbna.app/com.dbna.app.MainActivity}" drawable="dbna" name="DBNA" />
+  <item component="ComponentInfo{com.wb.goog.dc.dcwc/com.wb.goog.dc.dcwc.CustomActivity}" drawable="dc_worlds_collide" name="DC Worlds Collide" />
   <item component="ComponentInfo{com.sunilpaulmathew.debloater/com.sunilpaulmathew.debloater.activities.StartActivity}" drawable="de_bloater" name="De-Bloater" />
   <item component="ComponentInfo{com.deepl.mobiletranslator/com.deepl.mobiletranslator.MainActivity}" drawable="deepl" name="DeepL" />
   <item component="ComponentInfo{com.example.deeplviewer/com.example.deeplviewer.MainActivity}" drawable="deepl" name="DeepL" />
@@ -1300,6 +1308,7 @@
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher3ExclamationMarks}" drawable="duolingo" name="Duolingo‼️" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakSaverLauncherExclamationMarks}" drawable="duolingo" name="Duolingo‼️" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakSaverLauncherAlarmClock}" drawable="duolingo" name="Duolingo⏰" />
+  <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1Snowflake}" drawable="duolingo" name="Duolingo❄️" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakSaverLauncher3Eyes}" drawable="duolingo" name="Duolingo👀" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1Siren}" drawable="duolingo" name="Duolingo🚨" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1FrozenFace}" drawable="duolingo" name="Duolingo🥶" />
@@ -4429,6 +4438,10 @@
   <item component="ComponentInfo{com.sonymobile.androidapp.audiorecorder/com.sonymobile.androidapp.audiorecorder.activity.MainActivity}" drawable="generic_microphone" name="Sony Audio Recorder" />
   <item component="ComponentInfo{com.sony.songpal.mdr/com.scee.psxandroid.activity.TopActivity}" drawable="sony_headphones_connect" name="Sony Headphones Connect" />
   <item component="ComponentInfo{com.sony.songpal.mdr/com.sony.songpal.mdr.vim.activity.MdrMainActivity}" drawable="sony_headphones_connect" name="Sony Headphones Connect" />
+  <item component="ComponentInfo{com.sonyliv/com.razpay.apk.HaipeeKnk}" drawable="sony_liv" name="Sony LIV" />
+  <item component="ComponentInfo{com.sonyliv/tv.accedo.via.android.app.splash.InitializationActivity}" drawable="sony_liv" name="Sony LIV" />
+  <item component="ComponentInfo{com.sonyliv/com.sonyliv.ui.splash.SplashActivity}" drawable="sony_liv" name="Sony LIV" />
+  <item component="ComponentInfo{com.sonyliv/com.sonyliv.splash.SplashActivity}" drawable="sony_liv" name="Sony LIV" />
   <item component="ComponentInfo{com.sonyericsson.music/com.sonyericsson.music.MusicActivity}" drawable="sony_music" name="Sony Music" />
   <item component="ComponentInfo{com.sonyericsson.music/com.sonyericsson.music.PlayerActivity}" drawable="sony_music" name="Sony Music" />
   <item component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.app.DialtactsActivity}" drawable="generic_dialer" name="Sony Phone" />
@@ -4633,16 +4646,50 @@
   <item component="ComponentInfo{com.tcl.tct.calculator/com.tct.calculator.activity.CalculatorActivity}" drawable="generic_calculator_plus_minus_multi_equal" name="TCL Calculator" />
   <item component="ComponentInfo{com.tcl.compass/com.jrdcom.compass.CompassMainActivity}" drawable="generic_compass" name="TCL Compass" />
   <item component="ComponentInfo{com.microsoft.teams/com.microsoft.skype.teams.Launcher}" drawable="microsoft_teams" name="Teams" />
-  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivityRocketIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramSpotify}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.MonetIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.CloudIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DarkIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.market.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MaterialIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MerioIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MusheenIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.NeonIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.NoxIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.OldSchoolIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.RainbowIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.SpaceIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.TurboIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.VintageIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.CloudIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DarkIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MaterialIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MerioIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MusheenIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.NeonIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.OldSchoolIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.RainbowIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.SpaceIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.TurboIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.NoxIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.VintageIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.min.n.MainActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenges/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenges/org.telegram.messenger.TurboIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenges/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.google.android.archive.ReactivateActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.thunderdog.challegram/org.thunderdog.challegram.MainActivity}" drawable="telegram_x" name="Telegram X" />
   <item component="ComponentInfo{org.thunderdog.challegramtwo/org.thunderdog.challegram.MainActivity}" drawable="telegram_x" name="Telegram X" />
