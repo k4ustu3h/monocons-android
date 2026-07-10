@@ -17,13 +17,13 @@
 package k4ustu3h.monocons.ui.destination.acknowledgements
 
 import androidx.lifecycle.ViewModel
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoMap
 import dev.zacsweers.metrox.viewmodel.ViewModelKey
-import k4ustu3h.monocons.LawniconsScope
-import k4ustu3h.monocons.data.repository.OssLibraryRepository
+import k4ustu3h.monocons.data.repository.acknowledgements.OssLibraryRepository
 
-@ViewModelKey(AcknowledgementsViewModel::class)
-@ContributesIntoMap(LawniconsScope::class)
+@ViewModelKey
+@ContributesIntoMap(AppScope::class)
 class AcknowledgementsViewModel(
     ossLibraryRepository: OssLibraryRepository,
 ) : ViewModel() {

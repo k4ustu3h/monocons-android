@@ -59,9 +59,8 @@ import k4ustu3h.monocons.R
 import k4ustu3h.monocons.data.model.IconInfoModel
 import k4ustu3h.monocons.data.model.SearchMode
 import k4ustu3h.monocons.ui.components.AnnouncementList
-import k4ustu3h.monocons.ui.components.home.HomeBottomToolbar
+import k4ustu3h.monocons.ui.components.home.HomeBottomBar
 import k4ustu3h.monocons.ui.components.home.HomeTopBar
-import k4ustu3h.monocons.ui.components.home.NewIconsCard
 import k4ustu3h.monocons.ui.components.home.PlaceholderUI
 import k4ustu3h.monocons.ui.components.home.iconpreview.AppBarListItem
 import k4ustu3h.monocons.ui.components.home.iconpreview.IconPreviewGrid
@@ -70,6 +69,7 @@ import k4ustu3h.monocons.ui.components.home.search.rememberSearchState
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders
 import k4ustu3h.monocons.ui.util.SampleData
+import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
@@ -216,13 +216,6 @@ private fun HomeScreen(
                                 onLongClick = navigateActions.toDebugMenu,
                             )
                         }
-                        if (uiState.hasNewIcons) {
-                            item(
-                                span = { GridItemSpan(maxLineSpan) },
-                            ) {
-                                NewIconsCard(navigateActions.toNewIcons)
-                            }
-                        }
                         if (uiState.announcements.isNotEmpty()) {
                             item(
                                 span = { GridItemSpan(maxLineSpan) },
@@ -232,11 +225,13 @@ private fun HomeScreen(
                         }
                     }
 
-                    val string = stringResource(R.string.icon_requests_furfilled)
+                    val string = stringResource(R.string.icon_requests_fulfilled)
 
-                    HomeBottomToolbar(
+                    HomeBottomBar(
                         scrollBehavior = scrollBehavior,
                         showIconRequests = uiState.hasIconRequests,
+                        showNewIcons = uiState.hasNewIcons,
+                        onNavigateToNewIcons = navigateActions.toNewIcons,
                         onNavigateToAbout = navigateActions.toAbout,
                         onNavigateToIconRequest = navigateActions.toIconRequest,
                         onIconRequestUnavailable = {
@@ -260,7 +255,7 @@ private fun HomeScreen(
             }
 
             LaunchedEffect(homeSearchUiState.textFieldState.text) {
-                delay(300)
+                delay(300.milliseconds)
                 actions.searchIcons(homeSearchUiState.textFieldState.text.toString())
             }
         } else {

@@ -64,10 +64,7 @@ import k4ustu3h.monocons.ui.util.visitUrl
 import kotlinx.serialization.Serializable
 
 enum class ColumnTypes {
-    SPACER,
-    HEADER,
-    NAVIGATION_ITEM,
-    LIST_ITEM,
+    SPACER, HEADER, NAVIGATION_ITEM, LIST_ITEM,
 }
 
 @Serializable
@@ -219,7 +216,7 @@ private fun About(
                     description = it.descriptionRes?.let { stringResource(id = it) },
                     divider = index != specialThanks.lastIndex,
                     socialUrl = it.socialUrl,
-                    shapes = ListRowDefaults.singleItemShapes,
+                    shapes = ListItemDefaults.segmentedShapes(index, specialThanks.size),
                 )
             }
             item(contentType = ColumnTypes.SPACER) {
@@ -238,7 +235,9 @@ private fun About(
                         Image(
                             imageVector = Monocons.Lawnicons,
                             contentDescription = stringResource(id = R.string.app_name),
-                            modifier = Modifier.size(32.dp).clip(CircleShape),
+                            modifier = Modifier
+                                .size(32.dp)
+                                .clip(CircleShape),
                         )
                     },
                 )
@@ -338,6 +337,14 @@ private val specialThanks = listOf(
         socialUrl = "https://x.com/rkbdi",
         descriptionRes = R.string.special_thanks_restoration,
     ),
+)
+
+val coreContributorIds = coreContributors.map { it.id } + listOf(
+    29139614, // Remove Patryk from contributors list, as per https://t.me/lawnchairci/1557
+    56888459, // Renovate bot
+    41898282, // GitHub Actions bot
+    198982749, // Copilot bot
+    175728472, // Copilot bot
 )
 
 @PreviewLawnicons

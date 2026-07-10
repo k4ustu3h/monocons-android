@@ -109,9 +109,9 @@ fun PlaceholderUI(
                     modifier = Modifier
                         .padding(horizontal = 8.dp)
                         .padding(bottom = 12.dp)
-                        .height(48.dp)
+                        .height(72.dp)
                         .fillMaxWidth()
-                        .clip(CircleShape)
+                        .clip(MaterialTheme.shapes.large)
                         .placeholder(
                             visible = true,
                             color = MaterialTheme.colorScheme.surfaceContainer,

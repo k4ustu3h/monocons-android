@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Link apps and icons
-    url: https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#adding-icons-and-missing-app-ids-to-lawnicons
+    url: https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#adding-icons-and-missing-app-ids-to-monocons
     about: Learn more about linking an app to an existing icon via a pull request.
   - name: Requesting icons
-    url: https://github.com/k4ustu3h/monocons-android#requests
+    url: https://github.com/k4ustu3h/monocons-android#icon-requests
     about: We accept icon requests only by email.

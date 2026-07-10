@@ -26,7 +26,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import k4ustu3h.monocons.ui.components.home.NavigationIconButton
+import androidx.compose.ui.res.stringResource
+import k4ustu3h.monocons.R
+import k4ustu3h.monocons.ui.components.NavigationIconButton
 import k4ustu3h.monocons.ui.theme.icon.Back
 import k4ustu3h.monocons.ui.theme.icon.Close
 import k4ustu3h.monocons.ui.theme.icon.Monocons
@@ -50,8 +52,9 @@ fun SearchBarInputField(
         leadingIcon = {
             if (state.searchBarState.targetValue == SearchBarValue.Expanded) {
                 NavigationIconButton(
-                    imageVector = Monocons.Back,
+                    label = stringResource(R.string.back),
                     onClick = onBack,
+                    imageVector = Monocons.Back,
                 )
             } else {
                 Icon(Monocons.Search, contentDescription = null)
@@ -61,6 +64,7 @@ fun SearchBarInputField(
             Crossfade(state.textFieldState.text.isNotEmpty(), label = "") {
                 if (it) {
                     NavigationIconButton(
+                        label = stringResource(R.string.clear),
                         onClick = { state.textFieldState.clearText() },
                         imageVector = Monocons.Close,
                     )

@@ -21,6 +21,7 @@ import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable
 import android.util.Log
 import android.util.Xml
+import androidx.annotation.VisibleForTesting
 import androidx.core.graphics.drawable.toBitmap
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -147,10 +148,12 @@ internal object IconRequestBundler {
      * @param label The input string to normalize.
      * @return The normalized string suitable for use as a filename.
      */
-    private fun normalizeFileName(label: String): String {
+    @VisibleForTesting
+    internal fun normalizeFileName(label: String): String {
         val nfdNormalizedString = Normalizer.normalize(label, Normalizer.Form.NFD)
         val asciiApproximation = Regex("\\p{Mn}+").replace(nfdNormalizedString, "")
 
+        // TODO: also trim duplicate underscores
         val normalized = asciiApproximation.lowercase().replace(Regex("[^a-z0-9_]"), "_").trim('_')
 
         if (normalized.isBlank()) {
@@ -187,7 +190,7 @@ internal object IconRequestBundler {
         serializer.startTag(null, "resources")
 
         this.forEach { (iconInfo, drawableName) ->
-            val componentNameString = iconInfo.componentName.flattenToString()
+            val componentNameString = iconInfo.component.flattenToString()
 
             serializer.startTag(null, "item")
             serializer.attribute(null, "component", "ComponentInfo{$componentNameString}")
@@ -200,7 +203,8 @@ internal object IconRequestBundler {
         serializer.endDocument()
     }
 
-    private fun createUniqueIconInfoList(iconRequestList: List<SystemIconInfo>): List<UniqueIconInfo> {
+    @VisibleForTesting
+    internal fun createUniqueIconInfoList(iconRequestList: List<SystemIconInfo>): List<UniqueIconInfo> {
         val usedFileNames = mutableMapOf<String, Int>()
 
         return iconRequestList.map { iconInfo ->
@@ -212,12 +216,14 @@ internal object IconRequestBundler {
         }
     }
 
-    private data class UniqueIconInfo(
+    @VisibleForTesting
+    internal data class UniqueIconInfo(
         val iconInfo: SystemIconInfo,
         val drawableName: String,
     )
 }
 
-fun formatIconRequestList(iconRequestList: List<SystemIconInfo>): String = iconRequestList.joinToString(separator = "\n\n") { "${it.label}\n${it.componentName.flattenToString()}" }
+fun formatIconRequestList(iconRequestList: List<SystemIconInfo>): String =
+    iconRequestList.joinToString(separator = "\n\n") { "${it.label}\n${it.component.flattenToString()}" }
 
 private const val TAG = "IconRequestBundler"

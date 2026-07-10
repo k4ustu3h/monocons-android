@@ -1,0 +1,1 @@
+<p>Monocons este un pachet de pictograme open-source cu pictograme de brand pentru launcherele Android. Pictogramele se bazează pe instrucțiunile specifice ale brandului, având un design monocrom.</p>

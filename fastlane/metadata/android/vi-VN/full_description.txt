@@ -1,0 +1,1 @@
+<p>Monocons là bộ biểu tượng mã nguồn mở dành cho các trình khởi chạy (launcher) trên Android, bao gồm các biểu tượng thương hiệu được thiết kế theo phong cách đơn sắc và tuân thủ nguyên tắc nhận diện của từng thương hiệu.</p>

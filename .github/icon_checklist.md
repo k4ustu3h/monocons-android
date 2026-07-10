@@ -1,19 +1,12 @@
 Thanks for your contribution!
 
 - Please fix all common issues and ensure Monocons builds correctly.
-- Please submit up to 5 icons per PR. After a review with 4+ perfect icons, you can submit up to 10 icons.
-- You'll get a review within 2 weeks.
-- First-timers receive a brief review to confirm commitment.
+- Shortly after the merge, you can download Monocons Nightly to use your icons.
 
-[Monocons design guidelines](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#lawnicons-design-guidelines)
+[Monocons design guidelines](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#monocons-design-guidelines) • [Monocons Nightly](https://github.com/k4ustu3h/monocons-android/releases/tag/nightly)
 
-```
-Naming TL;DR
-_2048.svg | 2048
-monocons.svg | Monocons
-habitacao_caixa.svg | Habitação Caixa
-beijing_card.svg | 北京一卡通 ~~ Beijing Card
-a_and_w.svg | A&amp;W
-```
+### Common issues
 
 ![](https://raw.githubusercontent.com/k4ustu3h/monocons-android/refs/heads/main/docs/images/common-issues-to-fix.png)
+
+<!-- icon-checklist-posted -->

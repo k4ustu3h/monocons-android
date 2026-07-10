@@ -18,16 +18,17 @@ package k4ustu3h.monocons.data.repository.iconrequest
 
 import android.app.Application
 import android.util.Log
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
 import java.io.File
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.api.IconRequestSettingsAPI
 import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.data.model.IconRequestModel
 import k4ustu3h.monocons.data.model.SystemIconInfo
+import k4ustu3h.monocons.data.repository.AppFilter
+import k4ustu3h.monocons.data.repository.IconDataSource
 import k4ustu3h.monocons.data.repository.PreferenceManager
-import k4ustu3h.monocons.data.repository.home.getIconInfo
 import k4ustu3h.monocons.util.isIzzyBuild
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -46,9 +47,10 @@ interface IconRequestRepository {
     suspend fun createIconRequestZip(currentIconRequests: List<SystemIconInfo>?): File?
 }
 
-@SingleIn(LawniconsScope::class)
-@ContributesBinding(LawniconsScope::class)
+@SingleIn(AppScope::class)
+@ContributesBinding(AppScope::class)
 class IconRequestRepositoryImpl(
+    @param:AppFilter val iconDataSource: IconDataSource,
     val application: Application,
     private val api: IconRequestSettingsAPI,
     private val preferenceManager: PreferenceManager,
@@ -79,12 +81,11 @@ class IconRequestRepositoryImpl(
                 } else {
                     true
                 }
-
                 val forceEnabled = preferenceManager.forceEnableIconRequest.get()
                 apiEnabled || forceEnabled
             }
 
-            val iconList = application.getIconInfo().sortedBy { it.label.lowercase() }
+            val iconList = iconDataSource.getIconInfo().sortedBy { it.label.lowercase() }
             val systemPackageList =
                 application.getSystemIconInfo().sortedBy { it.label.lowercase() }
 
@@ -98,12 +99,7 @@ class IconRequestRepositoryImpl(
         lawniconsIconList: List<IconInfo>,
         systemPackageList: List<SystemIconInfo>,
     ) = withContext(Dispatchers.Default) {
-        val themedComponentStrings = lawniconsIconList.flatMap { it.componentNames }
-            .map { it.componentName.flattenToString() }.toSet()
-
-        val unthemedApps = systemPackageList.filter { systemApp ->
-            systemApp.componentName.flattenToString() !in themedComponentStrings
-        }
+        val unthemedApps = filterUnthemedApps(lawniconsIconList, systemPackageList)
 
         _iconRequestList.value = IconRequestModel(
             list = unthemedApps,
@@ -117,5 +113,25 @@ class IconRequestRepositoryImpl(
             return null
         }
         return IconRequestBundler.createIconRequestZip(application, currentIconRequests)
+    }
+}
+
+/**
+ * Filters system apps to find those without a themed icon.
+ *
+ * @param lawniconsIconList List of themed icons from Lawnicons
+ * @param systemPackageList List of all system packages
+ * @return A list of system packages that don't have a corresponding themed icon
+ */
+internal fun filterUnthemedApps(
+    lawniconsIconList: List<IconInfo>,
+    systemPackageList: List<SystemIconInfo>,
+): List<SystemIconInfo> {
+    val themedComponentStrings =
+        lawniconsIconList.flatMap { it.componentNames }.map { it.component.flattenToString() }
+            .toSet()
+
+    return systemPackageList.filter { systemApp ->
+        systemApp.component.flattenToString() !in themedComponentStrings
     }
 }

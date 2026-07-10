@@ -175,7 +175,7 @@ private fun ContributorList(
         itemsIndexed(contributors) { index, it ->
             ContributorRow(
                 name = it.login,
-                id = it.id.toLong(),
+                id = it.id,
                 photoUrl = it.avatarUrl,
                 profileUrl = it.htmlUrl,
                 shapes = ListItemDefaults.segmentedShapes(index, contributors.size),

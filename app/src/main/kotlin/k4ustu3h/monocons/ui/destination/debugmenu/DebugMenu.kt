@@ -48,7 +48,7 @@ import k4ustu3h.monocons.data.model.IconRequestModel
 import k4ustu3h.monocons.data.model.getFirstLabelAndComponent
 import k4ustu3h.monocons.data.model.splitByComponentName
 import k4ustu3h.monocons.data.repository.BasePreferenceManager
-import k4ustu3h.monocons.data.repository.DummySharedPreferences
+import k4ustu3h.monocons.data.repository.InMemoryPreferenceStore
 import k4ustu3h.monocons.data.repository.PreferenceManager
 import k4ustu3h.monocons.ui.components.core.LawniconsScaffold
 import k4ustu3h.monocons.ui.components.core.ListRow
@@ -193,7 +193,7 @@ private fun DebugMenuScreen(
                 ListRow(
                     label = {
                         Text(
-                            text = "${it.label}\n${it.componentName.flattenToString()}",
+                            text = "${it.label}\n${it.component.flattenToString()}",
                             fontFamily = FontFamily.Monospace,
                         )
                     },
@@ -218,7 +218,7 @@ private fun DebugMenuScreen(
                 ListRow(
                     label = {
                         Text(
-                            text = "${labelAndComponent.label}\n${labelAndComponent.componentName.flattenToString()}",
+                            text = "${labelAndComponent.label}\n${labelAndComponent.component.flattenToString()}",
                             fontFamily = FontFamily.Monospace,
                         )
                     },
@@ -265,7 +265,7 @@ private fun ListHeader(
 @Composable
 private fun DebugMenuScreenPreview() {
     PreviewProviders {
-        val prefs = PreferenceManager(DummySharedPreferences())
+        val prefs = PreferenceManager(InMemoryPreferenceStore())
 
         DebugMenuScreen(
             newIconsModel = IconInfoModel(

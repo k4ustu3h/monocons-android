@@ -19,10 +19,10 @@ package k4ustu3h.monocons.ui.destination.home
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoMap
 import dev.zacsweers.metro.binding
 import dev.zacsweers.metrox.viewmodel.ViewModelKey
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.model.Announcement
 import k4ustu3h.monocons.data.model.AnnouncementLocation
 import k4ustu3h.monocons.data.model.IconInfoModel
@@ -61,15 +61,14 @@ interface HomeViewModel {
     fun clearSearch()
 }
 
-@ViewModelKey(HomeViewModelImpl::class)
-@ContributesIntoMap(LawniconsScope::class, binding = binding<ViewModel>())
+@ViewModelKey
+@ContributesIntoMap(AppScope::class, binding = binding<ViewModel>())
 class HomeViewModelImpl(
     private val iconRepository: IconRepository,
     private val newIconsRepository: NewIconsRepository,
     private val iconRequestRepository: IconRequestRepository,
     private val announcementsRepository: AnnouncementsRepository,
-) : ViewModel(),
-    HomeViewModel {
+) : ViewModel(), HomeViewModel {
 
     private val _searchMode = MutableStateFlow(SearchMode.LABEL)
     override val searchMode = _searchMode.stateIn(

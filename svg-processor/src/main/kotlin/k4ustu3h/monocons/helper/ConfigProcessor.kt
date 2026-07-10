@@ -48,6 +48,9 @@ object ConfigProcessor {
             // Write AppFilter to resource directory
             XmlUtil.writeDocumentToFile(appFilterDocument, "$it/xml/appfilter.xml")
             println("Created appfilter.xml")
+            // Write icon_config.xml for Motorola launcher support
+            XmlUtil.writeDocumentToFile(appFilterDocument, "$it/xml/icon_config.xml")
+            println("Created icon_config.xml")
         }
     }
 
@@ -91,7 +94,8 @@ object ConfigProcessor {
             )
             iconsDocument.rootElement.addElement(ICON)
                 .addAttribute(DRAWABLE, "@drawable/${drawable}_foreground")
-                .addAttribute(PACKAGE, component[0]).addAttribute(NAME, name)
+                .addAttribute(PACKAGE, component[0])
+                .addAttribute(NAME, name)
         }
         XmlUtil.writeDocumentToFile(iconsDocument, filename)
     }

@@ -19,19 +19,27 @@ package k4ustu3h.monocons.di
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
-import k4ustu3h.monocons.LawniconsScope
+import k4ustu3h.monocons.data.repository.PreferenceStore
+import k4ustu3h.monocons.data.repository.SharedPreferencesStore
 
-@ContributesTo(LawniconsScope::class)
+@ContributesTo(AppScope::class)
 interface PreferencesModule {
 
     @Provides
-    @SingleIn(LawniconsScope::class)
+    @SingleIn(AppScope::class)
     fun provideSharedPreferences(app: Application): SharedPreferences {
         // Note: We request 'Application' because we bound it in the Graph Factory earlier.
         // Application is a Context.
         return app.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+    }
+
+    @Provides
+    @SingleIn(AppScope::class)
+    fun providePreferenceStore(prefs: SharedPreferences): PreferenceStore {
+        return SharedPreferencesStore(prefs)
     }
 }

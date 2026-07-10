@@ -1,0 +1,1 @@
+<p>Monocons, Android başlatıcıları (launcher) için marka simgelerini içeren açık kaynaklı bir simge paketidir. Simgeler, ilgili markanın yönergeleri temel alınarak tasarlanmış olup tek renkli (monokrom) bir görünüme sahiptir.</p>

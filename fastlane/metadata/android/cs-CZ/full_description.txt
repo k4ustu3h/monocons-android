@@ -1,0 +1,1 @@
+<p>Monocons je open-source sada ikon s ikonami značek pro launchery Androidu. Ikony jsou založeny na pokynech konkrétní značky a vyznačují se monochromatickým designem.</p>

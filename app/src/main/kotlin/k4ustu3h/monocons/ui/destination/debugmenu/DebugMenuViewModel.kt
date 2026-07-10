@@ -17,16 +17,16 @@
 package k4ustu3h.monocons.ui.destination.debugmenu
 
 import androidx.lifecycle.ViewModel
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoMap
 import dev.zacsweers.metrox.viewmodel.ViewModelKey
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.repository.NewIconsRepository
 import k4ustu3h.monocons.data.repository.PreferenceManager
 import k4ustu3h.monocons.data.repository.home.IconRepository
 import k4ustu3h.monocons.data.repository.iconrequest.IconRequestRepository
 
-@ViewModelKey(DebugMenuViewModel::class)
-@ContributesIntoMap(LawniconsScope::class)
+@ViewModelKey
+@ContributesIntoMap(AppScope::class)
 class DebugMenuViewModel(
     iconRepository: IconRepository,
     newIconsRepository: NewIconsRepository,

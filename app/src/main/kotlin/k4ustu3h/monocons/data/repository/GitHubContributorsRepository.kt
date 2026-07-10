@@ -2,41 +2,22 @@ package k4ustu3h.monocons.data.repository
 
 import android.app.Application
 import android.util.Log
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.Inject
 import dev.zacsweers.metro.SingleIn
 import java.io.FileNotFoundException
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.api.GitHubContributorsAPI
 import k4ustu3h.monocons.data.model.GitHubContributor
+import k4ustu3h.monocons.ui.destination.about.coreContributorIds
 import k4ustu3h.monocons.util.isIzzyBuild
 import kotlinx.serialization.json.Json
 
-val coreContributorIds = listOf(
-    // Remove Patryk from contributors list, as per https://t.me/lawnchairci/1557
-    29139614,
-    // Remove renovate-bot from contributors list, since we don't count bots as contributors
-    56888459,
-    // GitHub Actions bot
-    41898282,
-    // suphon-t
-    8080853,
-    // SuperDragonXD
-    70206496,
-    // Chefski
-    100310118,
-    // x9136
-    60105060,
-    // Goooler
-    10363352,
-    // Grabstertv
-    49114212,
-)
-
-@SingleIn(LawniconsScope::class)
+@SingleIn(AppScope::class)
 @Inject
 class GitHubContributorsRepository(
     private val api: GitHubContributorsAPI,
     private val application: Application,
+    private val contributorIds: List<Long> = coreContributorIds,
 ) {
     private val jsonParser = Json { ignoreUnknownKeys = true }
 
@@ -50,7 +31,7 @@ class GitHubContributorsRepository(
                     emptyList()
                 } else {
                     jsonParser.decodeFromString<List<GitHubContributor>>(jsonString)
-                        .filter { it.id !in coreContributorIds }
+                        .filterNot { contributorIds.contains(it.id) }
                         .sortedByDescending { it.contributions }
                 }
             } catch (e: FileNotFoundException) {
@@ -58,7 +39,7 @@ class GitHubContributorsRepository(
                 emptyList()
             }
         } else {
-            api.getContributors().filter { it.id !in coreContributorIds }
+            api.getContributors().filterNot { contributorIds.contains(it.id) }
                 .sortedByDescending { it.contributions }
         }
     }

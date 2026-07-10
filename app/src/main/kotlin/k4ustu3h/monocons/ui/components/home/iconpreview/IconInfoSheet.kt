@@ -16,7 +16,6 @@
 
 package k4ustu3h.monocons.ui.components.home.iconpreview
 
-import android.content.ComponentName
 import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -50,6 +49,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import k4ustu3h.monocons.R
+import k4ustu3h.monocons.data.model.Component
 import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.ui.components.IconLink
 import k4ustu3h.monocons.ui.components.core.ListRow
@@ -75,9 +75,11 @@ fun IconInfoSheet(
     )
 
     val groupedComponents = remember {
-        iconInfo.componentNames.groupBy { it.label }.map { (label, components) ->
-            label to components.map { it.componentName }
-        }
+        iconInfo.componentNames
+            .groupBy { it.label }
+            .map { (label, components) ->
+                label to components.map { it.component }
+            }
     }
 
     val githubName = iconInfo.drawableName.replace(
@@ -193,7 +195,7 @@ fun IconInfoSheet(
 
 private fun getShareContents(
     githubName: String,
-    groupedComponents: List<Pair<String, List<ComponentName>>>,
+    groupedComponents: List<Pair<String, List<Component>>>,
 ): String {
     val formattedComponents =
         groupedComponents.joinToString(separator = "\n") { (group, components) ->
@@ -221,7 +223,7 @@ private fun LinkHeader(
 @Composable
 private fun IconInfoListRow(
     label: String,
-    componentNames: List<ComponentName>,
+    componentNames: List<Component>,
 ) {
     SelectionContainer {
         ListRow(

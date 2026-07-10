@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import k4ustu3h.monocons.ui.components.home.NavigationIconButton
+import k4ustu3h.monocons.ui.components.NavigationIconButton
 import k4ustu3h.monocons.ui.theme.adaptiveSurfaceColor
 import k4ustu3h.monocons.ui.theme.icon.Back
 import k4ustu3h.monocons.ui.theme.icon.Monocons
@@ -66,10 +66,11 @@ private fun SmallTopAppBarPreview() {
         TopAppBar(
             navigationIcon = {
                 NavigationIconButton(
-                    imageVector = Monocons.Back,
+                    label = "Back",
                     onClick = {},
-                    size = 40.dp,
+                    imageVector = Monocons.Back,
                     modifier = Modifier.padding(horizontal = 4.dp),
+                    size = 40.dp,
                 )
             },
             scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(),
@@ -87,10 +88,11 @@ private fun LargeTopAppBarPreview() {
         TopAppBar(
             navigationIcon = {
                 NavigationIconButton(
-                    imageVector = Monocons.Back,
+                    label = "Back",
                     onClick = {},
-                    size = 40.dp,
+                    imageVector = Monocons.Back,
                     modifier = Modifier.padding(horizontal = 4.dp),
+                    size = 40.dp,
                 )
             },
             scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior(),

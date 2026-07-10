@@ -1,0 +1,1 @@
+<p>Monocons adalah paket ikon sumber terbuka yang berisi ikon merek untuk peluncur Android. Ikon-ikon ini dibuat berdasarkan pedoman masing-masing merek dan menampilkan desain monokrom.</p>

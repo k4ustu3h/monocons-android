@@ -1,0 +1,1 @@
+<p>Monocons est un pack d'icônes open source proposant des icônes de marques pour les lanceurs Android. Ces icônes sont basées sur les chartes graphiques des marques concernées et arborent un design monochrome.</p>

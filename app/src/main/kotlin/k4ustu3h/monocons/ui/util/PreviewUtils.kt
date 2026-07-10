@@ -1,6 +1,5 @@
 package k4ustu3h.monocons.ui.util
 
-import android.content.ComponentName
 import android.content.res.Configuration
 import android.graphics.drawable.ColorDrawable
 import androidx.compose.runtime.Composable
@@ -9,6 +8,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.Wallpapers
 import k4ustu3h.monocons.data.model.Announcement
 import k4ustu3h.monocons.data.model.AnnouncementLocation
+import k4ustu3h.monocons.data.model.Component
 import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.data.model.LabelAndComponent
 import k4ustu3h.monocons.data.model.OssLibrary
@@ -105,7 +105,7 @@ object SampleData {
     val iconRequestList = listOf(
         SystemIconInfo(
             label = "Email",
-            componentName = ComponentName(
+            component = Component(
                 "com.android.email",
                 "com.android.email/.ExampleActivity",
             ),
@@ -113,7 +113,7 @@ object SampleData {
         ),
         SystemIconInfo(
             label = "Search",
-            componentName = ComponentName(
+            component = Component(
                 "com.android.search",
                 "com.android.search/.ExampleActivity",
             ),

@@ -16,13 +16,10 @@
 
 package k4ustu3h.monocons.data.repository
 
-import android.app.Application
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import k4ustu3h.monocons.LawniconsScope
-import k4ustu3h.monocons.R
 import k4ustu3h.monocons.data.model.IconInfoModel
-import k4ustu3h.monocons.data.repository.home.getIconInfo
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -34,9 +31,11 @@ interface NewIconsRepository {
     val newIconsInfoModel: StateFlow<IconInfoModel>
 }
 
-@SingleIn(LawniconsScope::class)
-@ContributesBinding(LawniconsScope::class)
-class NewIconsRepositoryImpl(application: Application) : NewIconsRepository {
+@SingleIn(AppScope::class)
+@ContributesBinding(AppScope::class)
+class NewIconsRepositoryImpl(
+    @AppFilterDiff iconDataSource: IconDataSource,
+) : NewIconsRepository {
 
     private val coroutineScope = CoroutineScope(Dispatchers.IO)
 
@@ -45,8 +44,7 @@ class NewIconsRepositoryImpl(application: Application) : NewIconsRepository {
 
     init {
         coroutineScope.launch {
-            val iconInfo =
-                application.getIconInfo(R.xml.appfilter_diff).sortedBy { it.label.lowercase() }
+            val iconInfo = iconDataSource.getIconInfo().sortedBy { it.label.lowercase() }
             _newIconsInfoModel.value = IconInfoModel(
                 iconInfo,
                 iconInfo.size,

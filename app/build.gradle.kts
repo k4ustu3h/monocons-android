@@ -16,14 +16,14 @@ val buildCommit = providers.exec {
 val ciBuild = providers.environmentVariable("CI").isPresent
 val ciRef = providers.environmentVariable("GITHUB_REF").orNull.orEmpty()
 val ciRunNumber = providers.environmentVariable("GITHUB_RUN_NUMBER").orNull.orEmpty()
-val isReleaseBuild = ciBuild && (ciRef.contains("main") || ciRef.startsWith("refs/tags/"))
+val isReleaseBuild = ciBuild && ciRef.contains("main")
 val devReleaseName = if (ciBuild) "(Dev #$ciRunNumber)" else "($buildCommit)"
 
 val version = "1.0.1"
 val versionDisplayName = version + if (!isReleaseBuild) " $devReleaseName" else ""
 
 android {
-    compileSdk = 36
+    compileSdk = 37
     namespace = "k4ustu3h.monocons"
 
     defaultConfig {
@@ -110,6 +110,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 androidComponents {
@@ -124,10 +128,8 @@ androidComponents {
 
     onVariants { variant ->
         variant.outputs.forEach { output ->
-            // TODO: https://github.com/android/gradle-recipes/blob/cbe7c7dea2a3f5b1764756f24bf453d1235c80e2/listenToArtifacts/README.md
-            with(output as com.android.build.api.variant.impl.VariantOutputImpl) {
-                val newApkName =
-                    "Monocons ${versionName.get()} v${versionCode.get()}_${variant.buildType}.apk"
+            with(output) {
+                val newApkName = "Monocons ${versionName.get()} v${versionCode.get()}_${variant.buildType}.apk"
                 outputFileName = newApkName
             }
         }
@@ -179,6 +181,12 @@ dependencies {
     implementation(libs.coil.svg)
     implementation(libs.lazycolumn.scrollbar)
     implementation(libs.material.motion.compose.core)
+
+    // Unit tests
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 tasks.preBuild {

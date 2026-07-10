@@ -17,11 +17,11 @@
 package k4ustu3h.monocons.di
 
 import android.app.Application
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
 import java.io.File
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.api.AnnouncementsAPI
 import k4ustu3h.monocons.data.api.IconRequestSettingsAPI
 import k4ustu3h.monocons.data.kotlinxJson
@@ -36,12 +36,12 @@ import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import retrofit2.create
 
-@ContributesTo(LawniconsScope::class)
+@ContributesTo(AppScope::class)
 interface WebsiteApiModule {
 
     // Inside WebsiteApiModule
     @Provides
-    @SingleIn(LawniconsScope::class)
+    @SingleIn(AppScope::class)
     fun providesOkHttpClient(application: Application): OkHttpClient {
         val cacheSize = 5L * 1024 * 1024 // 5 MB
         val cache = Cache(File(application.cacheDir, "http_cache"), cacheSize)
@@ -54,7 +54,7 @@ interface WebsiteApiModule {
     }
 
     @Provides
-    @SingleIn(LawniconsScope::class)
+    @SingleIn(AppScope::class)
     fun providesWebsiteIconRequestApi(client: OkHttpClient): IconRequestSettingsAPI {
         return if (!isIzzyBuild) {
             Retrofit.Builder().baseUrl(Constants.WEBSITE).client(client)
@@ -68,7 +68,7 @@ interface WebsiteApiModule {
     }
 
     @Provides
-    @SingleIn(LawniconsScope::class)
+    @SingleIn(AppScope::class)
     fun providesWebsiteAnnouncementsApi(client: OkHttpClient): AnnouncementsAPI {
         return if (!isIzzyBuild) {
             Retrofit.Builder().baseUrl(Constants.WEBSITE).client(client)
@@ -76,7 +76,8 @@ interface WebsiteApiModule {
                 .build().create()
         } else {
             object : AnnouncementsAPI {
-                override suspend fun getAnnouncements(cacheControl: String) = Announcements(announcements = emptyList())
+                override suspend fun getAnnouncements(cacheControl: String) =
+                    Announcements(announcements = emptyList())
             }
         }
     }

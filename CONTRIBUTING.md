@@ -8,17 +8,17 @@ If you find errors or want to suggest improvements in the guide itself, create a
 
 **Contributors**
 
-The development of the core app is not done here. Monocons focuses on providing a curated set of icons and adapting the base project to our needs. The Lawnicons community (which includes everyone who wants to contribute) handles the core app development. The primary focus is on managing icons and the specific features that Monocons offers.
+The development of the core app is not done here. Monocons focuses on providing a curated set of icons and adapting the base project to our needs. The Lawnicons community (which includes everyone who wants to contribute) handles the core app development. The primary focus is on managing icons and the specific features that Monocons offers. Anyone can become a contributor — it takes some learning, but it's doable.
 
 [Lawnicons contributors](https://github.com/LawnchairLauncher/lawnicons/graphs/contributors) • [Monocons contributors](https://github.com/k4ustu3h/monocons-android/graphs/contributors) • [Lawnchair](https://github.com/LawnchairLauncher/lawnchair)
 
 **Development**
 
-The main tasks are to maintain Monocons and interaction with launchers, fix bugs, add new features and automate organizational processes. Please see our issues for more details.
+The main tasks are to maintain Monocons and interaction with launchers, fix bugs, add new features and automate processes. Please see our issues for more details.
 
 **Icons**
 
-You can contribute your icons, fulfill icon requests, add missing app IDs, refine and update existing icons, clean up dead apps and duplicates. Mastering the Monocons design guidelines in practice will allow you to do icon reviews.
+You can contribute icons, fulfill icon requests, add missing app IDs, refine existing icons, clean up dead apps, and remove duplicates. Mastering the Monocons design guidelines in practice will also allow you to review icons.
 
 ## Contributing code
 
@@ -32,6 +32,16 @@ Visit the Lawnicons developer wiki for developer information regarding Lawnicons
 
 [Lawnicons developer wiki](https://github.com/LawnchairLauncher/lawnicons/wiki)
 
+## Contributing icons TL;DR
+
+1. Create an icon (\*.svg) following the Monocons design guidelines (for example, in Figma).
+2. Find the app ID to link with your icon.
+3. Fork the Monocons repository and make a local copy via GitHub Desktop.
+4. Add the icon and the app ID to your local copy and push the changes.
+5. Create a pull request and wait for review.
+
+[Check app IDs on Dashboard](https://lawnicons-requests.vercel.app/) • [How to find app IDs](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#how-to-find-app-ids) • [Add icons to Monocons](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#adding-icons-and-missing-app-ids-to-lawnicons)
+
 ## Monocons design guidelines
 
 The Lawnicons contributors who laid the foundations: [GrabsterTV](https://github.com/Grabstertv) and [Chefski](https://github.com/Chefski).
@@ -44,15 +54,9 @@ The Lawnicons contributors who laid the foundations: [GrabsterTV](https://github
 
 ### Approach
 
-The Monocons style is built on strong fundamentals and a commitment to quality. To minimize the need for rework, please read these guidelines carefully. Our main goal is to create high-quality icons that clearly represent their respective apps. To achieve this goal, you may sometimes need to redesign an icon from scratch.
+Please read these guidelines carefully to minimize rework. The goal is to create high-quality icons that represent their apps, even if it means redesigning from scratch.
 
-Tips
-
-- Make no more than 5 icons at a time, as long as your PRs require rework.
-- Prioritize quality.
-- Try to reproduce the original style exactly.
-- Practice on easy-to-make icons to understand the whole process.
-- See how other contributors have made pull requests (PRs).
+Tips: prioritize quality over exact reproduction and practice on simple icons first.
 
 [Merged PRs](https://github.com/k4ustu3h/monocons-android/pulls?q=is%3Apr+is%3Amerged+label%3Aicons)
 
@@ -70,26 +74,13 @@ a_and_w.svg | A&amp;W
 
 **App name**
 
-The main app name should be in its main language. It can be found in app stores or primary sources.
+The app name should be in its primary language, sourced from app stores. For non-English names, add a localized or transliterated English version, separated by `~~` (main name first). If the name is mostly English letters, no second name is needed.
 
-Apps with non-English names require an additional name based on the English alphabet. At best it will be a localized official app name. If an app name is mostly made up of letters from the English alphabet, it doesn't need an additional one.
-
-Tips
-
-- Add localized names if available.
-- Transliterate non-English names when there are no localized ones.
-- Separate app names using `~~`. First, the main app name, then the additional one.
-- Delete things that aren't part of an app name.
-- Use the HTML character references for special symbols: for instance, `&amp;` instead of "&".
+Delete things that aren't part of an app name, and use HTML character references for special symbols (for example, &amp; instead of &).
 
 **Icon name (drawable)**
 
-Repeat the app name. Use `a–z`, `0–9`, and `_` for spaces. Insert `_` before a digit at the beginning of an icon name.
-
-Tips
-
-- When multiple apps are linked to the same icon, choose the most popular app name for it.
-- Replace non-English letters with English letters.
+Repeat the app name, using `a–z`, `0–9`, and `_` for spaces. Insert `_` before a digit if the icon name starts with one. For multiple apps sharing one icon, use the most popular name.
 
 ### Fundamentals
 
@@ -105,12 +96,7 @@ Tips
 
 Determine the abstract icon size before you start. The exact size is determined by the shape's position, and the graphic editor used. The icon content area is `160 × 160 px`.
 
-Tips
-
-- Follow the blue guides.
-- Use existing icons as an example.
-- Aim for pixel-perfect.
-- The margin of error is `<0.1 px`.
+Tips: follow the blue guides, use existing icons as an example, and aim for pixel-perfect.
 
 #### 3 Square icons
 
@@ -118,12 +104,7 @@ Tips
 
 Determine the square icon size before you start. These are icons with `50%` or more of the edges running along the square. The exact size is determined by the shape's position, and the graphic editor used. The square icon content area is `154 × 154 px`.
 
-Tips
-
-- Follow the golden guides.
-- Use existing icons as an example.
-- Aim for pixel-perfect.
-- The margin of error is `<0.1 px`.
+Tips: follow the golden guides, use existing icons as an example, aim for pixel-perfect.
 
 #### 4 Color
 
@@ -156,11 +137,7 @@ The primary goal is to maintain consistency with the app's official monochrome i
 
 Your icons should be clean and easy to read. Avoid making them too dense or detailed. Avoid unnecessary tranparency.
 
-Tips
-
-- Icons should have enough space between elements to be clear at small sizes.
-- Enlarge original icons to make the main features easier to draw.
-- Simplify or redraw.
+Tips: move lines and shapes further apart or combine into one, and enlarge original icons to make the main features easier to draw.
 
 #### 4 Alignment
 
@@ -184,20 +161,13 @@ Icons should be centered, but shape-aware. Align them to the optical center as m
 
 First, try to make a complex icon based on the original. When it’s clear that the original icon can’t be conveyed in a monochrome style, you need to study the visual part of an app or a game. Whatever you come to, the result should be at least logical and high-quality.
 
-Sources for creating a recognizable icon
-
-- Branding guidelines.
-- UI or gameplay.
-- Website’s favicons.
-- In-app icons.
-- Essence of an app or a game.
-- Combination of recognizable features and your own ideas.
+Recognition sources: branding guidelines, UI or gameplay, website favicons, in-app icons, essence of an app or game, and a combination of recognizable features with your own ideas.
 
 #### 7 Minimal icons
 
 <img src="docs/images/quality-8-minimal-icons.png" alt="7 Minimal icons" height="200" />
 
-Some minimal icons should be detailed based on an app design to become more recognizable. Add distinctive features to them **only** when it makes sense.
+Some minimal icons need distinctive features to aid recognition.
 
 Only add the additional feaures if they appear anywhere in the app. Don't stray away from the original.
 
@@ -205,14 +175,9 @@ Only add the additional feaures if they appear anywhere in the app. Don't stray 
 
 <img src="docs/images/quality-9-version-badges.png" alt="8 Version badges" height="200" />
 
-Use one of our version badges to highlight a separate version of an app **only** if the original icons are indistinguishable. For instance, it could be nightly builds, paid apps with a free one available, or lite versions. Keep in mind that cases such as Opera Mini or Firefox Klar are different.
+Use one of our version badges to highlight a separate version of an app **only** if the original icons are indistinguishable. For instance, it could be nightly builds or paid apps with a free one available. Keep in mind that cases such as Opera Mini or Firefox Klar are different.
 
-Tips
-
-- Create a safe zone of 8px stroke around the version badge by cutting shapes (refer to the Excessive density section).
-- The default location for the badge is the lower right corner, but a lot depends on the icon shape.
-- Avoid shifting icons for the sake of the badge.
-- Create an issue if there aren’t enough version badges.
+Tips: cut lines around the badge, place it in the lower right corner when possible, and don't shift icons for it.
 
 ## Icon contribution tools
 

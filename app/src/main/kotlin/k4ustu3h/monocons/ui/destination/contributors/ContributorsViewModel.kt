@@ -19,9 +19,9 @@ package k4ustu3h.monocons.ui.destination.contributors
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoMap
 import dev.zacsweers.metrox.viewmodel.ViewModelKey
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.model.GitHubContributor
 import k4ustu3h.monocons.data.repository.GitHubContributorsRepository
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -53,16 +53,14 @@ private data class ContributorsViewModelState(
     }
 }
 
-@ViewModelKey(ContributorsViewModel::class)
-@ContributesIntoMap(LawniconsScope::class)
+@ViewModelKey
+@ContributesIntoMap(AppScope::class)
 class ContributorsViewModel(
     private val repository: GitHubContributorsRepository,
 ) : ViewModel() {
 
     private val viewModelState = MutableStateFlow(ContributorsViewModelState(isRefreshing = true))
-    val uiState = viewModelState
-        .map { it.toUiState() }
-        .stateIn(
+    val uiState = viewModelState.map { it.toUiState() }.stateIn(
             viewModelScope,
             SharingStarted.Eagerly,
             viewModelState.value.toUiState(),

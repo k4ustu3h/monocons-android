@@ -4,21 +4,98 @@ import android.content.SharedPreferences
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.produceState
+import androidx.core.content.edit
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.Inject
 import dev.zacsweers.metro.SingleIn
-import k4ustu3h.monocons.LawniconsScope
+
+fun interface PreferenceChangeListener {
+    fun onPreferenceChanged(key: String)
+}
 
 /**
- * A class that abstracts the functionality of SharedPreferences
- * We use SharedPreferences to avoid the unnecessary complexity Preference DataStore has
- *
- * @param prefs The SharedPreferences instance to use
+ * Backend-agnostic preference storage used by [BasePreferenceManager].
  */
-abstract class BasePreferenceManager(
-    private val prefs: SharedPreferences,
-) {
-    private val editor = prefs.edit()
+interface PreferenceStore {
+    fun getBoolean(key: String, defaultValue: Boolean): Boolean
+    fun putBoolean(key: String, value: Boolean)
 
+    fun getInt(key: String, defaultValue: Int): Int
+    fun putInt(key: String, value: Int)
+
+    fun registerListener(listener: PreferenceChangeListener)
+    fun unregisterListener(listener: PreferenceChangeListener)
+}
+
+class SharedPreferencesStore(
+    private val prefs: SharedPreferences,
+) : PreferenceStore {
+    private val listeners =
+        mutableMapOf<PreferenceChangeListener, SharedPreferences.OnSharedPreferenceChangeListener>()
+
+    override fun getBoolean(key: String, defaultValue: Boolean) =
+        prefs.getBoolean(key, defaultValue)
+
+    override fun putBoolean(key: String, value: Boolean) {
+        prefs.edit { putBoolean(key, value) }
+    }
+
+    override fun getInt(key: String, defaultValue: Int) = prefs.getInt(key, defaultValue)
+
+    override fun putInt(key: String, value: Int) {
+        prefs.edit { putInt(key, value) }
+    }
+
+    override fun registerListener(listener: PreferenceChangeListener) {
+        val sharedPrefsListener =
+            SharedPreferences.OnSharedPreferenceChangeListener { _, changedKey ->
+                changedKey?.let(listener::onPreferenceChanged)
+            }
+        listeners[listener] = sharedPrefsListener
+        prefs.registerOnSharedPreferenceChangeListener(sharedPrefsListener)
+    }
+
+    override fun unregisterListener(listener: PreferenceChangeListener) {
+        val sharedPrefsListener = listeners.remove(listener) ?: return
+        prefs.unregisterOnSharedPreferenceChangeListener(sharedPrefsListener)
+    }
+}
+
+class InMemoryPreferenceStore : PreferenceStore {
+    private val values = mutableMapOf<String, Any>()
+    private val listeners = linkedSetOf<PreferenceChangeListener>()
+
+    override fun getBoolean(key: String, defaultValue: Boolean) =
+        values[key] as? Boolean ?: defaultValue
+
+    override fun putBoolean(key: String, value: Boolean) {
+        values[key] = value
+        notifyChanged(key)
+    }
+
+    override fun getInt(key: String, defaultValue: Int) = values[key] as? Int ?: defaultValue
+
+    override fun putInt(key: String, value: Int) {
+        values[key] = value
+        notifyChanged(key)
+    }
+
+    override fun registerListener(listener: PreferenceChangeListener) {
+        listeners += listener
+    }
+
+    override fun unregisterListener(listener: PreferenceChangeListener) {
+        listeners -= listener
+    }
+
+    private fun notifyChanged(key: String) {
+        listeners.forEach { it.onPreferenceChanged(key) }
+    }
+}
+
+abstract class BasePreferenceManager(
+    private val store: PreferenceStore,
+) {
     /**
      * A class that represents a boolean preference
      * @param key The key of the preference
@@ -28,22 +105,22 @@ abstract class BasePreferenceManager(
         val key: String,
         private val defaultValue: Boolean,
     ) {
-        fun get() = prefs.getBoolean(key, defaultValue)
-        fun set(value: Boolean) = editor.putBoolean(key, value).apply()
+        fun get() = store.getBoolean(key, defaultValue)
+        fun set(value: Boolean) = store.putBoolean(key, value)
 
         fun toggle() = set(!get())
 
         @Composable
         fun asState(): State<Boolean> {
             return produceState(initialValue = get(), this) {
-                val listener = SharedPreferences.OnSharedPreferenceChangeListener { _, changedKey ->
+                val listener = PreferenceChangeListener { changedKey ->
                     if (changedKey == key) {
                         value = get()
                     }
                 }
-                prefs.registerOnSharedPreferenceChangeListener(listener)
+                store.registerListener(listener)
                 awaitDispose {
-                    prefs.unregisterOnSharedPreferenceChangeListener(listener)
+                    store.unregisterListener(listener)
                 }
             }
         }
@@ -58,20 +135,20 @@ abstract class BasePreferenceManager(
         val key: String,
         private val defaultValue: Int,
     ) {
-        fun get() = prefs.getInt(key, defaultValue)
-        fun set(value: Int) = editor.putInt(key, value).apply()
+        fun get() = store.getInt(key, defaultValue)
+        fun set(value: Int) = store.putInt(key, value)
 
         @Composable
         fun asState(): State<Int> {
             return produceState(initialValue = get(), this) {
-                val listener = SharedPreferences.OnSharedPreferenceChangeListener { _, changedKey ->
+                val listener = PreferenceChangeListener { changedKey ->
                     if (changedKey == key) {
                         value = get()
                     }
                 }
-                prefs.registerOnSharedPreferenceChangeListener(listener)
+                store.registerListener(listener)
                 awaitDispose {
-                    prefs.unregisterOnSharedPreferenceChangeListener(listener)
+                    store.unregisterListener(listener)
                 }
             }
         }
@@ -79,44 +156,9 @@ abstract class BasePreferenceManager(
 }
 
 @Inject
-@SingleIn(LawniconsScope::class)
+@SingleIn(AppScope::class)
 class PreferenceManager(
-    prefs: SharedPreferences,
-) : BasePreferenceManager(prefs) {
+    store: PreferenceStore,
+) : BasePreferenceManager(store) {
     val forceEnableIconRequest = BoolPref("force_icon_request", false)
-}
-
-/**
- * Dummy implementation of [SharedPreferences] for Compose previews, with mock default values
- */
-class DummySharedPreferences : SharedPreferences {
-    override fun getAll() = mutableMapOf<String, List<*>>()
-    override fun getBoolean(key: String?, defValue: Boolean) = true
-    override fun getString(key: String?, defValue: String?) = ""
-    override fun getStringSet(key: String?, defValues: MutableSet<String>?) = mutableSetOf<String>()
-    override fun getLong(key: String?, defValue: Long) = 0L
-    override fun getFloat(key: String?, defValue: Float) = 0.0f
-    override fun getInt(key: String?, defValue: Int) = 0
-    override fun contains(key: String?) = true
-    override fun edit() = DummyEditor()
-    override fun registerOnSharedPreferenceChangeListener(listener: SharedPreferences.OnSharedPreferenceChangeListener?) {}
-    override fun unregisterOnSharedPreferenceChangeListener(listener: SharedPreferences.OnSharedPreferenceChangeListener?) {}
-
-    /**
-     * Dummy implementation of [SharedPreferences.Editor] for Compose previews
-     */
-    class DummyEditor : SharedPreferences.Editor {
-        override fun putString(key: String?, value: String?) = DummyEditor()
-        override fun putStringSet(key: String?, values: MutableSet<String>?) = DummyEditor()
-
-        override fun putInt(key: String?, value: Int) = DummyEditor()
-        override fun putLong(key: String?, value: Long) = DummyEditor()
-        override fun putFloat(key: String?, value: Float) = DummyEditor()
-        override fun putBoolean(key: String?, value: Boolean) = DummyEditor()
-        override fun remove(key: String?) = DummyEditor()
-        override fun clear() = DummyEditor()
-
-        override fun commit() = true
-        override fun apply() {}
-    }
 }

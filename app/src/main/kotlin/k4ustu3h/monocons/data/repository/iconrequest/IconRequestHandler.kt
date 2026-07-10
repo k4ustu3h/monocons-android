@@ -20,10 +20,10 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.core.content.FileProvider
+import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
 import k4ustu3h.monocons.BuildConfig
-import k4ustu3h.monocons.LawniconsScope
 import k4ustu3h.monocons.data.model.IconRequestData
 import k4ustu3h.monocons.ui.util.Constants
 
@@ -31,8 +31,8 @@ interface IconRequestHandler {
     fun execute(context: Context, requestData: IconRequestData)
 }
 
-@SingleIn(LawniconsScope::class)
-@ContributesBinding(LawniconsScope::class)
+@SingleIn(AppScope::class)
+@ContributesBinding(AppScope::class)
 class ArcticonsDashboardHandler : IconRequestHandler {
     override fun execute(context: Context, requestData: IconRequestData) {
         val authority = "${context.packageName}.fileprovider"

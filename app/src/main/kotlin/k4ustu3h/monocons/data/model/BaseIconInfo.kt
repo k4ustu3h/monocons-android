@@ -16,13 +16,7 @@
 
 package k4ustu3h.monocons.data.model
 
-import android.content.ComponentName
-import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.descriptors.PrimitiveKind
-import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
-import kotlinx.serialization.encoding.Decoder
-import kotlinx.serialization.encoding.Encoder
 
 interface BaseIconInfo {
     val componentNames: List<LabelAndComponent>
@@ -37,39 +31,58 @@ interface BaseIconInfo {
 
 fun BaseIconInfo.getFirstLabelAndComponent(): LabelAndComponent {
     val firstLabel = componentNames.firstOrNull()?.label ?: ""
-    val firstComponent = componentNames.firstOrNull()?.componentName ?: ComponentName("", "")
-    return _root_ide_package_.k4ustu3h.monocons.data.model.LabelAndComponent(
-        firstLabel,
-        firstComponent,
-    )
+    val firstComponent = componentNames.firstOrNull()?.component ?: Component()
+    return LabelAndComponent(firstLabel, firstComponent)
 }
 
 /**
  * Data class representing a label and component name pair.
  *
  * @property label The user-facing label associated with the component.
- * @property componentName The name of the component, typically a fully qualified class name.
+ * @property component The name of the component, typically a fully qualified class name.
  */
 @Serializable
 data class LabelAndComponent(
     val label: String,
-    @Serializable(with = ComponentNameSerializer::class) val componentName: ComponentName,
+    val component: Component,
 ) {
     constructor(
         label: String,
         componentName: String,
-    ) : this(label, ComponentName.unflattenFromString(componentName)!!)
+    ) : this(label, Component.unflattenFromString(componentName)!!)
 }
 
-object ComponentNameSerializer : KSerializer<ComponentName> {
-    override val descriptor = PrimitiveSerialDescriptor("ComponentName", PrimitiveKind.STRING)
+@Serializable
+data class Component(
+    val packageName: String,
+    val className: String,
+) : Comparable<Component> {
+    constructor() : this("", "")
 
-    override fun serialize(encoder: Encoder, value: ComponentName) {
-        encoder.encodeString(value.flattenToString())
+    fun flattenToString() = "$packageName/$className"
+
+    override fun toString(): String {
+        return "ComponentInfo{$packageName/$className}"
     }
 
-    override fun deserialize(decoder: Decoder): ComponentName {
-        val componentString = decoder.decodeString()
-        return ComponentName.unflattenFromString(componentString) ?: ComponentName("", "")
+    override fun equals(other: Any?) =
+        other is Component && packageName == other.packageName && className == other.className
+
+    override fun hashCode() = packageName.hashCode() + className.hashCode()
+
+    override fun compareTo(other: Component) =
+        compareValuesBy(this, other, Component::packageName, Component::className)
+
+    companion object {
+        fun unflattenFromString(str: String): Component? {
+            val sep = str.indexOf('/')
+            if (sep < 0 || (sep + 1) >= str.length) return null
+
+            val pkg = str.substring(0, sep)
+            val rawCls = str.substring(sep + 1)
+            val cls = if (rawCls.startsWith('.')) "$pkg$rawCls" else rawCls
+
+            return Component(pkg, cls)
+        }
     }
 }

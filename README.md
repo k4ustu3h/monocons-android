@@ -6,17 +6,13 @@
 
 <div align="center">    
   <a href="https://github.com/k4ustu3h/monocons-android/blob/main/LICENSE">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/k4ustu3h/monocons-android?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjRkZGRkZGIj48cGF0aCBkPSJNNDgwLTQ0MHEtNTAgMC04NS0zNXQtMzUtODVxMC01MCAzNS04NXQ4NS0zNXE1MCAwIDg1IDM1dDM1IDg1cTAgNTAtMzUgODV0LTg1IDM1Wm0wIDMyMEwyOTMtNThxLTIwIDctMzYuNS01VDI0MC05NXYtMjU0cS0zOC00Mi01OS05NnQtMjEtMTE1cTAtMTM0IDkzLTIyN3QyMjctOTNxMTM0IDAgMjI3IDkzdDkzIDIyN3EwIDYxLTIxIDExNXQtNTkgOTZ2MjU0cTAgMjAtMTYuNSAzMlQ2NjctNThsLTE4Ny02MlptMC0yMDBxMTAwIDAgMTcwLTcwdDcwLTE3MHEwLTEwMC03MC0xNzB0LTE3MC03MHEtMTAwIDAtMTcwIDcwdC03MCAxNzBxMCAxMDAgNzAgMTcwdDE3MCA3MFpNMzIwLTE1OWwxNjAtNDEgMTYwIDQxdi0xMjRxLTM1IDIwLTc1LjUgMzEuNVQ0ODAtMjQwcS00NCAwLTg0LjUtMTEuNVQzMjAtMjgzdjEyNFptMTYwLTYyWiIvPjwvc3ZnPg==&color=43444B">
-  </a>
+    <img alt="GitHub License" src="https://img.shields.io/github/license/k4ustu3h/monocons-android?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjRkZGRkZGIj48cGF0aCBkPSJNNDgwLTQ0MHEtNTAgMC04NS0zNXQtMzUtODVxMC01MCAzNS04NXQ4NS0zNXE1MCAwIDg1IDM1dDM1IDg1cTAgNTAtMzUgODV0LTg1IDM1Wm0wIDMyMEwyOTMtNThxLTIwIDctMzYuNS01VDI0MC05NXYtMjU0cS0zOC00Mi01OS05NnQtMjEtMTE1cTAtMTM0IDkzLTIyN3QyMjctOTNxMTM0IDAgMjI3IDkzdDkzIDIyN3EwIDYxLTIxIDExNXQtNTkgOTZ2MjU0cTAgMjAtMTYuNSAzMlQ2NjctNThsLTE4Ny02MlptMC0yMDBxMTAwIDAgMTcwLTcwdDcwLTE3MHEwLTEwMC03MC0xNzB0LTE3MC03MHEtMTAwIDAtMTcwIDcwdC03MCAxNzBxMCAxMDAgNzAgMTcwdDE3MCA3MFpNMzIwLTE1OWwxNjAtNDEgMTYwIDQxdi0xMjRxLTM1IDIwLTc1LjUgMzEuNVQ0ODAtMjQwcS00NCAwLTg0LjUtMTEuNVQzMjAtMjgzdjEyNFptMTYwLTYyWiIvPjwvc3ZnPg==&color=43444B"></a>
   <a href="https://github.com/k4ustu3h/monocons-android/actions/workflows/build_debug_apk.yml">
-    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/k4ustu3h/monocons-android/build_debug_apk.yml?branch=main&label=Debug%20APK&logo=github&color=3F9E00">
-  </a>
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/k4ustu3h/monocons-android/build_debug_apk.yml?branch=main&label=Debug%20APK&logo=github&color=3F9E00"></a>
   <a href="https://github.com/k4ustu3h/monocons-android/actions/workflows/build_release_apk.yml">
-    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/k4ustu3h/monocons-android/build_release_apk.yml?label=Release%20APK&logo=github&color=3F9E00">
-  </a>
-  <a href="https://github.com/LawnchairLauncher/lawnicons/releases/tag/v2.17.1">
-    <img alt="Lawnicons Version" src="https://img.shields.io/badge/Lawnicons_Version-v2.17.1-s?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxMiIgZD0iTTY1LjggMTE0LjA2YTEwLjEgMTAuMSAwIDAgMC0xNy41LS4wMWwtMjEuODcgMzcuNDFjLTQgNi44Ni44OCAxNS41NCA4Ljc1IDE1LjU0aDQzLjY0YzcuODcgMCAxMi43NS04LjY2IDguNzYtMTUuNTJsLTIxLjc5LTM3LjQyWiIvPjxjaXJjbGUgY3g9IjU0IiBjeT0iNTQiIHI9IjI5IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxMiIvPjxyZWN0IHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgeD0iMTEwIiB5PSIyNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMTIiIHJ4PSIxNCIvPjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEyIiBkPSJNMTI3LjIyIDExNC4wOGExMy45OSAxMy45OSAwIDAgMSAyMS41NiAwbDUuMSA2LjE3YTEzLjk5IDEzLjk5IDAgMCAwIDEuODcgMS44N2w2LjE4IDUuMWExMy45OSAxMy45OSAwIDAgMSAwIDIxLjU3bC02LjE4IDUuMWExMy45OSAxMy45OSAwIDAgMC0xLjg3IDEuODdsLTUuMSA2LjE3YTEzLjk5IDEzLjk5IDAgMCAxLTIxLjU2IDBsLTUuMS02LjE3YTEzLjk5IDEzLjk5IDAgMCAwLTEuODctMS44N2wtNi4xNy01LjFhMTMuOTkgMTMuOTkgMCAwIDEgMC0yMS41N2w2LjE3LTUuMWExMy45OSAxMy45OSAwIDAgMCAxLjg3LTEuODdsNS4xLTYuMTd6Ii8+PC9zdmc+">
-  </a>
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/k4ustu3h/monocons-android/build_release_apk.yml?label=Release%20APK&logo=github&color=3F9E00"></a>
+  <a href="https://github.com/LawnchairLauncher/lawnicons/releases/tag/v2.18.0">
+    <img alt="Lawnicons Version" src="https://img.shields.io/badge/Lawnicons_Version-v2.18.0-s?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxMiIgZD0iTTY1LjggMTE0LjA2YTEwLjEgMTAuMSAwIDAgMC0xNy41LS4wMWwtMjEuODcgMzcuNDFjLTQgNi44Ni44OCAxNS41NCA4Ljc1IDE1LjU0aDQzLjY0YzcuODcgMCAxMi43NS04LjY2IDguNzYtMTUuNTJsLTIxLjc5LTM3LjQyWiIvPjxjaXJjbGUgY3g9IjU0IiBjeT0iNTQiIHI9IjI5IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxMiIvPjxyZWN0IHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgeD0iMTEwIiB5PSIyNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMTIiIHJ4PSIxNCIvPjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEyIiBkPSJNMTI3LjIyIDExNC4wOGExMy45OSAxMy45OSAwIDAgMSAyMS41NiAwbDUuMSA2LjE3YTEzLjk5IDEzLjk5IDAgMCAwIDEuODcgMS44N2w2LjE4IDUuMWExMy45OSAxMy45OSAwIDAgMSAwIDIxLjU3bC02LjE4IDUuMWExMy45OSAxMy45OSAwIDAgMC0xLjg3IDEuODdsLTUuMSA2LjE3YTEzLjk5IDEzLjk5IDAgMCAxLTIxLjU2IDBsLTUuMS02LjE3YTEzLjk5IDEzLjk5IDAgMCAwLTEuODctMS44N2wtNi4xNy01LjFhMTMuOTkgMTMuOTkgMCAwIDEgMC0yMS41N2w2LjE3LTUuMWExMy45OSAxMy45OSAwIDAgMCAxLjg3LTEuODdsNS4xLTYuMTd6Ii8+PC9zdmc+"></a>
 
 </div>
 
@@ -28,7 +24,7 @@ _Monocons restores the original themed icons of apps and adds icons for apps tha
 
 Try Monocons on the latest version of Lawnchair. You can enable themed icons by going to `Home Settings → General → Icon Style` and choosing the desired option.
 
-[Try Lawnchair](https://play.google.com/store/apps/details?id=app.lawnchair.play)
+[Try Lawnchair](https://github.com/LawnchairLauncher/lawnchair#download)
 
 ## Download
 
@@ -48,29 +44,38 @@ Try Monocons on the latest version of Lawnchair. You can enable themed icons by 
 ## Supporting
 
 > [!IMPORTANT]
-> Sustain Lawnicons by backing the Lawnchair team.
+> Support us on Lawnchair's Open Collective or its GitHub to help maintain Lawnicons, and in turn Monocons.
 
-[Support Lawnchair team](https://opencollective.com/lawnchair)
+[Open Collective](https://opencollective.com/lawnchair) • [GitHub](https://github.com/sponsors/LawnchairLauncher)
 
 ## Contributing
 
 <div align="left">
     <a href="CONTRIBUTING.md">
-        <img alt="Monocons guidelines" src="https://img.shields.io/badge/Monocons%20guidelines-3F9E00?logo=gitbook&logoColor=ffffff">
-    </a>  
+        <img alt="Monocons guidelines" src="https://img.shields.io/badge/Monocons%20guidelines-3F9E00?logo=gitbook&logoColor=ffffff"></a>
+    <a href="https://lawnchair.crowdin.com/lawnicons">
+        <img alt="Lawnicons localization issue" src="https://img.shields.io/badge/Localization-3F9E00?logo=crowdin&logoColor=ffffff"></a>      
 </div>
 
 ### Icons
 
-You may add missing icons if they are of high quality, with no more than 5 icons per pull request. It's essential to follow the Monocons design guidelines. To help with icon requests, please prioritize popular apps with 5M+ installations.
+You may add missing icons if they are of high quality, with no more than 5 icons per pull request. It's essential to follow the Monocons design guidelines.
 
 ### Development
 
-You can help with issues. Please refer to our guidelines.
+You're welcome to work on our issues.
+
+### Icons
+
+It's required to follow the Monocons design guidelines. Accepted contributions include: new icons capped at 5 per pull request, missing app IDs, rebranding reports, and updates for outdated icons.
+
+[Monocons design guidelines](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#contributing-icons-tldr) • [Report outdated and low-quality icons](https://github.com/k4ustu3h/monocons-android/issues/new?template=report_outdated_and_low_quality_icons.yml)
 
 ### Icon requests
 
 `Open Monocons → Tap "Request icons" → Select and request icons`
+
+The only guaranteed way to get an icon added is to contribute it yourself.
 
 ## Credits
 
