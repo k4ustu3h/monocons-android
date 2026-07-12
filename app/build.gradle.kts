@@ -78,6 +78,7 @@ android {
             dimension = "product"
             resValue("string", "apps_name", "Monocons")
             applicationIdSuffix = ".izzy"
+            versionName = version
         }
     }
 
