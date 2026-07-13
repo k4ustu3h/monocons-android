@@ -16,11 +16,11 @@
 
 package k4ustu3h.monocons.data.repository.acknowledgements
 
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
 import k4ustu3h.monocons.data.model.OssLibrary
 import k4ustu3h.monocons.data.repository.FakeOssLibraryDataSource
 import k4ustu3h.monocons.data.repository.FakeOssLibraryDataSource.Companion.defaultLibraries
-import java.util.concurrent.CountDownLatch
-import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineStart

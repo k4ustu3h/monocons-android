@@ -24,6 +24,11 @@ import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoMap
+import dev.zacsweers.metrox.viewmodel.ViewModelKey
+import java.io.File
+import java.io.FileOutputStream
 import k4ustu3h.monocons.R
 import k4ustu3h.monocons.data.model.Announcement
 import k4ustu3h.monocons.data.model.AnnouncementLocation
@@ -34,11 +39,6 @@ import k4ustu3h.monocons.data.repository.iconrequest.IconRequestHandler
 import k4ustu3h.monocons.data.repository.iconrequest.IconRequestRepository
 import k4ustu3h.monocons.data.repository.iconrequest.formatIconRequestList
 import k4ustu3h.monocons.ui.util.copyTextToClipboard
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoMap
-import dev.zacsweers.metrox.viewmodel.ViewModelKey
-import java.io.File
-import java.io.FileOutputStream
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

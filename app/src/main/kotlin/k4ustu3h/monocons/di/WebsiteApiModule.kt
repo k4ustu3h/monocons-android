@@ -76,8 +76,7 @@ interface WebsiteApiModule {
                 .build().create()
         } else {
             object : AnnouncementsAPI {
-                override suspend fun getAnnouncements(cacheControl: String) =
-                    Announcements(announcements = emptyList())
+                override suspend fun getAnnouncements(cacheControl: String) = Announcements(announcements = emptyList())
             }
         }
     }

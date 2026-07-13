@@ -33,8 +33,7 @@ class SharedPreferencesStore(
     private val listeners =
         mutableMapOf<PreferenceChangeListener, SharedPreferences.OnSharedPreferenceChangeListener>()
 
-    override fun getBoolean(key: String, defaultValue: Boolean) =
-        prefs.getBoolean(key, defaultValue)
+    override fun getBoolean(key: String, defaultValue: Boolean) = prefs.getBoolean(key, defaultValue)
 
     override fun putBoolean(key: String, value: Boolean) {
         prefs.edit { putBoolean(key, value) }
@@ -65,8 +64,7 @@ class InMemoryPreferenceStore : PreferenceStore {
     private val values = mutableMapOf<String, Any>()
     private val listeners = linkedSetOf<PreferenceChangeListener>()
 
-    override fun getBoolean(key: String, defaultValue: Boolean) =
-        values[key] as? Boolean ?: defaultValue
+    override fun getBoolean(key: String, defaultValue: Boolean) = values[key] as? Boolean ?: defaultValue
 
     override fun putBoolean(key: String, value: Boolean) {
         values[key] = value

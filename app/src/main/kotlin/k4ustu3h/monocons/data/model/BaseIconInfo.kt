@@ -65,13 +65,11 @@ data class Component(
         return "ComponentInfo{$packageName/$className}"
     }
 
-    override fun equals(other: Any?) =
-        other is Component && packageName == other.packageName && className == other.className
+    override fun equals(other: Any?) = other is Component && packageName == other.packageName && className == other.className
 
     override fun hashCode() = packageName.hashCode() + className.hashCode()
 
-    override fun compareTo(other: Component) =
-        compareValuesBy(this, other, Component::packageName, Component::className)
+    override fun compareTo(other: Component) = compareValuesBy(this, other, Component::packageName, Component::className)
 
     companion object {
         fun unflattenFromString(str: String): Component? {

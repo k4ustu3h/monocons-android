@@ -16,11 +16,11 @@
 
 package k4ustu3h.monocons.data.repository
 
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
 import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.data.model.IconInfoModel
 import k4ustu3h.monocons.data.repository.FakeIconDataSource.Companion.defaultIcons
-import java.util.concurrent.CountDownLatch
-import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.test.runTest

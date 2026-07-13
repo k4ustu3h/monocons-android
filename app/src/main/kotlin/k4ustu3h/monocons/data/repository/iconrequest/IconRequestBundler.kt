@@ -223,7 +223,6 @@ internal object IconRequestBundler {
     )
 }
 
-fun formatIconRequestList(iconRequestList: List<SystemIconInfo>): String =
-    iconRequestList.joinToString(separator = "\n\n") { "${it.label}\n${it.component.flattenToString()}" }
+fun formatIconRequestList(iconRequestList: List<SystemIconInfo>): String = iconRequestList.joinToString(separator = "\n\n") { "${it.label}\n${it.component.flattenToString()}" }
 
 private const val TAG = "IconRequestBundler"

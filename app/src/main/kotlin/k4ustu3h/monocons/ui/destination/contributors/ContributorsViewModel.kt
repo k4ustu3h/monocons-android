@@ -61,10 +61,10 @@ class ContributorsViewModel(
 
     private val viewModelState = MutableStateFlow(ContributorsViewModelState(isRefreshing = true))
     val uiState = viewModelState.map { it.toUiState() }.stateIn(
-            viewModelScope,
-            SharingStarted.Eagerly,
-            viewModelState.value.toUiState(),
-        )
+        viewModelScope,
+        SharingStarted.Eagerly,
+        viewModelState.value.toUiState(),
+    )
 
     init {
         viewModelScope.launch {
