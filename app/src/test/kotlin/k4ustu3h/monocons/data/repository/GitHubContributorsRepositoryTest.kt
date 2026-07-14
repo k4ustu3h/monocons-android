@@ -16,6 +16,7 @@
 
 package k4ustu3h.monocons.data.repository
 
+import android.app.Application
 import k4ustu3h.monocons.data.api.GitHubContributorsAPI
 import k4ustu3h.monocons.data.model.GitHubContributor
 import kotlinx.coroutines.test.runTest
@@ -23,8 +24,11 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import org.mockito.Mockito.mock
 
 class GitHubContributorsRepositoryTest {
+
+    private val mockApplication = mock(Application::class.java)
 
     private fun contributor(
         id: Long,
@@ -44,6 +48,7 @@ class GitHubContributorsRepositoryTest {
     private fun repository(contributors: List<GitHubContributor>) = GitHubContributorsRepository(
         api = FakeGitHubContributorsApi(contributors),
         contributorIds = coreIds,
+        application = mockApplication,
     )
 
     @Test
@@ -96,6 +101,7 @@ class GitHubContributorsRepositoryTest {
         val throwingRepo = GitHubContributorsRepository(
             api = ThrowingGitHubContributorsApi,
             contributorIds = coreIds,
+            application = mockApplication,
         )
 
         throwingRepo.getTopContributors()
