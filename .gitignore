@@ -19,7 +19,3 @@ __pycache__/
 .idea/
 .vscode/
 .vsc/
-
-# Contributors' data
-app/assets/contributors.json
-app/src/izzy/res
