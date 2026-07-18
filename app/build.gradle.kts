@@ -16,7 +16,7 @@ val buildCommit = providers.exec {
 val ciBuild = providers.environmentVariable("CI").isPresent
 val ciRef = providers.environmentVariable("GITHUB_REF").orNull.orEmpty()
 val ciRunNumber = providers.environmentVariable("GITHUB_RUN_NUMBER").orNull.orEmpty()
-val isReleaseBuild = ciBuild && ciRef.contains("main")
+val isReleaseBuild = ciBuild && (ciRef.contains("main") || ciRef.startsWith("refs/tags/"))
 val devReleaseName = if (ciBuild) "(Dev #$ciRunNumber)" else "($buildCommit)"
 
 val version = "1.1.1"
