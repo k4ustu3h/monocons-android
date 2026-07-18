@@ -36,14 +36,6 @@ jobs:
           fi
       - name: Assign needed environment variables
         run: echo "CUSTOM_TAG=${{ github.event.inputs.customTag }}" >> $GITHUB_ENV
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.13"
-      - name: Prepare Offline Data for Izzy
-        run: |
-          pip install Pillow
-          python download_contributor_data.py
       - name: Build release APKs
         run: ./gradlew clean assembleAppRelease assembleIzzyRelease
       - name: Upload artifacts
