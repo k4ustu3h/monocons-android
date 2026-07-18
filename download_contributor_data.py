@@ -1,6 +1,8 @@
 import os
 import json
 import urllib.request
+import argparse
+import shutil
 from PIL import Image
 
 API_URL = "https://api.github.com/repos/k4ustu3h/monocons-android/contributors"
@@ -14,6 +16,24 @@ EXTRA_AVATARS = [
         "avatar_url": "https://avatars.githubusercontent.com/u/49114212?v=4"
     }
 ]
+
+def clean_offline_data():
+    print("Running cleanup...")
+
+    json_path = os.path.join(RAW_DIR, "contributors.json")
+    if os.path.exists(json_path):
+        os.remove(json_path)
+        print(f"Deleted: {json_path}")
+    else:
+        print(f"Not found (skipping): {json_path}")
+
+    if os.path.exists(DRAWABLE_DIR):
+        shutil.rmtree(DRAWABLE_DIR)
+        print(f"Deleted directory and contents: {DRAWABLE_DIR}")
+    else:
+        print(f"Not found (skipping): {DRAWABLE_DIR}")
+
+    print("Cleanup complete.")
 
 def download_offline_data():
     os.makedirs(RAW_DIR, exist_ok=True)
@@ -67,4 +87,16 @@ def download_offline_data():
             print(f"Failed to process {user_id}: {e}")
 
 if __name__ == "__main__":
-    download_offline_data()
+    parser = argparse.ArgumentParser(description="Manage offline contributor data for Monocons Izzy build.")
+    parser.add_argument(
+        "--clean",
+        action="store_true",
+        help="Clean up the previously downloaded contributors.json and avatar images."
+    )
+
+    args = parser.parse_args()
+
+    if args.clean:
+        clean_offline_data()
+    else:
+        download_offline_data()
