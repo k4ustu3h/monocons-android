@@ -128,9 +128,13 @@ androidComponents {
     }
 
     onVariants { variant ->
+        val flavorName = variant.productFlavors.firstOrNull()?.second
+        val isIzzy = flavorName == "izzy"
+
         variant.outputs.forEach { output ->
             with(output) {
-                val newApkName = "Monocons ${versionName.get()} v${versionCode.get()}_${variant.buildType}.apk"
+                val flavorSuffix = if (isIzzy) "izzy" else ""
+                val newApkName = "Monocons.${versionName.get()}.${variant.buildType}.$flavorSuffix.apk"
                 outputFileName = newApkName
             }
         }
