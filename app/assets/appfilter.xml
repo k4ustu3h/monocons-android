@@ -67,6 +67,7 @@
   <item component="ComponentInfo{me.linshen.abattery/me.linshen.abattery.MainActivity}" drawable="abattery" name="aBattery" />
   <item component="ComponentInfo{com.hampusolsson.abstruct/com.hampusolsson.abstruct.splash.SplashActivity}" drawable="abstruct" name="Abstruct" />
   <item component="ComponentInfo{io.aiddevs.verbandbuch/io.aiddevs.verbandbuch.MainActivity}" drawable="generic_aid" name="Accident book" />
+  <item component="ComponentInfo{uk.akane.accord/org.akanework.gramophone.ui.MainActivity}" drawable="accord" name="Accord" />
   <item component="ComponentInfo{com.nll.cb/com.nll.cb.DefaultAlias}" drawable="generic_dialer" name="ACR Phone" />
   <item component="ComponentInfo{de.szalkowski.activitylauncher/de.szalkowski.activitylauncher.MainActivity}" drawable="activity_launcher" name="Activity Launcher" />
   <item component="ComponentInfo{de.szalkowski.activitylauncher/de.szalkowski.activitylauncher.entrypoint.MainActivity}" drawable="activity_launcher" name="Activity Launcher" />
@@ -313,6 +314,9 @@
   <item component="ComponentInfo{com.mobileappsshop.barcode/com.mobileappsshop.MainActivity}" drawable="generic_qr_reader" name="Barcode Scanner" />
   <item component="ComponentInfo{com.manateeworks.barcodescanners/com.manateeworks.barcodescanners.SplashActivity}" drawable="generic_qr_reader" name="Barcode Scanner" />
   <item component="ComponentInfo{com.odenapps.scanner/com.odenapps.scanner.MainActivity}" drawable="generic_qr_reader" name="Barcode Scanner" />
+  <item component="ComponentInfo{com.chiller3.bcr/com.chiller3.bcr.SettingsActivity}" drawable="basic_call_recorder" name="Basic Call Recorder" />
+  <item component="ComponentInfo{com.chiller3.bcr/com.chiller3.bcr.settings.SettingsActivity}" drawable="basic_call_recorder" name="Basic Call Recorder" />
+  <item component="ComponentInfo{com.chiller3.bcr/com.chiller3.bcr.settings.SettingsActivityLauncher}" drawable="basic_call_recorder" name="Basic Call Recorder" />
   <item component="ComponentInfo{notizen.basic.notes.notas.note.notepad/notizen.basic.notes.notas.note.notepad.main.SplashActivity}" drawable="generic_notes" name="BasicNote" />
   <item component="ComponentInfo{ru.g000sha256.bass_booster/g000sha256.bass_booster.MainActivity}" drawable="generic_voice" name="Bass Booster" />
   <item component="ComponentInfo{com.saha.batchuninstaller/com.saha.batchuninstaller.ui.SplashScreenActivity}" drawable="generic_trash_can" name="Batch Uninstaller" />
@@ -1203,6 +1207,16 @@
   <item component="ComponentInfo{com.candywriter.doglife/com.unity3d.player.UnityPlayerActivity}" drawable="doglife" name="DogLife" />
   <item component="ComponentInfo{app.dogo.com.dogo_android/app.dogo.com.dogo_android.splashscreen.SplashActivity}" drawable="dogo" name="Dogo" />
   <item component="ComponentInfo{com.dolby/com.dolby.ds1appUI.MainActivity}" drawable="dolby" name="Dolby" />
+  <item component="ComponentInfo{com.atmos/com.atmos.ds1appUI.MainActivity}" drawable="dolby" name="Dolby" />
+  <item component="ComponentInfo{com.ontim.dolby/com.ontim.dolby.LauncherActivity}" drawable="dolby" name="Dolby" />
+  <item component="ComponentInfo{co.aospa.settings.dolby/co.aospa.settings.dolby.DolbyActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{co.aospa.dolby.oplus/co.aospa.dolby.oplus.DolbyActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{com.ontim.dolby.dolbyui.ui/com.ontim.dolby.dolbyui.ui.LauncherActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{org.lunaris.dolby/org.lunaris.dolby.ui.DolbyActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{co.aospa.dolby.xiaomi/co.aospa.dolby.xiaomi.DolbySettingsActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{com.ape.dolby.settings/com.ape.dolby.settings.LauncherActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{co.aospa.dolby/co.aospa.dolby.DolbyActivity}" drawable="dolby" name="Dolby Atmos" />
+  <item component="ComponentInfo{com.motorola.dolby.dolbyui.ui/com.motorola.dolby.dolbyui.ui.LauncherActivity}" drawable="dolby" name="Dolby Audio" />
   <item component="ComponentInfo{com.dolby.dolby234/com.dolby.sessions.Launcher}" drawable="dolby" name="Dolby On" />
   <item component="ComponentInfo{se.dominossweden.app/com.google.android.archive.ReactivateActivity}" drawable="dominos_pizza" name="Domino's Pizza" />
   <item component="ComponentInfo{zena.dominos/zena.dominos.MainActivity}" drawable="dominos_pizza" name="Domino's Pizza" />
@@ -1327,6 +1341,7 @@
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakSaverLauncher3Hourglass}" drawable="duolingo" name="Duolingo⏳" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1Snowflake}" drawable="duolingo" name="Duolingo❄️" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakSaverLauncher3Eyes}" drawable="duolingo" name="Duolingo👀" />
+  <item component="ComponentInfo{com.duolingo/com.duolingo.app.BackgroundedLauncherBrokenHeart}" drawable="duolingo" name="Duolingo💔" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1Siren}" drawable="duolingo" name="Duolingo🚨" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1FrozenFace}" drawable="duolingo" name="Duolingo🥶" />
   <item component="ComponentInfo{com.duolingo/com.duolingo.app.StreakFrozenLauncher1IceCube}" drawable="duolingo" name="Duolingo🧊" />
@@ -2215,6 +2230,7 @@
   <item component="ComponentInfo{com.indus.appstore/com.indus.appstore.BetaIconLauncherActivityAlias}" drawable="indus_appstore" name="Indus Appstore" />
   <item component="ComponentInfo{com.grykuby.minesweeper/com.unity3d.player.UnityPlayerActivity}" drawable="generic_minesweeper" name="Infinite Minesweeper" />
   <item component="ComponentInfo{com.balysv.loop/com.balysv.loop.SplashScreenActivity}" drawable="infinity_loop" name="Infinity Loop" />
+  <item component="ComponentInfo{com.infosysit.springboard/com.infosysit.springboard.HomeActivity}" drawable="infosys_springboard" name="Infosys Springboard" />
   <item component="ComponentInfo{com.comarch.security.mobilebanking/pl.ing.ingflutter.MainActivity}" drawable="ing" name="ING" />
   <item component="ComponentInfo{com.ing.banking/com.ing.banking.features.welcome.WelcomeActivity}" drawable="ing" name="ING" />
   <item component="ComponentInfo{com.ing.banking/com.ing.banking.framework.features.welcome.WelcomeActivity}" drawable="ing" name="ING" />
@@ -3090,6 +3106,7 @@
   <item component="ComponentInfo{com.android.notes/com.android.notes.Notes}" drawable="generic_notes" name="Notes" />
   <item component="ComponentInfo{foundation.e.notes/it.niedermann.owncloud.notes.main.MainActivity}" drawable="generic_notes" name="Notes" />
   <item component="ComponentInfo{foundation.e.notes/foundation.e.notes.android.activity.SplashscreenActivity}" drawable="generic_notes" name="Notes" />
+  <item component="ComponentInfo{in.fudr.nbc/in.fudr.nbc.MainActivity}" drawable="nothing_before_coffee" name="Nothing Before Coffee" />
   <item component="ComponentInfo{com.nothing.camera/com.nothing.camera.activity.CameraActivity}" drawable="nothing_camera" name="Nothing Camera" />
   <item component="ComponentInfo{com.nothing.gallery/com.nothing.gallery.activity.EntryActivity}" drawable="nothing_gallery" name="Nothing Gallery" />
   <item component="ComponentInfo{com.nothing.games/com.nothing.games.MainActivity}" drawable="nothing_games" name="Nothing Games" />
@@ -3121,6 +3138,7 @@
   <item component="ComponentInfo{nl.ns.android.activity/nl.ns.android.activity.homepagina.HomePaginaActivity}" drawable="ns" name="NS" />
   <item component="ComponentInfo{nl.ns.android.activity/nl.ns.android.activity.reisplanner.ReisplannerActivity}" drawable="ns" name="NS" />
   <item component="ComponentInfo{nl.ns.android.activity/nl.ns.android.activity.start.StartActivity}" drawable="ns" name="NS" />
+  <item component="ComponentInfo{in.gov.scholarships.nspotr/in.gov.scholarships.nspotr.ui.activities.SplashScreenActivity}" drawable="nsp_otr" name="NSP OTR" />
   <item component="ComponentInfo{thanhletranngoc.calculator.pro/thanhletranngoc.calculator.pro.activities.MainActivity}" drawable="generic_calculator_plus_minus_multi_equal" name="NT Calculator" />
   <item component="ComponentInfo{com.nu.production/br.com.nubank.app.ProxyActivity}" drawable="nubank" name="Nubank" />
   <item component="ComponentInfo{com.nu.production/br.com.nubank.app.SplashScreenActivity}" drawable="nubank" name="Nubank" />
@@ -5064,6 +5082,9 @@
   <item component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.gui.tv.MainTvActivity}" drawable="vlc" name="VLC" />
   <item component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.StartActivity}" drawable="vlc" name="VLC" />
   <item component="ComponentInfo{com.frontrow.vlog/com.frontrow.vlog.ui.splash.SplashActivity}" drawable="vn" name="VN" />
+  <item component="ComponentInfo{com.google.android.apps.accessibility.voiceaccess/com.google.android.apps.accessibility.voiceaccess.activities.Launchapp.pixel_Jauncher}" drawable="voice_access" name="Voice Access" />
+  <item component="ComponentInfo{com.google.android.apps.accessibility.voiceaccess/com.google.android.apps.accessibility.voiceaccess.LauncherActivity}" drawable="voice_access" name="Voice Access" />
+  <item component="ComponentInfo{com.google.android.apps.accessibility.voiceaccess/com.google.android.apps.accessibility.voiceaccess.activities.LaunchActivity}" drawable="voice_access" name="Voice Access" />
   <item component="ComponentInfo{com.first75.voicerecorder2/com.first75.voicerecorder2.ui.MainActivity}" drawable="generic_voice_recorder_waves" name="Voice Recorder" />
   <item component="ComponentInfo{com.first75.voicerecorder2/com.first75.voicerecorder2.ui.main.MainActivity}" drawable="generic_voice_recorder_waves" name="Voice Recorder" />
   <item component="ComponentInfo{com.splendapps.voicerec/com.splendapps.voicerec.MainActivity}" drawable="generic_microphone" name="Voice Recorder" />
