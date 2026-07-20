@@ -29,12 +29,12 @@ Try Monocons on the latest version of Lawnchair. You can enable themed icons by 
 ## Download
 
 <p align="left">
+  <a href="https://apt.izzysoft.de/fdroid/index/apk/k4ustu3h.monocons.izzy">
+    <img src="docs/images/badge-izzyondroid.png" alt="Get it on IzzyOnDroid" height="60" /></a>
   <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/k4ustu3h/monocons-android">
-    <img src="docs/images/badge-obtainium.png" alt="Get it on Obtainium" height="60" />
-  </a>
+    <img src="docs/images/badge-obtainium.png" alt="Get it on Obtainium" height="60" /></a>
   <a href="https://github.com/k4ustu3h/monocons-android/releases/latest">
-    <img src="docs/images/badge-github.png" alt="Get it on GitHub" height="60" />
-  </a>
+    <img src="docs/images/badge-github.png" alt="Get it on GitHub" height="60" /></a>
 </p>
 
 ### Pre-release version with recent updates
