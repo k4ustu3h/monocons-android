@@ -3795,6 +3795,7 @@
   <item component="ComponentInfo{com.pl.premierleague/com.pulselive.premierleague25.main.MainActivity}" drawable="premier_league" name="Premier League" />
   <item component="ComponentInfo{com.prequel.app/com.prequel.app.ui.SplashActivity}" drawable="prequel" name="Prequel" />
   <item component="ComponentInfo{com.prequel.app/com.prequel.app.DefaultIconAlias}" drawable="prequel" name="Prequel" />
+  <item component="ComponentInfo{journal.gratitude.com.gratitudejournal/journal.gratitude.com.gratitudejournal.ContainerActivity}" drawable="presently" name="Presently" />
   <item component="ComponentInfo{com.smmservice.printer/com.smmservice.printer.ui.activity.MainActivity}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{org.billthefarmer.print/org.billthefarmer.print.Print}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{com.dynamixsoftware.printershare/com.dynamixsoftware.printershare.ActivityMain}" drawable="generic_printer" name="PrinterShare" />
@@ -5070,6 +5071,9 @@
   <item component="ComponentInfo{org.ungoogled.chromium.extensions.stable/com.google.android.apps.chrome.Main}" drawable="google_chrome" name="Ungoogled Chromium Extensions" />
   <item component="ComponentInfo{jp.ddo.hotmist.unicodepad/jp.ddo.hotmist.unicodepad.UnicodeActivity}" drawable="unicodepad" name="UnicodePad" />
   <item component="ComponentInfo{com.ubnt.easyunifi/com.ubnt.unifi.network.splashscreen.SplashScreenActivity}" drawable="unifi" name="UniFi" />
+  <item component="ComponentInfo{com.Relmtech.Remote/com.unified.v3.frontend.views.MainActivity}" drawable="unified_remote" name="Unified Remote" />
+  <item component="ComponentInfo{com.Relmtech.Remote/com.Relmtech.Remote2.Activities.MainActivity}" drawable="unified_remote" name="Unified Remote" />
+  <item component="ComponentInfo{com.Relmtech.RemotePaid/com.unified.v3.frontend.views.MainActivity}" drawable="unified_remote_full" name="Unified Remote Full" />
   <item component="ComponentInfo{de.unifilm.app/de.unifilm.app.MainActivity}" drawable="unifilm_de" name="unifilm.de" />
   <item component="ComponentInfo{com.uniqlo.my.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.HomeActivity}" drawable="uniqlo" name="UNIQLO" />
   <item component="ComponentInfo{com.uniqlo.my.catalogue/com.uniqlo.ja.catalogue.view.mobile.startup.StartupActivity}" drawable="uniqlo" name="UNIQLO" />
