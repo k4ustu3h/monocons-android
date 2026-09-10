@@ -348,6 +348,7 @@
   <item component="ComponentInfo{com.certified.audionote/com.certified.audionote.ui.main.MainActivity}" drawable="generic_voice" name="Audio Notes" />
   <item component="ComponentInfo{fr.dzx.audiosource/fr.dzx.audiosource.MainActivity}" drawable="generic_microphone" name="Audio Source" />
   <item component="ComponentInfo{com.audiobooks.androidapp/com.audiobooks.androidapp.core.MainActivity}" drawable="generic_player" name="Audiobooks.com" />
+  <item component="ComponentInfo{org.lineageos.audiofx/org.lineageos.audiofx.activity.ActivityMusic}" drawable="audiofx" name="AudioFX" />
   <item component="ComponentInfo{com.aurora.store/com.aurora.store.activity.AuroraActivity}" drawable="aurora_store" name="Aurora Store" />
   <item component="ComponentInfo{com.aurora.store/com.aurora.store.ui.single.activity.SplashActivity}" drawable="aurora_store" name="Aurora Store" />
   <item component="ComponentInfo{com.aurora.store/com.aurora.store.view.ui.onboarding.OnboardingActivity}" drawable="aurora_store" name="Aurora Store" />
@@ -1356,6 +1357,13 @@
   <item component="ComponentInfo{com.dbna.app/com.dbna.app.MainActivity}" drawable="dbna" name="DBNA" />
   <item component="ComponentInfo{com.wb.goog.dc.dcwc/com.wb.goog.dc.dcwc.CustomActivity}" drawable="dc_worlds_collide" name="DC Worlds Collide" />
   <item component="ComponentInfo{com.sunilpaulmathew.debloater/com.sunilpaulmathew.debloater.activities.StartActivity}" drawable="de_bloater" name="De-Bloater" />
+  <item component="ComponentInfo{com.playdigious.deadcells.mobile/com.fiveplay.mod.RMS.Recovery}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.playdigious.deadcells.mobile/com.playdigious.deadcells.mobile.DeadCellsLoading}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.netflix.NGP.DeadCellsReturnToCastlevania/com.playdigious.deadcells.mobile.DeadCellsLoading}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.tencent.tmgp.bilibili.deadcells.mobile/com.bilibili.deadcells.mobile.SplashActivity}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.netflix.NGP.DeadCellsReturnToCastlevania/com.fiveplay.mod.RMS.Recovery}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.playdigious.deadcells.epic/com.playdigious.deadcells.mobile.DeadCells}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.playdigious.deadcells.mobile/com.an1.unpackdata.MainActivity}" drawable="dead_cells" name="Dead Cells" />
   <item component="ComponentInfo{com.deepl.mobiletranslator/com.deepl.mobiletranslator.MainActivity}" drawable="deepl" name="DeepL" />
   <item component="ComponentInfo{com.example.deeplviewer/com.example.deeplviewer.MainActivity}" drawable="deepl" name="DeepL" />
   <item component="ComponentInfo{com.jamal2367.deepl/com.jamal2367.deepl.MainActivity}" drawable="deepl" name="DeepL" />
@@ -2632,6 +2640,7 @@
   <item component="ComponentInfo{com.heytap.music/com.allsaints.music.ui.splash.SplashActivity}" drawable="heytap_music" name="HeyTap Music" />
   <item component="ComponentInfo{com.heytap.music/com.nearme.music.local.ui.LocalMusicActivity}" drawable="heytap_music" name="HeyTap Music" />
   <item component="ComponentInfo{com.heytap.music/com.nearme.music.splash.SplashActivity}" drawable="heytap_music" name="HeyTap Music" />
+  <item component="ComponentInfo{com.hiby.music/com.hiby.music.Activity.StartActivity}" drawable="hiby_music" name="Hiby Music" />
   <item component="ComponentInfo{com.jami.tool.hiddensetting/com.xiaopandream.hiddensetting.MainActivity}" drawable="settings" name="Hidden Settings" />
   <item component="ComponentInfo{com.jami.tool.hiddensetting/com.mobileandroid.tools.hidden.settings.features.access.master.SplashActivity}" drawable="settings" name="Hidden Settings" />
   <item component="ComponentInfo{com.calculator.hideu/com.calculator.hideu.SplashActivity}" drawable="generic_calculator_minus_multi_plus_equal" name="HideU" />
@@ -3169,6 +3178,10 @@
   <item component="ComponentInfo{org.lichess.mobileapp/org.lichess.mobileapp.MainActivity}" drawable="lichess" name="Lichess" />
   <item component="ComponentInfo{org.lichess.mobileV2/org.lichess.mobileV2.MainActivity}" drawable="lichess" name="Lichess" />
   <item component="ComponentInfo{cl.walmart.liderapp/cl.walmart.liderapp.SplashActivity}" drawable="walmart" name="Lider" />
+  <item component="ComponentInfo{de.lidlconnect.android/de.addmoremobile.lidlconnect.ui.boot.BootActivity}" drawable="lidl_plus" name="Lidl Connect" />
+  <item component="ComponentInfo{com.lidlhome.smart/com.smart.ThingSplashActivity}" drawable="lidl_plus" name="Lidl Home" />
+  <item component="ComponentInfo{com.lidl.eci.lidlplus/es.lidlplus.i18n.splash.presentation.view.SplashActivity}" drawable="lidl_plus" name="Lidl Plus" />
+  <item component="ComponentInfo{com.lidl.eci.lidlplus/es.lidlplus.i18n.StandardLauncher}" drawable="lidl_plus" name="Lidl Plus" />
   <item component="ComponentInfo{com.adobe.lrmobile/com.adobe.lrmobile.LrMobileActivity}" drawable="lightroom" name="Lightroom" />
   <item component="ComponentInfo{com.adobe.lrmobile/com.adobe.lrmobile.StorageCheckActivity}" drawable="lightroom" name="Lightroom" />
   <item component="ComponentInfo{com.adobe.lrmobile/com.jojoy.delegate.JojoyInstallerActivity}" drawable="lightroom" name="Lightroom" />
@@ -3176,6 +3189,8 @@
   <item component="ComponentInfo{jp.naver.line.android/jp.naver.line.android.activity.SplashActivity}" drawable="line" name="LINE" />
   <item component="ComponentInfo{org.lineageos.glimpse/org.lineageos.glimpse.MainActivity}" drawable="generic_gallery" name="LineageOS Gallery" />
   <item component="ComponentInfo{org.lineageos.glimpse.dev/org.lineageos.glimpse.MainActivity}" drawable="generic_gallery_dev" name="LineageOS Gallery Dev" />
+  <item component="ComponentInfo{org.lineageos.twelve/org.lineageos.twelve.MainActivity}" drawable="lineageos_music_12" name="LineageOS Music 12" />
+  <item component="ComponentInfo{com.bluen1nja1.twelve/com.bluen1nja1.twelve.MainActivity}" drawable="lineageos_music_12" name="LineageOS Music 12" />
   <item component="ComponentInfo{org.lineageos.recorder/org.lineageos.recorder.RecorderActivity}" drawable="generic_voice_recorder_waves" name="LineageOS Recorder" />
   <item component="ComponentInfo{org.lineageos.recorder/.RecorderActivity}" drawable="generic_voice_recorder_waves" name="LineageOS Recorder" />
   <item component="ComponentInfo{org.lineageos.recorder.dev/org.lineageos.recorder.RecorderActivity}" drawable="generic_voice_recorder_waves_dev" name="LineageOS Recorder Dev" />
@@ -3555,6 +3570,8 @@
   <item component="ComponentInfo{com.javiersantos.mlmanager/com.javiersantos.mlmanager.activities.MainActivity}" drawable="ml_manager" name="ML Manager" />
   <item component="ComponentInfo{com.javiersantos.mlmanagerpro/com.javiersantos.mlmanager.activities.MainActivity}" drawable="ml_manager" name="ML Manager Pro" />
   <item component="ComponentInfo{com.supercell.moco/com.supercell.moco.GameApp}" drawable="moco" name="mo.co" />
+  <item component="ComponentInfo{com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity}" drawable="mob_control" name="Mob Control" />
+  <item component="ComponentInfo{com.vincentb.MobControl/com.unity3d.player.UnityPlayerActivity}" drawable="mob_control" name="Mob Control" />
   <item component="ComponentInfo{com.mobikwik_new/com.mobikwik_new.MobikwikMain}" drawable="mobikwik" name="Mobikwik" />
   <item component="ComponentInfo{com.mobile.legends/com.moba.unityplugin.MobaGameMainActivity}" drawable="mobile_legends" name="Mobile Legends" />
   <item component="ComponentInfo{com.mobile.legends/com.moba.unityplugin.MobaGameMainActivityWithExtractor}" drawable="mobile_legends" name="Mobile Legends" />
@@ -3850,6 +3867,7 @@
   <item component="ComponentInfo{br.com.gruposbf.nike/br.com.gruposbf.nike.MainActivity}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{com.nike.omega/com.nike.omega.MainActivityDefault}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{com.nintendo.znba/com.nintendo.znba.MainActivity}" drawable="nintendo_music" name="Nintendo Music" />
+  <item component="ComponentInfo{xyz.nextalone.nnngram/org.telegram.messenger.DefaultIcon}" drawable="nullgram" name="Nnngram" />
   <item component="ComponentInfo{com.shamim.skypatch/com.android.camera.CameraLauncher}" drawable="generic_camera" name="Nocture" />
   <item component="ComponentInfo{com.shallwaystudio.nodevideo/com.unity3d.player.UnityPlayerActivity}" drawable="nodevideo" name="Node Video" />
   <item component="ComponentInfo{com.nokoprint/com.nokoprint.ActivityHome}" drawable="generic_printer" name="Noko Print" />
@@ -3897,6 +3915,7 @@
   <item component="ComponentInfo{com.noto/com.noto.app.Futuristic}" drawable="noto" name="Noto" />
   <item component="ComponentInfo{com.noto/com.noto.app.Purpleberry}" drawable="noto" name="Noto" />
   <item component="ComponentInfo{com.noto/com.noto.app.SanguineSun}" drawable="noto" name="Noto" />
+  <item component="ComponentInfo{com.invex.now/com.invex.now.ui.splash.view.SplashActivity}" drawable="now_bank" name="Now Bank" />
   <item component="ComponentInfo{com.google.android.apps.pixel.nowplaying/com.google.android.apps.pixel.nowplaying.mainscreen.NowPlayingMainActivity}" drawable="google_now_playing" name="Now Playing" />
   <item component="ComponentInfo{irheral.edge.nowplaying/edge.irheral.nowplaying.MainActivity}" drawable="generic_player" name="Now Playing for Edge Screen" />
   <item component="ComponentInfo{nl.ns.android.activity/nl.ns.android.activity.homepagina.HomePaginaActivity}" drawable="ns" name="NS" />
@@ -3913,6 +3932,23 @@
   <item component="ComponentInfo{com.nu.production/br.com.nubank.app.valhalla.ValhallaSplashScreenActivity}" drawable="nubank" name="Nubank" />
   <item component="ComponentInfo{com.nu.production/br.com.nubank.app.LegacySplashActivity}" drawable="nubank" name="Nubank" />
   <item component="ComponentInfo{com.nu.production/br.com.nubank.app.LegacyUvSplashActivity}" drawable="nubank" name="Nubank" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.AquaIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.CloudIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.DarkIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.MaterialIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.MerioIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.MusheenIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.NeonIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.NoxIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.OFFICIAL}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.OldSchoolIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.PremiumIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.RainbowIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.SpaceIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.TurboIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.VintageIcon}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.ui.LaunchActivity}" drawable="nullgram" name="Nullgram" />
+  <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.DefaultIcon}" drawable="nullgram" name="Nullgram" />
   <item component="ComponentInfo{app.myzel394.numberhub/app.myzel394.numberhub.MainActivity}" drawable="unitto" name="NumberHub" />
   <item component="ComponentInfo{com.nvidia.geforcenow/com.nvidia.geforcenow.LauncherActivity}" drawable="nvidia" name="NVIDIA GeForce NOW" />
   <item component="ComponentInfo{com.nvidia.geforcenow/com.nvidia.tegrazone.MainActivity}" drawable="nvidia" name="NVIDIA GeForce NOW" />
@@ -4500,6 +4536,7 @@
   <item component="ComponentInfo{au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivity}" drawable="pocket_casts" name="Pocket Casts" />
   <item component="ComponentInfo{au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.TabWidget}" drawable="pocket_casts" name="Pocket Casts" />
   <item component="ComponentInfo{org.catrobat.paintroid/org.catrobat.paintroid.MainActivity}" drawable="pocket_paint" name="Pocket Paint" />
+  <item component="ComponentInfo{com.itunestoppodcastplayer.app/com.itunestoppodcastplayer.app.StartupActivity}" drawable="podcast_republic" name="Podcast Republic" />
   <item component="ComponentInfo{com.podverse.fdroid/com.podverse.fdroid.MainActivity}" drawable="podverse" name="Podverse" />
   <item component="ComponentInfo{com.podverse/com.podverse.MainActivity}" drawable="podverse" name="Podverse" />
   <item component="ComponentInfo{com.application.pokecardex/com.application.pokecardex.ui.MainActivity}" drawable="pokecardex" name="Pokécardex" />
