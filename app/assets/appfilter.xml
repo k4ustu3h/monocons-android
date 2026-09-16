@@ -94,6 +94,7 @@
   <item component="ComponentInfo{de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity}" drawable="activity_launcher" name="Activity Launcher" />
   <item component="ComponentInfo{wit.android.bcpBankingApp.activoBank/wit.android.bcpBankingApp.ui.activities.SplashScreenActivity}" drawable="activobank" name="ActivoBank" />
   <item component="ComponentInfo{wit.android.bcpBankingApp.activoBank/wit.android.bcpBankingApp.ui.activities.SlidingMenusActivity}" drawable="activobank" name="ActivoBank" />
+  <item component="ComponentInfo{dev.lexip.hecate/dev.lexip.hecate.ui.MainActivity}" drawable="adaptive_theme" name="Adaptive Theme" />
   <item component="ComponentInfo{com.jndapp.adaptive.material.you.iconpack/com.jndapp.adaptive.material.you.iconpack.MainActivity}" drawable="adaptive_you_icons" name="Adaptive You Icons" />
   <item component="ComponentInfo{org.adaway/org.adaway.AdAway}" drawable="adaway" name="AdAway" />
   <item component="ComponentInfo{org.adaway/org.adaway.ui.BaseActivity}" drawable="adaway" name="AdAway" />
@@ -3192,6 +3193,7 @@
   <item component="ComponentInfo{com.companyname.MaturaMatematyka/crc641e16e0ee91153bdf.SplashActivity}" drawable="generic_pi" name="Learn Math &amp; Math problems" />
   <item component="ComponentInfo{com.companyname.MaturaMatematyka/com.companyname.MaturaMatematyka.MainActivity}" drawable="generic_pi" name="Learn Math &amp; Math problems" />
   <item component="ComponentInfo{com.inditex.lefties/es.sdos.sdosproject.ui.splash.activity.LaunchActivity}" drawable="lefties" name="Lefties" />
+  <item component="ComponentInfo{com.swordfish.lemuroid/com.swordfish.lemuroid.app.mobile.feature.main.MainActivity}" drawable="lemuroid" name="Lemuroid" />
   <item component="ComponentInfo{com.zui.filemanager/com.zui.filemanager.MainActivity}" drawable="generic_files" name="Lenovo ZUI File Manager" />
   <item component="ComponentInfo{com.zui.notes/com.zui.notes.main.home.MainActivity}" drawable="generic_notes" name="Lenovo ZUI Notepad" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcuts.LensShortcut}" drawable="google_lens" name="Lens (Google Shortcuts Launcher)" />
@@ -6442,6 +6444,8 @@
   <item component="ComponentInfo{com.wtmp.svdsoftware/com.wtmp.svdsoftware.ui.HostActivity}" drawable="wtmp" name="Who touched my phone?" />
   <item component="ComponentInfo{com.wtmp.svdsoftware/com.wtmp.svdsoftware.view.AppActivity}" drawable="wtmp" name="Who touched my phone?" />
   <item component="ComponentInfo{com.wtmp.svdsoftware/com.wtmp.ui.HostActivity}" drawable="wtmp" name="Who touched my phone?" />
+  <item component="ComponentInfo{com.vrem.wifianalyzer/com.vrem.wifianalyzer.SplashActivity}" drawable="wifi_analyzer_open_source" name="WiFi Analyzer (open-source)" />
+  <item component="ComponentInfo{com.vrem.wifianalyzer/com.vrem.wifianalyzer.MainActivity}" drawable="wifi_analyzer_open_source" name="WiFi Analyzer (open-source)" />
   <item component="ComponentInfo{com.ubnt.usurvey/com.ubnt.usurvey.ui.app.splash.SplashActivity}" drawable="wifiman" name="WiFiman" />
   <item component="ComponentInfo{com.ubnt.usurvey/com.ubnt.usurvey.ui.splash.SplashActivity}" drawable="wifiman" name="WiFiman" />
   <item component="ComponentInfo{org.wikipedia/org.wikipedia.MainActivity}" drawable="wikipedia" name="Wikipedia" />
