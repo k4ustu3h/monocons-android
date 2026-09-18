@@ -396,6 +396,7 @@
   <item component="ComponentInfo{mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity}" drawable="banco_azteca" name="Banco Azteca" />
   <item component="ComponentInfo{com.bancoazteca.bienestarazteca/com.bancoazteca.bienestarazteca.ui.splash.BASplashActivity}" drawable="banco_azteca" name="Banco Azteca" />
   <item component="ComponentInfo{com.bancoazteca.bienestarazteca/vaf917458.v3bfd8f07.l9c1fc28c.ui.ofba14fd3.g475ba066}" drawable="banco_azteca" name="Banco Azteca" />
+  <item component="ComponentInfo{com.pacifico.movilmatico/xrW1T8.z3Ayu4.mnCm98.ui.tgFtL3.sn3sg8}" drawable="bdp" name="Banco del Pacífico" />
   <item component="ComponentInfo{br.com.bancopan.cartoes/br.com.bancopan.bancodigital.presentation.splash.SplashActivity}" drawable="banco_pan" name="Banco PAN" />
   <item component="ComponentInfo{mx.com.miapp/mx.com.miapp.ui.general.splash.SplashActivity}" drawable="bancoppel" name="BanCoppel" />
   <item component="ComponentInfo{mx.com.miapp/mx.com.miapp.ui.general.splash.RebrandingSplashActivity}" drawable="bancoppel" name="BanCoppel" />
@@ -1782,6 +1783,7 @@
   <item component="ComponentInfo{com.jeremysteckling.facerrel/com.jeremysteckling.facerrel.ui.activities.MainActivity}" drawable="facer" name="Facer" />
   <item component="ComponentInfo{com.fairphone.android.fairbudsapp/com.fairphone.fairsound.MainActivity}" drawable="generic_voice_recorder_waves" name="Fairbuds" />
   <item component="ComponentInfo{eu.faircode.email/eu.faircode.email.ActivityMain}" drawable="fairemail" name="FairEmail" />
+  <item component="ComponentInfo{org.fairscan.app/org.fairscan.app.MainActivity}" drawable="fairscan" name="FairScan" />
   <item component="ComponentInfo{com.miraclegames.farlight84/com.epicgames.ue4.SplashActivity}" drawable="farlight_84" name="Farlight 84" />
   <item component="ComponentInfo{com.netflix.Speedtest/com.netflix.Speedtest.MainActivity}" drawable="fast" name="Fast" />
   <item component="ComponentInfo{com.fedmobile/in.co.federalbank.federalbank.SplashScreenActivity}" drawable="federal_bank" name="Federal Bank" />
@@ -1963,6 +1965,7 @@
   <item component="ComponentInfo{com.foap.android/com.foap.android.modules.start.activities.StartActivity}" drawable="generic_camera" name="Foap" />
   <item component="ComponentInfo{com.superelement.pomodoro/com.superelement.project.LauncherActivity}" drawable="focus_todo" name="Focus To-Do" />
   <item component="ComponentInfo{com.superelement.pomodoro/com.superelement.project.ProjectActivity}" drawable="focus_todo" name="Focus To-Do" />
+  <item component="ComponentInfo{io.github.luantak.fokuslauncher/com.lu4p.fokuslauncher.MainActivity}" drawable="fokus" name="Fokus" />
   <item component="ComponentInfo{money.fold.marble/money.fold.marble.ui.screen.splash.SplashActivity_anarchy}" drawable="fold" name="Fold" />
   <item component="ComponentInfo{money.fold.marble/money.fold.marble.ui.screen.splash.SplashActivity_nebula}" drawable="fold" name="Fold" />
   <item component="ComponentInfo{money.fold.marble/money.fold.marble.ui.screen.splash.SplashActivity_original}" drawable="fold" name="Fold" />
@@ -6512,6 +6515,11 @@
   <item component="ComponentInfo{com.windscribe.vpn/com.windscribe.mobile.ui.AppStartActivity}" drawable="windscribe" name="Windscribe" />
   <item component="ComponentInfo{com.windscribe.vpn/com.windscribe.mobile.ui.preferences.icons.GlitchScribeActivity}" drawable="windscribe" name="Windscribe" />
   <item component="ComponentInfo{com.wingos.wingcamera/com.wingos.wingcamera.Camera}" drawable="generic_camera" name="WingOS Camera" />
+  <item component="ComponentInfo{com.winlator/com.winlator.MainActivity}" drawable="winlator" name="Winlator" />
+  <item component="ComponentInfo{com.winlator.vanilla/com.winlator.cmod.MainActivity}" drawable="winlator" name="Winlator" />
+  <item component="ComponentInfo{com.winlatcn/com.winlator.MainActivity}" drawable="winlator" name="Winlator" />
+  <item component="ComponentInfo{com.ludashi.benchmark/com.winlator.cmod.MainActivity}" drawable="winlator" name="Winlator CMOD" />
+  <item component="ComponentInfo{com.winlator.cmod/com.winlator.cmod.MainActivity}" drawable="winlator" name="Winlator CMOD" />
   <item component="ComponentInfo{com.fourdegreewater.wintwealth/com.fourdegreewater.wintwealth.view.WintActivity}" drawable="wint_wealth" name="Wint Wealth" />
   <item component="ComponentInfo{com.bestweatherfor.bibleoffline_pt_mulher/com.bestweatherfor.bibleoffline_pt_ra.bibleoffline.splash.Splash}" drawable="generic_bible" name="Woman Bible" />
   <item component="ComponentInfo{com.weenysoft.word2pdf/com.weenysoft.word2pdf.MainActivity}" drawable="generic_pdf_square" name="Word to PDF Converter" />
