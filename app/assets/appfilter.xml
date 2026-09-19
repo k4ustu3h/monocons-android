@@ -130,6 +130,7 @@
   <item component="ComponentInfo{com.dv.adm/com.dv.get.WebIcon}" drawable="advanced_download_manager" name="Advanced Download Manager (ADM)" />
   <item component="ComponentInfo{com.dv.adm.pay/com.dv.adm.pay.Main}" drawable="advanced_download_manager" name="Advanced Download Manager (ADM)" />
   <item component="ComponentInfo{com.dv.adm.pay/com.dv.get.Main}" drawable="advanced_download_manager" name="Advanced Download Manager (ADM)" />
+  <item component="ComponentInfo{com.codedead.advancedpassgen/com.codedead.advancedpassgen.MainActivity}" drawable="advanced_passgen" name="Advanced PassGen" />
   <item component="ComponentInfo{de.aregel.advancedpasswordgenerator/de.aregel.advancedpasswordgenerator.MainActivity}" drawable="generic_lock" name="Advanced Password Generator" />
   <item component="ComponentInfo{com.beemdevelopment.aegis/com.beemdevelopment.aegis.ui.AuthActivity}" drawable="aegis_authenticator" name="Aegis Authenticator" />
   <item component="ComponentInfo{com.beemdevelopment.aegis/com.beemdevelopment.aegis.ui.MainActivity}" drawable="aegis_authenticator" name="Aegis Authenticator" />
@@ -1053,6 +1054,7 @@
   <item component="ComponentInfo{jwtc.android.chess/jwtc.android.chess.start}" drawable="generic_chess" name="Chess" />
   <item component="ComponentInfo{com.google.android.chess/com.google.android.chess.Chess}" drawable="generic_chess" name="Chess for Android" />
   <item component="ComponentInfo{io.dehaas.chesser/io.dehaas.chesser.Welcome}" drawable="generic_chess" name="Chesseer" />
+  <item component="ComponentInfo{com.metallic.chiaki/com.metallic.chiaki.main.MainActivity}" drawable="chiaki" name="Chiaki" />
   <item component="ComponentInfo{com.onedebit.chime/com.onedebit.chime.MainActivity}" drawable="chime" name="Chime" />
   <item component="ComponentInfo{com.onedebit.chime/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="chime" name="Chime" />
   <item component="ComponentInfo{com.google.chromeremotedesktop/org.chromium.chromoting.Chromoting}" drawable="chrome_remote_desktop" name="Chrome Remote Desktop" />
@@ -2408,6 +2410,7 @@
   <item component="ComponentInfo{com.robtopx.geometryjump/com.robtopx.geometryjump.GeometryJump}" drawable="geometry_dash" name="Geometry Dash" />
   <item component="ComponentInfo{com.robtopx.geometryjump/com.unity.player.sdk.PlayerLauncher}" drawable="geometry_dash" name="Geometry Dash" />
   <item component="ComponentInfo{com.robtopx.geometryjumplite/com.robtopx.geometryjumplite.GeometryDashLite}" drawable="geometry_dash" name="Geometry Dash Lite" />
+  <item component="ComponentInfo{org.app.geotagvideocamera/org.app.geotagvideocamera.MainActivity}" drawable="geotag_video_camera" name="Geotag video camera" />
   <item component="ComponentInfo{com.pictext.followersedit/com.pictext.followersedit.ui.activ.LaunchActivity}" drawable="generic_heart" name="Get Followers Likes For Ins" />
   <item component="ComponentInfo{jp.yusukey.getsauce/jp.yusukey.getsauce.MainActivity}" drawable="generic_search" name="Get Sauce" />
   <item component="ComponentInfo{app.eduroam.geteduroam/app.eduroam.geteduroam.MainActivity}" drawable="geteduroam" name="geteduroam" />
@@ -3679,6 +3682,8 @@
   <item component="ComponentInfo{org.monogram/org.monogram.app.MainActivity}" drawable="monogram" name="MonoGram" />
   <item component="ComponentInfo{com.ustwo.monumentvalley/com.ustwo.deviceutil.MainActivity}" drawable="monument_valley" name="Monument Valley" />
   <item component="ComponentInfo{com.mooneva.app/com.mooneva.app.LauncherDefault}" drawable="mooneva_cycle" name="Mooneva Cycle" />
+  <item component="ComponentInfo{com.tranzmate/com.moovit.home.HomeActivity}" drawable="moovit" name="Moovit" />
+  <item component="ComponentInfo{com.tranzmate/com.moovit.app.home.HomeActivity}" drawable="moovit" name="Moovit" />
   <item component="ComponentInfo{org.mopria.printplugin/com.google.android.archive.ReactivateActivity}" drawable="generic_printer" name="Mopria Print Service" />
   <item component="ComponentInfo{org.mopria.printplugin/org.mopria.printplugin.ShareToPrintActivity}" drawable="generic_printer" name="Mopria Print Service" />
   <item component="ComponentInfo{org.mopria.printplugin/org.mopria.printplugin.AddPrivateCloudServiceActivity}" drawable="generic_printer" name="Mopria Print Service" />
@@ -4800,6 +4805,7 @@
   <item component="ComponentInfo{qrcodereader.barcodescanner.scan.qrscanner/qrcodereader.barcodescanner.scan.qrscanner.page.SplashActivity}" drawable="generic_qr_reader" name="QR Scanner" />
   <item component="ComponentInfo{com.appswing.qr.barcodescanner.barcodereader/com.appswing.qr.barcodescanner.barcodereader.activities.main.MainActivity}" drawable="generic_qr_reader" name="QR Scanner" />
   <item component="ComponentInfo{com.imagetotext.qrcodescanner/com.imagetotext.qrcodescanner.MainActivity}" drawable="generic_qr_reader" name="QR Scanner" />
+  <item component="ComponentInfo{com.wchung.qrshare/com.wchung.qrshare.MainActivity}" drawable="qr_share" name="QR share" />
   <item component="ComponentInfo{net.qrbot/net.qrbot.ui.main.MainActivity}" drawable="generic_qr_reader" name="QRbot" />
   <item component="ComponentInfo{com.hero.iot/com.hero.iot.ui.splash.LoadingActivity}" drawable="qubo" name="Qubo" />
   <item component="ComponentInfo{m.hero.iot/com.hero.iot.ui.splash.LoadingActivity}" drawable="qubo" name="Qubo" />
@@ -6040,6 +6046,11 @@
   <item component="ComponentInfo{net.thunderbird.android/net.thunderbird.app.common.MainActivity}" drawable="thunderbird" name="Thunderbird" />
   <item component="ComponentInfo{net.thunderbird.android.beta/com.fsck.k9.activity.MessageList}" drawable="thunderbird_beta" name="Thunderbird Beta" />
   <item component="ComponentInfo{net.thunderbird.android.beta/net.thunderbird.app.common.MainActivity}" drawable="thunderbird_beta" name="Thunderbird Beta" />
+  <item component="ComponentInfo{com.ticketmaster.tickets.international/com.ticketmaster.tickets.international.MainActivity}" drawable="ticketmaster" name="Ticketmaster" />
+  <item component="ComponentInfo{com.ticketmaster.mobile.android.na/com.ticketmaster.mobile.android.library.activity.MainActivity}" drawable="ticketmaster" name="Ticketmaster" />
+  <item component="ComponentInfo{com.ticketmaster.tickets.international/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="ticketmaster" name="Ticketmaster" />
+  <item component="ComponentInfo{com.ticketmaster.mobile.android.mx/com.ticketmaster.mobile.android.library.activity.MainActivity}" drawable="ticketmaster" name="Ticketmaster" />
+  <item component="ComponentInfo{com.ticketmaster.mobile.android.uk/com.ticketmaster.mobile.android.library.activity.MainActivity}" drawable="ticketmaster" name="Ticketmaster" />
   <item component="ComponentInfo{cn.ticktick.task/cn.ticktick.task.HomeAlia_default}" drawable="ticktick" name="TickTick" />
   <item component="ComponentInfo{com.ticktick.task/com.ticktick.task.activity.MeTaskActivity}" drawable="ticktick" name="TickTick" />
   <item component="ComponentInfo{com.ticktick.task/com.ticktick.task.activity.TickTickStartActivity}" drawable="ticktick" name="TickTick" />
@@ -6152,6 +6163,8 @@
   <item component="ComponentInfo{tv.telequebec/uk.tva.template.LaunchScreenActivity}" drawable="tele_quebec" name="Télé-Québec" />
   <item component="ComponentInfo{com.tmobile.pr.mytmobile/com.tmobile.pr.mytmobile.MyTMobileActivity}" drawable="tmobile" name="T‑Mobile" />
   <item component="ComponentInfo{com.ubercab/com.ubercab.presidio.app.core.root.RootActivity}" drawable="uber" name="Uber" />
+  <item component="ComponentInfo{com.ubercab.eats/com.ubercab.eats.app.feature.launch.LauncherActivity}" drawable="uber_eats" name="Uber Eats" />
+  <item component="ComponentInfo{com.ubercab.eats/com.ubercab.eats.core.activity.LauncherActivity}" drawable="uber_eats" name="Uber Eats" />
   <item component="ComponentInfo{com.ubs.swidK2Y.android/com.ubs.swidK2Y.android.ui.activities.start.StartActivity}" drawable="ubs_access_secure_login" name="UBS Access: Secure login" />
   <item component="ComponentInfo{com.ubs.Paymit.android/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="UBS TWINT" />
   <item component="ComponentInfo{in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity}" drawable="udise_gis_capture" name="UDISE+ GIS Capture" />
@@ -6576,6 +6589,7 @@
   <item component="ComponentInfo{com.xiaomi.glgm/com.xiaomi.glgm.home.ui.SplashActivity}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
   <item component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon1}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
   <item component="ComponentInfo{id.my.pjm.qbcd_okr_dvii/android.app.NativeActivity}" drawable="generic_shell" name="xka wl rl" />
+  <item component="ComponentInfo{com.xnotes/com.xnotes.MainActivity}" drawable="xnotes" name="xnotes" />
   <item component="ComponentInfo{video.player.videoplayer/com.inshot.xplayer.activities.FileExplorerActivity}" drawable="xplayer" name="XPlayer" />
   <item component="ComponentInfo{video.player.videoplayer/com.inshot.xplayer.activities.SplashActivity}" drawable="xplayer" name="XPlayer" />
   <item component="ComponentInfo{tv.accedo.airtel.wynk/com.razpay.apk.HaipeeKnk}" drawable="xstream" name="Xstream" />
