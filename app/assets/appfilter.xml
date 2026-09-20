@@ -431,6 +431,7 @@
   <item component="ComponentInfo{com.saha.batchuninstaller/com.saha.batchuninstaller.ui.SplashScreenActivity}" drawable="generic_trash_can" name="Batch Uninstaller" />
   <item component="ComponentInfo{com.paget96.batteryguru/com.paget96.batteryguru.activities.SplashScreen}" drawable="battery_guru" name="Battery Guru" />
   <item component="ComponentInfo{com.paget96.batteryguru/activities.MainActivity}" drawable="battery_guru" name="Battery Guru" />
+  <item component="ComponentInfo{codes.swistak.batterymonitor/codes.swistak.batterymonitor.app.BatteryInfoActivity}" drawable="battery_monitor" name="Battery Monitor" />
   <item component="ComponentInfo{com.pubg.imobile/CrackMonkey.free.menu.MainActivity}" drawable="battlegrounds_india" name="Battlegrounds India" />
   <item component="ComponentInfo{com.pubg.imobile/com.epicgames.ue4.SplashActivity}" drawable="battlegrounds_india" name="Battlegrounds India" />
   <item component="ComponentInfo{com.bancomer.mbanking/com.bbva.glomohybrid.splash.presentation.view.SplashActivity}" drawable="bbva" name="BBVA" />
@@ -2276,6 +2277,7 @@
   <item component="ComponentInfo{org.freedownloadmanager.fdm/org.freedownloadmanager.fdm.MyActivity}" drawable="free_download_manager" name="Free Download Manager" />
   <item component="ComponentInfo{com.dts.freefireth/com.dts.freefireth.FFMainActivity}" drawable="free_fire" name="Free Fire" />
   <item component="ComponentInfo{com.dts.freefiremax/com.dts.freefireth.FFMainActivity}" drawable="free_fire" name="Free Fire MAX" />
+  <item component="ComponentInfo{com.freecash.app2/com.freecash.MainActivity}" drawable="freecash" name="Freecash" />
   <item component="ComponentInfo{com.freecharge.android/com.freecharge.activities.main.MainActivity}" drawable="freecharge" name="Freecharge" />
   <item component="ComponentInfo{com.freecharge.android/com.freecharge.activities.splash.SplashActivity}" drawable="freecharge" name="Freecharge" />
   <item component="ComponentInfo{com.freecharge.android/com.freecharge.ui.MainSplashActivity}" drawable="freecharge" name="Freecharge" />
@@ -3235,6 +3237,9 @@
   <item component="ComponentInfo{com.lge.clock/com.lge.clock.AlarmClockActivity}" drawable="generic_clock" name="LG Clock" />
   <item component="ComponentInfo{com.lge.filemanager/com.lge.filemanager.view.LaunchActivity}" drawable="generic_files" name="LG File Manager" />
   <item component="ComponentInfo{com.lge.qmemoplus/com.lge.qmemoplus.ui.main.MainActivity}" drawable="generic_notes" name="LG QuickMemo" />
+  <item component="ComponentInfo{com.lgeha.nuts/com.lgeha.nuts.MainActivity}" drawable="lg_thinq" name="LG ThinQ" />
+  <item component="ComponentInfo{com.lgeha.nuts/com.lgeha.nuts.DashboardActivity50}" drawable="lg_thinq" name="LG ThinQ" />
+  <item component="ComponentInfo{com.lgeha.nuts/.MainActivity}" drawable="lg_thinq" name="LG ThinQ" />
   <item component="ComponentInfo{com.lge.vvm/com.lge.vvm.ProvisioningStateMachine}" drawable="generic_voicemail" name="LG Voicemail" />
   <item component="ComponentInfo{org.documentfoundation.libreoffice/org.libreoffice.ui.LibreOfficeUIActivity}" drawable="libreoffice_viewer" name="LibreOffice Viewer" />
   <item component="ComponentInfo{org.proninyaroslav.libretorrent/lorg.proninyaroslav.ibretorrent.MainActivity}" drawable="libretorrent" name="LibreTorrent" />
@@ -3712,9 +3717,14 @@
   <item component="ComponentInfo{com.motorola.genie/com.motorola.genie.view.start.LaunchActivity}" drawable="moto_device_help" name="Moto Device Help" />
   <item component="ComponentInfo{com.motorola.genie/com.motorola.genie.app.DashboardActivity}" drawable="moto_device_help" name="Moto Device Help" />
   <item component="ComponentInfo{com.motorola.email/com.android.email.activity.Welcome}" drawable="generic_email" name="Moto Email" />
+  <item component="ComponentInfo{com.motorola.spaces/com.motorola.spaces.presentation.LauncherActivity}" drawable="moto_family_space" name="Moto Family Space" />
+  <item component="ComponentInfo{com.motorola.spaces/com.motorola.spaces.presentation.router.OnBoardRouterActivity}" drawable="moto_family_space" name="Moto Family Space" />
+  <item component="ComponentInfo{com.motorola.help/com.motorola.feedback.HomeScreenActivityLauncher}" drawable="moto_feedback" name="Moto Feedback" />
   <item component="ComponentInfo{com.motorola.cn.gallery/com.motorola.cn.gallery.app.GalleryActivity}" drawable="generic_gallery" name="Moto Gallery" />
   <item component="ComponentInfo{com.motorola.gamemode/com.motorola.gamemode.ui.launcher.main.PRCGameCenterActivity}" drawable="moto_gametime" name="Moto Gametime" />
   <item component="ComponentInfo{com.motorola.gamemode/com.motorola.gamemode.ui.launcher.main.GameCenterActivity}" drawable="moto_gametime" name="Moto Gametime" />
+  <item component="ComponentInfo{com.motorola.livewallpaper3/com.motorola.livewallpaper3.ui.menu.WallpaperMenuActivity}" drawable="moto_interactive_wallpaper" name="Moto Interactive Wallpaper" />
+  <item component="ComponentInfo{com.motorola.livewallpaper3/com.motorola.livewallpaper3.ui.menu.WallpaperMenuTrampolineActivity}" drawable="moto_interactive_wallpaper" name="Moto Interactive Wallpaper" />
   <item component="ComponentInfo{com.motorola.stylus/com.motorola.stylus.manager.NoteManagerActivity}" drawable="generic_notes" name="Moto Note" />
   <item component="ComponentInfo{com.motorola.cn.notes/com.motorola.cn.notes.MainActivity}" drawable="generic_notes" name="Moto Notepad" />
   <item component="ComponentInfo{com.motorola.ccc.notification/com.motorola.engageapp.ui.MotoplaceActivity}" drawable="moto_notifications" name="Moto Notifications" />
@@ -3723,6 +3733,7 @@
   <item component="ComponentInfo{com.motorola.ccc.notification/com.motorola.engageapp.ui.HelloYouActivity}" drawable="moto_notifications" name="Moto Notifications" />
   <item component="ComponentInfo{com.motorola.ccc.notification/com.motorola.engageapp.ui.MotoNewsActivity}" drawable="moto_notifications" name="Moto Notifications" />
   <item component="ComponentInfo{com.motorola.securityhub/com.motorola.securityhub.ui.view.MainActivity}" drawable="moto_secure" name="Moto Secure" />
+  <item component="ComponentInfo{com.motorola.securevault/com.motorola.securevault.MainActivityLauncher}" drawable="moto_secure_folder" name="Moto Secure folder" />
   <item component="ComponentInfo{com.motorola.ccc.notification/com.motorola.engageapp.ui.MarketplaceActivity}" drawable="moto_store" name="Moto Store" />
   <item component="ComponentInfo{com.motorola.om/com.motorola.om.presentation.LauncherActivity}" drawable="moto_unplugged" name="Moto Unplugged" />
   <item component="ComponentInfo{com.motorola.visualvoicemail/com.motorola.visualvoicemail.ui.VvmMainActivity}" drawable="generic_voicemail" name="Moto Voicemail" />
@@ -5159,6 +5170,8 @@
   <item component="ComponentInfo{com.companyname.andriodapp1/crc64c9fbd4a1c52464df.MainActivity}" drawable="seeker" name="Seeker" />
   <item component="ComponentInfo{com.byus.seenr/com.byus.seenr.MainActivity}" drawable="seenr" name="Seenr" />
   <item component="ComponentInfo{com.yablio.sendfilestotv/com.yablio.sendfilestotv.ui.MainActivity}" drawable="send_files_to_tv" name="Send Files To TV" />
+  <item component="ComponentInfo{br.com.serasaexperian.consumidor/br.com.serasaexperian.consumidor.onboarding.features.splash.view.SplashScreenActivity}" drawable="serasa" name="Serasa" />
+  <item component="ComponentInfo{br.com.serasaexperian.consumidor/br.com.serasaexperian.consumidor.ui.view.onboarding.WelcomeActivity}" drawable="serasa" name="Serasa" />
   <item component="ComponentInfo{de.kai_morich.serial_bluetooth_terminal/de.kai_morich.serial_bluetooth_terminal.MainActivity}" drawable="generic_bluetooth" name="Serial Bluetooth Terminal" />
   <item component="ComponentInfo{com.serializdmobile/com.serializdmobile.MainActivity}" drawable="serializd" name="Serializd" />
   <item component="ComponentInfo{com.serializdmobile/com.serializdmobile.LauncherDefault}" drawable="serializd" name="Serializd" />
@@ -5804,6 +5817,9 @@
   <item component="ComponentInfo{com.snowcorp.stickerly.android/com.snowcorp.stickerly.android.main.ui.LauncherEntryActivity}" drawable="sticker_ly" name="Sticker.ly" />
   <item component="ComponentInfo{com.snowcorp.stickerly.android/com.snowcorp.stickerly.android.LauncherEntryActivity}" drawable="sticker_ly" name="Sticker.ly" />
   <item component="ComponentInfo{com.MartianRexInc.StoneStory/com.google.firebase.MessagingUnityPlayerActivity}" drawable="stone_story" name="Stone Story RPG" />
+  <item component="ComponentInfo{ai.powerup.stori/ai.powerup.stori.home.mvp.ui.activity.NewSplashActivity}" drawable="stori" name="Stori" />
+  <item component="ComponentInfo{ai.powerup.stori/ai.powerup.stori.ui.splash.NewSplashActivity}" drawable="stori" name="Stori" />
+  <item component="ComponentInfo{ai.powerup.stori/ai.powerup.stori.ui.splash.SplashActivity}" drawable="stori" name="Stori" />
   <item component="ComponentInfo{com.strava/com.strava.SplashActivity}" drawable="strava" name="Strava" />
   <item component="ComponentInfo{com.streamlabs/com.streamlabs.live.ui.main.HomeActivity}" drawable="streamlabs" name="Streamlabs" />
   <item component="ComponentInfo{com.stremio.one/com.stremio.android.MainActivity}" drawable="stremio" name="Stremio" />
@@ -6121,6 +6137,9 @@
   <item component="ComponentInfo{com.bnyro.translate.nf/com.bnyro.translate.ui.MainActivity}" drawable="translate_you" name="Translate You" />
   <item component="ComponentInfo{com.bnyro.translate/com.bnyro.translate.ui.MainActivity}" drawable="translate_you" name="Translate You" />
   <item component="ComponentInfo{com.traveloka.android/com.traveloka.android.appentry.splash.SplashActivity}" drawable="traveloka" name="Traveloka" />
+  <item component="ComponentInfo{com.trello/com.google.android.archive.ReactivateActivity}" drawable="trello" name="Trello" />
+  <item component="ComponentInfo{com.trello/com.trello.authentication.AuthLoginActivity}" drawable="trello" name="Trello" />
+  <item component="ComponentInfo{com.trello/com.trello.home.HomeActivity}" drawable="trello" name="Trello" />
   <item component="ComponentInfo{com.lynxspa.prontotreno/com.ibm.android.states.main.MainActivity}" drawable="trenitalia" name="Trenitalia" />
   <item component="ComponentInfo{com.lynxspa.prontotreno/com.ibm.android.states.startup.StartUpActivity}" drawable="trenitalia" name="Trenitalia" />
   <item component="ComponentInfo{com.lynxspa.prontotreno/com.ibm.android._redesign.HostActivity}" drawable="trenitalia" name="Trenitalia" />
@@ -6583,6 +6602,7 @@
   <item component="ComponentInfo{com.rk.xededitor/com.rk.xededitor.ui.activities.main.MainActivity}" drawable="xed_editor" name="Xed-Editor" />
   <item component="ComponentInfo{com.rk.xededitor/com.rk.activities.main.MainActivity}" drawable="xed_editor" name="Xed-Editor" />
   <item component="ComponentInfo{cn.xender/cn.xender.ui.activity.SplashActivity}" drawable="xender" name="Xender" />
+  <item component="ComponentInfo{com.xfinity.digitalhome/com.xfinity.digitalhome.features.launch.splash.SplashActivity}" drawable="xfinity" name="Xfinity" />
   <item component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon3}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
   <item component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon0}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
   <item component="ComponentInfo{com.xiaomi.glgm/com.xiaomi.glgm.home.ui.category}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
@@ -6741,6 +6761,8 @@
   <item component="ComponentInfo{com.zoho.campaigns/com.zoho.campaigns.LauncherActivity}" drawable="zoho_campaigns" name="Zoho Campaigns" />
   <item component="ComponentInfo{com.zoho.chat/com.zoho.chat.ui.MyBaseActivity}" drawable="zoho_cliq" name="Zoho Cliq" />
   <item component="ComponentInfo{com.zoho.zohopulse/com.zoho.zohopulse.main.SplashActivity}" drawable="zoho_connect" name="Zoho Connect" />
+  <item component="ComponentInfo{org.chromium.webapk.a17d5f06b475fcc97_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}" drawable="zoho_mail" name="Zoho Mail" />
+  <item component="ComponentInfo{com.zoho.mail/com.zoho.mail.android.activities.Login}" drawable="zoho_mail" name="Zoho Mail" />
   <item component="ComponentInfo{com.zoho.notebook/com.zoho.notebook.activities.NoteBookActivity}" drawable="zoho_notebook" name="Zoho Notebook" />
   <item component="ComponentInfo{com.zoho.zohoone/com.zoho.zohoone.splash.SplashScreenActivity}" drawable="zoho_one" name="Zoho One" />
   <item component="ComponentInfo{com.zoho.accounts.oneauth/com.zoho.accounts.oneauth.v2.ui.applock.AppLockActivity}" drawable="zoho_oneauth" name="Zoho OneAuth" />
