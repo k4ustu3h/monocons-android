@@ -2458,6 +2458,7 @@
   <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivity}" drawable="goibibo" name="Goibibo" />
   <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivityAliasIPL}" drawable="goibibo" name="Goibibo" />
   <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivityAliasBirthday}" drawable="goibibo" name="Goibibo" />
+  <item component="ComponentInfo{com.goodreads/com.goodreads.kindle.ui.activity.RoutingActivity}" drawable="goodreads" name="Goodreads" />
   <item component="ComponentInfo{com.google.android.apps.searchlite/com.google.android.apps.searchlite.ui.SearchActivity}" drawable="google" name="Google" />
   <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.staticplugins.opa.EnterOpaActivityFromLauncher}" drawable="google" name="Google" />
   <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.velour.DynamicActivityTrampoline}" drawable="google" name="Google" />
@@ -3048,6 +3049,7 @@
   <item component="ComponentInfo{money.jupiter/money.jupiter.MainActivityWorldCup}" drawable="jupiter" name="Jupiter" />
   <item component="ComponentInfo{money.jupiter/money.jupiter.MainActivitySalary}" drawable="jupiter" name="Jupiter" />
   <item component="ComponentInfo{com.brouken.player/com.brouken.player.PlayerActivity}" drawable="just_player" name="Just Player" />
+  <item component="ComponentInfo{com.justwatch.justwatch/com.justwatch.justwatch.MainActivity}" drawable="justwatch" name="JustWatch" />
   <item component="ComponentInfo{com.fsck.k9/com.fsck.k9.activity.MainActivity}" drawable="k_9_mail" name="K-9 Mail" />
   <item component="ComponentInfo{com.fsck.k9/com.fsck.k9.activity.Accounts}" drawable="k_9_mail" name="K-9 Mail" />
   <item component="ComponentInfo{com.fsck.k9/com.fsck.k9.activity.MessageCompose}" drawable="k_9_mail" name="K-9 Mail" />
@@ -4014,6 +4016,9 @@
   <item component="ComponentInfo{br.com.gruposbf.nike/br.com.gruposbf.nike.MainActivity}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{com.nike.omega/com.nike.omega.MainActivityDefault}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{com.nintendo.znba/com.nintendo.znba.MainActivity}" drawable="nintendo_music" name="Nintendo Music" />
+  <item component="ComponentInfo{com.nintendo.znca/com.nintendo.coral.ui.boot.BootActivity}" drawable="nintendo_switch" name="Nintendo Switch" />
+  <item component="ComponentInfo{com.nintendo.znca/crc64e1ce91bfba58d316.MainActivity}" drawable="nintendo_switch" name="Nintendo Switch" />
+  <item component="ComponentInfo{com.nintendo.znca/md5e14d8df872e237c80839f608ad2933ea.MainActivity}" drawable="nintendo_switch" name="Nintendo Switch" />
   <item component="ComponentInfo{xyz.nextalone.nnngram/org.telegram.messenger.DefaultIcon}" drawable="nullgram" name="Nnngram" />
   <item component="ComponentInfo{com.shamim.skypatch/com.android.camera.CameraLauncher}" drawable="generic_camera" name="Nocture" />
   <item component="ComponentInfo{com.shallwaystudio.nodevideo/com.unity3d.player.UnityPlayerActivity}" drawable="nodevideo" name="Node Video" />
@@ -5924,6 +5929,7 @@
   <item component="ComponentInfo{in.swiggy.android/in.swiggy.android.HomeIcon}" drawable="swiggy" name="Swiggy" />
   <item component="ComponentInfo{com.swisssign.swissid.mobile/crc6412a1d71f8eea03e7.MainActivity}" drawable="swissid" name="SwissID" />
   <item component="ComponentInfo{com.swisssign.swissid.mobile/dev.swisssign.swissid.mobile.MainActivity}" drawable="swissid" name="SwissID" />
+  <item component="ComponentInfo{com.daydream.sn/com.daydream.sn.ui.ShopMainActivity}" drawable="nintendo_switch" name="switch助手 ~~ Switch Guide" />
   <item component="ComponentInfo{io.github.zyrouge.symphony/io.github.zyrouge.symphony.MainActivity}" drawable="symphony" name="Symphony" />
   <item component="ComponentInfo{com.laurencedawson.reddit_sync.dev/com.laurencedawson.reddit_sync.activities.MainActivity}" drawable="sync" name="Sync" />
   <item component="ComponentInfo{com.laurencedawson.reddit_sync.dev/com.laurencedawson.reddit_sync.ui.activities.HomeActivity.Default}" drawable="sync" name="Sync" />
@@ -6163,6 +6169,7 @@
   <item component="ComponentInfo{com.maforn.timedshutdown/com.maforn.timedshutdown.MainActivity}" drawable="generic_power" name="Timed Shutdown" />
   <item component="ComponentInfo{org.woheller69.TimeLapseCam/at.andreasrohner.spartantimelapserec.MainActivity}" drawable="generic_camera" name="TimeLapseCam" />
   <item component="ComponentInfo{com.appxy.tinyscanner/com.appxy.tinyscanfree.Activity_Start}" drawable="generic_scanner" name="Tiny Scanner" />
+  <item component="ComponentInfo{io.github.jqssun.helium/com.google.android.apps.chrome.Main}" drawable="titanium" name="Titanium" />
   <item component="ComponentInfo{ch.tkb.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="TKB TWINT" />
   <item component="ComponentInfo{com.tcl.android.video/com.tct.video.View.activities.VideoMainActivity}" drawable="generic_player" name="TLC Video" />
   <item component="ComponentInfo{cn.super12138.todo/cn.super12138.todo.ui.activities.MainActivity}" drawable="google_tasks" name="To Do" />
