@@ -242,6 +242,7 @@
   <item component="ComponentInfo{com.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
   <item component="ComponentInfo{com.frandro.quicksettings/com.common.ad.cmp.CmpMainActivity}" drawable="settings" name="Android Quick Settings" />
   <item component="ComponentInfo{com.github.mueller_ma.viewandroidversion/com.github.mueller_ma.viewandroidversion.MainActivity}" drawable="generic_shell" name="Android version" />
+  <item component="ComponentInfo{exe.bbllw8.anemo/exe.bbllw8.anemo.shell.LauncherActivity}" drawable="anemo" name="Anemo" />
   <item component="ComponentInfo{com.rovio.baba/rovio.baba.facebook.AbbaUnityActivity}" drawable="angry_birds_2" name="Angry Birds 2" />
   <item component="ComponentInfo{com.rovio.baba/com.unity3d.player.UnityPlayerActivity}" drawable="angry_birds_2" name="Angry Birds 2" />
   <item component="ComponentInfo{com.axiel7.anihyou/com.axiel7.anihyou.ui.screens.MainActivity}" drawable="anihyou" name="AniHyou" />
@@ -277,6 +278,7 @@
   <item component="ComponentInfo{foundation.e.apps/foundation.e.apps.MainActivity}" drawable="app_lounge" name="App Lounge" />
   <item component="ComponentInfo{io.github.muntashirakon.AppManager/io.github.muntashirakon.AppManager.main.MainActivity}" drawable="app_manager" name="App Manager" />
   <item component="ComponentInfo{io.github.muntashirakon.AppManager/io.github.muntashirakon.AppManager.main.SplashActivity}" drawable="app_manager" name="App Manager" />
+  <item component="ComponentInfo{io.github.muntashirakon.AppManager/io.github.muntashirakon.AppManager.fm.FilesActivity}" drawable="app_manager_fm" name="App Manager File Manager" />
   <item component="ComponentInfo{rikka.appops/rikka.appops.SplashActivity}" drawable="app_ops" name="App Ops" />
   <item component="ComponentInfo{rikka.appops/rikka.appops.home.HomeActivity}" drawable="app_ops" name="App Ops" />
   <item component="ComponentInfo{net.pnhdroid.appsearch/net.pnhdroid.appsearch.search.SearchActivity}" drawable="generic_search" name="App Search" />
@@ -3940,6 +3942,7 @@
   <item component="ComponentInfo{com.franco.doze/com.franco.doze.activities.MainActivity}" drawable="sleep" name="Naptime" />
   <item component="ComponentInfo{com.franco.doze/com.franco.doze.activities.SplashActivity}" drawable="sleep" name="Naptime" />
   <item component="ComponentInfo{pl.stokrotka.app/pl.stokrotka.app.MainActivity}" drawable="nasza_stokrotka" name="Nasza Stokrotka" />
+  <item component="ComponentInfo{cris.icms.ntes/cris.icms.ntes.LaunchApp}" drawable="national_train_enquiry_system" name="National Train Enquiry System" />
   <item component="ComponentInfo{com.reveny.nativecheck/com.reveny.nativecheck.ui.activity.MainActivity}" drawable="native_detector" name="Native Detector" />
   <item component="ComponentInfo{org.codeberg.genericpers0n.soundrecorderplus/org.codeberg.genericpers0n.soundrecorderplus.activities.MainActivity}" drawable="generic_microphone" name="Nauhuri" />
   <item component="ComponentInfo{naukriApp.appModules.login/naukriApp.appModules.login.SplashActivityAlias}" drawable="naukri" name="Naukri" />
@@ -5879,6 +5882,7 @@
   <item component="ComponentInfo{com.google.android.apps.wallpaper/com.google.android.apps.wallpaper.picker.CategoryPickerActivity}" drawable="simple_gallery" name="Styles &amp; Wallpapers" />
   <item component="ComponentInfo{de.simolation.subscriptionmanager/de.simolation.subscriptionmanager.ui.main.MainActivity}" drawable="subscriptions" name="Subscriptions" />
   <item component="ComponentInfo{projekt.substratum.lite/projekt.substratum.lite.activity.SplashScreenActivity}" drawable="substratum_lite" name="substratum Lite" />
+  <item component="ComponentInfo{mx.com.suburbia.shoppingapp/mx.com.suburbia.shoppingapp.icon.AppIcon}" drawable="suburbia" name="Suburbia" />
   <item component="ComponentInfo{mx.com.suburbia.shoppingapp/mx.com.suburbia.shoppingapp.splash.SplashActivity}" drawable="suburbia" name="Suburbia" />
   <item component="ComponentInfo{com.icenta.sudoku/com.icenta.sudoku.ui.SplashActivityPremium}" drawable="generic_sudoku" name="Sudoku" />
   <item component="ComponentInfo{easy.sudoku.puzzle.solver.free/com.meevii.ui.activity.SplashActivity}" drawable="generic_sudoku" name="Sudoku" />
