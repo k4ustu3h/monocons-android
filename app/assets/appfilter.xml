@@ -635,6 +635,7 @@
   <item component="ComponentInfo{com.brother.mfc.brprint/com.brother.mfc.brprint.v2.ui.SplashActivity}" drawable="generic_printer" name="Brother iPrint&amp;Scan" />
   <item component="ComponentInfo{com.brother.mfc.brprint/com.brother.mfc.brprint.v2.ui.top.SplashActivity}" drawable="generic_printer" name="Brother iPrint&amp;Scan" />
   <item component="ComponentInfo{com.brother.mfc.brprint/md5450eea9ab8a0196aff36292d85264a37.MainActivity}" drawable="generic_printer" name="Brother iPrint&amp;Scan" />
+  <item component="ComponentInfo{com.tcl.browser/com.tcl.browser.portal.home.activity.HomePageActivity}" drawable="browsehere" name="BrowseHere" />
   <item component="ComponentInfo{com.heytap.browser/com.android.browser.BrowserActivity}" drawable="generic_browser" name="Browser" />
   <item component="ComponentInfo{foundation.e.browser/com.google.android.apps.chrome.Main}" drawable="generic_browser" name="Browser" />
   <item component="ComponentInfo{org.droidtr.jelly/org.droidtr.jelly.MainActivity}" drawable="generic_browser" name="Browser" />
@@ -1770,6 +1771,7 @@
   <item component="ComponentInfo{com.sameerasw.essentials/com.sameerasw.essentials.MainActivityBlack}" drawable="essentials" name="Essentials" />
   <item component="ComponentInfo{com.sameerasw.essentials/com.sameerasw.essentials.AppFreezingLauncher}" drawable="essentials_app_freezing" name="Essentials App Freezing" />
   <item component="ComponentInfo{de.jepfa.personaltasklogger/de.jepfa.personaltasklogger.MainActivity}" drawable="google_tasks" name="Everyday Tasks" />
+  <item component="ComponentInfo{com.jndapp.nothing.widgets.pack/com.jndapp.nothing.widgets.pack.MainActivity}" drawable="everything_widgets" name="Everything Widgets" />
   <item component="ComponentInfo{com.coolkit/com.coolkit.SplashActivity}" drawable="ewelink" name="eWeLink" />
   <item component="ComponentInfo{com.none.tom.exiferaser/com.none.tom.exiferaser.ExifEraserActivity}" drawable="exiferaser" name="ExifEraser" />
   <item component="ComponentInfo{exodusmovement.exodus/exodusmovement.exodus.MainActivity}" drawable="exodus" name="Exodus" />
@@ -2999,6 +3001,7 @@
   <item component="ComponentInfo{com.ivoox.app/com.ivoox.app.ui.login.activity.LoginMainActivity}" drawable="ivoox" name="iVoox" />
   <item component="ComponentInfo{com.ixigo/com.ixigo.DefaultSplashScreenActivity}" drawable="ixigo" name="ixigo" />
   <item component="ComponentInfo{com.ixigo.train.ixitrain/com.ixigo.train.ixitrain.SplashScreenActivity}" drawable="ixigo_trains" name="ixigo Trains" />
+  <item component="ComponentInfo{telecom.televisa.com.izzi/telecom.televisa.com.izzi.MainActivity}" drawable="izzi" name="Izzi" />
   <item component="ComponentInfo{in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity}" drawable="izzyondroid" name="IzzyOnDroid" />
   <item component="ComponentInfo{com.citynav.jakdojade.pl.android/com.citynav.jakdojade.pl.android.MainActivity}" drawable="jakdojade" name="Jakdojade" />
   <item component="ComponentInfo{com.citynav.jakdojade.pl.android/com.citynav.jakdojade.pl.android.SplashScreenActivity}" drawable="jakdojade" name="Jakdojade" />
@@ -4774,6 +4777,7 @@
   <item component="ComponentInfo{com.spookyhousestudios.progressbar95/com.d.a}" drawable="progressbar95" name="Progressbar95" />
   <item component="ComponentInfo{com.drsants.eggproject/com.drsants.projectegg.activities.Open}" drawable="project_themer" name="Project Themer" />
   <item component="ComponentInfo{com.IndexEducation.Pronote/com.IndexEducation.Pronote.MainActivity}" drawable="pronote" name="PRONOTE" />
+  <item component="ComponentInfo{com.proto.circuitsimulator/com.proto.circuitsimulator.splash.SplashActivity}" drawable="proto" name="PROTO" />
   <item component="ComponentInfo{proton.android.authenticator/proton.android.authenticator.app.ui.MainActivity}" drawable="proton_authenticator" name="Proton Authenticator" />
   <item component="ComponentInfo{proton.android.authenticator.fdroid/proton.android.authenticator.app.ui.MainActivity}" drawable="proton_authenticator" name="Proton Authenticator" />
   <item component="ComponentInfo{me.proton.android.calendar/me.proton.android.calendar.presentation.main.MainActivity}" drawable="proton_calendar" name="Proton Calendar" />
