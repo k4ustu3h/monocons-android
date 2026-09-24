@@ -1984,6 +1984,7 @@
   <item component="ComponentInfo{money.fold.marble/money.fold.marble.ui.screen.splash.SplashActivity_anarchy}" drawable="fold" name="Fold" />
   <item component="ComponentInfo{money.fold.marble/money.fold.marble.ui.screen.splash.SplashActivity_nebula}" drawable="fold" name="Fold" />
   <item component="ComponentInfo{money.fold.marble/money.fold.marble.ui.screen.splash.SplashActivity_original}" drawable="fold" name="Fold" />
+  <item component="ComponentInfo{fr.kanis.foldio/fr.kanis.foldio.MainActivity}" drawable="foldio" name="Foldio" />
   <item component="ComponentInfo{me.yuki.folk/me.bmax.apatch.ui.MainActivityAliasAltSu}" drawable="apatch" name="FolkSU" />
   <item component="ComponentInfo{moe.shizuku.fontprovider/moe.shizuku.fontprovider.FontManageActivity}" drawable="generic_shell" name="Font Provider" />
   <item component="ComponentInfo{com.irctc.fot/com.irctc.fot.ui.screens.main.MainActivity}" drawable="food_on_track" name="Food on Track" />
@@ -3563,6 +3564,8 @@
   <item component="ComponentInfo{com.facebook.stella/com.facebook.wearable.companion.silverstone.main.view.SilverstoneMainActivity}" drawable="meta_ai" name="Meta AI" />
   <item component="ComponentInfo{com.oculus.twilight/com.oculus.twilight.crossapp.activity.XOCLoginActivity}" drawable="meta_quest" name="Meta Quest" />
   <item component="ComponentInfo{com.oculus.twilight/com.oculus.twilight.crossapp.activity.XOCMainActivity}" drawable="meta_quest" name="Meta Quest" />
+  <item component="ComponentInfo{io.metamask/com.google.android.archive.ReactivateActivity}" drawable="metamask" name="MetaMask" />
+  <item component="ComponentInfo{io.metamask/io.metamask.MainActivity}" drawable="metamask" name="MetaMask" />
   <item component="ComponentInfo{pt.ipma.meteo/pt.ipma.meteo.activities.splashscreen.SplashActivity}" drawable="meteoipma" name="Meteo@IPMA" />
   <item component="ComponentInfo{pt.ipma.meteo/pt.ipma.meteo.StartActivity}" drawable="meteoipma" name="Meteo@IPMA" />
   <item component="ComponentInfo{xyz.metiq/xyz.metiq.MainActivity}" drawable="metiq" name="Metiq" />
@@ -4224,6 +4227,7 @@
   <item component="ComponentInfo{ua.slando/pl.tablica2.activities.MainActivity}" drawable="olx" name="Olx" />
   <item component="ComponentInfo{ua.slando/pl.tablica2.app.startup.activity.StartupActivity}" drawable="olx" name="Olx" />
   <item component="ComponentInfo{pl.tablica/pl.tablica2.app.startup.activity.StartupActivity}" drawable="olx" name="Olxa" />
+  <item component="ComponentInfo{uk.akane.omni/uk.akane.omni.ui.MainActivity}" drawable="omni" name="Omni" />
   <item component="ComponentInfo{it.feio.android.omninotes.foss/it.feio.android.omninotes.MainActivity}" drawable="generic_notes" name="Omni Notes" />
   <item component="ComponentInfo{com.igloocreations.ondago/com.mapgears.ondago.application.StartupActivity}" drawable="ondago" name="Ondago" />
   <item component="ComponentInfo{rk.android.app.lockscreen/rk.android.app.lockscreen.activity.HomeActivity}" drawable="generic_lock" name="One Click Lock Screen" />
@@ -4263,6 +4267,10 @@
   <item component="ComponentInfo{com.oneplus.soundrecorder/.SoundRecorder}" drawable="generic_voice_recorder_waves" name="OnePlus Recorder" />
   <item component="ComponentInfo{net.oneplus.weather/com.oplus.weather.main.view.WeatherMainActivity}" drawable="weather" name="OnePlus Weather" />
   <item component="ComponentInfo{net.oneplus.weather/net.oneplus.weather.app.MainActivity}" drawable="weather" name="OnePlus Weather" />
+  <item component="ComponentInfo{com.oneplus.brickmode/com.oneplus.brickmode.activity.MainControlActivity}" drawable="oneplus_zen_space" name="OnePlus Zen Space" />
+  <item component="ComponentInfo{com.oneplus.brickmode/com.oneplus.brickmode.activity.HomeActivity}" drawable="oneplus_zen_space" name="OnePlus Zen Space" />
+  <item component="ComponentInfo{pl.onet.poczta/pl.onet.poczta.MainActivity}" drawable="onet_poczta" name="Onet Poczta" />
+  <item component="ComponentInfo{pl.onet.poczta/pl.onet.poczta.PrivacyActivity}" drawable="onet_poczta" name="Onet Poczta" />
   <item component="ComponentInfo{com.one.ui.dark.s10.iconpack/com.one.ui.dark.s10.iconpack.MainActivity}" drawable="oneui_dark_icon_pack" name="OneUI Dark Icon Pack" />
   <item component="ComponentInfo{com.onlyoffice.documents/app.editors.manager.ui.activities.main.MainActivity}" drawable="onlyoffice_documents" name="ONLYOFFICE Documents" />
   <item component="ComponentInfo{com.onlyoffice.documents/app.editors.manager.ui.activities.login.SplashActivity}" drawable="onlyoffice_documents" name="ONLYOFFICE Documents" />
@@ -5734,6 +5742,7 @@
   <item component="ComponentInfo{app.smart.timetable/app.smart.timetable.MainActivity}" drawable="smart_timetable" name="Smart Timetable" />
   <item component="ComponentInfo{com.africa.smartcash/com.airtel.africa.selfcare.presentation.login.activity.LoginActivity}" drawable="my_airtel" name="Smartcash PSB" />
   <item component="ComponentInfo{com.hutchison3g.sundae/com.hutchison3g.sundae.MainActivity}" drawable="smarty" name="SMARTY" />
+  <item component="ComponentInfo{com.smashco.smash/com.smashco.smash.controllers.SplashScreenActivity}" drawable="smash" name="Smash" />
   <item component="ComponentInfo{com.microsoft.android.smsorganizer/com.microsoft.android.smsorganizer.StartupActivity}" drawable="sms_organizer" name="SMS Organizer" />
   <item component="ComponentInfo{com.app.smytten/com.app.smytten.ui.auth.PreLoginActivity}" drawable="smytten" name="Smytten" />
   <item component="ComponentInfo{com.snapchat.android/.LandingPageActivity}" drawable="snapchat" name="Snapchat" />
