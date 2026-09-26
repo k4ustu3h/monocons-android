@@ -240,6 +240,7 @@
   <item component="ComponentInfo{com.google.android.projection.gearhead/com.google.android.projection.gearhead.companion.SplashScreenActivity}" drawable="android_auto" name="Android Auto" />
   <item component="ComponentInfo{com.google.android.apps.betterbug/com.google.android.apps.betterbug.bugslist.BugsListActivity}" drawable="android_beta_feedback" name="Android Beta Feedback" />
   <item component="ComponentInfo{com.arumcomm.settingsshortcut/com.common.ad.cmp.CmpMainActivity}" drawable="settings" name="Android Hidden Settings" />
+  <item component="ComponentInfo{com.github.digitallyrefined.androidipcamera/com.github.digitallyrefined.androidipcamera.activities.MainActivity}" drawable="android_ip_camera" name="Android IP Camera" />
   <item component="ComponentInfo{com.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.framework.core.LauncherActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
   <item component="ComponentInfo{com.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
   <item component="ComponentInfo{com.frandro.quicksettings/com.common.ad.cmp.CmpMainActivity}" drawable="settings" name="Android Quick Settings" />
@@ -1961,10 +1962,16 @@
   <item component="ComponentInfo{dev.patrickgold.florisboard.beta/dev.patrickgold.florisboard.SettingsLauncherAlias}" drawable="florisboard" name="Florisboard Beta" />
   <item component="ComponentInfo{dev.patrickgold.florisboard.debug/dev.patrickgold.florisboard.SettingsLauncherAlias}" drawable="florisboard" name="Florisboard Debug" />
   <item component="ComponentInfo{com.google.android.apps.labs.whisk/com.google.android.apps.labs.whisk.MainActivity}" drawable="google_flow" name="Flow" />
+  <item component="ComponentInfo{io.github.aedev.flow/io.github.aedev.flow.IconFlowRed}" drawable="flow_by_aedev" name="Flow" />
+  <item component="ComponentInfo{io.github.aedev.flow/io.github.aedev.flow.MainActivity}" drawable="flow_by_aedev" name="Flow by aedev" />
+  <item component="ComponentInfo{io.github.aedev.flow/io.github.aedev.flow.IconDynamic}" drawable="flow_by_aedev" name="Flow by aedev" />
+  <item component="ComponentInfo{io.github.aedev.flow/io.github.aedev.flow.IconMonochrome}" drawable="flow_by_aedev" name="Flow by aedev" />
+  <item component="ComponentInfo{io.github.aedev.flow/io.github.aedev.flow.IconGhost}" drawable="flow_by_aedev" name="Flow by aedev" />
   <item component="ComponentInfo{com.markel.flowstate/com.markel.flowstate.MainActivity}" drawable="flowstate" name="FlowState" />
   <item component="ComponentInfo{com.delphicoder.flud/com.delphicoder.flud.MainActivity}" drawable="flud" name="Flud" />
   <item component="ComponentInfo{com.delphicoder.flud.paid/com.delphicoder.flud.MainActivity}" drawable="flud_plus" name="Flud+" />
   <item component="ComponentInfo{com.flux/com.flux.MainActivity}" drawable="flux" name="Flux" />
+  <item component="ComponentInfo{com.mskd.flux/com.mskd.flux.MainActivity}" drawable="flux" name="Flux" />
   <item component="ComponentInfo{com.transsion.fmradio/com.funbase.xradio.home.activity.MainActivity}" drawable="generic_fm_radio" name="FM Radio" />
   <item component="ComponentInfo{com.miui.fm/com.miui.fmradio.activity.LauncherActivity}" drawable="generic_fm_radio" name="FM Radio" />
   <item component="ComponentInfo{com.transsion.fmradio/com.funbase.xradio.activity.SplashActivity}" drawable="generic_fm_radio" name="FM Radio" />
@@ -3334,6 +3341,8 @@
   <item component="ComponentInfo{com.amrdeveloper.linkhub/com.amrdeveloper.linkhub.ui.MainActivity}" drawable="linkhub" name="LinkHub" />
   <item component="ComponentInfo{fe.linksheet.debug/fe.linksheet.activity.MainActivity}" drawable="linksheet" name="LinkSheet" />
   <item component="ComponentInfo{fe.linksheet/fe.linksheet.activity.MainActivity}" drawable="linksheet" name="LinkSheet" />
+  <item component="ComponentInfo{dev.linwood.butterfly/dev.linwood.butterfly.MainActivity}" drawable="linwood_butterfly" name="Linwood Butterfly" />
+  <item component="ComponentInfo{dev.linwood.butterfly.nightly/dev.linwood.butterfly.MainActivity}" drawable="linwood_butterfly_nightly" name="Linwood Butterfly Nightly" />
   <item component="ComponentInfo{com.loptr.kherod.uygdl/com.loptr.kherod.uygdl.activity.MainActivity}" drawable="generic_player" name="lite player" />
   <item component="ComponentInfo{com.liteapks.androidapps/com.liteapks.ui.home.HomeActivity}" drawable="liteapks" name="Liteapks" />
   <item component="ComponentInfo{com.liteapks.androidapps/com.liteapks.androidapps.ui.home.HomeActivity}" drawable="liteapks" name="Liteapks" />
@@ -3612,6 +3621,7 @@
   <item component="ComponentInfo{com.xiaomi.wearable/com.xiaomi.wearable.start.privacy.PrivacyActivity}" drawable="mi_fitness" name="Mi Fitness" />
   <item component="ComponentInfo{com.xiaomi.health/com.xiaomi.fitness.login.SplashActivity}" drawable="mi_fitness" name="Mi Fitness" />
   <item component="ComponentInfo{com.mi.healthglobal/com.mi.healthglobal.HeartrateHomeActivity}" drawable="mi_fitness" name="Mi Fitness" />
+  <item component="ComponentInfo{com.miui.huanji/com.miui.huanji.MainActivity}" drawable="mi_mover" name="Mi Mover" />
   <item component="ComponentInfo{com.miui.notes/com.miui.notes.ui.NotesListActivity}" drawable="generic_notes" name="Mi Notes" />
   <item component="ComponentInfo{com.miui.notes/.ui.NotesListActivity}" drawable="generic_notes" name="Mi Notes" />
   <item component="ComponentInfo{com.duokan.phone.remotecontroller/com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2}" drawable="xiaomi_remote" name="Mi Remote" />
@@ -4167,6 +4177,7 @@
   <item component="ComponentInfo{dev.imranr.obtainium/dev.imranr.obtainium.MainActivity}" drawable="obtainium" name="Obtainium" />
   <item component="ComponentInfo{dev.bikram.obtainx/dev.imranr.obtainium.MainActivity}" drawable="obtainx" name="ObtainX" />
   <item component="ComponentInfo{it.octogram.android/org.telegram.messenger.DefaultIcon}" drawable="octogram" name="OctoGram" />
+  <item component="ComponentInfo{com.vayunmathur.office/com.vayunmathur.office.MainActivity}" drawable="generic_description" name="Office" />
   <item component="ComponentInfo{com.sdeteam.gsa/com.sdeteam.gsa.activity.MainActivity}" drawable="generic_microphone" name="OK Google Voice Commands Guide" />
   <item component="ComponentInfo{com.owkb.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="OKB TWINT" />
   <item component="ComponentInfo{com.cambyte.okenscan/com.intsig.camscanner.launcher.WelcomeDefaultActivity}" drawable="camscanner" name="OKEN Scanner" />
@@ -4613,6 +4624,7 @@
   <item component="ComponentInfo{com.phonepe.app.business/com.phonepe.app.business.SplashActivity}" drawable="phonepe" name="PhonePe Business" />
   <item component="ComponentInfo{com.phonepe.app.business/com.google.android.archive.ReactivateActivity}" drawable="phonepe" name="PhonePe Business" />
   <item component="ComponentInfo{com.microblink.photomath/com.microblink.photomath.main.activity.LauncherActivity}" drawable="photomath" name="Photomath" />
+  <item component="ComponentInfo{com.vayunmathur.photos/com.vayunmathur.photos.MainActivity}" drawable="generic_photo_library" name="Photos" />
   <item component="ComponentInfo{com.microsoft.PhotosCompanion/md5b5b858fe62a02ce0e2eaf09bebdb581a.SplashActivity}" drawable="generic_gallery" name="Photos Companion" />
   <item component="ComponentInfo{com.google.android.apps.photos.scanner/com.google.android.apps.photo.scanner.home.HomeActivity}" drawable="photoscan" name="PhotoScan" />
   <item component="ComponentInfo{com.google.android.apps.photos.scanner/com.google.android.apps.photos.scanner.home.HomeActivity}" drawable="photoscan" name="PhotoScan" />
@@ -5974,6 +5986,8 @@
   <item component="ComponentInfo{com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.SuntimesActivity}" drawable="suntimes" name="Suntimes" />
   <item component="ComponentInfo{com.forrestguice.suntimescalendars/com.forrestguice.suntimeswidget.calendar.SuntimesCalendarActivity}" drawable="suntimes_calendars" name="Suntimes Calendars" />
   <item component="ComponentInfo{money.super.payments/com.supermoney.payments.MainActivity}" drawable="super_money" name="super.money" />
+  <item component="ComponentInfo{superfreeze.tool.android/superfreeze.tool.android.userInterface.mainActivity.MainActivity}" drawable="superfreezz" name="SuperFreezZ" />
+  <item component="ComponentInfo{superfreeze.tool.android/superfreeze.tool.android.userInterface.FreezeShortcutActivity}" drawable="superfreezz_shortcut" name="SuperFreezZ Shortcut" />
   <item component="ComponentInfo{mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.SplashActivity}" drawable="santander" name="SuperMóvil" />
   <item component="ComponentInfo{mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity}" drawable="santander" name="SuperMóvil" />
   <item component="ComponentInfo{com.joinsuperset.studentapp/com.joinsuperset.studentapp.MainActivity}" drawable="superset" name="Superset" />
@@ -6049,6 +6063,7 @@
   <item component="ComponentInfo{net.dinglisch.android.taskerm/com.joaomgcd.taskerm.util.ActivitySecondaryApp}" drawable="tasker" name="Tasker" />
   <item component="ComponentInfo{net.dinglisch.android.taskerm/net.dinglisch.android.taskerm.Tasker}" drawable="tasker" name="Tasker" />
   <item component="ComponentInfo{com.vintia.taskflow/com.vintia.taskflow.MainActivity}" drawable="google_tasks" name="TaskFlow" />
+  <item component="ComponentInfo{com.rk.taskmanager/com.rk.taskmanager.MainActivity}" drawable="taskmanager" name="TaskManager" />
   <item component="ComponentInfo{org.tasks/com.todoroo.astrid.activity.ShortcutActivity}" drawable="tasks" name="Tasks" />
   <item component="ComponentInfo{org.tasks/com.todoroo.astrid.activity.TaskListActivity.Amber}" drawable="tasks" name="Tasks" />
   <item component="ComponentInfo{org.tasks/com.todoroo.astrid.activity.TaskListActivity.BlueGrey}" drawable="tasks" name="Tasks" />
