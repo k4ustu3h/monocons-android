@@ -1,0 +1,3 @@
+* 426 new icons
+* Increased pro and plus version badge weights
+* Various UI fixes, and SVG optimizations
