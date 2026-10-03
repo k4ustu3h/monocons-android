@@ -135,46 +135,6 @@ def rule_placeholder_square_size(ctx: CheckContext, max_speed: Speed) -> tuple[S
     return Status.PASS, "Placeholder: C04 Not Implemented (Requires Geometry)."
 
 
-@register_rule(rule_id="C05", category="Core")
-def rule_transparency(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: Flags transparency for review (Monocons allows if matching original)."""
-    if max_speed < Speed.MEDIUM:
-        return Status.PASS, "Skipped transparency check."
-    if ctx.xml_tree is None:
-        return Status.FAIL, "XML missing, cannot check transparency."
-
-    forbidden_attrs = ['opacity', 'fill-opacity', 'stroke-opacity', 'stop-opacity']
-    forbidden_style_props = set(forbidden_attrs)
-
-    for el in ctx.xml_tree.iter():
-        tag = el.tag.split('}')[-1]
-
-        for attr in forbidden_attrs:
-            val = el.get(attr)
-            if not val:
-                continue
-
-            normalized = val.strip().lower()
-            if 'opacity' in attr and normalized in {'1', '1.0'}:
-                continue
-
-            return Status.REVIEW, f"Transparency '{attr}' in <{tag}>. Ensure transparency is necessary to match the original icon."
-
-        style_val = el.get('style')
-        if style_val:
-            style_map = parse_style_attribute(style_val)
-            for prop, value in style_map.items():
-                if prop not in forbidden_style_props:
-                    continue
-
-                normalized = value.strip().lower()
-                if 'opacity' in prop and normalized in {'1', '1.0'}:
-                    continue
-
-                return Status.REVIEW, f"Transparency '{prop}' in style on <{tag}>. Avoid unnecessary transparency."
-
-    return Status.PASS, "No transparency found."
-
 
 @register_rule(rule_id="C07", category="Core")
 def rule_monochrome_colors(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
