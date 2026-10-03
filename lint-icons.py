@@ -211,6 +211,22 @@ def rule_rounded_corners(ctx: CheckContext, max_speed: Speed) -> tuple[Status, s
             return Status.FAIL, f"Rect has invalid rx: {rect.get('rx')}"
     return Status.PASS, "All rects properly rounded."
 
+
+@register_rule(rule_id="C11", category="Core")
+def rule_disallow_style(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
+    """Core: Disallows <style> tags (must use inline attributes)."""
+    if max_speed < Speed.MEDIUM:
+        return Status.PASS, "Skipped style tag check."
+    if ctx.xml_tree is None:
+        return Status.FAIL, "XML missing."
+
+    for el in ctx.xml_tree.iter():
+        tag = el.tag.split('}')[-1]
+        if tag == 'style':
+            return Status.FAIL, "<style> tags are not allowed. Use inline attributes instead."
+
+    return Status.PASS, "No <style> tags found."
+
 # --- Quality Rules ---
 
 @register_rule(rule_id="Q02", category="Quality")
