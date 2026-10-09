@@ -1818,6 +1818,8 @@
   <item component="ComponentInfo{com.sameerasw.essentials/com.sameerasw.essentials.MainActivity}" drawable="essentials" name="Essentials" />
   <item component="ComponentInfo{com.sameerasw.essentials/com.sameerasw.essentials.MainActivityBlack}" drawable="essentials" name="Essentials" />
   <item component="ComponentInfo{com.sameerasw.essentials/com.sameerasw.essentials.AppFreezingLauncher}" drawable="essentials_app_freezing" name="Essentials App Freezing" />
+  <item component="ComponentInfo{eu.depau.etchdroid/eu.depau.etchdroid.ui.activities.StartActivity}" drawable="etchdroid" name="EtchDroid" />
+  <item component="ComponentInfo{eu.depau.etchdroid/eu.depau.etchdroid.ui.MainActivity}" drawable="etchdroid" name="EtchDroid" />
   <item component="ComponentInfo{de.jepfa.personaltasklogger/de.jepfa.personaltasklogger.MainActivity}" drawable="google_tasks" name="Everyday Tasks" />
   <item component="ComponentInfo{com.jndapp.nothing.widgets.pack/com.jndapp.nothing.widgets.pack.MainActivity}" drawable="everything_widgets" name="Everything Widgets" />
   <item component="ComponentInfo{com.coolkit/com.coolkit.SplashActivity}" drawable="ewelink" name="eWeLink" />
@@ -2366,6 +2368,7 @@
   <item component="ComponentInfo{com.tommychow.frosty/com.tommychow.frosty.MainActivity}" drawable="frosty" name="Frosty" />
   <item component="ComponentInfo{com.kajda.fuelio/com.kajda.fuelio.DashboardActivity}" drawable="fuelio" name="Fuelio" />
   <item component="ComponentInfo{org.futo.inputmethod.latin.playstore/org.futo.inputmethod.latin.uix.settings.SettingsActivity}" drawable="futo_keyboard" name="FUTO Keyboard" />
+  <item component="ComponentInfo{org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity}" drawable="futo_keyboard" name="FUTO Keyboard" />
   <item component="ComponentInfo{nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.ControlCenter}" drawable="gadgetbridge" name="Gadgetbridge" />
   <item component="ComponentInfo{nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.activities.ControlCenter}" drawable="gadgetbridge" name="Gadgetbridge" />
   <item component="ComponentInfo{nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.activities.ControlCenterv2}" drawable="gadgetbridge" name="Gadgetbridge" />
@@ -2728,6 +2731,7 @@
   <item component="ComponentInfo{org.geogebra.android/org.geogebra.android.privatelibrary.splashscreen.SplashScreenActivity_}" drawable="graphing_calc" name="Graphing Calc" />
   <item component="ComponentInfo{org.geogebra.android/org.geogebra.android.privatelibrary.splashscreen.SplashScreenActivity}" drawable="graphing_calc" name="Graphing Calc" />
   <item component="ComponentInfo{com.area120.grasshopper/com.google.engedu.grasshopper.flutter.MainActivity}" drawable="grasshopper" name="Grasshopper" />
+  <item component="ComponentInfo{com.futo.platformplayer/com.futo.platformplayer.activities.MainActivity}" drawable="grayjay" name="Grayjay" />
   <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyActivity}" drawable="greenify" name="Greenify" />
   <item component="ComponentInfo{com.oasisfeng.greenify.pro/com.oasisfeng.greenify.pro.PilotActivity}" drawable="greenify" name="Greenify (Donation Package)" />
   <item component="ComponentInfo{com.shub39.grit/com.shub39.grit.app.MainActivity}" drawable="grit" name="Grit" />
@@ -3590,6 +3594,8 @@
   <item component="ComponentInfo{de.telekom.android.customercenter/de.telekom.android.customercenter.ui.activities.MainActivity}" drawable="tmobile" name="MeinMagenta" />
   <item component="ComponentInfo{com.vodafone.selfservis/com.vodafone.selfservis.feature.growth.activities.SplashActivity}" drawable="vodafone" name="MeinVodafone / " />
   <item component="ComponentInfo{com.meizu.flyme.calculator/com.meizu.flyme.calculator.CalculatorActivity}" drawable="generic_calculator_plus_minus_multi_equal" name="Meizu Calculator" />
+  <item component="ComponentInfo{com.meld.app/com.metrolist.music.MainActivityAlias}" drawable="meld" name="Meld" />
+  <item component="ComponentInfo{com.meld.app/com.metrolist.music.MainActivityStatic}" drawable="meld" name="Meld" />
   <item component="ComponentInfo{com.anticor.mellowdark/com.anticor.mellowdark.activities.SplashActivity}" drawable="mellow_dark_icon_pack" name="Mellow Dark Icon Pack" />
   <item component="ComponentInfo{com.midicontroller.melodi/com.midicontroller.melodi.SplashActivity}" drawable="generic_piano" name="Melodi MIDI Controller" />
   <item component="ComponentInfo{com.worldance.drama/com.worldance.novel.pages.splash.SplashActivity}" drawable="melolo" name="Melolo" />
@@ -6107,6 +6113,7 @@
   <item component="ComponentInfo{com.mwm.stems/com.mwm.stems.main_activity.MainActivity}" drawable="stemz" name="Stemz" />
   <item component="ComponentInfo{com.stepsappgmbh.stepsapp/com.stepsappgmbh.stepsapp.home.MainActivity}" drawable="stepsapp" name="StepsApp" />
   <item component="ComponentInfo{com.stepsappgmbh.stepsapp/com.stepsappgmbh.stepsapp.steps.MainActivity}" drawable="stepsapp" name="StepsApp" />
+  <item component="ComponentInfo{com.nvllz.stepsy/com.nvllz.stepsy.ui.MainActivity}" drawable="stepsy" name="Stepsy" />
   <item component="ComponentInfo{com.snowcorp.stickerly.android/com.snowcorp.stickerly.android.main.ui.LauncherEntryActivity}" drawable="sticker_ly" name="Sticker.ly" />
   <item component="ComponentInfo{com.snowcorp.stickerly.android/com.snowcorp.stickerly.android.LauncherEntryActivity}" drawable="sticker_ly" name="Sticker.ly" />
   <item component="ComponentInfo{chat.revolt/chat.stoat.activities.MainActivity}" drawable="stoat" name="Stoat" />
