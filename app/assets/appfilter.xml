@@ -3137,6 +3137,12 @@
   <item component="ComponentInfo{com.instagram.android/com.OM7753.gold.icon1}" drawable="instagram" name="Instagram" />
   <item component="ComponentInfo{com.instagram.lite/com.facebook.lite.MainActivity}" drawable="instagram" name="Instagram" />
   <item component="ComponentInfo{com.instagram.lite/com.instagram.lite.IgLiteActivity}" drawable="instagram" name="Instagram" />
+  <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity13}" drawable="instagram" name="Instagram" />
+  <item component="ComponentInfo{com.instagram.android/com.instagram.android.InternalLauncher}" drawable="instagram" name="Instagram" />
+  <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity1}" drawable="instagram" name="Instagram" />
+  <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity2}" drawable="instagram" name="Instagram" />
+  <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity15}" drawable="instagram" name="Instagram" />
+  <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity.throwback}" drawable="instagram" name="Instagram" />
   <item component="ComponentInfo{an1.Roblox.installer/com.aefyr.sai.ui.activities.MainActivity}" drawable="roblox" name="Installer Roblox" />
   <item component="ComponentInfo{com.rosan.installer.x/com.rosan.installer.ui.activity.SettingsActivity}" drawable="installerx" name="InstallerX" />
   <item component="ComponentInfo{com.rosan.installer.x.revived/com.rosan.installer.ui.activity.LauncherAlias}" drawable="installerx" name="InstallerX Revived" />
@@ -3710,6 +3716,8 @@
   <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleOct24}" drawable="meesho" name="Meesho" />
   <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.default}" drawable="meesho" name="Meesho" />
   <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.main.MainActivity}" drawable="meesho" name="Meesho" />
+  <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleSept25}" drawable="meesho" name="Meesho" />
+  <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleAug26}" drawable="meesho" name="Meesho" />
   <item component="ComponentInfo{mega.privacy.android.app/com.duapps.ad.DuAd}" drawable="mega" name="MEGA" />
   <item component="ComponentInfo{mega.privacy.android.app/com.google.android.archive.ReactivateActivity}" drawable="mega" name="MEGA" />
   <item component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.LauncherActivity}" drawable="mega" name="MEGA" />
@@ -3960,6 +3968,7 @@
   <item component="ComponentInfo{com.supercell.moco/com.supercell.moco.GameApp}" drawable="moco" name="mo.co" />
   <item component="ComponentInfo{com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity}" drawable="mob_control" name="Mob Control" />
   <item component="ComponentInfo{com.vincentb.MobControl/com.unity3d.player.UnityPlayerActivity}" drawable="mob_control" name="Mob Control" />
+  <item component="ComponentInfo{com.vincentb.MobControl/com.vincentb.mobcontrol.VkQualityUnityPlayerActivity}" drawable="mob_control" name="Mob Control" />
   <item component="ComponentInfo{com.mobikwik_new/com.mobikwik_new.MobikwikMain}" drawable="mobikwik" name="Mobikwik" />
   <item component="ComponentInfo{com.mobile.legends/com.moba.unityplugin.MobaGameMainActivity}" drawable="mobile_legends" name="Mobile Legends" />
   <item component="ComponentInfo{com.mobile.legends/com.moba.unityplugin.MobaGameMainActivityWithExtractor}" drawable="mobile_legends" name="Mobile Legends" />
@@ -3989,6 +3998,7 @@
   <item component="ComponentInfo{k4ustu3h.monocons/k4ustu3h.monocons.MainActivity}" drawable="monocons" name="Monocons" />
   <item component="ComponentInfo{k4ustu3h.monocons.light/k4ustu3h.monocons.MainActivity}" drawable="monocons" name="Monocons light" />
   <item component="ComponentInfo{org.monogram/org.monogram.app.MainActivity}" drawable="monogram" name="MonoGram" />
+  <item component="ComponentInfo{org.monogram/org.monogram.MainActivity}" drawable="monogram" name="Monogram" />
   <item component="ComponentInfo{com.ustwo.monumentvalley/com.ustwo.deviceutil.MainActivity}" drawable="monument_valley" name="Monument Valley" />
   <item component="ComponentInfo{com.ustwo.monumentvalley/com.fiveplay.mod.RMS.Recovery}" drawable="monument_valley" name="Monument Valley" />
   <item component="ComponentInfo{com.ustwo.monumentvalley/com.unity3d.player.UnityPlayerActivity}" drawable="monument_valley" name="Monument Valley" />
@@ -4280,6 +4290,7 @@
   <item component="ComponentInfo{naukriApp.appModules.login/com.naukri.splash.SplashActivity}" drawable="naukri" name="Naukri" />
   <item component="ComponentInfo{com.naukriGulf.app/com.naukriGulf.app.features.onboarding.splash.presentation.activities.SplashActivity}" drawable="naukri" name="Naukrigulf" />
   <item component="ComponentInfo{com.naviapp/com.naviapp.home.compose.activity.HomePageActivity}" drawable="navi" name="Navi" />
+  <item component="ComponentInfo{com.naviapp/com.naviapp.HomePageActivityDefault}" drawable="navi" name="Navi" />
   <item component="ComponentInfo{com.mventus.ncell.activity/com.mventus.ncell.activity.MainActivity}" drawable="ncell" name="Ncell App" />
   <item component="ComponentInfo{com.narayana.nconnect/com.narayana.nconnect.activity.SplashActivity}" drawable="nconnect" name="nConnect" />
   <item component="ComponentInfo{com.nspira.nconnect/com.nspira.nconnect.MainActivity}" drawable="nconnect_parent" name="nConnect Parent" />
@@ -4315,6 +4326,7 @@
   <item component="ComponentInfo{eu.faircode.netguard/eu.faircode.netguard.ActivityMain}" drawable="netguard" name="NetGuard" />
   <item component="ComponentInfo{com.offsec.nethunter.store/org.fdroid.fdroid.views.main.MainActivity}" drawable="nethunter_store" name="NetHunter Store" />
   <item component="ComponentInfo{cz.mroczis.netmonster/cz.mroczis.kotlin.presentation.main.MainActivity}" drawable="netmonster" name="NetMonster" />
+  <item component="ComponentInfo{cz.mroczis.netmonster/cz.mroczis.comp.MainActivity}" drawable="netmonster" name="NetMonster" />
   <item component="ComponentInfo{com.newme.mobile/com.newme.mobile.MainActivity}" drawable="newme" name="NEWME" />
   <item component="ComponentInfo{org.polymorphicshade.newpipe/org.schabi.newpipe.MainActivity}" drawable="newpipe" name="NewPipe" />
   <item component="ComponentInfo{org.schabi.newpipe.nightly/org.schabi.newpipe.MainActivity}" drawable="newpipe" name="NewPipe" />
@@ -4454,6 +4466,7 @@
   <item component="ComponentInfo{com.fsn.nds/com.fsn.nds.defaultIcon}" drawable="nykaa_fashion" name="Nykaa Fashion" />
   <item component="ComponentInfo{com.fsn.nykaa.man/com.fsn.nykaa.SplashScreenActivityV2}" drawable="nykaa_man" name="Nykaa Man" />
   <item component="ComponentInfo{com.fsn.nykaa.man/com.fsn.nykaa.SplashScreenActivity}" drawable="nykaa_man" name="Nykaa Man" />
+  <item component="ComponentInfo{com.fsn.nykaa.man/com.fsn.nykaa.default}" drawable="nykaa_man" name="Nykaa Man" />
   <item component="ComponentInfo{com.nytimes.crossword/com.nytimes.games.core.activity.MainActivity}" drawable="nyt_games_word_games_and_sudoku" name="NYT Games: Word Games &amp; Sudoku" />
   <item component="ComponentInfo{com.nytimes.crossword/com.nytimes.crosswordlib.activity.MainActivity}" drawable="nyt_games_word_games_and_sudoku" name="NYT Games: Word Games &amp; Sudoku" />
   <item component="ComponentInfo{com.coloros.relax/com.coloros.relax.ui.MainActivity}" drawable="o_relax" name="O Relax" />
@@ -6170,6 +6183,7 @@
   <item component="ComponentInfo{com.snapdeal.main/com.snapdeal.ui.material.activity.MaterialMainActivity}" drawable="snapdeal" name="Snapdeal" />
   <item component="ComponentInfo{com.snapdeal.main/com.snapdeal.ui.material.activity.MaterialMainActivityDefault}" drawable="snapdeal" name="Snapdeal" />
   <item component="ComponentInfo{com.snapdeal.main/com.snapdeal.ui.material.activity.MaterialMainActivityDefaultClone}" drawable="snapdeal" name="Snapdeal" />
+  <item component="ComponentInfo{com.snapdeal.main/com.snapdeal.ui.material.activity.MaterialMainActivitySecond}" drawable="snapdeal" name="Snapdeal" />
   <item component="ComponentInfo{com.fmsys.snapdrop/com.fmsys.snapdrop.MainActivity}" drawable="snapdrop" name="Snapdrop" />
   <item component="ComponentInfo{me.rhunk.snapenhance/me.rhunk.snapenhance.ui.download.DownloadManagerActivity}" drawable="snapenhance" name="SnapEnhance" />
   <item component="ComponentInfo{com.niksoftware.snapseed/com.google.android.apps.snapseed.MainActivity}" drawable="snapseed" name="Snapseed" />
