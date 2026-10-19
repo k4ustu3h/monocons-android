@@ -220,6 +220,9 @@
   <item component="ComponentInfo{deltazero.amarok.foss/deltazero.amarok.launcher.default}" drawable="amarok" name="Amarok" />
   <item component="ComponentInfo{deltazero.amarok.foss/deltazero.amarok.ui.MainActivity}" drawable="amarok" name="Amarok" />
   <item component="ComponentInfo{deltazero.amarok.foss/deltazero.amarok.launcher.calendar}" drawable="amarok" name="Amarok" />
+  <item component="ComponentInfo{deltazero.amarok/deltazero.amarok.ui.MainActivity}" drawable="amarok" name="Amarok" />
+  <item component="ComponentInfo{deltazero.amarok/deltazero.amarok.launcher.default}" drawable="amarok" name="Amarok" />
+  <item component="ComponentInfo{deltazero.amarok/deltazero.amarok.launcher.calendar}" drawable="amarok" name="Amarok" />
   <item component="ComponentInfo{com.amaze.filemanager/com.amaze.filemanager.activities.MainActivity}" drawable="amaze" name="Amaze" />
   <item component="ComponentInfo{com.amaze.filemanager/com.amaze.filemanager.ui.activities.MainActivity}" drawable="amaze" name="Amaze" />
   <item component="ComponentInfo{com.amazfitwatchfaces.st/com.amazfitwatchfaces.st.MainActivity}" drawable="amazfaces" name="AmazFaces" />
@@ -1101,6 +1104,7 @@
   <item component="ComponentInfo{io.github.muntashirakon.captiveportalcontroller/io.github.muntashirakon.captiveportalcontroller.LaunchActivity}" drawable="generic_shell" name="Captive Portal Controller" />
   <item component="ComponentInfo{com.juliansparber.captiveportallogin/com.juliansparber.captiveportallogin.CaptivePortalLoginActivity}" drawable="generic_shell" name="CaptivePortalLogin" />
   <item component="ComponentInfo{com.ovz.carscanner.rustore/carScannerXamarinForms.Droid.MainActivity}" drawable="generic_engine" name="Car Scanner" />
+  <item component="ComponentInfo{com.ovz.carscanner/crc6499ccedf271453986.MainActivity}" drawable="generic_engine" name="Car Scanner" />
   <item component="ComponentInfo{com.ovz.carscanner/carScannerXamarinForms.Droid.MainActivity}" drawable="generic_engine" name="Car Scanner ELM OBD2" />
   <item component="ComponentInfo{generic_card/a}" drawable="generic_card" name="Card" />
   <item component="ComponentInfo{com.careerwill.careerwillapp/com.careerwill.careerwillapp.auth.MainActivity}" drawable="careerwill" name="Careerwill" />
@@ -1869,6 +1873,7 @@
   <item component="ComponentInfo{com.rootify.emptyfoldercleaner/com.rootify.emptyfoldercleaner.MainActivity}" drawable="empty_folder_cleaner" name="Empty Folder Cleaner" />
   <item component="ComponentInfo{br.com.trinitysolucoes.saemobile/br.com.trinitysolucoes.saemobile.MainActivity}" drawable="enel" name="Enel" />
   <item component="ComponentInfo{it.enel/crc64d0549c3f31f5415a.SplashActivity}" drawable="enel" name="Enel" />
+  <item component="ComponentInfo{br.com.trinitysolucoes.saemobile/com.enel.brasil.MainActivity}" drawable="enel" name="Enel" />
   <item component="ComponentInfo{english.tagalog.bible/king.james.bible.android.activity.LaunchActivity}" drawable="generic_bible" name="English Tagalog Bible" />
   <item component="ComponentInfo{io.ente.auth.independent/io.ente.auth.MainActivity}" drawable="ente_auth" name="Ente Auth" />
   <item component="ComponentInfo{io.ente.auth/io.ente.auth.MainActivity}" drawable="ente_auth" name="Ente Auth" />
@@ -2880,6 +2885,7 @@
   <item component="ComponentInfo{com.ftw_and_co.happn/com.ftw_and_co.happn.ui.splash.SplashActivity}" drawable="happn" name="happn" />
   <item component="ComponentInfo{com.simon.harmonichackernews/com.simon.harmonichackernews.MainActivity}" drawable="harmonic" name="Harmonic" />
   <item component="ComponentInfo{com.alexmercerind.harmonoid/com.alexmercerind.harmonoid.MainActivity}" drawable="harmonoid" name="Harmonoid" />
+  <item component="ComponentInfo{sh.haven.app/sh.haven.app.MainActivity}" drawable="haven" name="Haven" />
   <item component="ComponentInfo{com.hbo.hbonow/com.hbo.go.LaunchActivity}" drawable="hbo_max" name="HBO Max" />
   <item component="ComponentInfo{com.hbo.hbonow/com.hbo.hbonow.LaunchActivity}" drawable="hbo_max" name="HBO Max" />
   <item component="ComponentInfo{com.hbo.hbonow/com.hbo.hbonow.MainActivity}" drawable="hbo_max" name="HBO Max" />
@@ -4739,6 +4745,7 @@
   <item component="ComponentInfo{com.cbs.ca/com.paramount.android.pplus.splash.mobile.integration.SplashActivity}" drawable="paramount_plus" name="Paramount+" />
   <item component="ComponentInfo{tv.parsec.client/tv.parsec.client.MainActivity}" drawable="parsec" name="Parsec" />
   <item component="ComponentInfo{ca.chancehorizon.paseo/ca.chancehorizon.paseo.MainActivity}" drawable="paseo" name="Paseo" />
+  <item component="ComponentInfo{app.passwordstore.agrahn/app.passwordstore.ui.main.LaunchActivity}" drawable="password_store" name="Password Store" />
   <item component="ComponentInfo{app.passwordstore.pando85/app.passwordstore.ui.main.LaunchActivity}" drawable="password_store" name="Password Store" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.PasswordManagerActivity}" drawable="google_passwords" name="Passwords (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcut.PasswordManagerActivity}" drawable="google_passwords" name="Passwords (Google Shortcuts Launcher)" />
@@ -6189,6 +6196,7 @@
   <item component="ComponentInfo{sleeptrakcer.sleeprecorder.sleepapp.sleep/sleeptrakcer.sleeprecorder.sleepapp.sleep.guide.SplashActivity}" drawable="generic_moon" name="Sleep Tracker" />
   <item component="ComponentInfo{indwin.c3.shareapp/indwin.c3.shareapp.splash.SplashActivity}" drawable="slice" name="Slice" />
   <item component="ComponentInfo{indwin.c3.shareapp/indwin.c3.shareapp.Splash}" drawable="slice" name="Slice" />
+  <item component="ComponentInfo{indwin.c3.shareapp/com.slice.android.main.SingleActivity}" drawable="slice" name="Slice" />
   <item component="ComponentInfo{com.buzbuz.smartautoclicker/com.buzbuz.smartautoclicker.activity.ScenarioActivity}" drawable="smart_autoclicker" name="Smart AutoClicker" />
   <item component="ComponentInfo{com.buzbuz.smartautoclicker/com.buzbuz.smartautoclicker.scenarios.ScenarioActivity}" drawable="smart_autoclicker" name="Smart AutoClicker" />
   <item component="ComponentInfo{cz.moneta.smartbanka/cz.moneta.smartbanka.mobile.views.activities.MainActivity}" drawable="moneta" name="Smart Banka" />
@@ -6197,6 +6205,8 @@
   <item component="ComponentInfo{com.tuya.smartlife/com.smart.TuyaSplashActivity}" drawable="smart_life" name="Smart Life" />
   <item component="ComponentInfo{com.tuya.smartlife/com.tuyasmart.sample.TuyaSplashActivity}" drawable="smart_life" name="Smart Life" />
   <item component="ComponentInfo{co.vulcanlabs.printer/co.vulcanlabs.printer.features.splash.PreLoadingActivity}" drawable="generic_printer" name="Smart Print for HP Printer" />
+  <item component="ComponentInfo{com.transsion.scanningrecharger/com.transsion.scanningrecharger.view.activity.SplashActivity}" drawable="transsion_scanner" name="Smart Scanner" />
+  <item component="ComponentInfo{com.transsion.scanningrecharger/com.transsion.scanningrecharger.view.activity.textrecognized.TextRecognizedActivity}" drawable="transsion_scanner" name="Smart Scanner" />
   <item component="ComponentInfo{app.smart.timetable/app.smart.timetable.MainActivity}" drawable="smart_timetable" name="Smart Timetable" />
   <item component="ComponentInfo{com.africa.smartcash/com.airtel.africa.selfcare.presentation.login.activity.LoginActivity}" drawable="my_airtel" name="Smartcash PSB" />
   <item component="ComponentInfo{com.kieronquinn.app.smartspacer/com.kieronquinn.app.smartspacer.ui.activities.MainActivity}" drawable="smartspacer" name="Smartspacer" />
@@ -6402,6 +6412,7 @@
   <item component="ComponentInfo{com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivityLauncher}" drawable="suntimes" name="Suntimes" />
   <item component="ComponentInfo{com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.SuntimesActivity}" drawable="suntimes" name="Suntimes" />
   <item component="ComponentInfo{com.forrestguice.suntimescalendars/com.forrestguice.suntimeswidget.calendar.SuntimesCalendarActivity}" drawable="suntimes_calendars" name="Suntimes Calendars" />
+  <item component="ComponentInfo{org.unifiedpush.distributor.sunup/org.unifiedpush.distributor.sunup.activities.MainActivity}" drawable="sunup" name="Sunup" />
   <item component="ComponentInfo{fi.suomi.viestit/fi.suomi.viestit.MainActivity}" drawable="suomi_fi" name="Suomi.fi" />
   <item component="ComponentInfo{money.super.payments/com.supermoney.payments.MainActivity}" drawable="super_money" name="super.money" />
   <item component="ComponentInfo{superfreeze.tool.android/superfreeze.tool.android.userInterface.mainActivity.MainActivity}" drawable="superfreezz" name="SuperFreezZ" />
@@ -6450,6 +6461,8 @@
   <item component="ComponentInfo{com.laurencedawson.reddit_sync/com.laurencedawson.reddit_sync.ui.activities.HomeActivity.Pride}" drawable="sync" name="Sync" />
   <item component="ComponentInfo{com.laurencedawson.reddit_sync/com.laurencedawson.reddit_sync.ui.activities.HomeActivity}" drawable="sync" name="Sync" />
   <item component="ComponentInfo{com.laurencedawson.reddit_sync/com.laurencedawson.reddit_sync.ui.RedditActivity}" drawable="sync" name="Sync" />
+  <item component="ComponentInfo{com.github.catfriend1.syncthingfork/com.nutomic.syncthingandroid.activities.FirstStartActivity}" drawable="syncthing" name="Syncthing" />
+  <item component="ComponentInfo{com.github.catfriend1.syncthingfork/com.nutomic.syncthingandroid.onboarding.OnboardingActivity}" drawable="syncthing" name="Syncthing" />
   <item component="ComponentInfo{com.github.catfriend1.syncthingandroid/com.nutomic.syncthingandroid.activities.FirstStartActivity}" drawable="syncthing" name="Syncthing" />
   <item component="ComponentInfo{com.github.catfriend1.syncthingandroid/com.nutomic.syncthingandroid.activities.MainActivity}" drawable="syncthing" name="Syncthing" />
   <item component="ComponentInfo{com.github.catfriend1.syncthingandroid/com.nutomic.syncthingandroid.activities.PhotoShootActivity}" drawable="syncthing" name="Syncthing" />
@@ -6833,6 +6846,7 @@
   <item component="ComponentInfo{com.uniqlo.in.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity}" drawable="uniqlo" name="UNIQLO" />
   <item component="ComponentInfo{com.uniqlo.usa.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity}" drawable="uniqlo" name="UNIQLO" />
   <item component="ComponentInfo{com.uniqlo.kr.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity}" drawable="uniqlo" name="UNIQLO" />
+  <item component="ComponentInfo{com.veewalabs.unitconverter/com.veewalabs.unitconverter.MainActivity}" drawable="unit_converter" name="Unit Converter" />
   <item component="ComponentInfo{com.sadellie.unitto/com.sadellie.unitto.MainActivity}" drawable="unitto" name="Unitto" />
   <item component="ComponentInfo{app.pwhs.universalinstaller/app.pwhs.universalinstaller.presentation.splash.SplashActivity}" drawable="universal_installer" name="Universal Installer" />
   <item component="ComponentInfo{com.kratosle.unlim/com.kratosle.unlim.scenes.login.LoginScene}" drawable="unlim_cloud" name="Unlim Cloud" />
