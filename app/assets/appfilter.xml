@@ -2886,6 +2886,7 @@
   <item component="ComponentInfo{com.simon.harmonichackernews/com.simon.harmonichackernews.MainActivity}" drawable="harmonic" name="Harmonic" />
   <item component="ComponentInfo{com.alexmercerind.harmonoid/com.alexmercerind.harmonoid.MainActivity}" drawable="harmonoid" name="Harmonoid" />
   <item component="ComponentInfo{sh.haven.app/sh.haven.app.MainActivity}" drawable="haven" name="Haven" />
+  <item component="ComponentInfo{app.hayase/app.hayase.MainActivity}" drawable="hayase" name="Hayase" />
   <item component="ComponentInfo{com.hbo.hbonow/com.hbo.go.LaunchActivity}" drawable="hbo_max" name="HBO Max" />
   <item component="ComponentInfo{com.hbo.hbonow/com.hbo.hbonow.LaunchActivity}" drawable="hbo_max" name="HBO Max" />
   <item component="ComponentInfo{com.hbo.hbonow/com.hbo.hbonow.MainActivity}" drawable="hbo_max" name="HBO Max" />
@@ -4125,6 +4126,7 @@
   <item component="ComponentInfo{is.xyz.mpv/is.xyz.mpv.MainActivity}" drawable="mpv_android" name="mpv-android" />
   <item component="ComponentInfo{app.marlboroadvance.mpvex/app.marlboroadvance.mpvex.MainActivity}" drawable="mpvex" name="mpvEx" />
   <item component="ComponentInfo{app.marlboroadvance.mpvex.preview/app.marlboroadvance.mpvex.MainActivity}" drawable="mpvex" name="mpvEx" />
+  <item component="ComponentInfo{app.gyrolet.mpvrx/app.gyrolet.mpvrx.MainActivity}" drawable="mpvrx" name="MpvRx" />
   <item component="ComponentInfo{com.pryshedko.mtisland/com.pryshedko.mtisland.MyMainActivity}" drawable="mt_capsule" name="MT Capsule" />
   <item component="ComponentInfo{com.pryshedko.mtisland/com.pryshedko.mtisland.MainAppActivity}" drawable="mt_capsule" name="MT Capsule" />
   <item component="ComponentInfo{bin.mt.plus.canary/bin.mt.plus.MainDarkIcon}" drawable="mt_manager" name="MT Manager" />
@@ -4388,6 +4390,7 @@
   <item component="ComponentInfo{com.nike.omega/com.nike.mynike.ui.SplashScreenActivity}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{br.com.gruposbf.nike/br.com.gruposbf.nike.MainActivity}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{com.nike.omega/com.nike.omega.MainActivityDefault}" drawable="nike" name="Nike" />
+  <item component="ComponentInfo{app.ninjavpn.android/app.ninjavpn.android.app.Dashboard}" drawable="ninja_vpn" name="Ninja VPN" />
   <item component="ComponentInfo{com.nintendo.znba/com.nintendo.znba.MainActivity}" drawable="nintendo_music" name="Nintendo Music" />
   <item component="ComponentInfo{com.nintendo.znca/com.nintendo.coral.ui.boot.BootActivity}" drawable="nintendo_switch" name="Nintendo Switch" />
   <item component="ComponentInfo{com.nintendo.znca/crc64e1ce91bfba58d316.MainActivity}" drawable="nintendo_switch" name="Nintendo Switch" />
@@ -5826,6 +5829,8 @@
   <item component="ComponentInfo{com.ril.shein/com.ril.shein.launch.activity.SplashScreenActivity}" drawable="shein" name="SHEIN" />
   <item component="ComponentInfo{moe.shizuku.privileged.api/moe.shizuku.manager.MainActivity}" drawable="shizuku" name="Shizuku" />
   <item component="ComponentInfo{com.noxinfinity.shell/com.noxinfinity.shell.MainActivity}" drawable="terminal" name="ShizuShell" />
+  <item component="ComponentInfo{com.shopback.app/com.google.android.archive.ReactivateActivity}" drawable="shopback" name="ShopBack" />
+  <item component="ComponentInfo{com.shopback.app/com.shopback.app.core.ui.splash.SplashActivity}" drawable="shopback" name="ShopBack" />
   <item component="ComponentInfo{com.shopee.my/com.shopee.app.ui.tutorial.TutorialActivity_}" drawable="shopee" name="Shopee" />
   <item component="ComponentInfo{com.shopee.id/com.shopee.MainActivity}" drawable="shopee" name="Shopee" />
   <item component="ComponentInfo{com.shopee.br/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee" name="Shopee" />
