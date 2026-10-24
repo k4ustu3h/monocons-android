@@ -56,7 +56,8 @@ class IconRepositoryImpl(
 
     init {
         coroutineScope.launch {
-            val iconList = iconDataSource.getIconInfo().sortedBy { it.label.lowercase() }
+            val iconList = iconDataSource.getIconInfo()
+                .sortedWith(compareBy(String.CASE_INSENSITIVE_ORDER) { it.label })
             val groupedIcons = iconList.associateBy { it.label }.values
             val iconCount = groupedIcons.size
 
@@ -82,10 +83,8 @@ class IconRepositoryImpl(
                 it.indexOf(string = query, ignoreCase = true)
             }.filter { it != -1 }.minOrNull() ?: return@mapNotNull null
             val matchAtWordStart = searchIn.any {
-                it.indexOf(
-                    string = query,
-                    ignoreCase = true,
-                ) == 0 || it.getOrNull(it.indexOf(string = query, ignoreCase = true) - 1) == ' '
+                it.indexOf(string = query, ignoreCase = true) == 0 ||
+                    it.getOrNull(it.indexOf(string = query, ignoreCase = true) - 1) == ' '
             }
             SearchInfo(
                 iconInfo = candidate,

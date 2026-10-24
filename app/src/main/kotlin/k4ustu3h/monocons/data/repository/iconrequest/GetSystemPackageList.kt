@@ -25,6 +25,7 @@ import android.content.res.Resources
 import android.graphics.drawable.Drawable
 import android.util.Log
 import k4ustu3h.monocons.data.model.Component
+import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.data.model.SystemIconInfo
 
 fun Context.getPackagesList(): List<ResolveInfo> {
@@ -38,11 +39,26 @@ fun Context.getPackagesList(): List<ResolveInfo> {
     }
 }
 
-fun Context.getSystemIconInfo(): List<SystemIconInfo> {
-    return getPackagesList().map { ri ->
+fun Context.getSystemIconInfo(
+    lawniconsIconList: List<IconInfo> = emptyList(),
+): List<SystemIconInfo> {
+    val themedComponentStrings = if (lawniconsIconList.isNotEmpty()) {
+        lawniconsIconList
+            .flatMap { it.componentNames }
+            .mapTo(HashSet()) { it.component.flattenToString() }
+    } else {
+        null
+    }
+
+    return getPackagesList().mapNotNull { ri ->
         with(ri) {
             val riPkg = activityInfo.packageName
-            val component = "$riPkg/${activityInfo.name}"
+            val componentStr = "$riPkg/${activityInfo.name}"
+            val component = Component.unflattenFromString(componentStr) ?: return@mapNotNull null
+
+            if (themedComponentStrings != null && component.flattenToString() in themedComponentStrings) {
+                return@mapNotNull null
+            }
 
             val name = loadLabel(packageManager).toString()
             val drawable = getHighResIcon(packageManager) ?: loadIcon(packageManager)
@@ -50,7 +66,7 @@ fun Context.getSystemIconInfo(): List<SystemIconInfo> {
             SystemIconInfo(
                 drawable = drawable,
                 label = name,
-                component = Component.unflattenFromString(component)!!,
+                component = component,
             )
         }
     }
@@ -58,13 +74,17 @@ fun Context.getSystemIconInfo(): List<SystemIconInfo> {
 
 fun ResolveInfo.getHighResIcon(packageManager: PackageManager): Drawable? {
     return try {
-        val componentName = ComponentName(activityInfo.packageName, activityInfo.name)
+        val componentName =
+            ComponentName(activityInfo.packageName, activityInfo.name)
         if (iconResource != 0) {
             return packageManager.getResourcesForActivity(componentName).getDrawable(
                 iconResource,
                 null,
             )
         }
+        null
+    } catch (e: PackageManager.NameNotFoundException) {
+        Log.d(TAG, "$e")
         null
     } catch (e: Resources.NotFoundException) {
         Log.d(TAG, "$e")

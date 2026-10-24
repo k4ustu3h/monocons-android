@@ -1,15 +1,16 @@
+#!/usr/bin/env python3
+import argparse
+import json
+import logging
 import re
 import sys
 import time
-import logging
-import argparse
-import json
-import xml.etree.ElementTree as ET # lint: ignore
-from pathlib import Path
-from enum import Enum, IntEnum
-from dataclasses import dataclass, field, asdict
-from concurrent.futures import ProcessPoolExecutor
+import xml.etree.ElementTree as ET  # lint: ignore
 from abc import ABC, abstractmethod
+from concurrent.futures import ProcessPoolExecutor
+from dataclasses import dataclass, field, asdict
+from enum import Enum, IntEnum
+from pathlib import Path
 from typing import Callable, List, Dict, Optional, Any, Type
 
 try:
@@ -34,9 +35,35 @@ class Status(Enum):
 
 
 class Speed(IntEnum):
-    FAST = 1     # Regex / String only
-    MEDIUM = 2   # XML Tree
-    SLOW = 3     # svgelements / Geometry
+    # Regex / String only
+    FAST = 1
+    # XML Tree
+    MEDIUM = 2
+    # svgelements / Geometry
+    SLOW = 3
+
+
+@dataclass(frozen=True)
+class Outcome:
+    id: str
+    name: str
+    output: str
+
+
+@dataclass(frozen=True)
+class RuleDefinition:
+    id: str
+    name: str
+    description: str
+    outcomes: Any  # Namespace class or Dict[str, Outcome]
+    category: str = "Core"
+
+
+@dataclass(frozen=True)
+class Finding:
+    outcome: Outcome
+    metadata: Dict[str, Any] = field(default_factory=dict)
+    status: Status = Status.FAIL
 
 
 @dataclass
@@ -47,25 +74,31 @@ class CheckContext:
     svg_doc: Optional[Any] = None
 
 
-RULES_REGISTRY: List[tuple[Callable, str, str]] = []
+RULES_REGISTRY: List[tuple[Callable, RuleDefinition]] = []
 
 
-def register_rule(rule_id: str, category: str = "Core"):
-    """Decorator to register a pure function rule."""
+def register_rule(id: str, name: str, outcomes: Any, description: str = "", category: str = "Core"):
+    """Decorator to register a rule with structured outcomes."""
+
     def decorator(func):
-        RULES_REGISTRY.append((func, rule_id, category))
+        rule_def = RuleDefinition(id, name, description, outcomes, category)
+        RULES_REGISTRY.append((func, rule_def))
         return func
+
     return decorator
 
 
 @dataclass(frozen=True)
 class CheckResult:
     id: str
+    name: str
     category: str
-    check_name: str
     status: Status
-    message: str
-    duration_ms: float
+    outcome_id: Optional[str] = None
+    outcome_name: Optional[str] = None
+    message: str = ""
+    metadata: Dict[str, Any] = field(default_factory=dict)
+    duration_ms: float = 0.0
 
 
 @dataclass
@@ -79,75 +112,101 @@ class FileReport:
         return any(r.status == Status.FAIL for r in self.results)
 
 
-# --- Plugin System ---
-PLUGIN_REGISTRY: Dict[Speed, List[tuple[Callable, str]]] = {
-    s: [] for s in Speed}
-
-
-def register_check(speed: Speed, check_id: str):
-    def decorator(func):
-        PLUGIN_REGISTRY[speed].append((func, check_id))
-        return func
-    return decorator
-
 # --- Helper Functions ---
 STYLE_PAIR_RE = re.compile(r'([\w-]+)\s*:\s*([^;]+)')
+
 
 def parse_style_attribute(style_str: Optional[str]) -> Dict[str, str]:
     if not style_str:
         return {}
     return {k: v.strip() for k, v in STYLE_PAIR_RE.findall(style_str.lower())}
 
+
 # --- Rules Implementation ---
 
 # --- Core Rules ---
 
-@register_rule(rule_id="C01", category="Core")
-def rule_canvas_size(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: Ensures canvas is exactly 192x192."""
+class C01Outcomes:
+    WRONG_SIZE = Outcome("WRONG_SIZE", "Wrong canvas size", "canvas: {width}×{height} px")
+    MISSING = Outcome("MISSING", "No canvas", "no canvas")
+    MALFORMED = Outcome("MALFORMED", "Malformed viewBox", "canvas: malformed viewBox '{vb}'")
+
+
+@register_rule(
+    id="C01",
+    name="Canvas size",
+    description="Ensures canvas is exactly 192x192.",
+    outcomes=C01Outcomes
+)
+def rule_canvas_size(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
     if max_speed < Speed.MEDIUM:
-        return Status.PASS, "Skipped canvas check."
+        return []
     if ctx.xml_tree is None:
-        return Status.FAIL, "XML missing, cannot verify canvas."
-    vb = ctx.xml_tree.get('viewBox', '').split()
+        return [Finding(C01Outcomes.MISSING)]
+
+    vb_str = ctx.xml_tree.get('viewBox', '')
+    vb = vb_str.split()
     w = ctx.xml_tree.get('width', '').strip('px ')
     h = ctx.xml_tree.get('height', '').strip('px ')
+
     if vb == ['0', '0', '192', '192'] or (w == '192' and h == '192'):
-        return Status.PASS, "Confirmed 192x192."
-    return Status.FAIL, f"Invalid canvas: viewBox={vb}, w={w}, h={h}"
+        return []
+
+    if not vb and not (w or h):
+        return [Finding(C01Outcomes.MISSING)]
+
+    if vb and len(vb) != 4:
+        return [Finding(C01Outcomes.MALFORMED, {"vb": vb_str})]
+
+    return [Finding(C01Outcomes.WRONG_SIZE, {"width": w or "?", "height": h or "?"})]
 
 
-@register_rule(rule_id="C02", category="Core")
-def rule_placeholder_too_small(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: [Placeholder] Checks if icons are too small."""
-    return Status.PASS, "Placeholder: C02 Not Implemented (Requires Geometry)."
+@register_rule(id="C02", name="Icon too small", outcomes={},
+               description="Checks if icons are too small.")
+def rule_placeholder_too_small(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    return []
 
 
-@register_rule(rule_id="C03", category="Core")
-def rule_placeholder_outside_content(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: [Placeholder] Checks for elements outside the content area."""
-    return Status.PASS, "Placeholder: C03 Not Implemented (Requires Geometry)."
+@register_rule(id="C03", name="Outside content", outcomes={},
+               description="Checks for elements outside the content area.")
+def rule_placeholder_outside_content(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    return []
 
 
-@register_rule(rule_id="C04", category="Core")
-def rule_placeholder_square_size(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: [Placeholder] Checks size of square icons."""
-    return Status.PASS, "Placeholder: C04 Not Implemented (Requires Geometry)."
+@register_rule(id="C04", name="Square size", outcomes={},
+               description="Checks size of square icons.")
+def rule_placeholder_square_size(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    return []
 
 
+class C07Outcomes:
+    UNAUTHORIZED_FILL = Outcome(
+        "UNAUTHORIZED_FILL",
+        "Unauthorized fill",
+        "<{tag}> has unauthorized fill '{fill}'. Monocons must be monochrome (black, none, or gradients)."
+    )
+    UNAUTHORIZED_STROKE = Outcome(
+        "UNAUTHORIZED_STROKE",
+        "Unauthorized stroke",
+        "<{tag}> has unauthorized stroke '{stroke}'. Must be monochrome (black, none, or gradients)."
+    )
 
-@register_rule(rule_id="C07", category="Core")
-def rule_monochrome_colors(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: Enforces monochrome shapes (allows explicit black, implicit fill, none, or url gradients)."""
-    if max_speed < Speed.MEDIUM:
-        return Status.PASS, "Skipped fill check."
-    if ctx.xml_tree is None:
-        return Status.FAIL, "XML missing."
+
+@register_rule(
+    id="C07",
+    name="Monochrome colors",
+    description="Enforces monochrome shapes (allows explicit black, implicit fill, none, or url gradients).",
+    outcomes=C07Outcomes
+)
+def rule_monochrome_colors(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    if max_speed < Speed.MEDIUM or ctx.xml_tree is None:
+        return []
 
     # These are the only valid hardcoded color values for monocons.
     # An omitted fill attribute effectively defaults to 'black'.
     # url(...) is also permitted to allow referencing <linearGradient> etc.
     allowed_colors = {'none', '#000000', '#000', 'black'}
+    findings = []
 
     root = ctx.xml_tree.getroot() if hasattr(ctx.xml_tree, 'getroot') else ctx.xml_tree
     root_style = parse_style_attribute(root.get('style'))
@@ -177,75 +236,113 @@ def rule_monochrome_colors(ctx: CheckContext, max_speed: Speed) -> tuple[Status,
 
         if tag in ['path', 'circle', 'rect', 'ellipse', 'line', 'polygon', 'polyline']:
             if current_fill not in allowed_colors and not current_fill.startswith('url('):
-                return Status.FAIL, f"<{tag}> has unauthorized fill '{current_fill}'. Monocons must be monochrome (black, none, or gradients)."
+                findings.append(Finding(C07Outcomes.UNAUTHORIZED_FILL, {"tag": tag, "fill": current_fill}))
             if local_stroke:
                 local_stroke_lower = local_stroke.lower()
                 if local_stroke_lower not in allowed_colors and not local_stroke_lower.startswith('url('):
-                    return Status.FAIL, f"<{tag}> has unauthorized stroke '{local_stroke}'. Must be monochrome (black, none, or gradients)."
+                    findings.append(Finding(C07Outcomes.UNAUTHORIZED_STROKE, {"tag": tag, "stroke": local_stroke}))
 
         for child in el:
             stack.append((child, current_fill))
 
-    return Status.PASS, "All shapes have valid monochrome colors."
+    return findings
 
 
-@register_rule(rule_id="C10", category="Core")
-def rule_rounded_corners(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: Validates <rect> corner rounding (rx)."""
-    if max_speed < Speed.MEDIUM:
-        return Status.PASS, "Skipped rect rounding check."
-    if ctx.xml_tree is None:
-        return Status.FAIL, "XML missing."
+class RoundingOutcomes:
+    MISSING_RECT_ROUND = Outcome("MISSING_RECT_ROUND", "Rect missing rounding", "rect: no rx")
+    INVALID_RECT_ROUND = Outcome("INVALID_RECT_ROUND", "Invalid rect rounding", "rect rx: {rx}")
 
+
+@register_rule(
+    id="C10",
+    name="Rounded corners",
+    outcomes=RoundingOutcomes,
+    description="Validates <rect> corner rounding (rx)."
+)
+def rule_rounded_corners(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    if max_speed < Speed.MEDIUM or ctx.xml_tree is None:
+        return []
+
+    findings = []
     for rect in ctx.xml_tree.iter():
         tag = rect.tag.split('}')[-1]
         if tag != 'rect':
             continue
+        rx = rect.get('rx')
+        if rx is None:
+            findings.append(Finding(RoundingOutcomes.MISSING_RECT_ROUND))
+            continue
         try:
-            rx = rect.get('rx')
-            if rx is None:
-                return Status.FAIL, "Rect lacks rx attribute."
             if not (6 <= float(rx) <= 32):
-                return Status.FAIL, f"Rect rx='{rx}' out of 6-32 range."
+                findings.append(Finding(RoundingOutcomes.INVALID_RECT_ROUND, {"rx": rx}))
         except (ValueError, TypeError):
-            return Status.FAIL, f"Rect has invalid rx: {rect.get('rx')}"
-    return Status.PASS, "All rects properly rounded."
+            findings.append(Finding(RoundingOutcomes.INVALID_RECT_ROUND, {"rx": rx}))
+
+    return findings
 
 
-@register_rule(rule_id="C11", category="Core")
-def rule_disallow_style(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Core: Disallows <style> tags (must use inline attributes)."""
-    if max_speed < Speed.MEDIUM:
-        return Status.PASS, "Skipped style tag check."
-    if ctx.xml_tree is None:
-        return Status.FAIL, "XML missing."
+class C11Outcomes:
+    DISALLOWED_STYLE = Outcome(
+        "DISALLOWED_STYLE",
+        "Disallowed <style> tag",
+        "<style> tags are not allowed. Use inline attributes instead."
+    )
+
+
+@register_rule(
+    id="C11",
+    name="Disallow style",
+    outcomes=C11Outcomes,
+    description="Disallows <style> tags (must use inline attributes)."
+)
+def rule_disallow_style(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    if max_speed < Speed.MEDIUM or ctx.xml_tree is None:
+        return []
 
     for el in ctx.xml_tree.iter():
         tag = el.tag.split('}')[-1]
         if tag == 'style':
-            return Status.FAIL, "<style> tags are not allowed. Use inline attributes instead."
+            return [Finding(C11Outcomes.DISALLOWED_STYLE)]
 
-    return Status.PASS, "No <style> tags found."
+    return []
+
 
 # --- Quality Rules ---
 
-@register_rule(rule_id="Q02", category="Quality")
-def rule_placeholder_black_spots(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
+@register_rule(id="Q02", name="Black spots", outcomes={},
+               description="Detects unintentional black spots from overlapping paths.",
+               category="Quality")
+def rule_placeholder_black_spots(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
     """Quality: [Placeholder] Detects unintentional black spots from overlapping paths."""
-    return Status.PASS, "Placeholder: Q02 Not Implemented (Requires SLOW/Geometry)."
+    return []
 
-@register_rule(rule_id="Q04", category="Quality")
-def rule_placeholder_visual_alignment(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
+
+@register_rule(id="Q04", name="Visual alignment", outcomes={},
+               description="Checks for visual alignment.", category="Quality")
+def rule_placeholder_visual_alignment(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
     """Quality: [Placeholder] Checks for visual alignment instead of bounding-box alignment."""
-    return Status.PASS, "Placeholder: Q04 Not Implemented (Requires SLOW/Geometry)."
+    return []
+
 
 # --- Optimization Rules ---
-@register_rule(rule_id="O01", category="Optimization")
-def rule_svg_size(ctx: CheckContext, max_speed: Speed) -> tuple[Status, str]:
-    """Optimization: Flags SVGs larger than 10KB."""
-    if len(ctx.raw_content.encode('utf-8')) > 10 * 1024:
-        return Status.WARN, "SVG file size exceeds 10KB. Avoid excessive density."
-    return Status.PASS, "SVG file size is within limits."
+
+class O01Outcomes:
+    TOO_LARGE = Outcome("TOO_LARGE", "SVG too large", "size: {size} KB")
+
+
+@register_rule(
+    id="O01",
+    name="SVG size",
+    outcomes=O01Outcomes,
+    description="Flags SVGs larger than 10KB.",
+    category="Optimization"
+)
+def rule_svg_size(ctx: CheckContext, max_speed: Speed) -> List[Finding]:
+    size_kb = len(ctx.raw_content.encode('utf-8')) / 1024
+    if size_kb > 10:
+        return [Finding(O01Outcomes.TOO_LARGE, {"size": round(size_kb, 1)}, Status.WARN)]
+    return []
+
 
 # --- Output System (Modular) ---
 
@@ -266,11 +363,12 @@ class OutputHandler(ABC):
     @abstractmethod
     def finish(self): pass
 
+
 class ConsoleOutput(OutputHandler):
     COLORS = {
-        Status.PASS: "\033[92m",   # Green
-        Status.WARN: "\033[93m",   # Yellow
-        Status.FAIL: "\033[91m",   # Red
+        Status.PASS: "\033[92m",    # Green
+        Status.WARN: "\033[93m",    # Yellow
+        Status.FAIL: "\033[91m",    # Red
         Status.REVIEW: "\033[95m",  # Magenta
         Status.EXEMPT: "\033[90m",  # Grey
     }
@@ -280,40 +378,28 @@ class ConsoleOutput(OutputHandler):
         pass
 
     def process(self, report: FileReport):
-        # 1. Handle Catastrophic Errors
         if report.error:
-            print(
-                f"{self.COLORS[Status.FAIL]}ERR{self.RESET} {report.file_path}: {report.error}",
-                file=self.dest,
-            )
+            print(f"{self.COLORS[Status.FAIL]}ERR{self.RESET} {report.file_path}: {report.error}",
+                  file=self.dest)
             self.failed_count += 1
             return
 
-        # 2. Determine Visibility
-        # Actionable = anything that isn't a PASS
-        actionable_results = [
-            r for r in report.results if r.status not in (Status.PASS, Status.EXEMPT)]
-        has_failure = any(r.status == Status.FAIL for r in report.results)
-
-        if has_failure:
+        actionable = [r for r in report.results if r.status not in (Status.PASS, Status.EXEMPT)]
+        if any(r.status == Status.FAIL for r in report.results):
             self.failed_count += 1
 
-        # Skip printing if not verbose and nothing is wrong
-        if not self.verbose and not actionable_results:
+        if not self.verbose and not actionable:
             return
 
-        # 3. Printing Logic
         print(f"\n{report.file_path}", file=self.dest)
         for r in report.results:
             if not self.verbose and r.status == Status.PASS:
                 continue
-
             color = self.COLORS.get(r.status, "")
             timing = f" ({r.duration_ms:.1f} ms)" if self.verbose else ""
             print(
                 f"  [{color}{r.status.name:6}{self.RESET}] [{r.category}: {r.id}] {r.message}{timing}",
-                file=self.dest,
-            )
+                file=self.dest)
 
     def finish(self):
         print(f"\nAnalysis complete. Failed files: {self.failed_count}", file=self.dest)
@@ -325,7 +411,9 @@ class JsonOutput(OutputHandler):
         self.first = True
 
     def process(self, report: FileReport):
-        # In non-verbose mode, skip files that passed everything perfectly
+        if any(r.status == Status.FAIL for r in report.results):
+            self.failed_count += 1
+
         actionable = [r for r in report.results if r.status != Status.PASS]
         if not self.verbose and not actionable and not report.error:
             return
@@ -334,15 +422,10 @@ class JsonOutput(OutputHandler):
             self.dest.write(",\n")
         self.first = False
 
-        if any(r.status == Status.FAIL for r in report.results):
-            self.failed_count += 1
-
         data = asdict(report)
-        # Enums to strings for JSON
         for r in data['results']:
             r['status'] = r['status'].value
 
-        # Strip PASS results from JSON if not verbose to save disk/bandwidth on 8k files
         if not self.verbose:
             data['results'] = [r for r in data['results'] if r['status'] != "PASS"]
 
@@ -362,22 +445,18 @@ class CompactOutput(OutputHandler):
         pass
 
     def process(self, report: FileReport):
-        # Gather IDs of all results that are FAIL
         failed_ids = [r.id for r in report.results if r.status == Status.FAIL]
 
         if report.error:
-            # Handle catastrophic file errors (e.g. unreadable)
             self.dest.write(
                 f"{Path(report.file_path).name}: CRITICAL_ERROR ({report.error}) \n")
             self.failed_count += 1
         elif failed_ids:
-            # Sort IDs for consistent output
             ids_str = ", ".join(sorted(set(failed_ids)))
             self.dest.write(f"{Path(report.file_path).name}: {ids_str} \n")
             self.failed_count += 1
 
     def finish(self):
-        # Summary sent to stderr to avoid polluting stdout if user pipes output
         if self.failed_count > 0:
             print(
                 f"\nFound {self.failed_count} files with failures.", file=sys.stderr)
@@ -386,13 +465,14 @@ class CompactOutput(OutputHandler):
 OUTPUT_FACTORIES: Dict[str, Type[OutputHandler]] = {
     'text': ConsoleOutput,
     'json': JsonOutput,
-    'compact': CompactOutput
+    'compact': CompactOutput,
 }
+
 
 # --- Worker Logic ---
 
-
-def analyze_file(filepath_str: str, max_speed: Speed, exceptions: Dict[str, List[str]]) -> FileReport:
+def analyze_file(filepath_str: str, max_speed: Speed,
+                 exceptions: Dict[str, List[str]]) -> FileReport:
     path = Path(filepath_str)
     report = FileReport(filepath_str)
     filename = path.name
@@ -422,29 +502,51 @@ def analyze_file(filepath_str: str, max_speed: Speed, exceptions: Dict[str, List
             pass
 
     # 2. Execute Rules sequentially
-    for rule_func, rule_id, category in RULES_REGISTRY:
+    for rule_func, rule_def in RULES_REGISTRY:
         t0 = time.perf_counter()
 
         try:
-            status, msg = rule_func(ctx, max_speed)
+            findings = rule_func(ctx, max_speed)
         except Exception as e:
-            status, msg = Status.FAIL, f"Rule Exception: {e}"
+            findings = [Finding(Outcome("EXCEPTION", "Rule Exception", str(e)), status=Status.FAIL)]
 
         dt = (time.perf_counter() - t0) * 1000
 
-        # 3. Handle Exceptions / Exemptions natively
-        if status not in (Status.PASS, Status.WARN):
-            if filename in exceptions.get(rule_id, []):
-                status = Status.EXEMPT
-                msg = f"[EXEMPTED] {msg}"
+        if not findings:
+            report.results.append(CheckResult(
+                id=rule_def.id,
+                name=rule_def.name,
+                category=rule_def.category,
+                status=Status.PASS,
+                duration_ms=dt
+            ))
+            continue
 
-        report.results.append(CheckResult(
-            rule_id, category, rule_func.__name__, status, msg, dt))
+        for f in findings:
+            status = f.status
+            msg = f.outcome.output.format(**f.metadata)
+
+            if status not in (Status.PASS, Status.WARN):
+                if filename in exceptions.get(rule_def.id, []):
+                    status = Status.EXEMPT
+                    msg = f"[EXEMPTED] {msg}"
+
+            report.results.append(CheckResult(
+                id=rule_def.id,
+                name=rule_def.name,
+                category=rule_def.category,
+                status=status,
+                outcome_id=f.outcome.id,
+                outcome_name=f.outcome.name,
+                message=msg,
+                metadata=f.metadata,
+                duration_ms=dt
+            ))
 
     return report
 
-# --- Main ---
 
+# --- Main ---
 
 def main():
     parser = argparse.ArgumentParser(description="SVG Linter & Optimizer")
@@ -523,7 +625,7 @@ def main():
         # We use a partial or a list comprehension approach
         futures = executor.map(
             analyze_file,
-            files, [max_speed]*len(files), [exceptions]*len(files),
+            files, [max_speed] * len(files), [exceptions] * len(files),
             chunksize=chunk_size
         )
 

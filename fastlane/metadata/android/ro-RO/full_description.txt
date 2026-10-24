@@ -1,1 +1,5 @@
-<p>Monocons este un pachet de pictograme open-source cu pictograme de brand pentru launcherele Android. Pictogramele se bazează pe instrucțiunile specifice ale brandului, având un design monocrom.</p>
+<p>Monocons este un pachet de pictograme open-source care conține sigle ale unor mărci, destinat lansatoarelor (launchers) pentru Android. Pictogramele sunt create pe baza ghidurilor specifice fiecărei mărci și adoptă un design monocrom.
+
+Funcționează cu Lawnchair și cu majoritatea lansatoarelor terțe — aplică-l din setările lansatorului tău.
+
+Fără reclame, fără plăți, fără abonamente — doar iconițe adaptive Material You, minimaliste, pentru ecranul tău principal.</p>

@@ -4,6 +4,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.PlainTooltip
@@ -25,6 +26,7 @@ import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NavigationIconButton(
     label: String,

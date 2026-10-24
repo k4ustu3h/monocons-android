@@ -3,8 +3,9 @@ import subprocess
 import json
 import re
 import os
+import urllib.request
 from collections import defaultdict
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 
 def run(cmd: str) -> str:
@@ -14,11 +15,42 @@ def run(cmd: str) -> str:
     return result.stdout.strip()
 
 
-def get_merged_prs() -> list[dict]:
-    repo = os.getenv("GH_REPO", "k4ustu3h/monocons-android")
+def get_latest_tag(repo: str) -> str:
+    # 1. Try GitHub CLI
+    tag = run(f"gh api repos/{repo}/tags --jq '.[].name' | grep '^v' | grep -v 'nightly' | head -1")
+    if tag:
+        return tag
 
-    latest_tag = run(f"gh api repos/{repo}/tags --jq '.[].name' | grep '^v' | grep -v 'nightly' | head -1")
+    # 2. Try GitHub REST API via urllib
+    token = os.getenv("GITHUB_TOKEN")
+    headers = {"User-Agent": "nightly-notes-script"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    try:
+        req = urllib.request.Request(f"https://api.github.com/repos/{repo}/tags", headers=headers)
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode())
+            for item in data:
+                name = item.get("name", "")
+                if name.startswith("v") and "nightly" not in name:
+                    return name
+    except Exception:
+        pass
 
+    # 3. Try git ls-remote origin
+    tag = run("git ls-remote --tags --refs origin 'v*' | sed 's|.*refs/tags/||' | sort -V | grep -v 'nightly' | tail -1")
+    if tag:
+        return tag
+
+    # 4. Try local git tag
+    tag = run("git tag --list 'v*' --sort=-version:refname | grep -v 'nightly' | head -1")
+    if tag:
+        return tag
+
+    return "v1.2.1"
+
+
+def get_merged_prs(repo: str, latest_tag: str) -> list[dict]:
     if latest_tag:
         output = run(f"git log {latest_tag}..HEAD --format='%s|%an|%h'")
     else:
@@ -28,11 +60,11 @@ def get_merged_prs() -> list[dict]:
         return []
 
     commits = []
-    for line in output.split('\n'):
+    for line in output.split("\n"):
         if not line.strip():
             continue
 
-        parts = line.split('|')
+        parts = line.split("|")
         title = parts[0].strip() if len(parts) > 0 else ""
         git_author = parts[1].strip() if len(parts) > 1 else "unknown"
         commit_hash = parts[2].strip() if len(parts) > 2 else ""
@@ -48,14 +80,12 @@ def get_merged_prs() -> list[dict]:
             if not any(word in title_lower for word in ["dependenc", "bump"]):
                 labels.append({"name": "code"})
 
-        pr_match = re.search(r'\(#(\d+)\)\s*$', title)
-
+        pr_match = re.search(r"\(#(\d+)\)\s*$", title)
         if pr_match:
             is_pr = True
             pr_number = pr_match.group(1)
 
             pr_data_json = run(f"gh pr view {pr_number} -R {repo} --json author,labels")
-
             if pr_data_json:
                 try:
                     pr_data = json.loads(pr_data_json)
@@ -65,7 +95,6 @@ def get_merged_prs() -> list[dict]:
 
                     for label in pr_data.get("labels", []):
                         labels.append({"name": label.get("name", "").lower()})
-
                 except json.JSONDecodeError:
                     pass
         else:
@@ -79,7 +108,7 @@ def get_merged_prs() -> list[dict]:
             "author": {"login": author},
             "labels": labels,
             "mergedAt": datetime.now(timezone.utc).isoformat(),
-            "number": pr_number
+            "number": pr_number,
         })
 
     return commits
@@ -132,7 +161,9 @@ def get_icon_contributors(prs: list[dict]) -> list[dict]:
 
 
 def generate_notes() -> str:
-    prs = get_merged_prs()
+    repo = os.getenv("GH_REPO", "k4ustu3h/monocons-android")
+    latest_tag = get_latest_tag(repo)
+    prs = get_merged_prs(repo, latest_tag)
 
     if not prs:
         return "No changes in this nightly build."
@@ -167,9 +198,6 @@ def generate_notes() -> str:
 
     sha = os.getenv("GITHUB_SHA", "unknown")[:7]
     branch = os.getenv("GITHUB_REF_NAME", "main")
-    repo = os.getenv("GH_REPO", "k4ustu3h/monocons-android")
-
-    latest_tag = run(f"gh api repos/{repo}/tags --jq '.[].name' | grep '^v' | grep -v 'nightly' | head -1") or "v1.2.0"
 
     icon_contributors = get_icon_contributors(icon_prs)
 
@@ -198,7 +226,7 @@ def generate_notes() -> str:
                 label = "update" if c["updates"] == 1 else "updates"
                 parts.append(f"{c['updates']} {label}")
 
-            if c["first_time"]:
+            if c.get("first_time"):
                 first_timers_list.append(f"@{c['author']}: {' + '.join(parts)}")
             else:
                 lines.append(f"@{c['author']}: {' + '.join(parts)}")
@@ -214,7 +242,7 @@ def generate_notes() -> str:
             title = pr.get("title", "")
             number = pr.get("number", "")
 
-            clean_title = re.sub(r'\s*\(#\d+\)\s*$', '', title)
+            clean_title = re.sub(r"\s*\(#\d+\)\s*$", "", title)
             ref = f"#{number}" if str(number).isdigit() else f"`{number}`"
             lines.append(f"- {clean_title} by @{author} in {ref}")
 

@@ -13,9 +13,17 @@ class LawniconsApplication :
         createGraphFactory<LawniconsGraph.Factory>().create(this)
     }
 
+    override fun onCreate() {
+        super.onCreate()
+        lawniconsGraph.initializers.forEach { it.initialize() }
+    }
+
     override fun newImageLoader(): ImageLoader {
-        return ImageLoader.Builder(this).components {
-            add(SvgDecoder.Factory())
-        }.crossfade(true).build()
+        return ImageLoader.Builder(this)
+            .components {
+                add(SvgDecoder.Factory())
+            }
+            .crossfade(true)
+            .build()
     }
 }

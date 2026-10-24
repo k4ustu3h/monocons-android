@@ -13,7 +13,7 @@ jobs:
     outputs:
       skip_steps: ${{ steps.filter.outputs.workflows == 'false' }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
           fetch-depth: 0
@@ -39,7 +39,7 @@ jobs:
     if: needs.check-paths.outputs.skip_steps != 'true'
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-java@v5
@@ -72,7 +72,7 @@ jobs:
     needs: check-paths
     if: needs.check-paths.outputs.skip_steps != 'true'
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-java@v5
@@ -90,7 +90,7 @@ jobs:
     needs: check-paths
     if: needs.check-paths.outputs.skip_steps != 'true'
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-java@v5
@@ -107,7 +107,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: actions/download-artifact@v8
@@ -115,7 +115,7 @@ jobs:
           name: Debug APK
           path: artifacts/debug-apk
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: "3.x"
       - name: Export APK_NAME
@@ -131,7 +131,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release view "nightly" && gh release delete "nightly" -y --cleanup-tag
+          gh release delete "nightly" -y 2>/dev/null || true
+          sleep 5
+          git push origin :refs/tags/nightly 2>/dev/null || true
+          git tag -f nightly ${{ github.sha }}
+          git push origin -f nightly
+          sleep 3
           gh release create "nightly" "$APK_NAME" \
             -p \
             -t "Monocons Nightly" \

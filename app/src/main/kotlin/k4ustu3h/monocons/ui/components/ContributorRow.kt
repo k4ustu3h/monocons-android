@@ -2,7 +2,6 @@ package k4ustu3h.monocons.ui.components
 
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItemShapes
 import androidx.compose.runtime.Composable
@@ -23,7 +22,6 @@ import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders
 import k4ustu3h.monocons.ui.util.visitUrl
 
-@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun ContributorRow(
     name: String,
@@ -72,7 +70,6 @@ fun ContributorRow(
     )
 }
 
-@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @PreviewLawnicons
 @Composable
 private fun ContributorRowPreview() {

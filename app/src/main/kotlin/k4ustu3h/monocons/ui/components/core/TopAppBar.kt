@@ -1,8 +1,6 @@
 package k4ustu3h.monocons.ui.components.core
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.LargeFlexibleTopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -20,7 +18,6 @@ import k4ustu3h.monocons.ui.theme.icon.Monocons
 import k4ustu3h.monocons.ui.util.PreviewLawnicons
 import k4ustu3h.monocons.ui.util.PreviewProviders
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun TopAppBar(
     navigationIcon: @Composable () -> Unit,
@@ -58,7 +55,6 @@ fun TopAppBar(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @PreviewLawnicons
 @Composable
 private fun SmallTopAppBarPreview() {
@@ -80,7 +76,6 @@ private fun SmallTopAppBarPreview() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @PreviewLawnicons
 @Composable
 private fun LargeTopAppBarPreview() {

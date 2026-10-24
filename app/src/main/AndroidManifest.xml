@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
-        android:name=".LawniconsApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/apps_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lawnicons.SplashScreen"
+        android:name=".LawniconsApplication"
         android:enableOnBackInvokedCallback="true"
         tools:targetApi="33">
         <activity
@@ -60,7 +61,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="com.gau.go.launcherex.theme" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <!-- Atom Launcher -->
@@ -71,7 +71,6 @@
             <intent-filter>
                 <action android:name="com.motorola.launcher.ACTION_ICON_PACK" />
                 <action android:name="com.motorola.launcher3.ICON_PACK_CHANGED" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <!-- Turbo Launcher Custom Icon Picker -->
@@ -94,7 +93,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="com.lge.launcher2.THEME" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <!-- OnePlus Launcher -->
@@ -132,7 +130,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="com.vivid.launcher.theme" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <!-- Mail -->
@@ -156,6 +153,32 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+        <provider
+            android:authorities="${applicationId}.bugreport.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:name="k4ustu3h.monocons.data.repository.bugreport.FileProvider">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <receiver
+            android:name="k4ustu3h.monocons.data.repository.bugreport.BugReportReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="${applicationId}.bugreport.COPY" />
+                <action android:name="${applicationId}.bugreport.UPLOAD" />
+                <action android:name="${applicationId}.bugreport.UPLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:enabled="true"
+            android:exported="false"
+            android:name="k4ustu3h.monocons.data.repository.bugreport.UploaderService"
+            android:foregroundServiceType="dataSync"
+            android:process=":bugReport" />
     </application>
     <queries>
         <!-- Browser -->

@@ -1,1 +1,5 @@
-<p>Ang Monocons ay isang open-source na icon pack na may mga brand icon para sa mga Android launcher. Ang mga icon ay batay sa mga alituntunin ng partikular na brand, na nagtatampok ng monochrome na disenyo.</p>
+<p>Ang Monocons ay isang open-source na icon pack na may mga brand icon para sa mga Android launcher. Ang mga icon ay batay sa mga alituntunin ng partikular na brand, na nagtatampok ng monochrome na disenyo.
+
+Gumagana sa Lawnchair at sa karamihan ng mga third-party launcher — piliin ito sa mga setting ng iyong launcher.
+
+Walang mga ad, walang mga bayad, walang mga subscription — kaunting adaptive na mga icon ng Material You para sa iyong home screen.</p>

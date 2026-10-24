@@ -1,1 +1,5 @@
-<p>Monocons on avatud lähtekoodiga ikoonipakk brändiikoone Androidi käivitajatele. Ikoonid põhinevad konkreetse brändi juhistel ja neil on mustvalge disain.</p>
+<p>Monocons is an open-source icon pack with brand icons for Android launchers. The icons are based on the specific brand's guidelines, featuring a monochrome design.
+
+Works with Lawnchair and most third-party launchers — apply it in your launcher's settings.
+
+No ads, no payments, no subscriptions — just minimal adaptive Material You icons for your home screen.</p>

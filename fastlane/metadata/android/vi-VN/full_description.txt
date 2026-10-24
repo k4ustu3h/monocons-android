@@ -1,1 +1,5 @@
-<p>Monocons là bộ biểu tượng mã nguồn mở dành cho các trình khởi chạy (launcher) trên Android, bao gồm các biểu tượng thương hiệu được thiết kế theo phong cách đơn sắc và tuân thủ nguyên tắc nhận diện của từng thương hiệu.</p>
+<p>Monocons is an open-source icon pack with brand icons for Android launchers. The icons are based on the specific brand's guidelines, featuring a monochrome design.
+
+Works with Lawnchair and most third-party launchers — apply it in your launcher's settings.
+
+No ads, no payments, no subscriptions — just minimal adaptive Material You icons for your home screen.</p>

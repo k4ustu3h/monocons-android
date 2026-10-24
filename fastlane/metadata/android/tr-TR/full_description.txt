@@ -1,1 +1,5 @@
-<p>Monocons, Android başlatıcıları (launcher) için marka simgelerini içeren açık kaynaklı bir simge paketidir. Simgeler, ilgili markanın yönergeleri temel alınarak tasarlanmış olup tek renkli (monokrom) bir görünüme sahiptir.</p>
+<p>Monocons, Android başlatıcıları (launcher) için marka simgelerini içeren, açık kaynaklı bir simge paketidir. Simgeler, ilgili markaların kendi yönergeleri temel alınarak tasarlanmış olup monokrom (tek renkli) bir görünüme sahiptir.
+
+Lawnchair ve çoğu üçüncü parti başlatıcı ile çalışır - başlatınıcınızın ayarlarından uygulayın.
+
+Reklam yok, ödeme yok, abonelik yok, sadece ana ekranınız için minimal, uyarlanabilir Material You simgeleri.</p>

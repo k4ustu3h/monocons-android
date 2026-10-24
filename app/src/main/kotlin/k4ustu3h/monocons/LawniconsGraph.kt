@@ -22,12 +22,14 @@ import dev.zacsweers.metro.DependencyGraph
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
 import dev.zacsweers.metrox.viewmodel.ViewModelGraph
+import k4ustu3h.monocons.di.AppInitializer
 import k4ustu3h.monocons.di.MetroViewModelFactoryImpl
 
 @SingleIn(AppScope::class)
 @DependencyGraph(AppScope::class)
 interface LawniconsGraph : ViewModelGraph {
     val viewModelFactory: MetroViewModelFactoryImpl
+    val initializers: Set<AppInitializer>
 
     @DependencyGraph.Factory
     fun interface Factory {

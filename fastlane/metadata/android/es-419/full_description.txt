@@ -1,0 +1,5 @@
+<p>Monocons es un paquete de iconos de código abierto que incluye logotipos de marcas, diseñado para lanzadores (launchers) de Android. Los iconos se basan en las directrices de cada marca y presentan un diseño monocromático.
+
+Funciona con Lawnchair y la mayoría de los lanzadores de terceros — aplícalo en la configuración de tu lanzador.
+
+Sin anuncios, sin pagos, sin suscripciones — solo iconos minimalistas y adaptables de Material You para tu pantalla de inicio.</p>

@@ -3,6 +3,7 @@ package k4ustu3h.monocons
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
+import android.content.res.Configuration
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
 import android.os.Build
@@ -10,7 +11,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
@@ -22,9 +22,9 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.WindowCompat
 import k4ustu3h.monocons.data.model.IconInfo
 import k4ustu3h.monocons.ui.Lawnicons
-import k4ustu3h.monocons.ui.components.SetupEdgeToEdge
 import k4ustu3h.monocons.ui.theme.LawniconsTheme
 import k4ustu3h.monocons.ui.util.Constants
 
@@ -35,16 +35,19 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
+        WindowCompat.enableEdgeToEdge(window)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.setNavigationBarContrastEnforced(false)
+        }
+
+        val insetsController = WindowCompat.getInsetsController(window, window.decorView)
+        val isDarkTheme = (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+        insetsController.isAppearanceLightNavigationBars = !isDarkTheme
+        insetsController.isAppearanceLightStatusBars = !isDarkTheme
 
         val app = application as LawniconsApplication
         val metroVmf = app.lawniconsGraph.viewModelFactory
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            @Suppress("DEPRECATION")
-            window.setDecorFitsSystemWindows(false)
-            window.setNavigationBarContrastEnforced(false)
-        }
 
         val isIconPicker = intent?.action == Constants.ICON_PICKER_INTENT_ACTION
 
@@ -53,7 +56,11 @@ class MainActivity : ComponentActivity() {
             val windowSizeClass = calculateWindowSizeClass(this)
             LawniconsTheme {
                 val isExpandedScreen =
-                    windowSizeClass.widthSizeClass == WindowWidthSizeClass.Expanded && (windowSizeClass.heightSizeClass == WindowHeightSizeClass.Medium || windowSizeClass.heightSizeClass == WindowHeightSizeClass.Expanded)
+                    windowSizeClass.widthSizeClass == WindowWidthSizeClass.Expanded &&
+                        (
+                            windowSizeClass.heightSizeClass == WindowHeightSizeClass.Medium ||
+                                windowSizeClass.heightSizeClass == WindowHeightSizeClass.Expanded
+                            )
 
                 Lawnicons(
                     metroVmf = metroVmf,
@@ -64,7 +71,6 @@ class MainActivity : ComponentActivity() {
                     },
                     isIconPicker = isIconPicker,
                 )
-                SetupEdgeToEdge(isExpandedScreen)
             }
         }
     }
@@ -131,7 +137,10 @@ class MainActivity : ComponentActivity() {
             if (BuildConfig.DEBUG) {
                 Log.d(
                     "SetIntentResult",
-                    "Preparing to send bitmap. " + "Width: ${bitmap.width}, Height: ${bitmap.height}, " + "Config: ${bitmap.config}, ByteCount: ${bitmap.byteCount}, " + "isRecycled: ${bitmap.isRecycled}",
+                    "Preparing to send bitmap. " +
+                        "Width: ${bitmap.width}, Height: ${bitmap.height}, " +
+                        "Config: ${bitmap.config}, ByteCount: ${bitmap.byteCount}, " +
+                        "isRecycled: ${bitmap.isRecycled}",
                 )
             }
             intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, iconRes)

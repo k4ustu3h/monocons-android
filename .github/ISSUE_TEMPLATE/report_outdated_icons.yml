@@ -1,0 +1,27 @@
+name: Report outdated icons
+description: Request to change an icon if its design is outdated.
+labels: ["redesign"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        > If an existing icon isn't applying automatically, [create a pull request instead](https://github.com/k4ustu3h/monocons-android/blob/main/CONTRIBUTING.md#adding-icons-and-missing-app-ids-to-lawnicons).
+
+        #### How to find the current icon and app name
+        Search [the appfilter.xml](https://github.com/k4ustu3h/monocons-android/blob/main/app/assets/appfilter.xml). In the line `drawable="..." name="..."`: `drawable` — icon name, `name` — app name.
+
+        #### Sample response
+        ```
+        X (formerly Twitter)
+        Now: https://github.com/k4ustu3h/monocons-android/tree/main/svgs/x.svg
+        New: https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png
+        ```
+
+  - type: textarea
+    id: outdated-icon-list
+    attributes:
+      label: Icons
+      placeholder: Outdated icons
+    validations:
+      required: true

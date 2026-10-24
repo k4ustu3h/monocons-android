@@ -1,1 +1,5 @@
-<p>Monocons is an open-source icon pack with brand icons for Android launchers. The icons are based on the specific brand's guidelines, featuring a monochrome design.</p>
+<p>Monocons is een open-source iconenpakket met merklogo's voor Android-launchers. De iconen zijn gebaseerd op de richtlijnen van de betreffende merken en hebben een monochroom ontwerp.
+
+Werkt met Lawnchair en de meeste launchers van derden — pas toe in de instellingen van je launcher.
+
+Geen advertenties, geen betalingen, geen abonnementen - gewoon minimale adaptieve Material You-iconen voor je beginscherm.</p>
