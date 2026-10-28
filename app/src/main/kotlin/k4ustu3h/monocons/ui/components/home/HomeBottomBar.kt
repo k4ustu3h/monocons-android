@@ -89,9 +89,19 @@ fun BoxScope.HomeBottomBar(
             onClick = { context.visitUrl(Constants.GITHUB) },
         ),
         ToolbarItem(
+            icon = Monocons.GithubSponsors,
+            label = stringResource(R.string.github_sponsors),
+            onClick = { context.visitUrl(Constants.GITHUB_SPONSORS) },
+        ),
+        ToolbarItem(
             icon = Monocons.About,
             label = stringResource(R.string.about),
             onClick = onNavigateToAbout,
+        ),
+        ToolbarItem(
+            icon = Monocons.IconDashboard,
+            label = stringResource(R.string.icon_request_dashboard),
+            onClick = { context.visitUrl(Constants.ICON_REQUEST_DASHBOARD) },
         ),
         ToolbarItem(
             icon = Monocons.IconRequest,
@@ -104,21 +114,11 @@ fun BoxScope.HomeBottomBar(
                 }
             },
         ),
-        ToolbarItem(
-            icon = Monocons.GithubSponsors,
-            label = stringResource(R.string.github_sponsors),
-            onClick = { context.visitUrl(Constants.GITHUB_SPONSORS) },
-        ),
-        ToolbarItem(
-            icon = Monocons.IconDashboard,
-            label = stringResource(R.string.icon_request_dashboard),
-            onClick = { context.visitUrl(Constants.ICON_REQUEST_DASHBOARD) },
-        ),
     ).filter {
         showNewIcons || it.icon != Monocons.NewIcons
     }
 
-    val maxIcons = 4
+    val maxIcons = 3
     val iconItems = toolbarItems.take(maxIcons)
     val overflowItems = toolbarItems.drop(maxIcons).reversed()
 
