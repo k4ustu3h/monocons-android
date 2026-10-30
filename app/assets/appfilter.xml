@@ -2103,6 +2103,7 @@
   <item component="ComponentInfo{org.familysearch.mobile/org.familysearch.mobile.tree.MainActivity}" drawable="family_tree" name="Family Tree" />
   <item component="ComponentInfo{com.miraclegames.farlight84/com.epicgames.ue4.SplashActivity}" drawable="farlight_84" name="Farlight 84" />
   <item component="ComponentInfo{com.netflix.Speedtest/com.netflix.Speedtest.MainActivity}" drawable="fast" name="Fast" />
+  <item component="ComponentInfo{com.mkx.hrttracker/com.mkx.hrttracker.MainActivity}" drawable="featherline" name="Featherline" />
   <item component="ComponentInfo{com.fedmobile/in.co.federalbank.federalbank.SplashScreenActivity}" drawable="federal_bank" name="Federal Bank" />
   <item component="ComponentInfo{com.nononsenseapps.feeder.play/com.nononsenseapps.feeder.ui.FeedActivity}" drawable="feeder" name="Feeder" />
   <item component="ComponentInfo{com.nononsenseapps.feeder.play/com.nononsenseapps.feeder.ui.MainActivity}" drawable="feeder" name="Feeder" />
@@ -5236,6 +5237,7 @@
   <item component="ComponentInfo{de.pca.pca_kantine/de.pca.pca_kantine.MainActivity}" drawable="generic_silverware" name="PCA Kantine" />
   <item component="ComponentInfo{com.emanuelef.remote_capture/com.emanuelef.remote_capture.activities.MainActivity}" drawable="pcapdroid" name="PCAPdroid" />
   <item component="ComponentInfo{com.pcloud.pcloud/com.pcloud.screens.Main}" drawable="pcloud" name="pCloud" />
+  <item component="ComponentInfo{io.pcontacts.app/io.pcontacts.app.MainActivity}" drawable="pcontacts" name="pcontacts" />
   <item component="ComponentInfo{com.vayunmathur.pdf/com.vayunmathur.pdf.MainActivity}" drawable="generic_pdf_square" name="PDF" />
   <item component="ComponentInfo{com.pdfconvertonline.pdfconvert/com.pdfconvertonline.pdfconvert.MainActivityNew}" drawable="generic_pdf_square" name="PDF Converter" />
   <item component="ComponentInfo{com.lonelycatgames.pdf.viewer/com.pdf_reader.ui.SplashActivity}" drawable="generic_pdf_square" name="PDF Document" />
@@ -5703,6 +5705,7 @@
   <item component="ComponentInfo{com.smmservice.printer/com.smmservice.printer.ui.activity.MainActivity}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{org.billthefarmer.print/org.billthefarmer.print.Print}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{com.dynamixsoftware.printershare/com.dynamixsoftware.printershare.ActivityMain}" drawable="generic_printer" name="PrinterShare" />
+  <item component="ComponentInfo{com.prismgallery.app/com.example.amoledgallery.LauncherIos}" drawable="prism_gallery" name="Prism Gallery" />
   <item component="ComponentInfo{br.com.sisteplant.prismanetmobile/br.com.sisteplant.prismanetmobile.MainActivity}" drawable="prism_net_mobile_vivo" name="Prism@Net Mobile Vivo" />
   <item component="ComponentInfo{com.stoutner.privacybrowser.standard/com.stoutner.privacybrowser.activities.MainWebViewActivity}" drawable="privacy_browser" name="Privacy Browser" />
   <item component="ComponentInfo{com.stoutner.privacybrowser.standard/com.stoutner.privacybrowser.standard.activities.MainWebViewActivity}" drawable="privacy_browser" name="Privacy Browser" />
@@ -5961,6 +5964,7 @@
   <item component="ComponentInfo{reddit.news/reddit.news.RedditNavigation}" drawable="relay" name="Relay" />
   <item component="ComponentInfo{com.vishnu.remindme/com.vishnu.remindme.ui.MainActivity}" drawable="remind_me" name="Remind Me!" />
   <item component="ComponentInfo{com.bigwinepot.nwdn.international/com.bendingspoons.remini.MainActivity}" drawable="remini" name="Remini" />
+  <item component="ComponentInfo{com.remitly.androidapp/com.remitly.androidapp.MainActivity}" drawable="remitly" name="Remitly" />
   <item component="ComponentInfo{ro.andreimircius.remotefingerauth/com.example.mircius.fingerprintauth.MainActivity}" drawable="fingerprint" name="Remote Fingerprint Unlock" />
   <item component="ComponentInfo{com.oh1.renoir/com.oh1.renoir.MainActivity}" drawable="renoir" name="ReNoir" />
   <item component="ComponentInfo{dev.kdrag0n.dyntheme/.ui.main.MainActivity}" drawable="repainter" name="Repainter" />
@@ -7615,6 +7619,7 @@
   <item component="ComponentInfo{com.vivi.vivimusic/com.music.vivi.MainActivity}" drawable="vivi_music" name="VIVI Music" />
   <item component="ComponentInfo{com.vivi.vivimusic/com.music.vivi.WelcomeActivity}" drawable="vivi_music" name="VIVI Music" />
   <item component="ComponentInfo{br.com.vivo/br.com.vivo.MainActivity}" drawable="vivo" name="vivo" />
+  <item component="ComponentInfo{br.com.vivo.vivoeasy/br.com.zup.vivoeasy3.presentation.MainActivity}" drawable="vivo_easy" name="vivo Easy" />
   <item component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadioActivity}" drawable="generic_fm_radio" name="vivo FM Radio" />
   <item component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadio}" drawable="generic_fm_radio" name="vivo FM Radio" />
   <item component="ComponentInfo{com.vivo.gallery/com.android.gallery3d.vivo.GalleryTabActivity}" drawable="generic_gallery" name="vivo Gallery" />
@@ -7697,6 +7702,8 @@
   <item component="ComponentInfo{com.weawow/com.weawow.DarkIcon}" drawable="weawow" name="Weawow" />
   <item component="ComponentInfo{com.instantbits.cast.webvideo/com.instantbits.cast.webvideo.SplashActivity}" drawable="web_video_caster" name="Web Video Caster" />
   <item component="ComponentInfo{com.qamar.ide.web/com.alif.app.AppActivity}" drawable="generic_braces" name="WebCode" />
+  <item component="ComponentInfo{com.dergoogler.mmrl.wx/com.dergoogler.mmrl.wx.ui.activity.CrashHandlerActivity}" drawable="webui_x" name="WebUI X" />
+  <item component="ComponentInfo{com.dergoogler.mmrl.wx/com.dergoogler.mmrl.wx.ui.activity.MainActivity}" drawable="webui_x" name="WebUI X" />
   <item component="ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}" drawable="wechat" name="WeChat" />
   <item component="ComponentInfo{com.tencent.mm/com.tencent.mm.WeChatActivity}" drawable="wechat" name="WeChat" />
   <item component="ComponentInfo{com.wetalkapp/com.wetalkapp.ui.activity.LaunchActivity}" drawable="generic_dialer" name="WeTalk" />
