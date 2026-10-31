@@ -69,6 +69,8 @@
   <item component="ComponentInfo{idm.internet.download.manager.plus/idm.internet.download.manager.MainActivity}" drawable="_1dm_plus" name="1dm+" />
   <item component="ComponentInfo{idm.internet.download.manager.mas/idm.internet.download.manager.MainActivity}" drawable="_1dm_plus" name="1DM+" />
   <item component="ComponentInfo{com.onemore.life/com.bitaxon.n2.activity.GuideActivity}" drawable="one_more_music" name="1MORE MUSIC" />
+  <item component="ComponentInfo{com.handmark.expressweather/com.handmark.expressweather.ui.activities.MainActivity}" drawable="_1weather" name="1Weather" />
+  <item component="ComponentInfo{com.handmark.expressweather/com.oneweather.app.MainActivity}" drawable="_1weather" name="1Weather" />
   <item component="ComponentInfo{com.twentythreeandme.app/com.twentythreeandme.app.nux.NuxIntroductionActivity}" drawable="twentythreeandme" name="23andMe" />
   <item component="ComponentInfo{com.twentythreeandme.app/com.twentythreeandme.app.start.StartActivity}" drawable="twentythreeandme" name="23andMe" />
   <item component="ComponentInfo{com.twofasapp/com.twofasapp.start.ui.start.StartActivity}" drawable="_2fa_authenticator_2fas" name="2FA Authenticator (2FAS)" />
@@ -1418,6 +1420,7 @@
   <item component="ComponentInfo{com.clue.android/com.helloclue.AppIconDefault}" drawable="clue" name="Clue" />
   <item component="ComponentInfo{com.clue.android/com.helloclue.ui.MainActivity}" drawable="clue" name="Clue" />
   <item component="ComponentInfo{com.activision.callofduty.warzone/com.activision.game.MainActivity}" drawable="cod_warzone" name="COD Warzone" />
+  <item component="ComponentInfo{tech.coddy.coddyapp/tech.coddy.coddyapp.MainActivity}" drawable="coddy" name="Coddy" />
   <item component="ComponentInfo{com.alif.ide/com.alif.ide.MainActivity}" drawable="generic_braces" name="Code Studio" />
   <item component="ComponentInfo{com.alif.ide/com.alif.app.AppActivity}" drawable="generic_braces" name="Code Studio" />
   <item component="ComponentInfo{org.chromium.webapk.a13bcbd79270cd125_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}" drawable="codeberg" name="Codeberg.org" />
@@ -1614,6 +1617,7 @@
   <item component="ComponentInfo{com.kubix.creative/com.kubix.creative.activity.IntroActivity}" drawable="creativeapp" name="CreativeApp" />
   <item component="ComponentInfo{com.dreamplug.androidapp/com.dreamplug.androidapp.SplashActivity}" drawable="cred" name="CRED" />
   <item component="ComponentInfo{com.dreamplug.androidapp/com.dreamplug.androidapp.CredFlutterActivity}" drawable="cred" name="CRED" />
+  <item component="ComponentInfo{br.org.sesc.credencialvirtual/br.org.sesc.credencialvirtual.MainActivity}" drawable="credencial_sesc_sp" name="Credencial Sesc SP" />
   <item component="ComponentInfo{it.caitalia.apphub/com.creditagricole.MainActivity}" drawable="credit_agricole" name="Credit Agricole" />
   <item component="ComponentInfo{com.csg.creditsuisse.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="Credit Suisse TWINT" />
   <item component="ComponentInfo{org.cromite.cromite/com.google.android.apps.chrome.Main}" drawable="cromite" name="Cromite" />
@@ -4246,6 +4250,7 @@
   <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.main.MainActivity}" drawable="meesho" name="Meesho" />
   <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleSept25}" drawable="meesho" name="Meesho" />
   <item component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleAug26}" drawable="meesho" name="Meesho" />
+  <item component="ComponentInfo{com.meetgeek.assistant/com.meetgeek.assistant.MainActivity}" drawable="meetgeek" name="MeetGeek" />
   <item component="ComponentInfo{mega.privacy.android.app/com.duapps.ad.DuAd}" drawable="mega" name="MEGA" />
   <item component="ComponentInfo{mega.privacy.android.app/com.google.android.archive.ReactivateActivity}" drawable="mega" name="MEGA" />
   <item component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.LauncherActivity}" drawable="mega" name="MEGA" />
@@ -4959,6 +4964,8 @@
   <item component="ComponentInfo{com.hegocre.nextcloudpasswords/com.hegocre.nextcloudpasswords.ui.activities.MainActivity}" drawable="nextcloud_passwords" name="Nextcloud Passwords" />
   <item component="ComponentInfo{io.nextdns.NextDNS/io.nextdns.NextDNS.MainActivity}" drawable="nextdns" name="NextDNS" />
   <item component="ComponentInfo{com.doubleangels.nextdnsmanagement/com.doubleangels.nextdnsmanagement.MainActivity}" drawable="nextdns" name="NextDNS Manager" />
+  <item component="ComponentInfo{com.nic.mparivahan/com.nic.mparivahan.activity.SplashActivity}" drawable="nextgen_mparivahan" name="NextGen mParivahan" />
+  <item component="ComponentInfo{com.nic.mparivahan/com.nic.mparivahan.Welcome.SplashScreen}" drawable="nextgen_mparivahan" name="NextGen mParivahan" />
   <item component="ComponentInfo{com.wakdev.wdnfc/com.wakdev.nfctools.free.MainActivityFree}" drawable="nfc_tools" name="NFC Tools" />
   <item component="ComponentInfo{com.wakdev.wdnfc/com.wakdev.nfctools.free.views.MainActivityFree}" drawable="nfc_tools" name="NFC Tools" />
   <item component="ComponentInfo{com.wakdev.nfctools.pro/com.wakdev.nfctools.pro.MainActivityPro}" drawable="nfc_tools_pro" name="NFC Tools Pro" />
@@ -5068,6 +5075,10 @@
   <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.ui.LaunchActivity}" drawable="nullgram" name="Nullgram" />
   <item component="ComponentInfo{top.qwq2333.nullgram/org.telegram.messenger.DefaultIcon}" drawable="nullgram" name="Nullgram" />
   <item component="ComponentInfo{app.myzel394.numberhub/app.myzel394.numberhub.MainActivity}" drawable="unitto" name="NumberHub" />
+  <item component="ComponentInfo{com.nuvio.app/com.nuvio.app.MainActivity}" drawable="nuvio" name="Nuvio" />
+  <item component="ComponentInfo{com.nuvio.app/com.nuvio.app.launcher.AppIconRoseGold}" drawable="nuvio" name="Nuvio" />
+  <item component="ComponentInfo{com.nuvio.app/com.nuvio.app.launcher.AppIconArcticBlue}" drawable="nuvio" name="Nuvio" />
+  <item component="ComponentInfo{com.nuvio.app/com.nuvio.app.launcher.AppIconDefault}" drawable="nuvio" name="Nuvio" />
   <item component="ComponentInfo{com.nvidia.geforcenow/com.nvidia.geforcenow.LauncherActivity}" drawable="nvidia" name="NVIDIA GeForce NOW" />
   <item component="ComponentInfo{com.nvidia.geforcenow/com.nvidia.tegrazone.MainActivity}" drawable="nvidia" name="NVIDIA GeForce NOW" />
   <item component="ComponentInfo{com.nvidia.geforcenow/com.nvidia.geforcenow.MallActivity}" drawable="nvidia" name="NVIDIA GeForce NOW" />
@@ -5293,6 +5304,15 @@
   <item component="ComponentInfo{com.coloros.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity}" drawable="clone_phone" name="OPPO Clone Phone" />
   <item component="ComponentInfo{com.oplus.audio.effectcenterui/com.oplus.partners.dolby.activity.DolbyMainActivity}" drawable="dolby" name="OPPO Dolby Atmos" />
   <item component="ComponentInfo{com.orange.rn.dop/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="orange_flex" name="Orange Flex" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.OrbotActivity}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.OrbotApp}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.Orbot}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.OrbotMainActivity}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.settings.AppManager}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.settings.SettingsPreferences}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.ui.OrbotLogActivity}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.main.OrbotAlt4}" drawable="orbot" name="Orbot" />
+  <item component="ComponentInfo{org.torproject.android/org.torproject.android.main.OrbotAlt3}" drawable="orbot" name="Orbot" />
   <item component="ComponentInfo{app.organicmaps/app.organicmaps.DownloadResourcesActivity}" drawable="organic_maps" name="Organic Maps" />
   <item component="ComponentInfo{app.organicmaps/com.mapswithme.maps.DownloadResourcesActivity}" drawable="organic_maps" name="Organic Maps" />
   <item component="ComponentInfo{com.orion.store/com.orion.store.MainActivity}" drawable="orion_store" name="Orion Store" />
@@ -7147,6 +7167,8 @@
   <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.activity.MainActivity}" drawable="steam" name="Steam" />
   <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.activity.SteamGuardActivity}" drawable="steam" name="Steam" />
   <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.MainActivity}" drawable="steam" name="Steam" />
+  <item component="ComponentInfo{com.valvesoftware.android.steam.friendsui/com.valvesoftware.android.steam.friendsui.MainActivity}" drawable="steam_chat" name="Steam Chat" />
+  <item component="ComponentInfo{com.valvesoftware.android.steam.friendsui/host.exp.exponent.MainActivity}" drawable="steam_chat" name="Steam Chat" />
   <item component="ComponentInfo{com.noctuasoftware.stellarium_free/com.stellariumlabs.stellarium.mobile.StellariumFree}" drawable="stellarium" name="Stellarium" />
   <item component="ComponentInfo{com.noctuasoftware.stellarium_free/com.noctuasoftware.stellarium_free.Stellarium}" drawable="stellarium" name="Stellarium" />
   <item component="ComponentInfo{com.noctuasoftware.stellarium_plus/com.stellariumlabs.stellarium.mobile.StellariumPlus}" drawable="stellarium_plus" name="Stellarium Plus" />
@@ -7276,6 +7298,7 @@
   <item component="ComponentInfo{com.tailscale.ipn/com.tailscale.ipn.MainActivity}" drawable="tailscale" name="Tailscale" />
   <item component="ComponentInfo{com.tailscale.ipn/org.gioui.GioActivity}" drawable="tailscale" name="Tailscale" />
   <item component="ComponentInfo{com.tailscale.ipn/com.tailscale.ipn.IPNActivity}" drawable="tailscale" name="Tailscale" />
+  <item component="ComponentInfo{com.gent8.taison/eu.kanade.tachiyomi.ui.main.MainActivity}" drawable="taison" name="Taison" />
   <item component="ComponentInfo{com.next.innovation.takatak/com.mx.buzzify.activity.SplashActivity}" drawable="generic_player" name="Takatak" />
   <item component="ComponentInfo{be.pizza.android/com.takeaway.android.activity.Splash}" drawable="just_eat" name="Takeaway" />
   <item component="ComponentInfo{be.pizza.android/com.takeaway.android.Startup}" drawable="just_eat" name="Takeaway" />
