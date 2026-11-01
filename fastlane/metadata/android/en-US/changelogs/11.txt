@@ -1,0 +1,3 @@
+* 276 new icons
+* ~1051 links
+* Fixed the clock icon on the Moto stock launcher and various bugs

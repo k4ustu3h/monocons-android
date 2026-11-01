@@ -19,7 +19,7 @@
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 886
+        "contributions": 1025
     },
     {
         "login": "renovate[bot]",
@@ -41,7 +41,7 @@
         "type": "Bot",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 620
+        "contributions": 691
     },
     {
         "login": "SuperDragonXD",
@@ -63,7 +63,7 @@
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 401
+        "contributions": 437
     },
     {
         "login": "k4ustu3h",
@@ -85,7 +85,7 @@
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 272
+        "contributions": 307
     },
     {
         "login": "Chefski",
@@ -129,7 +129,7 @@
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 156
+        "contributions": 157
     },
     {
         "login": "github-actions[bot]",
@@ -151,7 +151,7 @@
         "type": "Bot",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 93
+        "contributions": 101
     },
     {
         "login": "RadekBledowski",
@@ -239,7 +239,7 @@
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 50
+        "contributions": 51
     },
     {
         "login": "daywalk3r666",
@@ -305,7 +305,7 @@
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
-        "contributions": 36
+        "contributions": 39
     },
     {
         "login": "mluizvitor",
@@ -572,6 +572,28 @@
         "contributions": 18
     },
     {
+        "login": "validcube",
+        "id": 93124920,
+        "node_id": "U_kgDOBYz5OA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/93124920?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/validcube",
+        "html_url": "https://github.com/validcube",
+        "followers_url": "https://api.github.com/users/validcube/followers",
+        "following_url": "https://api.github.com/users/validcube/following{/other_user}",
+        "gists_url": "https://api.github.com/users/validcube/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/validcube/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/validcube/subscriptions",
+        "organizations_url": "https://api.github.com/users/validcube/orgs",
+        "repos_url": "https://api.github.com/users/validcube/repos",
+        "events_url": "https://api.github.com/users/validcube/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/validcube/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false,
+        "contributions": 15
+    },
+    {
         "login": "I21b",
         "id": 169070113,
         "node_id": "U_kgDOChPOIQ",
@@ -610,28 +632,6 @@
         "repos_url": "https://api.github.com/users/benteg/repos",
         "events_url": "https://api.github.com/users/benteg/events{/privacy}",
         "received_events_url": "https://api.github.com/users/benteg/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false,
-        "contributions": 14
-    },
-    {
-        "login": "validcube",
-        "id": 93124920,
-        "node_id": "U_kgDOBYz5OA",
-        "avatar_url": "https://avatars.githubusercontent.com/u/93124920?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/validcube",
-        "html_url": "https://github.com/validcube",
-        "followers_url": "https://api.github.com/users/validcube/followers",
-        "following_url": "https://api.github.com/users/validcube/following{/other_user}",
-        "gists_url": "https://api.github.com/users/validcube/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/validcube/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/validcube/subscriptions",
-        "organizations_url": "https://api.github.com/users/validcube/orgs",
-        "repos_url": "https://api.github.com/users/validcube/repos",
-        "events_url": "https://api.github.com/users/validcube/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/validcube/received_events",
         "type": "User",
         "user_view_type": "public",
         "site_admin": false,
