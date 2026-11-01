@@ -9,6 +9,9 @@ API_URL = "https://api.github.com/repos/k4ustu3h/monocons-android/contributors"
 RAW_DIR = "app/assets"
 DRAWABLE_DIR = "app/src/izzy/res/drawable"
 
+# Read token from environment variable
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN")
+
 EXTRA_AVATARS = [
     {
         "login": "Grabstertv",
@@ -16,6 +19,14 @@ EXTRA_AVATARS = [
         "avatar_url": "https://avatars.githubusercontent.com/u/49114212?v=4"
     }
 ]
+
+def get_headers():
+    headers = {
+        'User-Agent': 'Monocons-Android-Script'
+    }
+    if GITHUB_TOKEN:
+        headers['Authorization'] = f"Bearer {GITHUB_TOKEN}"
+    return headers
 
 def clean_offline_data():
     print("Running cleanup...")
@@ -39,8 +50,13 @@ def download_offline_data():
     os.makedirs(RAW_DIR, exist_ok=True)
     os.makedirs(DRAWABLE_DIR, exist_ok=True)
 
+    if GITHUB_TOKEN:
+        print("Using GitHub token for authentication (Rate limit: 5,000/hr).")
+    else:
+        print("Warning: No GITHUB_TOKEN found. Using unauthenticated requests (Rate limit: 60/hr).")
+
     print("Fetching contributors list...")
-    req = urllib.request.Request(API_URL, headers={'User-Agent': 'Mozilla/5.0'})
+    req = urllib.request.Request(API_URL, headers=get_headers())
     with urllib.request.urlopen(req) as response:
         data = json.loads(response.read().decode())
 
@@ -57,10 +73,12 @@ def download_offline_data():
             download_list.append(extra)
             print(f"Added {extra['login']} to image download queue")
 
+    headers = get_headers()
     for user in download_list:
         user_id = str(user.get("id", ""))
         avatar_url = user.get("avatar_url", "")
-        if not user_id or not avatar_url: continue
+        if not user_id or not avatar_url:
+            continue
 
         safe_name = f"avatar_u{user_id}"
         temp_path = os.path.join(DRAWABLE_DIR, f"{safe_name}.tmp")
@@ -68,7 +86,7 @@ def download_offline_data():
 
         try:
             print(f"Downloading ID {user_id}...")
-            img_req = urllib.request.Request(avatar_url, headers={'User-Agent': 'Mozilla/5.0'})
+            img_req = urllib.request.Request(avatar_url, headers=headers)
             with urllib.request.urlopen(img_req) as img_response:
                 with open(temp_path, 'wb') as f:
                     f.write(img_response.read())
@@ -78,7 +96,6 @@ def download_offline_data():
                     img = img.convert("RGBA")
 
                 img.thumbnail((128, 128), Image.Resampling.LANCZOS)
-
                 img.save(final_path, "WEBP", quality=80)
 
             os.remove(temp_path)
