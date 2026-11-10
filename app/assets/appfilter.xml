@@ -101,6 +101,7 @@
   <item component="ComponentInfo{com.ninegag.android.app/com.ninegag.android.app.ui.HomeActivity}" drawable="ninegag" name="9GAG" />
   <item component="ComponentInfo{eu.chainfire.liveboot/eu.chainfire.liveboot.MainActivity}" drawable="liveboot" name="[root] LiveBoot" />
   <item component="ComponentInfo{in.gov.uidai.pehchaan/in.gov.uidai.pehchaan.onboarding.SplashActivity}" drawable="aadhaar" name="Aadhaar" />
+  <item component="ComponentInfo{in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity}" drawable="aaj_tak" name="Aaj Tak" />
   <item component="ComponentInfo{itkach.aard2/itkach.aard2.MainActivity}" drawable="aard_2" name="Aard 2" />
   <item component="ComponentInfo{com.abdownloadmanager/com.abdownloadmanager.android.ui.MainActivity}" drawable="ab_download_manager" name="AB Download Manager" />
   <item component="ComponentInfo{me.linshen.abattery/me.linshen.abattery.MainActivity}" drawable="abattery" name="aBattery" />
@@ -535,6 +536,7 @@
   <item component="ComponentInfo{org.altruist.BajajExperia/com.bfl.superapp.ui.activity.SplashActivity}" drawable="bajaj_finserv" name="Bajaj Finserv" />
   <item component="ComponentInfo{org.altruist.BajajExperia/com.bfl.superapp.onboarding.SplashActivity}" drawable="bajaj_finserv" name="Bajaj Finserv" />
   <item component="ComponentInfo{com.elevatelabs.geonosis/com.elevatelabs.geonosis.MainActivity}" drawable="balance" name="Balance" />
+  <item component="ComponentInfo{ir.nasim/ir.nasim.features.MainActivity}" drawable="bale" name="Bale" />
   <item component="ComponentInfo{com.baluchon.app/com.comptesvacances.app.MainActivity}" drawable="baluchon" name="Baluchon" />
   <item component="ComponentInfo{com.citibanamex.banamexmobile/com.citibanamex.banamexmobile.splashscreen.presentation.view.SplashActivity}" drawable="banamex" name="Banamex" />
   <item component="ComponentInfo{mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity}" drawable="banco_azteca" name="Banco Azteca" />
@@ -1339,6 +1341,39 @@
   <item component="ComponentInfo{pl.lukok.draughts/pl.lukok.draughts.ui.splash.SplashActivity}" drawable="generic_checkers" name="Checkers" />
   <item component="ComponentInfo{com.miniclip.checkers/com.miniclip.checkers.CheckersActivity}" drawable="generic_checkers" name="Checkers Clash" />
   <item component="ComponentInfo{com.russians.checkers/com.dynamo.android.DefoldActivity}" drawable="generic_checkers" name="Checkers ~~ Шашки" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/.CG_Icon_Cherry}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.AquaIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Aqua}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry_NY}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_Bra}" drawable="cherrygram_bra" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_NY}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Green}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Laguna}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Lavanda}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Pixel}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Samsung}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Night}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunrise}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunset}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Turbo}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Violet_Sunset_Bra}" drawable="cherrygram_bra" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry_Bra}" drawable="cherrygram_bra" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.DarkIcon}" drawable="cherrygram_bra" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.GreenIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LagunaIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LavandaIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Pixel}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Samsung}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.NoxIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Old_Icon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.PremiumIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunriseIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunsetIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.TurboIcon}" drawable="cherrygram" name="Cherrygram" />
+  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.White_Icon}" drawable="cherrygram" name="Cherrygram" />
   <item component="ComponentInfo{com.chess/com.chess.splash.SplashActivity}" drawable="chess" name="Chess" />
   <item component="ComponentInfo{com.chess/com.chess.ui.activities.MainActivity}" drawable="chess" name="Chess" />
   <item component="ComponentInfo{com.chess/com.chess.ui.activities.MainFragmentFaceActivity}" drawable="chess" name="Chess" />
@@ -2448,6 +2483,7 @@
   <item component="ComponentInfo{org.mozilla.fenix/org.mozilla.fenix.AppCool}" drawable="firefox_nightly" name="Firefox Nightly" />
   <item component="ComponentInfo{com.cube.gdpc.che/com.cube.gdpc.fa.BootActivity}" drawable="generic_aid" name="First Aid" />
   <item component="ComponentInfo{com.cube.rca/com.cube.rca.activity.BootActivity}" drawable="generic_aid" name="First aid by British Red Cross" />
+  <item component="ComponentInfo{com.firstclub.app/com.firstclub.app.MainActivity}" drawable="firstclub" name="Firstclub" />
   <item component="ComponentInfo{com.fitbit.FitbitMobile/com.fitbit.FitbitBrandedAlias}" drawable="fitbit" name="Fitbit" />
   <item component="ComponentInfo{fitapp.fittofit/fitapp.fittofit.activities.main.StartActivity}" drawable="generic_heart" name="FitToFit" />
   <item component="ComponentInfo{com.streamwide.fizz.vvm/com.streamwide.vvmc.MainActivity}" drawable="fizz_messages" name="Fizz | Visual voicemail" />
@@ -3618,6 +3654,7 @@
   <item component="ComponentInfo{ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.main_screen.MainActivity}" drawable="image_toolbox" name="Image Toolbox (Resizer)" />
   <item component="ComponentInfo{de.kaffeemitkoffein.imagepipe/de.kaffeemitkoffein.imagepipe.ImageReceiver}" drawable="imagepipe" name="Imagepipe" />
   <item component="ComponentInfo{imagetopdf.pdfmaker.pdfscanner.pdfeditor.jpgtopdf/com.templatemela.imagetopdf.ui.activity.SplashActivity}" drawable="generic_pdf_file" name="Images to PDF" />
+  <item component="ComponentInfo{com.sony.playmemories.mobile/com.sony.playmemories.mobile.splash.SplashActivity}" drawable="imaging_edge_mobile" name="Imaging Edge Mobile" />
   <item component="ComponentInfo{io.deveem.byemydpi2/app.vpn.ui.MainActivity}" drawable="secure_vpn" name="Imba VPN" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.Home}" drawable="imdb" name="IMDb" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.HomeActivity}" drawable="imdb" name="IMDb" />
@@ -5756,6 +5793,7 @@
   <item component="ComponentInfo{com.peacocktv.peacockandroid/com.nowtv.startup.StartupActivity}" drawable="peacock_tv" name="Peacock TV" />
   <item component="ComponentInfo{com.peacocktv.peacockandroid/com.nowtv.view.activity.manhattan.MainActivity}" drawable="peacock_tv" name="Peacock TV" />
   <item component="ComponentInfo{com.peacocktv.peacockandroid/com.peacocktv.legacy.monolith.main.MainActivity}" drawable="peacock_tv" name="Peacock TV" />
+  <item component="ComponentInfo{com.peeko.peekoapp/com.peeko.peekoapp.MainActivity}" drawable="peeko" name="Peeko" />
   <item component="ComponentInfo{com.samsung.android.pentastic/com.samsung.android.pentastic.settings.SettingsActivity}" drawable="pentastic" name="Pentastic" />
   <item component="ComponentInfo{softax.pekao.powerpay/com.pekao.peopay.presentation.MainActivity}" drawable="peopay" name="PeoPay" />
   <item component="ComponentInfo{softax.pekao.powerpay/softax.pekao.powerpay.screen.Menu}" drawable="peopay" name="PeoPay" />
@@ -7001,6 +7039,7 @@
   <item component="ComponentInfo{com.zzkko/com.shein.welcome.WelcomeActivity}" drawable="shein" name="SHEIN" />
   <item component="ComponentInfo{com.ril.shein/com.ril.shein.MainActivity}" drawable="shein" name="SHEIN" />
   <item component="ComponentInfo{com.ril.shein/com.ril.shein.launch.activity.SplashScreenActivity}" drawable="shein" name="SHEIN" />
+  <item component="ComponentInfo{com.shell.sitibv.shellgoplusindia/com.shell.asia.MainActivity}" drawable="shell" name="Shell Asia" />
   <item component="ComponentInfo{moe.shizuku.privileged.api/moe.shizuku.manager.MainActivity}" drawable="shizuku" name="Shizuku" />
   <item component="ComponentInfo{moe.shizuku.privileged.api/af.shizuku.manager.LauncherAlias}" drawable="shizuku" name="Shizuku" />
   <item component="ComponentInfo{com.noxinfinity.shell/com.noxinfinity.shell.MainActivity}" drawable="terminal" name="ShizuShell" />
@@ -7761,6 +7800,7 @@
   <item component="ComponentInfo{in.swiggy.android/in.swiggy.android.activities.HomeActivityNewYear}" drawable="swiggy" name="Swiggy" />
   <item component="ComponentInfo{in.swiggy.android/in.swiggy.android.activities.SplashActivity}" drawable="swiggy" name="Swiggy" />
   <item component="ComponentInfo{in.swiggy.android/in.swiggy.android.HomeIcon}" drawable="swiggy" name="Swiggy" />
+  <item component="ComponentInfo{com.swishapp/com.swishapp.SplashActivityDefault}" drawable="swish" name="Swish" />
   <item component="ComponentInfo{com.swisssign.swissid.mobile/crc6412a1d71f8eea03e7.MainActivity}" drawable="swissid" name="SwissID" />
   <item component="ComponentInfo{com.swisssign.swissid.mobile/dev.swisssign.swissid.mobile.MainActivity}" drawable="swissid" name="SwissID" />
   <item component="ComponentInfo{com.daydream.sn/com.daydream.sn.ui.ShopMainActivity}" drawable="nintendo_switch" name="switch助手 ~~ Switch Guide" />
@@ -7913,7 +7953,6 @@
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.thunderdog.challegram/org.thunderdog.challegram.MainActivity}" drawable="telegram_x" name="Telegram X" />
   <item component="ComponentInfo{org.thunderdog.challegramtwo/org.thunderdog.challegram.MainActivity}" drawable="telegram_x" name="Telegram X" />
   <item component="ComponentInfo{ir.ilmili.telegraph/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegraph" />
