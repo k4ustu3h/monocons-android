@@ -1388,6 +1388,8 @@
   <item component="ComponentInfo{com.metallic.chiaki/com.metallic.chiaki.main.MainActivity}" drawable="chiaki" name="Chiaki" />
   <item component="ComponentInfo{com.onedebit.chime/com.onedebit.chime.MainActivity}" drawable="chime" name="Chime" />
   <item component="ComponentInfo{com.onedebit.chime/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="chime" name="Chime" />
+  <item component="ComponentInfo{app.chompass/app.chompass.LauncherIndigo}" drawable="chompass" name="Chompass" />
+  <item component="ComponentInfo{app.chompass/app.chompass.LauncherTeal}" drawable="chompass" name="Chompass" />
   <item component="ComponentInfo{com.google.chromeremotedesktop/org.chromium.chromoting.Chromoting}" drawable="chrome_remote_desktop" name="Chrome Remote Desktop" />
   <item component="ComponentInfo{com.google.chromeremotedesktop/com.google.remoting.androidwrapper.MainActivity}" drawable="chrome_remote_desktop" name="Chrome Remote Desktop" />
   <item component="ComponentInfo{org.chromium.chrome/com.google.android.apps.chrome.Main}" drawable="google_chrome" name="Chromium" />
@@ -1565,6 +1567,7 @@
   <item component="ComponentInfo{app.comaps.fdroid/app.organicmaps.DownloadResourcesActivity}" drawable="comaps" name="CoMaps" />
   <item component="ComponentInfo{app.comaps.huawei/app.organicmaps.DownloadResourcesActivity}" drawable="comaps" name="CoMaps" />
   <item component="ComponentInfo{ai.perplexity.comet/ai.perplexity.comet.ui.CometActivity}" drawable="comet" name="Comet" />
+  <item component="ComponentInfo{com.jeerovan.comfer/com.jeerovan.comfer.MainActivity}" drawable="comfer" name="Comfer" />
   <item component="ComponentInfo{com.bobek.compass/com.bobek.compass.MainActivity}" drawable="generic_compass" name="Compass" />
   <item component="ComponentInfo{com.coloros.compass/com.coloros.compass.flat.FlatCompass}" drawable="generic_compass" name="Compass" />
   <item component="ComponentInfo{com.coloros.compass2/com.coloros.compass.flat.FlatCompass}" drawable="generic_compass" name="Compass" />
@@ -2162,6 +2165,7 @@
   <item component="ComponentInfo{im.angry.easyeuicc/im.angry.openeuicc.ui.UnprivilegedMainActivity}" drawable="pixel_ims" name="EasyEUICC" />
   <item component="ComponentInfo{com.mttnow.droid.easyjet/com.easyjet.travel.android.MainActivity}" drawable="easyjet" name="easyJet" />
   <item component="ComponentInfo{com.mttnow.droid.easyjet/com.mttnow.droid.easyjet.ui.home.SplashActivity}" drawable="easyjet" name="easyJet" />
+  <item component="ComponentInfo{com.eway/com.eway.android.app.MainActivity}" drawable="easyway" name="EasyWay" />
   <item component="ComponentInfo{com.done.faasos/com.done.faasos.activity.SplashActivity}" drawable="eatsure" name="EatSure" />
   <item component="ComponentInfo{com.done.faasos/com.done.faasos.default_theme}" drawable="eatsure" name="EatSure" />
   <item component="ComponentInfo{com.hwqgrhhjfd.idlefastfood/com.unity3d.player.UnityPlayerActivity}" drawable="eatventure" name="Eatventure" />
@@ -4844,6 +4848,8 @@
   <item component="ComponentInfo{com.axiel7.moelist/com.axiel7.moelist.ui.main.MainActivity}" drawable="moelist" name="MoeList" />
   <item component="ComponentInfo{com.axiel7.moelist/com.axiel7.moelist.uicompose.MainActivity}" drawable="moelist" name="MoeList" />
   <item component="ComponentInfo{com.axiel7.moelist/com.axiel7.moelist.MainActivity}" drawable="moelist" name="MoeList" />
+  <item component="ComponentInfo{in.mohalla.video/in.mohalla.sharechat.splash.SplashActivity}" drawable="moj" name="Moj" />
+  <item component="ComponentInfo{in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity}" drawable="moj" name="Moj" />
   <item component="ComponentInfo{pl.mojdhl.app/pl.mojdhl.app.MainActivity}" drawable="dhl" name="Moj DHL" />
   <item component="ComponentInfo{im.molly.app/org.thoughtcrime.securesms.RoutingActivityAltBubbles}" drawable="molly" name="Molly" />
   <item component="ComponentInfo{im.molly.app/org.thoughtcrime.securesms.RoutingActivityAltChat}" drawable="molly" name="Molly" />
@@ -4882,6 +4888,7 @@
   <item component="ComponentInfo{org.mopria.printplugin/org.mopria.printplugin.ShareToPrintActivity}" drawable="generic_printer" name="Mopria Print Service" />
   <item component="ComponentInfo{org.mopria.printplugin/org.mopria.printplugin.AddPrivateCloudServiceActivity}" drawable="generic_printer" name="Mopria Print Service" />
   <item component="ComponentInfo{org.mopria.printplugin/org.mopria.printplugin.SplashScreenActivity}" drawable="generic_printer" name="Mopria Print Service" />
+  <item component="ComponentInfo{com.zarz.mornye/com.zarz.mornye.MainActivity}" drawable="mornye" name="Mornye" />
   <item component="ComponentInfo{app.morphe.manager/app.revanced.manager.MainActivity_Default}" drawable="morphe" name="Morphe" />
   <item component="ComponentInfo{app.morphe.manager/app.revanced.manager.MainActivity_Dark_2}" drawable="morphe" name="Morphe" />
   <item component="ComponentInfo{app.morphe.manager/app.morphe.manager.MainActivity_Dark_2}" drawable="morphe" name="Morphe" />
@@ -7785,6 +7792,17 @@
   <item component="ComponentInfo{com.subway.mobile.subwayapp03/com.paydiant.common.HomeActivity}" drawable="subway" name="Subway" />
   <item component="ComponentInfo{com.subway.mobile.subwayapp03/com.subway.mobile.subwayapp03.ui.SplashActivity}" drawable="subway" name="Subway" />
   <item component="ComponentInfo{com.subway.mobile.subwayapp03/com.subway.na.lower.MainActivity}" drawable="subway" name="Subway" />
+  <item component="ComponentInfo{com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity}" drawable="subway_surfers" name="Subway City" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/com.releasedata.ReleaseDataActivity.SplashActivityKing}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/io.unity.sdk.android.UnityLauncher}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/cn.releasedata.ReleaseDataActivity.SplashActivityKing}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/com.google.android.archive.ReactivateActivity}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/com.ms.sdk.plugin.explain.ExplainActivity}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/com.kiloo.subwaysurf.RRAndroidPluginActivity}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/com.kiloo.unityutilities.UnityPluginActivity}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurf/com.sybogames.chili.multidex.ChiliMultidexSupportActivity}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.kiloo.subwaysurfyue/com.sybogames.chili.multidex.ChiliMultidexSupportActivity}" drawable="subway_surfers" name="Subway Surfers" />
+  <item component="ComponentInfo{com.MaLik.SubwaySurfers/com.unity3d.player.UnityPlayerActivity}" drawable="subway_surfers" name="Subway Surfers" />
   <item component="ComponentInfo{org.sudachi.sudachi_emu.ea/org.sudachi.sudachi_emu.ui.main.MainActivity}" drawable="sudachi" name="Sudachi" />
   <item component="ComponentInfo{com.icenta.sudoku/com.icenta.sudoku.ui.SplashActivityPremium}" drawable="generic_sudoku" name="Sudoku" />
   <item component="ComponentInfo{easy.sudoku.puzzle.solver.free/com.meevii.ui.activity.SplashActivity}" drawable="generic_sudoku" name="Sudoku" />
