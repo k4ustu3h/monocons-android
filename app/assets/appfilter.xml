@@ -5223,6 +5223,7 @@
   <item component="ComponentInfo{com.myfitnesspal.android/com.myfitnesspal.android.login.WelcomeActivity}" drawable="myfitnesspal" name="MyFitnessPal" />
   <item component="ComponentInfo{com.myfitnesspal.android/com.myfitnesspal.android.login.Welcome}" drawable="myfitnesspal" name="MyFitnessPal" />
   <item component="ComponentInfo{au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity}" drawable="mygov" name="myGov" />
+  <item component="ComponentInfo{in.mygov.mobile/in.mygov.mobile.SplashActivity}" drawable="mygov_in" name="MyGov" />
   <item component="ComponentInfo{au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity}" drawable="myid" name="myID" />
   <item component="ComponentInfo{com.myinsta.android/com.instagram.android.activity.MainTabActivity}" drawable="instagram" name="MyInsta" />
   <item component="ComponentInfo{com.jio.myjio/com.jio.myjio.activities.StartAllAppView}" drawable="myjio" name="MyJio" />
