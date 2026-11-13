@@ -987,6 +987,7 @@
   <item component="ComponentInfo{com.expremio.burgerking/com.expremio.mobileapp.MainActivity}" drawable="burger_king" name="Burger King" />
   <item component="ComponentInfo{com.buyhatke.assistant/com.buyhatke.assistant.views.activities.MainActivity}" drawable="buyhatke" name="Buyhatke" />
   <item component="ComponentInfo{com.buyhatke.assistant/com.buyhatke.assistant.MainActivityDefault}" drawable="buyhatke" name="Buyhatke" />
+  <item component="ComponentInfo{com.buyhatke.assistant/com.buyhatke.assistant.MainActivityLauncher}" drawable="buyhatke" name="Buyhatke" />
   <item component="ComponentInfo{com.samruston.buzzkill/com.samruston.buzzkill.ui.MainActivity}" drawable="buzzkill" name="BuzzKill" />
   <item component="ComponentInfo{cc.kafuu.bilidownload/cc.kafuu.bilidownload.feature.viewbinding.view.activity.MainActivity}" drawable="bvd" name="BVD" />
   <item component="ComponentInfo{com.bybit.app/com.bybit.pro.MainActivity}" drawable="bybit" name="Bybit" />
@@ -7870,6 +7871,7 @@
   <item component="ComponentInfo{com.subway.mobile.subwayapp03/com.subway.mobile.subwayapp03.ui.SplashActivity}" drawable="subway" name="Subway" />
   <item component="ComponentInfo{com.subway.mobile.subwayapp03/com.subway.na.lower.MainActivity}" drawable="subway" name="Subway" />
   <item component="ComponentInfo{com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity}" drawable="subway_surfers" name="Subway City" />
+  <item component="ComponentInfo{com.sybogames.subway.surfers.game/com.sybo.subway2.SubCityPlayerActivity}" drawable="subway_surfers" name="Subway City" />
   <item component="ComponentInfo{com.kiloo.subwaysurf/com.releasedata.ReleaseDataActivity.SplashActivityKing}" drawable="subway_surfers" name="Subway Surfers" />
   <item component="ComponentInfo{com.kiloo.subwaysurf/io.unity.sdk.android.UnityLauncher}" drawable="subway_surfers" name="Subway Surfers" />
   <item component="ComponentInfo{com.kiloo.subwaysurf/cn.releasedata.ReleaseDataActivity.SplashActivityKing}" drawable="subway_surfers" name="Subway Surfers" />
@@ -9053,10 +9055,15 @@
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_black_1}" drawable="morphe" name="YouTube Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_light_1}" drawable="morphe" name="YouTube Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_black_1}" drawable="morphe" name="Youtube Music" />
+  <item component="ComponentInfo{app.morphe.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}" drawable="morphe" name="YouTube Music" />
+  <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5}" drawable="morphe" name="YouTube Music" />
+  <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_5}" drawable="morphe" name="YouTube Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_black_2}" drawable="morphe" name="YouTube Music Morphe" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_black_3}" drawable="morphe" name="YouTube Music Morphe" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_dark_5}" drawable="morphe" name="YouTube Music Morphe" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_3}" drawable="morphe" name="YouTube Music Morphe" />
+  <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2}" drawable="morphe" name="YouTube Music Morphe" />
+  <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3}" drawable="morphe" name="YouTube Music Morphe" />
   <item component="ComponentInfo{app.revanced.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}" drawable="youtube_music" name="YouTube Music Revanced" />
   <item component="ComponentInfo{app.rvx.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}" drawable="youtube_music" name="YouTube Music ReVanced Extended" />
   <item component="ComponentInfo{com.google.android.youtube.pro/com.google.android.youtube.pro.MainActivity}" drawable="youtube" name="Youtube Pro" />
@@ -9238,6 +9245,7 @@
   <item component="ComponentInfo{pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityDefault}" drawable="zappka" name="żappka" />
   <item component="ComponentInfo{pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityWinterSeason}" drawable="zappka" name="żappka" />
   <item component="ComponentInfo{pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityTriki}" drawable="zappka" name="żappka" />
+  <item component="ComponentInfo{it.mirko.beta/it.mirko.beta.onboarding.OnboardingActivity}" drawable="beta_maniac" name="β-Maniac" />
   <item component="ComponentInfo{ru.apteka/ru.apteka.androidApp.MainActivity}" drawable="generic_aid" name="Аптека.RU ~~ Apteka.RU" />
   <item component="ComponentInfo{com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon7}" drawable="vkontakte" name="ВКонтакте ~~ VK" />
   <item component="ComponentInfo{com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon3}" drawable="vkontakte" name="ВКонтакте ~~ VK" />
