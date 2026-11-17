@@ -84,6 +84,7 @@
   <item component="ComponentInfo{com.wilco375.onetwoauthenticate/com.wilco375.onetwoauthenticate.activity.AuthenticatorActivity}" drawable="generic_lock" name="1-2-Authenticate" />
   <item component="ComponentInfo{com.cloudflare.onedotonedotonedotone/com.cloudflare.app.presentation.main.MainActivity}" drawable="_1111" name="1.1.1.1" />
   <item component="ComponentInfo{com.cloudflare.onedotonedotonedotone/com.cloudflare.app.presentation.main.SplashActivity}" drawable="_1111" name="1.1.1.1" />
+  <item component="ComponentInfo{com.mojanprs.minecrafto/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="1.2Mine" />
   <item component="ComponentInfo{tr.gov.saglik.acilyardim/tr.gov.saglik.acilyardim.AcilYardimLoginActivity}" drawable="generic_112" name="112" />
   <item component="ComponentInfo{be.Nextel.EmergencyApp112/com.cegeka.astrid.emergencyapp.presentation.launcher.LauncherActivity}" drawable="generic_112" name="112" />
   <item component="ComponentInfo{fi.digia.suomi112/fi.digia.suomi112.MainActivity}" drawable="generic_112" name="112" />
@@ -600,6 +601,15 @@
   <item component="ComponentInfo{com.radolyn.ayugram/com.exteragram.messenger.MonetIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{com.radolyn.ayugram/com.exteragram.messenger.NeoIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{com.radolyn.ayugram/com.exteragram.messenger.AyuGramNothing}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramSpotify}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.ExteraIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AmethystIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.NeoIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.SusIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.MonetIconExtera}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.MonetIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.DefaultIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.ui.MainActivity}" drawable="az_screen_recorder" name="AZ Screen Recorder" />
   <item component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.activities.MainActivity}" drawable="az_screen_recorder" name="AZ Screen Recorder" />
   <item component="ComponentInfo{io.github.lime3ds.android/io.github.lime3ds.android.ui.main.MainActivity}" drawable="azahar_emulator" name="Azahar Emulator" />
@@ -1621,6 +1631,8 @@
   <item component="ComponentInfo{com.lagradost.cloudstream3.prerelease/com.lagradost.cloudstream3.ui.account.AccountSelectActivity}" drawable="cloudstream" name="CloudStream" />
   <item component="ComponentInfo{com.lagradost.cloudstream3/com.lagradost.cloudstream3.MainActivity}" drawable="cloudstream" name="CloudStream" />
   <item component="ComponentInfo{com.lagradost.cloudstream3/com.lagradost.cloudstream3.ui.account.AccountSelectActivity}" drawable="cloudstream" name="CloudStream" />
+  <item component="ComponentInfo{com.lagradost.cloudstream3.prerelease/com.lagradost.cloudstream3.ui.account.AccountSelectActivity2}" drawable="cloudstream" name="CloudStream" />
+  <item component="ComponentInfo{com.lagradost.cloudstream3/com.lagradost.cloudstream3.ui.account.AccountSelectActivity2}" drawable="cloudstream" name="CloudStream" />
   <item component="ComponentInfo{com.clubhouse.app/com.clubhouse.android.ui.ClubhouseActivity}" drawable="clubhouse" name="Clubhouse" />
   <item component="ComponentInfo{com.clue.android/com.helloclue.AppIconDefault}" drawable="clue" name="Clue" />
   <item component="ComponentInfo{com.clue.android/com.helloclue.ui.MainActivity}" drawable="clue" name="Clue" />
@@ -2200,6 +2212,7 @@
   <item component="ComponentInfo{waterwala.com.prime/waterwala.com.prime.screens.StartActivity}" drawable="drinkprime" name="DrinkPrime" />
   <item component="ComponentInfo{waterwala.com.prime/waterwala.com.prime.ui.start.StartActivity}" drawable="drinkprime" name="DrinkPrime" />
   <item component="ComponentInfo{com.softwarebakery.drivedroid/com.softwarebakery.drivedroid.MainActivity}" drawable="drivedroid" name="DriveDroid" />
+  <item component="ComponentInfo{com.softwarebakery.drivedroid.paid/com.softwarebakery.drivedroid.MainActivity}" drawable="drivedroid" name="DriveDroid" />
   <item component="ComponentInfo{com.androidfung.drminfo/com.androidfung.drminfo.MobileActivity}" drawable="drm_info" name="DRM Info" />
   <item component="ComponentInfo{com.looker.droidify/com.looker.droidify.MainActivity}" drawable="droidify" name="Droid-ify" />
   <item component="ComponentInfo{com.looker.droidify/com.looker.droidify.ui.activities.MainActivityX}" drawable="droidify" name="Droid-ify" />
@@ -2451,6 +2464,7 @@
   <item component="ComponentInfo{com.exteragram.messenger/com.exteragram.messenger.SunsetIcon}" drawable="exteragram" name="exteraGram" />
   <item component="ComponentInfo{com.exteragram.messenger/com.exteragram.messenger.SusIcon}" drawable="exteragram" name="exteraGram" />
   <item component="ComponentInfo{com.exteragram.messenger/com.exteragram.messenger.WinterIcon}" drawable="exteragram" name="exteraGram" />
+  <item component="ComponentInfo{com.exteragram.messenger/com.exteragram.messenger.HamsterIcon}" drawable="exteragram" name="exteraGram" />
   <item component="ComponentInfo{own.moderpach.extinguish/own.moderpach.extinguish.MainActivity}" drawable="extinguish" name="Extinguish" />
   <item component="ComponentInfo{com.ezviz/com.ezviz.main.LoadingActivity}" drawable="ezviz" name="EZVIZ" />
   <item component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.FDroid}" drawable="f_droid" name="F-Droid" />
@@ -3349,6 +3363,7 @@
   <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivity}" drawable="goibibo" name="Goibibo" />
   <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivityAliasIPL}" drawable="goibibo" name="Goibibo" />
   <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivityAliasBirthday}" drawable="goibibo" name="Goibibo" />
+  <item component="ComponentInfo{com.goibibo/com.goibibo.common.HomeActivityAliasGoTribe}" drawable="goibibo" name="Goibibo" />
   <item component="ComponentInfo{ph.gomo.gomoph/ph.gomo.gomoph.MainActivity}" drawable="gomo_ph" name="GOMO PH" />
   <item component="ComponentInfo{ph.com.globe.gomo/ph.com.globe.gomo.MainActivity}" drawable="gomo_ph" name="GOMO PH" />
   <item component="ComponentInfo{com.goodreads/com.goodreads.kindle.ui.activity.RoutingActivity}" drawable="goodreads" name="Goodreads" />
@@ -3995,6 +4010,7 @@
   <item component="ComponentInfo{com.instapaper.android/com.instapaper.android.activity.HomeActivity}" drawable="instapaper" name="Instapaper" />
   <item component="ComponentInfo{com.instapaper.android/com.instapaper.android.MainActivity}" drawable="instapaper" name="Instapaper" />
   <item component="ComponentInfo{com.instaprime.android/com.instagram.android.activity.MainTabActivity.zipeng}" drawable="instagram" name="InstaPrime" />
+  <item component="ComponentInfo{com.instaprime.android/com.instagram.android.activity.MainTabActivity}" drawable="instagram" name="InstaPrime" />
   <item component="ComponentInfo{com.instapro.android/com.instagram.android.activity.MainTabActivity1}" drawable="instagram" name="InstaPro" />
   <item component="ComponentInfo{com.instapro.android/com.instagram.android.activity.MainTabActivity12}" drawable="instagram" name="InstaPro" />
   <item component="ComponentInfo{com.instapro.android/com.instagram.android.activity.MainTabActivity8}" drawable="instagram" name="InstaPro" />
@@ -4015,6 +4031,7 @@
   <item component="ComponentInfo{com.latuabancaperandroid/com.latuabancaperandroid.ELoadingPageActivity}" drawable="intesa" name="Intesa" />
   <item component="ComponentInfo{com.latuabancaperandroid/com.latuabancaperandroid.presentation.activity.LandingPageActivity2}" drawable="intesa" name="Intesa" />
   <item component="ComponentInfo{com.latuabancaperandroid/com.latuabancaperandroid.presentation.activity.SplashActivity}" drawable="intesa" name="Intesa" />
+  <item component="ComponentInfo{com.creditkarma.mobile.international/com.creditkarma.mobile.international.landing.ui.LandingActivity}" drawable="intuit_credit_karma" name="Intuit Credit Karma" />
   <item component="ComponentInfo{com.creditkarma.mobile/com.creditkarma.mobile.ui.WelcomeActivity}" drawable="intuit_credit_karma" name="Intuit Credit Karma" />
   <item component="ComponentInfo{com.creditkarma.mobile/com.creditkarma.mobile.welcome.ui.WelcomeActivity}" drawable="intuit_credit_karma" name="Intuit Credit Karma" />
   <item component="ComponentInfo{com.involvex.ytmp3dlp/com.involvex.ytmp3dlp.Default}" drawable="ytdlnis" name="Involvexs" />
@@ -4182,6 +4199,7 @@
   <item component="ComponentInfo{org.sabda.kamus/yuku.kbbiandroid.ac.MainActivity}" drawable="generic_bible" name="Kamus Alkitab" />
   <item component="ComponentInfo{io.alexrintt.kanade/io.alexrintt.kanade.MainActivity}" drawable="kanade" name="Kanade" />
   <item component="ComponentInfo{com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.SplashActivity}" drawable="kaorin_icon_pack" name="Kaorin Icon Pack" />
+  <item component="ComponentInfo{com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity}" drawable="kaorin_icon_pack" name="Kaorin Icons" />
   <item component="ComponentInfo{nl.karwei.app.android/nl.intergamma.app.MainActivity}" drawable="karwei" name="KARWEI" />
   <item component="ComponentInfo{org.onekash.kashcal/org.onekash.kashcal.MainActivityDefault}" drawable="kashcal" name="KashCal" />
   <item component="ComponentInfo{org.onekash.kashcal/org.onekash.kashcal.MainActivity}" drawable="kashcal" name="KashCal" />
@@ -5003,16 +5021,6 @@
   <item component="ComponentInfo{com.getmimo/com.getmimo.ui.SplashActivity_default}" drawable="mimo" name="Mimo" />
   <item component="ComponentInfo{com.getmimo/com.getmimo.ui.SplashActivity_ukraine}" drawable="mimo" name="Mimo" />
   <item component="ComponentInfo{tech.dongdongbh.mindwtr/tech.dongdongbh.mindwtr.MainActivity}" drawable="mindwtr" name="Mindwtr" />
-  <item component="ComponentInfo{com.hanver.wdsj/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.mine261301/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftpe.hajsp/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftpe.patch/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftpe46ng/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftpe682/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftperclone/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftpx/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{com.mojang.minecraftqf/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
-  <item component="ComponentInfo{sdevtech.original/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
   <item component="ComponentInfo{com.mojang.minecraftpe/com.aiwu.Splash}" drawable="minecraft" name="Minecraft" />
   <item component="ComponentInfo{com.mojang.minecraftpe/com.d.a}" drawable="minecraft" name="Minecraft" />
   <item component="ComponentInfo{com.mojang.minecraftpe/com.feng.ym.ad.YMLoginActivity}" drawable="minecraft" name="Minecraft" />
@@ -5031,6 +5039,18 @@
   <item component="ComponentInfo{com.mojang.minecraftpe/com.jojoy.delegate.JojoyInstallerActivity}" drawable="minecraft" name="Minecraft" />
   <item component="ComponentInfo{com.mojang.minecraftpe/com.google.android.archive.ReactivateActivity}" drawable="minecraft" name="Minecraft" />
   <item component="ComponentInfo{com.mojang.minecraftpe/com.me.game.pmupdatesdk.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpe/com.me.game.promotion_popup.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpe/com.mod.activity.SplashActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.hanver.wdsj/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.mine261301/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpe.hajsp/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpe.patch/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpe46ng/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpe682/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftperclone/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftpx/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{com.mojang.minecraftqf/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
+  <item component="ComponentInfo{sdevtech.original/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft" />
   <item component="ComponentInfo{com.mojang.minecraftpet/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft PE" />
   <item component="ComponentInfo{com.mojang.minecrafttrialpe/com.mojang.minecraftpe.MainActivity}" drawable="minecraft" name="Minecraft Trial" />
   <item component="ComponentInfo{com.panu/com.panu.SplashScreenActivity}" drawable="generic_minesweeper" name="Minesweeper" />
@@ -6860,6 +6880,7 @@
   <item component="ComponentInfo{com.rapido.passenger/com.rapido.passenger.ChristmasAlias}" drawable="rapido" name="Rapido" />
   <item component="ComponentInfo{com.rapido.passenger/com.rapido.passenger.NewYearAlias}" drawable="rapido" name="Rapido" />
   <item component="ComponentInfo{com.rapido.passenger/com.rapido.passenger.NavratriAlias}" drawable="rapido" name="Rapido" />
+  <item component="ComponentInfo{com.rapido.passenger/com.rapido.passenger.DiwaliAlias}" drawable="rapido" name="Rapido" />
   <item component="ComponentInfo{com.grability.rappi/com.rappi.discovery.onboarding.impl.activities.RappiMainEntryActivity}" drawable="rappi" name="Rappi" />
   <item component="ComponentInfo{com.razorpay.payments.app/com.razorpay.payments.app.MainActivity}" drawable="razorpay" name="Razorpay" />
   <item component="ComponentInfo{com.rbc.mobile.android/com.rbc.mobile.bud.pre_auth.common.activity.SplashActivity}" drawable="rbc_mobile" name="RBC Mobile" />
@@ -8302,6 +8323,7 @@
   <item component="ComponentInfo{ca.skex.taxicoop5191/ca.skex.taxicoop.controler.home.MainActivity}" drawable="taxi_coop" name="Taxi Coop" />
   <item component="ComponentInfo{com.tcl.tct.calculator/com.tct.calculator.activity.CalculatorActivity}" drawable="generic_calculator_plus_minus_multi_equal" name="TCL Calculator" />
   <item component="ComponentInfo{com.tcl.compass/com.jrdcom.compass.CompassMainActivity}" drawable="generic_compass" name="TCL Compass" />
+  <item component="ComponentInfo{com.td/com.td.mobile.controllers.StartupActivity}" drawable="td_bank" name="TD Bank" />
   <item component="ComponentInfo{com.tdbank/com.td.dcts.android.us.app.MainActivity}" drawable="td_bank" name="TD Bank" />
   <item component="ComponentInfo{com.riotgames.league.teamfighttactics/com.riotgames.leagueoflegends.RiotNativeActivity}" drawable="tft" name="Teamfight Tactics" />
   <item component="ComponentInfo{com.microsoft.teams/com.microsoft.skype.teams.Launcher}" drawable="microsoft_teams" name="Teams" />
@@ -8312,27 +8334,7 @@
   <item component="ComponentInfo{lt.tele2.tsa/lt.tele2.tsa.features.onboarding.OnboardingActivity}" drawable="tele2" name="Tele2" />
   <item component="ComponentInfo{kz.tele2.app/kz.sardarpro.tele2.ui.launcher.LauncherActivity}" drawable="tele2" name="Tele2" />
   <item component="ComponentInfo{kz.tele2.app/kz.sardarpro.tele2.ui.launcher.alias.LauncherActivityAliasSpring}" drawable="tele2" name="Tele2" />
-  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.mytelegram.messenger/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivityRocketIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramSpotify}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.MonetIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.CloudIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DarkIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.market.DefaultIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MaterialIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MerioIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MusheenIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.NeonIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.NoxIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.OldSchoolIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.RainbowIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.SpaceIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.TurboIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.VintageIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.CloudIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DarkIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MaterialIcon}" drawable="telegram" name="Telegram" />
@@ -8349,14 +8351,33 @@
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.VintageIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.min.n.MainActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger/com.google.android.archive.ReactivateActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.mytelegram.messenger/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.MonetIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.CloudIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DarkIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.market.DefaultIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MaterialIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MerioIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.MusheenIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.NeonIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.NoxIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.OldSchoolIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.RainbowIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.SpaceIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.TurboIcon}" drawable="telegram" name="Telegram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.VintageIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger/com.min.n.MainActivity}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenges/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenges/org.telegram.messenger.TurboIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenges/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger/com.google.android.archive.ReactivateActivity}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.NoxIcon}" drawable="telegram" name="Telegram Beta" />
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.PremiumIcon}" drawable="telegram" name="Telegram Beta" />
   <item component="ComponentInfo{org.thunderdog.challegram/org.thunderdog.challegram.MainActivity}" drawable="telegram_x" name="Telegram X" />
@@ -8471,12 +8492,13 @@
   <item component="ComponentInfo{com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.activities.MainActivity}" drawable="tieba_lite" name="Tieba Lite" />
   <item component="ComponentInfo{com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivity}" drawable="tieba_lite" name="Tieba Lite" />
   <item component="ComponentInfo{io.github.tiefseetauchner.tiefprompt/io.github.tiefseetauchner.tiefprompt.MainActivity}" drawable="tiefprompt" name="tiefprompt" />
-  <item component="ComponentInfo{com.ss.android.ugc.trill/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok" name="TikTok" />
-  <item component="ComponentInfo{com.ss.android.ugc.trill/com.ss.android.ugc.aweme.ttp.IconStock}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.ss.android.ugc.trill.splash.I18nSplashActivity}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.zhiliaoapp.musically.activity.SplashActivity}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.zhiliaoapp.musically.MainActivity}" drawable="tiktok" name="TikTok" />
+  <item component="ComponentInfo{com.zhiliaoapp.musically/com.ss.android.ugc.aweme.ttp.IconStock}" drawable="tiktok" name="TikTok" />
+  <item component="ComponentInfo{com.ss.android.ugc.trill/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok" name="TikTok" />
+  <item component="ComponentInfo{com.ss.android.ugc.trill/com.ss.android.ugc.aweme.ttp.IconStock}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.ss.android.ugc.aweme.mobile/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok" name="TikTok" />
   <item component="ComponentInfo{com.zhiliaoapp.musically.go/com.ss.android.ugc.aweme.main.homepage.MainActivity}" drawable="tiktok" name="TikTok Lite" />
@@ -8489,6 +8511,7 @@
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.windukk.mod.icon.metal}" drawable="tiktok" name="TikTok Mod" />
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.windukk.mod.icon.default}" drawable="tiktok" name="TikTok Mod" />
   <item component="ComponentInfo{com.zhiliaoapp.musically/com.windukk.mod.icon.hlx}" drawable="tiktok" name="TikTok Mod" />
+  <item component="ComponentInfo{com.zhiliaoapp.musically/com.windukk.mod.icon.md}" drawable="tiktok" name="TikTok Mod" />
   <item component="ComponentInfo{com.ss.android.tt.creator/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok" name="TikTok Studio" />
   <item component="ComponentInfo{br.com.timbrasil.meutim/br.com.timbrasil.meutim.MeuTIM}" drawable="tim" name="TIM" />
   <item component="ComponentInfo{br.com.timbrasil.meutim/com.accenture.meutim.activities.SplashScreenActivity}" drawable="tim" name="TIM" />
@@ -8797,6 +8820,8 @@
   <item component="ComponentInfo{photo.video.instasaveapp/photo.video.instasaveapp.WelcomeActivity}" drawable="generic_download_circle" name="Video Downloader &amp; Editor" />
   <item component="ComponentInfo{downloader.video.download.free/free.files.downloader.save.video.manager.MainActivity}" drawable="generic_download_circle" name="Video Downloader &amp; Video Saver" />
   <item component="ComponentInfo{net.videodownloader.twittervideoindir/net.videodownloader.twittervideoindir.FirstOpen}" drawable="generic_download_circle" name="Video Downloader for Twitter" />
+  <item component="ComponentInfo{com.doionline.videolivewallpaper/com.doionline.videolivewallpaper.MainActivity}" drawable="video_live_wallpaper" name="Video Live Wallpaper" />
+  <item component="ComponentInfo{com.naing.vwallpaper/com.naing.vwallpaper.MainActivity}" drawable="video_live_wallpaper" name="Video Live Wallpaper" />
   <item component="ComponentInfo{io.github.codeg0blin.videowallpaper/io.github.codeg0blin.videowallpaper.MainActivity}" drawable="video_live_wallpaper" name="Video Live Wallpaper" />
   <item component="ComponentInfo{com.video.butterflyplayer/com.video.butterflyplayer.activities.starter.StartingActivity}" drawable="generic_player" name="Video Player Subtitle Support" />
   <item component="ComponentInfo{com.coloros.video/com.heytap.video.splash.VideoSplashActivity}" drawable="generic_player" name="Videos" />
@@ -9198,6 +9223,8 @@
   <item component="ComponentInfo{de.ericz.worldclockv2/com.example.world_clock_v2.MainActivity}" drawable="generic_earth" name="World Clock v2" />
   <item component="ComponentInfo{de.ericz.worldclockv2/de.ericz.worldclockv2.MainActivity}" drawable="generic_earth" name="World Clock v2" />
   <item component="ComponentInfo{com.azwstudios.theholybible.web/com.azwstudios.theholybible.MainActivity}" drawable="generic_bible" name="World English Bible" />
+  <item component="ComponentInfo{com.qbis.guessthecountry/dev.axmol.app.AppActivity}" drawable="generic_earth" name="World Map Quiz" />
+  <item component="ComponentInfo{com.qbis.guessthecountry/org.cocos2dx.cpp.AppActivity}" drawable="generic_earth" name="World Map Quiz" />
   <item component="ComponentInfo{com.worldcoin/com.worldcoin.app.main.MainActivity}" drawable="worldcoin_wallet" name="Worldcoin Wallet" />
   <item component="ComponentInfo{cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.a}" drawable="wps_office" name="WPS Office" />
   <item component="ComponentInfo{cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.main}" drawable="wps_office" name="WPS Office" />
@@ -9311,6 +9338,14 @@
   <item component="ComponentInfo{com.yousician.yousician/com.yousician.yousiciannative.PlayerActivity}" drawable="yousician" name="Yousician" />
   <item component="ComponentInfo{com.yousician.yousician/com.yousician.yousiciannative.YousicianActivity}" drawable="yousician" name="Yousician" />
   <item component="ComponentInfo{com.yousician.yousician/com.yousician.YousicianPlayerActivity}" drawable="yousician" name="Yousician" />
+  <item component="ComponentInfo{anddea.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{anddea.youtube/anddea.youtube.morphe_original_1}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_1}" drawable="youtube" name="Youtube" />
+  <item component="ComponentInfo{app.morphe.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_5}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_1}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.morphe_original_1}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_1}" drawable="morphe" name="YouTube" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_1}" drawable="morphe" name="YouTube" />
   <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell}" drawable="youtube" name="YouTube" />
@@ -9322,18 +9357,16 @@
   <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.HomePage}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.google.android.youtube/net.ogmods.youtube.OGDownloadManager1}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.gbox.com.google.android.youtube/com.gbox.app.LaunchAppActivity}" drawable="youtube" name="Youtube" />
-  <item component="ComponentInfo{anddea.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.rvx.android.youtube/com.rvx.android.youtube.revanced_original_1}" drawable="youtube" name="YouTube" />
-  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_1}" drawable="youtube" name="Youtube" />
-  <item component="ComponentInfo{app.morphe.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.rve.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
-  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5}" drawable="youtube" name="YouTube" />
-  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_5}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.morphe.youtube/com.morphe.youtube.morphe_original_1}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity}" drawable="youtube_create" name="YouTube Create" />
   <item component="ComponentInfo{com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity}" drawable="youtube" name="YouTube for Android TV" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_2}" drawable="youtube" name="YouTube Morphe" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_4}" drawable="youtube" name="YouTube Morphe" />
+  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_3}" drawable="youtube" name="YouTube Morphe" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_2}" drawable="morphe" name="YouTube Morphe" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_light_2}" drawable="morphe" name="YouTube Morphe" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_5}" drawable="morphe" name="YouTube Morphe" />
@@ -9344,9 +9377,6 @@
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_5}" drawable="morphe" name="YouTube Morphe" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_3}" drawable="morphe" name="YouTube Morphe" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_3}" drawable="morphe" name="YouTube Morphe" />
-  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_2}" drawable="youtube" name="YouTube Morphe" />
-  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_4}" drawable="youtube" name="YouTube Morphe" />
-  <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_3}" drawable="youtube" name="YouTube Morphe" />
   <item component="ComponentInfo{com.google.android.youtube/app.morphe.android.youtube.morphe_black_1}" drawable="youtube" name="YouTube Morphe" />
   <item component="ComponentInfo{yt.morphe.noname.exe/yt.morphe.noname.exe.morphe_black_2}" drawable="morphe" name="YouTube Morphe" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_black_4}" drawable="morphe" name="YouTube Music" />
@@ -9372,11 +9402,11 @@
   <item component="ComponentInfo{com.google.android.youtube.pro/com.google.android.youtube.pro.MainActivity}" drawable="youtube" name="Youtube Pro" />
   <item component="ComponentInfo{com.gold.android.youtube/com.google.android.youtube.app.honeycomb.Shell}" drawable="youtube" name="YouTube Pro" />
   <item component="ComponentInfo{com.gold.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube Pro" />
-  <item component="ComponentInfo{com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3}" drawable="youtube_revanced" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_1}" drawable="youtube" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_2}" drawable="youtube" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_3}" drawable="youtube" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_4}" drawable="youtube" name="YouTube ReVanced" />
+  <item component="ComponentInfo{com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3}" drawable="youtube_revanced" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_minimal_1}" drawable="youtube_revanced" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_minimal_2}" drawable="youtube_revanced" name="YouTube ReVanced" />
   <item component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_minimal_3}" drawable="youtube_revanced" name="YouTube ReVanced" />
@@ -9409,6 +9439,7 @@
   <item component="ComponentInfo{com.sirma.mobile.bible.android/com.youversion.ui.MainActivity}" drawable="generic_bible" name="YouVersion Bible" />
   <item component="ComponentInfo{com.sirma.mobile.bible.android/com.youversion.ui.SplashActivity}" drawable="generic_bible" name="YouVersion Bible" />
   <item component="ComponentInfo{com.wssdlc/com.whatsapp.Main}" drawable="whatsapp" name="YoWhatsApp" />
+  <item component="ComponentInfo{com.yppfnk.client/com.roblox.client.startup.ActivitySplash}" drawable="roblox" name="YPPFNK" />
   <item component="ComponentInfo{no.nrk.yr/no.nrk.yr.activity.MainActivity}" drawable="yr" name="Yr" />
   <item component="ComponentInfo{no.nrk.yr/no.nrk.yr.StartActivity}" drawable="yr" name="Yr" />
   <item component="ComponentInfo{no.nrk.yr/no.nrk.yr.SplashScreenActivity}" drawable="yr" name="Yr" />
