@@ -2677,6 +2677,9 @@
   <item component="ComponentInfo{com.cube.gdpc.che/com.cube.gdpc.fa.BootActivity}" drawable="generic_aid" name="First Aid" />
   <item component="ComponentInfo{com.cube.rca/com.cube.rca.activity.BootActivity}" drawable="generic_aid" name="First aid by British Red Cross" />
   <item component="ComponentInfo{com.firstclub.app/com.firstclub.app.MainActivity}" drawable="firstclub" name="Firstclub" />
+  <item component="ComponentInfo{fc.admin.fcexpressadmin/fc.admin.fcexpressadmin.activity.AccNewSplashActivity}" drawable="firstcry" name="Firstcry" />
+  <item component="ComponentInfo{fc.admin.fcexpressadmin/fc.admin.fcexpressadmin.activity.SplashScreen}" drawable="firstcry" name="Firstcry" />
+  <item component="ComponentInfo{fc.admin.fcexpressadmin/fc.admin.fcexpressadmin.HomeActivity}" drawable="firstcry" name="Firstcry" />
   <item component="ComponentInfo{com.fitbit.FitbitMobile/com.fitbit.FitbitBrandedAlias}" drawable="fitbit" name="Fitbit" />
   <item component="ComponentInfo{fitapp.fittofit/fitapp.fittofit.activities.main.StartActivity}" drawable="generic_heart" name="FitToFit" />
   <item component="ComponentInfo{com.fiverr.fiverr/com.fiverr.fiverr.ActivityAndFragment.EntryPoint.FVREntryPoint}" drawable="fiverr" name="Fiverr" />
@@ -3917,6 +3920,8 @@
   <item component="ComponentInfo{com.indeed.android.jobsearch/com.indeed.android.jobsearch.MainActivity}" drawable="indeed" name="Indeed" />
   <item component="ComponentInfo{com.indeed.android.jobsearch/com.indeed.android.jobsearch.launch.LaunchActivity}" drawable="indeed" name="Indeed" />
   <item component="ComponentInfo{com.indeed.android.jobsearch/com.indeed.android.jobsearch.LaunchActivity}" drawable="indeed" name="Indeed" />
+  <item component="ComponentInfo{cx.indianoil.in/cx.indianoil.in.lpg.view.login.WelcomeActivity}" drawable="indianoil_one" name="IndianOil ONE" />
+  <item component="ComponentInfo{cx.indianoil.in/cx.indianoil.in.SplashActivity}" drawable="indianoil_one" name="IndianOil ONE" />
   <item component="ComponentInfo{in.goindigo.android/in.goindigo.android.MainActivity}" drawable="indigo" name="IndiGo" />
   <item component="ComponentInfo{in.goindigo.android/in.goindigo.android.ui.modules.splash.SplashActivity}" drawable="indigo" name="IndiGo" />
   <item component="ComponentInfo{in.indwealth/splash.SplashActivity}" drawable="indmoney" name="INDmoney" />
@@ -4100,6 +4105,8 @@
   <item component="ComponentInfo{james.dsp/me.timschneeberger.rootlessjamesdsp.activity.MainActivity}" drawable="rootless_james_dsp" name="JamesDSP" />
   <item component="ComponentInfo{james.dsp/james.dsp.activity.DSPManager}" drawable="rootless_james_dsp" name="JamesDSP" />
   <item component="ComponentInfo{serakont.android.js/serakont.android.js.EditorActivity}" drawable="generic_braces" name="JavaScript For Android" />
+  <item component="ComponentInfo{jbl.stc.com/jbl.stc.com.activity.SplashActivity}" drawable="jbl_headphones" name="JBL Headphones" />
+  <item component="ComponentInfo{jbl.stc.com/jbl.stc.com.activity.LauncherStartActivity}" drawable="jbl_headphones" name="JBL Headphones" />
   <item component="ComponentInfo{com.evenma.jbl/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="je_bois_local" name="Je Bois Local" />
   <item component="ComponentInfo{com.jeevansathi.android/com.jeevansathi.android.splash.SplashActivity}" drawable="jeevansathi" name="Jeevansathi" />
   <item component="ComponentInfo{org.jellyfin.mobile/org.jellyfin.mobile.MainActivity}" drawable="jellyfin" name="Jellyfin" />
@@ -4395,6 +4402,7 @@
   <item component="ComponentInfo{org.kustom.widget.pro/a.y.z.HZ}" drawable="kwgt_pro" name="KWGT Pro Key" />
   <item component="ComponentInfo{org.kustom.widget.pro/android.app.AppDetailsActivity}" drawable="kwgt_pro" name="KWGT Pro Key" />
   <item component="ComponentInfo{com.kwicpic/com.data.onboard.ui.activity.SplashActivity}" drawable="generic_camera" name="Kwikpic" />
+  <item component="ComponentInfo{com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity}" drawable="kyoto_player" name="KYOTO Player" />
   <item component="ComponentInfo{la.bible.francaise.gratuit/king.james.bible.android.activity.LaunchActivity}" drawable="generic_bible" name="La Bible" />
   <item component="ComponentInfo{wiktoria.goroch.biblie_darby_french.AOURPEFFEFFAWZYR/king.james.bible.android.activity.LaunchActivity}" drawable="generic_bible" name="La Bible" />
   <item component="ComponentInfo{com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen}" drawable="generic_bible" name="La Bible Du Semeur" />
@@ -5545,6 +5553,8 @@
   <item component="ComponentInfo{com.naviapp/com.naviapp.home.compose.activity.HomePageActivity}" drawable="navi" name="Navi" />
   <item component="ComponentInfo{com.naviapp/com.naviapp.HomePageActivityDefault}" drawable="navi" name="Navi" />
   <item component="ComponentInfo{com.naviapp/com.naviapp.HomePageActivityDiwali}" drawable="navi" name="Navi" />
+  <item component="ComponentInfo{com.navyfederal.android/org.navyfederal.android.NFCUActivity}" drawable="navy_federal" name="Navy Federal" />
+  <item component="ComponentInfo{com.navyfederal.android/com.navyfederal.android.home.activity.SplashScreenActivity}" drawable="navy_federal" name="Navy Federal" />
   <item component="ComponentInfo{com.mventus.ncell.activity/com.mventus.ncell.activity.MainActivity}" drawable="ncell" name="Ncell App" />
   <item component="ComponentInfo{com.narayana.nconnect/com.narayana.nconnect.activity.SplashActivity}" drawable="nconnect" name="nConnect" />
   <item component="ComponentInfo{com.nspira.nconnect/com.nspira.nconnect.MainActivity}" drawable="nconnect_parent" name="nConnect Parent" />
@@ -6092,6 +6102,7 @@
   <item component="ComponentInfo{com.patreon.android/com.patreon.android.ui.shared.LauncherActivity}" drawable="patreon" name="Patreon" />
   <item component="ComponentInfo{com.patreon.android/com.patreon.app.RootActivity}" drawable="patreon" name="Patreon" />
   <item component="ComponentInfo{com.patreon.android/com.patreon.android.screens.launcher.LauncherActivity}" drawable="patreon" name="Patreon" />
+  <item component="ComponentInfo{com.payoneer.android/com.payoneer.SplashActivity}" drawable="payoneer" name="Payoneer" />
   <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.GridLauncherActivity}" drawable="paypal" name="PayPal" />
   <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.HubActivity}" drawable="paypal" name="PayPal" />
   <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.IntroActivity}" drawable="paypal" name="PayPal" />
@@ -6863,6 +6874,7 @@
   <item component="ComponentInfo{net.programmierecke.radiodroid2/net.programmierecke.radiodroid2.ActivityMain}" drawable="radiodroid" name="RadioDroid" />
   <item component="ComponentInfo{com.atf.radiogalaxy/com.atf.radiogalaxy.main.MainActivity}" drawable="generic_fm_radio" name="RadioG" />
   <item component="ComponentInfo{org.cris.aikyam/com.example.aikyam.MainActivity}" drawable="railone" name="RailOne" />
+  <item component="ComponentInfo{dev.raincord.app/com.discord.main.MainDefault}" drawable="raincord" name="Rain" />
   <item component="ComponentInfo{com.yoshi.rain/com.yoshi.rain.MainActivity}" drawable="rain" name="Rain" />
   <item component="ComponentInfo{com.yoshi.rain/com.example.rain.MainActivity}" drawable="rain" name="Rain" />
   <item component="ComponentInfo{za.co.rain.raintalk/com.unikie.vm.application.LaunchActivityInapp}" drawable="generic_dialer" name="rain talk" />
@@ -8652,6 +8664,7 @@
   <item component="ComponentInfo{com.alphabetiq.tvtracker/com.alphabetiq.tvtracker.MainActivity}" drawable="tvtracker" name="TVTracker" />
   <item component="ComponentInfo{dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivity}" drawable="twine" name="Twine" />
   <item component="ComponentInfo{dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivityDarkJade}" drawable="twine" name="Twine" />
+  <item component="ComponentInfo{com.twinndroid/com.twinndroid.LauncherTwinn}" drawable="twinndroid" name="TwinnDroid" />
   <item component="ComponentInfo{com.perflyst.twire/com.perflyst.twire.activities.StartUpActivity}" drawable="twire" name="Twire" />
   <item component="ComponentInfo{tv.twitch.android.app/tv.twitch.android.app.core.LandingActivity}" drawable="twitch" name="Twitch" />
   <item component="ComponentInfo{tv.twitch.android.app/tv.twitch.android.apps.LandingActivity}" drawable="twitch" name="Twitch" />
