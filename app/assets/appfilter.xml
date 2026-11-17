@@ -3587,10 +3587,10 @@
   <item component="ComponentInfo{com.grammarly.android.keyboard/com.grammarly.host.SplashActivity}" drawable="grammarly" name="Grammarly" />
   <item component="ComponentInfo{org.akanework.gramophone/org.akanework.gramophone.MainActivity}" drawable="gramophone" name="Gramophone" />
   <item component="ComponentInfo{org.akanework.gramophone/org.akanework.gramophone.ui.MainActivity}" drawable="gramophone" name="Gramophone" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.GameActivity}" drawable="gta_sa" name="Grand Theft Auto: San Andreas" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.d.a}" drawable="gta_sa" name="Grand Theft Auto: San Andreas" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.gamein.i.a.WelcomeActivity}" drawable="gta_sa" name="Grand Theft Auto: San Andreas" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.fastman92.main_activity_launcher.MainActivity}" drawable="gta_sa" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.GameActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.d.a}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.gamein.i.a.WelcomeActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.fastman92.main_activity_launcher.MainActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
   <item component="ComponentInfo{app.grapheneos.apps/org.grapheneos.apps.client.ui.container.MainActivity}" drawable="grapheneos_apps" name="GrapheneOS Apps" />
   <item component="ComponentInfo{app.grapheneos.apps/app.grapheneos.apps.ui.MainActivity}" drawable="grapheneos_apps" name="GrapheneOS Apps" />
   <item component="ComponentInfo{app.attestation.auditor/app.attestation.auditor.AttestationActivity}" drawable="grapheneos_auditor" name="GrapheneOS Auditor" />
@@ -3628,10 +3628,10 @@
   <item component="ComponentInfo{com.nextbillion.groww/com.nextbillion.groww.MainActivitycom.nextbillion.groww}" drawable="groww" name="Groww" />
   <item component="ComponentInfo{com.nextbillion.groww/com.nextbillion.groww.MainActivity}" drawable="groww" name="Groww" />
   <item component="ComponentInfo{com.nextbillion.groww/com.nextbillion.groww.genesys.loginsignup.activities.LoginActivity}" drawable="groww" name="Groww" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.fiveplay.mod.RMS.Recovery}" drawable="gta_sa" name="GTA SA" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.Downloader}" drawable="gta_sa" name="GTA SA" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.GTASA}" drawable="gta_sa" name="GTA SA" />
-  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.DownloaderActivity}" drawable="gta_sa" name="GTA SA" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.fiveplay.mod.RMS.Recovery}" drawable="grand_theft_auto_san_andreas" name="GTA SA" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.Downloader}" drawable="grand_theft_auto_san_andreas" name="GTA SA" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.GTASA}" drawable="grand_theft_auto_san_andreas" name="GTA SA" />
+  <item component="ComponentInfo{com.rockstargames.gtasa/com.rockstargames.gtasa.DownloaderActivity}" drawable="grand_theft_auto_san_andreas" name="GTA SA" />
   <item component="ComponentInfo{com.ovelin.guitartuna/com.unity3d.player.UnityPlayerNativeActivity}" drawable="guitartuna" name="GuitarTuna" />
   <item component="ComponentInfo{com.ovelin.guitartuna/com.unity3d.player.UnityPlayerActivity}" drawable="guitartuna" name="GuitarTuna" />
   <item component="ComponentInfo{com.ovelin.guitartuna/com.unity.purchasing.googleplay.VRPurchaseActivity}" drawable="guitartuna" name="GuitarTuna" />
