@@ -378,6 +378,7 @@
   <item component="ComponentInfo{com.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.framework.core.LauncherActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
   <item component="ComponentInfo{com.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" drawable="generic_keyboard" name="Android Keyboard (AOSP)" />
   <item component="ComponentInfo{com.frandro.quicksettings/com.common.ad.cmp.CmpMainActivity}" drawable="settings" name="Android Quick Settings" />
+  <item component="ComponentInfo{com.google.android.tv.remote/com.google.android.tv.remote.RemoteActivity}" drawable="android_tv_remote_service" name="Android TV Remote Service" />
   <item component="ComponentInfo{com.github.mueller_ma.viewandroidversion/com.github.mueller_ma.viewandroidversion.MainActivity}" drawable="generic_shell" name="Android version" />
   <item component="ComponentInfo{exe.bbllw8.anemo/exe.bbllw8.anemo.shell.LauncherActivity}" drawable="anemo" name="Anemo" />
   <item component="ComponentInfo{com.rovio.baba/rovio.baba.facebook.AbbaUnityActivity}" drawable="angry_birds_2" name="Angry Birds 2" />
@@ -4394,6 +4395,7 @@
   <item component="ComponentInfo{com.finapp.app/com.finapp.app.MainActivity}" drawable="kontto" name="Kontto" />
   <item component="ComponentInfo{org.xbmc.kore/org.xbmc.kore.ui.RemoteActivity}" drawable="kore" name="Kore" />
   <item component="ComponentInfo{org.xbmc.kore/org.xbmc.kore.ui.sections.remote.RemoteActivity}" drawable="kore" name="Kore" />
+  <item component="ComponentInfo{org.koreader.launcher/org.koreader.launcher.MainActivity}" drawable="koreader" name="KOReader" />
   <item component="ComponentInfo{com.msf.kbank.mobile/com.msf.kmb.mobile.init.NewSplashScreen}" drawable="kotak_bank" name="Kotak Bank" />
   <item component="ComponentInfo{com.msf.kbank.mobile/com.msf.kbank.mobile.launcher_d5e15a74df3d33e17b26d16a879646bfef34a86881463b2b8442d76af1f6f1f4}" drawable="kotak_bank" name="Kotak Bank" />
   <item component="ComponentInfo{com.kotak.bank.mobile/cb089f3c2.kfe1ad3a1.f4cd56a2f}" drawable="kotak_bank" name="Kotak Bank" />
@@ -5952,6 +5954,7 @@
   <item component="ComponentInfo{com.oneplus.gamespace/com.oplus.games.ui.main.MainGameActivity}" drawable="generic_games" name="OnePlus Games" />
   <item component="ComponentInfo{com.oplus.consumerIRApp/com.oplus.consumerIRApp.navigation.HomeActivity}" drawable="oneplus_ir_remote" name="OnePlus IR Remote" />
   <item component="ComponentInfo{com.oplus.consumerIRApp/com.oplus.consumerIRApp.navigation.LauncherActivity}" drawable="oneplus_ir_remote" name="OnePlus IR Remote" />
+  <item component="ComponentInfo{com.oplus.aimemory/com.oplus.aimemory.MainActivity}" drawable="oneplus_mind_space" name="OnePlus Mind Space" />
   <item component="ComponentInfo{com.oneplus.note/com.nearme.note.main.MainActivity}" drawable="generic_notes" name="OnePlus Notes" />
   <item component="ComponentInfo{com.oneplus.note/com.oneplus.note.ui.MainActivity}" drawable="generic_notes" name="OnePlus Notes" />
   <item component="ComponentInfo{com.oneplus.note/.ui.MainActivity}" drawable="generic_notes" name="OnePlus Notes" />
@@ -6004,6 +6007,8 @@
   <item component="ComponentInfo{com.Arturo254.opentune/com.arturo254.opentune.MainActivity}" drawable="opentune" name="OpenTune" />
   <item component="ComponentInfo{com.Arturo254.opentune/com.malopieds.innertune.MainActivity}" drawable="opentune" name="OpenTune" />
   <item component="ComponentInfo{com.insightfy.opentv/com.insightfy.opentv.MainActivity}" drawable="opentv" name="OpenTV" />
+  <item component="ComponentInfo{uk.co.openweather/uk.co.openweather.MainActivity}" drawable="openweather" name="OpenWeather" />
+  <item component="ComponentInfo{uk.co.openweather/uk.co.openweather.SplashActivity}" drawable="openweather" name="OpenWeather" />
   <item component="ComponentInfo{com.opera.browser/com.opera.Opera}" drawable="opera_browser" name="Opera" />
   <item component="ComponentInfo{com.opera.touch/com.opera.touch.MainActivity}" drawable="opera_browser" name="Opera" />
   <item component="ComponentInfo{com.opera.browser/com.opera.Launcher5}" drawable="opera_browser" name="Opera" />
@@ -7471,6 +7476,7 @@
   <item component="ComponentInfo{cloud.shelly.smartcontrol/cloud.shelly.smartcontrol.MainActivity_Default}" drawable="shelly_smart_control" name="Shelly Smart Control" />
   <item component="ComponentInfo{net.typeblog.shelter/net.typeblog.shelter.ui.DummyActivity}" drawable="shelter" name="Shelter" />
   <item component="ComponentInfo{net.typeblog.shelter/net.typeblog.shelter.ui.MainActivity}" drawable="shelter" name="Shelter" />
+  <item component="ComponentInfo{com.hamondev.shevery/moe.shizuku.manager.MainActivity}" drawable="shevery" name="Shevery" />
   <item component="ComponentInfo{com.net.shine/com.net.shine.MainActivity}" drawable="shine_com" name="Shine.com" />
   <item component="ComponentInfo{moe.shizuku.privileged.api/moe.shizuku.manager.MainActivity}" drawable="shizuku" name="Shizuku" />
   <item component="ComponentInfo{moe.shizuku.privileged.api/af.shizuku.manager.LauncherAlias}" drawable="shizuku" name="Shizuku" />
@@ -9426,6 +9432,7 @@
   <item component="ComponentInfo{com.rvx.android.youtube/com.rvx.android.youtube.revanced_original_1}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.rve.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube" name="YouTube" />
   <item component="ComponentInfo{com.morphe.youtube/com.morphe.youtube.morphe_original_1}" drawable="youtube" name="YouTube" />
+  <item component="ComponentInfo{com.pg_axis.ytcnv/com.pg_axis.ytcnv.MainActivity}" drawable="youtube_conv_axs" name="YouTube Conv.axs" />
   <item component="ComponentInfo{com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity}" drawable="youtube_create" name="YouTube Create" />
   <item component="ComponentInfo{com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity}" drawable="youtube" name="YouTube for Android TV" />
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_2}" drawable="youtube" name="YouTube Morphe" />
