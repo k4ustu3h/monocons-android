@@ -610,6 +610,7 @@
   <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.MonetIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.DefaultIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.ui.MainActivity}" drawable="az_screen_recorder" name="AZ Screen Recorder" />
   <item component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.activities.MainActivity}" drawable="az_screen_recorder" name="AZ Screen Recorder" />
   <item component="ComponentInfo{io.github.lime3ds.android/io.github.lime3ds.android.ui.main.MainActivity}" drawable="azahar_emulator" name="Azahar Emulator" />
@@ -643,6 +644,7 @@
   <item component="ComponentInfo{com.nhn.android.band/com.nhn.android.band.SplashActivity}" drawable="band" name="BAND" />
   <item component="ComponentInfo{com.bandcamp.android/com.bandcamp.android.landing.LandingActivity}" drawable="bandcamp" name="Bandcamp" />
   <item component="ComponentInfo{com.bandcamp.android/com.bandcamp.android.view.SplashActivity}" drawable="bandcamp" name="Bandcamp" />
+  <item component="ComponentInfo{com.bandcamp.artistapp/com.bandcamp.artistapp.RootTabActivity}" drawable="bandcamp" name="Bandcamp Artists" />
   <item component="ComponentInfo{com.bandlab.bandlab/com.bandlab.bandlab.core.activity.NavigationActivity}" drawable="bandlab" name="BandLab" />
   <item component="ComponentInfo{com.bandlab.bandlab/com.bandlab.bandlab.core.activity.navigation.NavigationActivity}" drawable="bandlab" name="BandLab" />
   <item component="ComponentInfo{com.bandlab.bandlab/com.bandlab.navigation.entry.NavigationActivity}" drawable="bandlab" name="BandLab" />
@@ -869,6 +871,8 @@
   <item component="ComponentInfo{org.blokada.sex/ui.MainActivity}" drawable="blokada" name="Blokada" />
   <item component="ComponentInfo{com.derdilla.bloodPressureApp/com.derdilla.blood_pressure_app.MainActivity}" drawable="blood_pressure_app" name="Blood pressure app" />
   <item component="ComponentInfo{com.blufinance.android/com.blufinance.android.MainActivity}" drawable="blu" name="Blu" />
+  <item component="ComponentInfo{com.bluecord/com.discord.app.AppActivity$Main}" drawable="discord" name="Bluecord" />
+  <item component="ComponentInfo{com.bluecord/com.discord.app.AppActivity}" drawable="discord" name="Bluecord" />
   <item component="ComponentInfo{xyz.blueskyweb.app/xyz.blueskyweb.app.MainActivity}" drawable="bluesky" name="Bluesky" />
   <item component="ComponentInfo{com.rockfort.bluetoothinfo/com.rockfort.bluetoothinfo.activity.PermissionsActivity}" drawable="generic_bluetooth" name="Bluetooth Devices Info" />
   <item component="ComponentInfo{de.simon.dankelmann.bluetoothlespam.debug/de.simon.dankelmann.bluetoothlespam.MainActivity}" drawable="bluetooth_le_spam" name="Bluetooth LE Spam" />
@@ -984,6 +988,14 @@
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.ui.landing.SplashActivity}" drawable="bundle" name="Bundle" />
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.v2.ui.landing.views.SplashActivity}" drawable="bundle" name="Bundle" />
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.v5.app.MainActivity}" drawable="bundle" name="Bundle" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainBlush}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainMatteDark}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainManga}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainController}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainMidnightPrism}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainDefault}" drawable="discord" name="Bunny" />
+  <item component="ComponentInfo{io.github.pyoncord.app/com.discord.main.MainInRainbows}" drawable="discord" name="Bunny" />
   <item component="ComponentInfo{se.burgerking.ordersapp/se.burgerking.ordersapp.MainActivity}" drawable="burger_king" name="Burger King" />
   <item component="ComponentInfo{se.burgerking.ordersapp/com.deazy.popeyes.MainActivity}" drawable="burger_king" name="Burger King" />
   <item component="ComponentInfo{ar.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity}" drawable="burger_king" name="Burger King" />
@@ -1426,6 +1438,7 @@
   <item component="ComponentInfo{generic_card/a}" drawable="generic_card" name="Card" />
   <item component="ComponentInfo{com.careerwill.careerwillapp/com.careerwill.careerwillapp.auth.MainActivity}" drawable="careerwill" name="Careerwill" />
   <item component="ComponentInfo{com.google.android.ims/com.google.android.ims.services.RcsService}" drawable="carrier_services" name="Carrier Services" />
+  <item component="ComponentInfo{com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity}" drawable="carrier_services" name="Carrier Services" />
   <item component="ComponentInfo{com.round_tower.app.android.wallpaper.cartogram/com.round_tower.cartogram.feature.splash.SplashActivity}" drawable="maps" name="Cartogram" />
   <item component="ComponentInfo{com.round_tower.app.android.wallpaper.cartogram/com.round_tower.cartogram.feature.main.MainActivity}" drawable="maps" name="Cartogram" />
   <item component="ComponentInfo{vem.posto.virtual/vem.posto.virtual.MainActivity}" drawable="cartao_vem" name="Cartão VEM" />
@@ -2708,6 +2721,7 @@
   <item component="ComponentInfo{com.flashfoodapp.android/com.flashfoodapp.android.presentation.ui.splash.SplashScreenActivity}" drawable="flashfood" name="Flashfood" />
   <item component="ComponentInfo{com.flashfoodapp.android/com.flashfoodapp.android.v2.activities.SplashActivity}" drawable="flashfood" name="Flashfood" />
   <item component="ComponentInfo{com.flashfoodapp.android/com.flashfoodapp.android.MainActivity}" drawable="flashfood" name="Flashfood" />
+  <item component="ComponentInfo{flashgram.org.web/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Flashgram" />
   <item component="ComponentInfo{com.android.systemui/com.android.systemui.flashlight.FlashlightActivity}" drawable="generic_flashlight" name="Flashlight" />
   <item component="ComponentInfo{com.simplemobiletools.flashlight/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity.Orange}" drawable="generic_flashlight" name="Flashlight" />
   <item component="ComponentInfo{com.simplemobiletools.flashlight/com.simplemobiletools.flashlight.activities.SplashActivity.Amber}" drawable="generic_flashlight" name="Flashlight" />
@@ -3618,6 +3632,7 @@
   <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.HibernateAndLockScreen}" drawable="greenify" name="Greenify" />
   <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyShortcut}" drawable="greenify" name="Greenify" />
   <item component="ComponentInfo{com.oasisfeng.greenify.pro/com.oasisfeng.greenify.pro.PilotActivity}" drawable="greenify" name="Greenify (Donation Package)" />
+  <item component="ComponentInfo{com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack}" drawable="generic_dialer" name="Grindr Phone" />
   <item component="ComponentInfo{com.shub39.grit/com.shub39.grit.app.MainActivity}" drawable="grit" name="Grit" />
   <item component="ComponentInfo{com.shub39.grit/com.shub39.grit.MainActivity}" drawable="grit" name="Grit" />
   <item component="ComponentInfo{ai.x.grok/ai.x.grok.main.GrokActivity}" drawable="grok" name="Grok" />
@@ -4241,6 +4256,8 @@
   <item component="ComponentInfo{mjkhgc.nhzlje.hczlzr/mjkhgc.nhzlje.hczlzr.ui.MainActivity}" drawable="kernelsu_next" name="KernelSU Next" />
   <item component="ComponentInfo{qsvyju.glqnam.huqomb/qsvyju.glqnam.huqomb.ui.MainActivity}" drawable="kernelsu_next" name="KernelSU Next" />
   <item component="ComponentInfo{vaumet.ndfdvv.ztmdui/vaumet.ndfdvv.ztmdui.ui.MainActivity}" drawable="kernelsu_next" name="KernelSU Next" />
+  <item component="ComponentInfo{cocobo1.pupu.app/com.discord.main.MainDefault}" drawable="discord" name="Kettu" />
+  <item component="ComponentInfo{cocobo1.pupu.app/com.discord.main.MainGalaxy}" drawable="discord" name="Kettu" />
   <item component="ComponentInfo{io.keybase.ossifrage/io.keybase.ossifrage.MainActivity}" drawable="keybase" name="Keybase" />
   <item component="ComponentInfo{com.artemchep.keyguard/com.artemchep.keyguard.android.MainActivity}" drawable="keyguard_for_bitwarden" name="Keyguard for Bitwarden" />
   <item component="ComponentInfo{io.bramerz.kfc/io.bramerz.kfc.MainActivity}" drawable="kfc" name="KFC" />
@@ -4345,6 +4362,7 @@
   <item component="ComponentInfo{com.zerodha.kite3/com.zerodha.kite3.MainActivity}" drawable="zerodha_kite" name="Kite" />
   <item component="ComponentInfo{com.kiwibrowser.browser.dev/com.google.android.apps.chrome.Main}" drawable="kiwi_browser" name="Kiwi Browser" />
   <item component="ComponentInfo{com.kiwibrowser.browser/com.google.android.apps.chrome.Main}" drawable="kiwi_browser" name="Kiwi Browser" />
+  <item component="ComponentInfo{org.kiwix.kiwixmobile.standalone/org.kiwix.kiwixmobile.main.KiwixMainActivity}" drawable="kiwix" name="Kiwix" />
   <item component="ComponentInfo{org.kiwix.kiwixmobile/org.kiwix.kiwixmobile.main.KiwixMainActivity}" drawable="kiwix" name="Kiwix" />
   <item component="ComponentInfo{kjv.bible.dictionary/king.james.bible.android.activity.LaunchActivity}" drawable="generic_bible" name="KJV Bible Dictionary" />
   <item component="ComponentInfo{christian.bible/king.james.bible.android.activity.LaunchActivity}" drawable="generic_bible" name="KJV Holy Bible" />
@@ -4412,6 +4430,7 @@
   <item component="ComponentInfo{ca.lapresse.android.lapressemobile/ca.lapresse.android.lapressemobile.StartupActivity}" drawable="la_presse" name="La Presse" />
   <item component="ComponentInfo{it.la7.it/com.tns.NativeScriptActivity}" drawable="la7" name="La7" />
   <item component="ComponentInfo{com.draco.ladb/com.draco.ladb.views.MainActivity}" drawable="ladb" name="LADB" />
+  <item component="ComponentInfo{org.larpgram.cc/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="larpgram" />
   <item component="ComponentInfo{fm.last.android/fm.last.android.LastFm}" drawable="last_fm" name="Last.fm" />
   <item component="ComponentInfo{fm.last.android/fm.last.android.ui.activity.SplashScreen}" drawable="last_fm" name="Last.fm" />
   <item component="ComponentInfo{com.lastpass.lpandroid/com.lastpass.lpandroid.activity.WebBrowserActivity}" drawable="lastpass" name="LastPass" />
@@ -7025,6 +7044,8 @@
   <item component="ComponentInfo{com.revanced.net.revancedmanager/com.revanced.net.revancedmanager.MainActivity}" drawable="youtube_revanced" name="ReVanced Manager" />
   <item component="ComponentInfo{app.revanced.manager.flutter/app.revanced.manager.MainActivity}" drawable="youtube_revanced" name="ReVanced Manager" />
   <item component="ComponentInfo{app.revanced.manager.flutter.debug/app.revanced.manager.flutter.MainActivity}" drawable="youtube_revanced" name="ReVanced Manager Debug" />
+  <item component="ComponentInfo{app.revenge/com.discord.main.MainDefault}" drawable="discord" name="Revenge" />
+  <item component="ComponentInfo{app.revenge/com.discord.main.MainCamo}" drawable="discord" name="Revenge" />
   <item component="ComponentInfo{com.softissimo.reverso.context/com.softissimo.reverso.context.activity.CTXSplashActivity}" drawable="reverso_context" name="Reverso Context" />
   <item component="ComponentInfo{com.softissimo.reverso.context/com.softissimo.reverso.context.activity.SplashActivity}" drawable="reverso_context" name="Reverso Context" />
   <item component="ComponentInfo{com.anticor.revo/com.anticor.revo.activities.SplashActivity}" drawable="revo_shine_ui" name="Revo Shine UI" />
@@ -7843,6 +7864,8 @@
   <item component="ComponentInfo{app.skullcandy/com.skullcandy_app.MainActivity}" drawable="skullcandy" name="Skullcandy" />
   <item component="ComponentInfo{com.google.android.stardroid/com.google.android.stardroid.activities.SplashScreenActivity}" drawable="sky_map" name="Sky Map" />
   <item component="ComponentInfo{com.google.android.stardroid/com.google.android.stardroid.ui.MainActivity}" drawable="sky_map" name="Sky Map" />
+  <item component="ComponentInfo{com.vitotechnology.sky.tonight.map.star.walk/com.google.firebase.MessagingUnityPlayerActivity}" drawable="star_walk_2" name="Sky Tonight" />
+  <item component="ComponentInfo{com.vitotechnology.sky.tonight.map.star.walk/com.unity3d.player.UnityPlayerActivity}" drawable="star_walk_2" name="Sky Tonight" />
   <item component="ComponentInfo{com.netease.sky.bilibili/com.netease.ntunisdk.external.protocol.ProtocolLauncher}" drawable="sky_children_of_the_light" name="Sky: Children of the Light" />
   <item component="ComponentInfo{com.netease.sky.vivo/com.netease.ntunisdk.external.protocol.ProtocolLauncher}" drawable="sky_children_of_the_light" name="Sky: Children of the Light" />
   <item component="ComponentInfo{com.netease.sky/com.tgc.sky.netease.GameActivity_Netease}" drawable="sky_children_of_the_light" name="Sky: Children of the Light" />
@@ -8184,6 +8207,7 @@
   <item component="ComponentInfo{com.kiloo.subwaysurfyue/com.sybogames.chili.multidex.ChiliMultidexSupportActivity}" drawable="subway_surfers" name="Subway Surfers" />
   <item component="ComponentInfo{com.MaLik.SubwaySurfers/com.unity3d.player.UnityPlayerActivity}" drawable="subway_surfers" name="Subway Surfers" />
   <item component="ComponentInfo{org.sudachi.sudachi_emu.ea/org.sudachi.sudachi_emu.ui.main.MainActivity}" drawable="sudachi" name="Sudachi" />
+  <item component="ComponentInfo{com.easybrain.sudoku.android/com.google.android.archive.ReactivateActivity}" drawable="generic_sudoku" name="Sudoku" />
   <item component="ComponentInfo{com.icenta.sudoku/com.icenta.sudoku.ui.SplashActivityPremium}" drawable="generic_sudoku" name="Sudoku" />
   <item component="ComponentInfo{easy.sudoku.puzzle.solver.free/com.meevii.ui.activity.SplashActivity}" drawable="generic_sudoku" name="Sudoku" />
   <item component="ComponentInfo{sudoku.puzzle.free.game.brain/sudoku.puzzle.free.game.brain.MainActivity}" drawable="generic_sudoku" name="Sudoku" />
@@ -8199,6 +8223,7 @@
   <item component="ComponentInfo{ee.dustland.android.dustlandsudoku/ee.dustland.android.dustlandsudoku.SudokuHostActivity}" drawable="generic_sudoku" name="Sudoku — The Clean One" />
   <item component="ComponentInfo{com.easybrain.sudoku.android/com.easybrain.template.SplashActivity}" drawable="generic_sudoku" name="Sudoku.com" />
   <item component="ComponentInfo{com.easybrain.sudoku.android/com.easybrain.sudoku.gui.splash.SplashActivity}" drawable="generic_sudoku" name="Sudoku.com" />
+  <item component="ComponentInfo{com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity}" drawable="generic_sudoku" name="Sudoku.com" />
   <item component="ComponentInfo{com.sukisu.ultra/.ui.MainActivityAlias}" drawable="kernelsu" name="SukiSU Ultra" />
   <item component="ComponentInfo{com.sukisu.ultra/com.sukisu.ultra.ui.MainActivity}" drawable="kernelsu" name="SukiSU Ultra" />
   <item component="ComponentInfo{com.sumone/com.sumone.MainActivity}" drawable="sumone" name="SumOne" />
@@ -8801,6 +8826,31 @@
   <item component="ComponentInfo{dev.beefers.vendetta/com.discord.screens.ScreenAux$Main}" drawable="discord" name="Vendetta" />
   <item component="ComponentInfo{dev.beefers.vendetta/com.discord.screens.ScreenLoading}" drawable="discord" name="Vendetta" />
   <item component="ComponentInfo{dev.beefers.vendetta/com.discord.screens.ScreenMain}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainAngry}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainBeanie}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainBlush}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainBrandDark}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainBrandInverted}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainCamo}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainCherryBlossom}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainCircuit}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainClydeStein}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainController}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainDrip}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainGalaxy}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainGaming}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainHoloWaves}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainManga}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainMatteDark}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainMatteLight}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainMushroom}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainPastel}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainPirate}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainSlimy}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainSunset}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainY2K}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainZombie}" drawable="discord" name="Vendetta" />
+  <item component="ComponentInfo{dev.beefers.vendetta/com.discord.main.MainDefault}" drawable="discord" name="Vendetta" />
   <item component="ComponentInfo{com.venmo/com.venmo.TabCentralActivity}" drawable="venmo" name="Venmo" />
   <item component="ComponentInfo{com.venmo/com.venmo.tabcentral.TabCentralActivity}" drawable="venmo" name="Venmo" />
   <item component="ComponentInfo{com.venmo/com.venmo.AppExperienceLauncherActivity}" drawable="venmo" name="Venmo" />
@@ -9315,6 +9365,7 @@
   <item component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon1}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
   <item component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon4}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
   <item component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon5}" drawable="xiaomi_game_center" name="Xiaomi Game Center" />
+  <item component="ComponentInfo{com.xiaomi.midrop/app.lawnchair.LawnchairLauncher}" drawable="share_me" name="Xiaomi ShareMe" />
   <item component="ComponentInfo{id.my.pjm.qbcd_okr_dvii/android.app.NativeActivity}" drawable="generic_shell" name="xka wl rl" />
   <item component="ComponentInfo{com.xnotes/com.xnotes.MainActivity}" drawable="xnotes" name="xnotes" />
   <item component="ComponentInfo{com.xodo.pdf.reader/viewer.CompleteReaderMainActivity}" drawable="xodo" name="Xodo" />
