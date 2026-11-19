@@ -5406,9 +5406,56 @@
   <item component="ComponentInfo{com.orange.myorange.omd/com.orange.omnis.main.ui.MainActivity}" drawable="moj_orange" name="My Orange" />
   <item component="ComponentInfo{com.bti.myPiano/com.bti.myPiano.myPiano}" drawable="generic_piano" name="My Piano" />
   <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.base}" drawable="my_pixel" name="My Pixel" />
-  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7}" drawable="my_pixel" name="My Pixel" />
-  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f}" drawable="my_pixel" name="My Pixel" />
-  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a}" drawable="my_pixel" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.Fortnite_Application}" drawable="my_pixel" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.beg}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.blk}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.grn}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.gry}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.pnk}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.beg}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.blk}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.pnk}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.ppl}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f.beg}" drawable="my_pixel_10f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f.blk}" drawable="my_pixel_10f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f}" drawable="my_pixel_10f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.beg}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.blk}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.grn}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.gry}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.pnk}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.ppl}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.slv}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11f.blk}" drawable="my_pixel_11f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11f.gry}" drawable="my_pixel_11f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11f}" drawable="my_pixel_11f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p4}" drawable="my_pixel_4" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5}" drawable="my_pixel_5" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7}" drawable="my_pixel_7" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7a}" drawable="my_pixel_7a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7p}" drawable="my_pixel_7p" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8}" drawable="my_pixel_8" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8a}" drawable="my_pixel_8" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8p}" drawable="my_pixel_8p" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.beg}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.grn}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.gry}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.pnk}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.beg}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.blk}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.pnk}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.ppl}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f.beg}" drawable="my_pixel_9f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f.blk}" drawable="my_pixel_9f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f}" drawable="my_pixel_9f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold}" drawable="my_pixel_fold" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pTablet}" drawable="my_pixel_tablet" name="My Pixel" />
   <item component="ComponentInfo{com.rayadams.myqr/com.rayadams.myqr.MainActivity}" drawable="generic_qr_reader" name="My QR" />
   <item component="ComponentInfo{myradio.radio.fmradio.liveradio.radiostation/radio.fm.onlineradio.views.activity.ActivityMain}" drawable="generic_fm_radio" name="My Radio" />
   <item component="ComponentInfo{com.vttm.vietteldiscovery/com.vttm.myviettelV2.activity.NFirstUserActivity}" drawable="my_viettel" name="My Viettel" />
