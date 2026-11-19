@@ -988,6 +988,7 @@
   <item component="ComponentInfo{bubble.shooter.exxtreme/org.cocos2dx.javascript.AppActivity}" drawable="generic_bubble_shooter" name="Bubble Shooter! Extreme" />
   <item component="ComponentInfo{com.excellenth5game.bubblepopmaster/org.cocos2dx.javascript.AppActivity}" drawable="generic_bubble_shooter" name="Bubblepop Master" />
   <item component="ComponentInfo{champions.empire.bubble/org.cocos2dx.javascript.AppActivity}" drawable="generic_bubble_shooter" name="Bubbles Empire Champions" />
+  <item component="ComponentInfo{com.buge.appmanager/com.buge.appmanager.MainActivity}" drawable="buge_app_manager" name="Buge App Manager" />
   <item component="ComponentInfo{com.bumble.app/com.bumble.app.ui.launcher.BumbleLauncherActivity}" drawable="bumble" name="Bumble" />
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.SplashActivity}" drawable="bundle" name="Bundle" />
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.ui.landing.SplashActivity}" drawable="bundle" name="Bundle" />
@@ -3910,6 +3911,8 @@
   <item component="ComponentInfo{imagetopdf.pdfmaker.pdfscanner.pdfeditor.jpgtopdf/com.templatemela.imagetopdf.ui.activity.SplashActivity}" drawable="generic_pdf_file" name="Images to PDF" />
   <item component="ComponentInfo{com.sony.playmemories.mobile/com.sony.playmemories.mobile.splash.SplashActivity}" drawable="imaging_edge_mobile" name="Imaging Edge Mobile" />
   <item component="ComponentInfo{io.deveem.byemydpi2/app.vpn.ui.MainActivity}" drawable="secure_vpn" name="Imba VPN" />
+  <item component="ComponentInfo{com.soul_99.suIMD/com.android.geto.activity.main.MainActivity}" drawable="imd" name="IMD" />
+  <item component="ComponentInfo{com.soul_99.suIMD/com.android.geto.activity.services.SettingsManagerLauncher}" drawable="imd_settings_manager" name="IMD Settings manager" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.Home}" drawable="imdb" name="IMDb" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.HomeActivity}" drawable="imdb" name="IMDb" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.IMDb}" drawable="imdb" name="IMDb" />
@@ -8698,6 +8701,7 @@
   <item component="ComponentInfo{network.tracker.app/network.tracker.app.MainActivity}" drawable="tracker_network" name="Tracker Network" />
   <item component="ComponentInfo{net.kollnig.missioncontrol/eu.faircode.netguard.ActivityMain}" drawable="trackercontrol" name="TrackerControl" />
   <item component="ComponentInfo{net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ActivityMain}" drawable="trackercontrol" name="TrackerControl" />
+  <item component="ComponentInfo{com.xlollx.songport/com.xlollx.songport.MainActivity}" drawable="trackhop" name="Trackhop" />
   <item component="ComponentInfo{com.avuscapital.trading212/com.avuscapital.trading212lib.modules.mainphone.MainActivity}" drawable="trading_212" name="Trading 212" />
   <item component="ComponentInfo{com.avuscapital.trading212/com.avuscapital.trading212.MainActivity}" drawable="trading_212" name="Trading 212" />
   <item component="ComponentInfo{com.avuscapital.trading212/com.trading212.MainActivity}" drawable="trading_212" name="Trading 212" />
