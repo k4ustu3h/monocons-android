@@ -2648,6 +2648,11 @@
   <item component="ComponentInfo{yuh.yuh.finelock/yuh.yuh.finelock.T}" drawable="fine_lock" name="Fine Lock" />
   <item component="ComponentInfo{yuh.yuh.finelock/yuh.yuh.finelock.M}" drawable="fine_lock" name="Fine Lock" />
   <item component="ComponentInfo{com.finnable.customer/com.finnable.customer.activity.SplashActivity}" drawable="finnable" name="Finnable" />
+  <item component="ComponentInfo{com.finshell.fin/com.finshell.fin.activity.MainActivity}" drawable="finshell_pay" name="FinShell Pay" />
+  <item component="ComponentInfo{com.finshell.fin/com.finshell.fin.activity.SplashActivity}" drawable="finshell_pay" name="FinShell Pay" />
+  <item component="ComponentInfo{com.finshell.fin/com.finshell.fin.Default}" drawable="finshell_pay" name="FinShell Pay" />
+  <item component="ComponentInfo{com.finshell.fin/com.finshell.fin.splash.SplashActivity}" drawable="finshell_pay" name="FinShell Pay" />
+  <item component="ComponentInfo{com.finshell.fin/com.finshell.fin.BuildIn}" drawable="finshell_pay" name="FinShell Pay" />
   <item component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.App}" drawable="firefox" name="Firefox" />
   <item component="ComponentInfo{org.mozilla.firefox/com.google.android.archive.ReactivateActivity}" drawable="firefox" name="Firefox" />
   <item component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.AlternativeApp}" drawable="firefox" name="Firefox" />
@@ -2896,12 +2901,27 @@
   <item component="ComponentInfo{cc.forestapp/cc.forestapp.activities.launch.LaunchActivity}" drawable="forest" name="Forest" />
   <item component="ComponentInfo{cc.forestapp/cc.forestapp.activities.main.MainActivity}" drawable="forest" name="Forest" />
   <item component="ComponentInfo{cc.forestapp/com.google.android.archive.ReactivateActivity}" drawable="forest" name="Forest" />
-  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Fork Client" />
-  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Fork Client" />
-  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Fork Client" />
-  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Forkgram" />
-  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.OriginalIcon}" drawable="telegram" name="Forkgram" />
-  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.VintageIcon}" drawable="telegram" name="Forkgram" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.AquaIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.CloudIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.DarkIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.MaterialIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.MerioIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.MusheenIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.NeonIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.NoxIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.OldSchoolIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.PremiumIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.RainbowIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.SpaceIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.TurboIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkclient.messenger.beta/org.telegram.messenger.VintageIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.DefaultIcon}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.ui.LaunchActivity}" drawable="forkclient" name="Fork Client" />
+  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.AquaIcon}" drawable="forkclient" name="Forkgram" />
+  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.OriginalIcon}" drawable="forkclient" name="Forkgram" />
+  <item component="ComponentInfo{org.forkgram.messenger/org.telegram.messenger.VintageIcon}" drawable="forkclient" name="Forkgram" />
   <item component="ComponentInfo{k4ustu3h.forkicons/k4ustu3h.forkicons.MainActivity}" drawable="forkicons" name="Forkicons" />
   <item component="ComponentInfo{k4ustu3h.forkicons.light/k4ustu3h.forkicons.MainActivity}" drawable="forkicons" name="Forkicons (light)" />
   <item component="ComponentInfo{com.softpauer.f1timingapp2014.basic/com.softpauer.common.TimingNativeActivity}" drawable="formula_1" name="Formula 1" />
@@ -3235,6 +3255,9 @@
   <item component="ComponentInfo{org.futo.inputmethod.latin.playstore/org.futo.inputmethod.latin.uix.settings.SettingsActivity}" drawable="futo_keyboard" name="FUTO Keyboard" />
   <item component="ComponentInfo{org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity}" drawable="futo_keyboard" name="FUTO Keyboard" />
   <item component="ComponentInfo{com.futo.notes/com.futo.notes.MainActivity}" drawable="futo_notes" name="FUTO Notes" />
+  <item component="ComponentInfo{com.gaana/com.google.android.apps.youtube.music.activities.MusicActivity}" drawable="gaana" name="Gaana" />
+  <item component="ComponentInfo{com.gaana/com.gaana.SplashScreenActivityMMX}" drawable="gaana" name="Gaana" />
+  <item component="ComponentInfo{com.gaana/com.gaana.SplashScreenActivity}" drawable="gaana" name="Gaana" />
   <item component="ComponentInfo{nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.ControlCenter}" drawable="gadgetbridge" name="Gadgetbridge" />
   <item component="ComponentInfo{nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.activities.ControlCenter}" drawable="gadgetbridge" name="Gadgetbridge" />
   <item component="ComponentInfo{nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.activities.ControlCenterv2}" drawable="gadgetbridge" name="Gadgetbridge" />
@@ -4646,6 +4669,7 @@
   <item component="ComponentInfo{mx.com.liverpool.shoppingapp/mx.com.liverpool.shoppingapp.icon.AppIcon}" drawable="liverpool" name="Liverpool" />
   <item component="ComponentInfo{com.ss.android.ugc.aweme/com.android.camera.CameraLauncher}" drawable="generic_camera" name="LMC 8.4" />
   <item component="ComponentInfo{com.camera.lmc83r1i/com.android.camera.CameraLauncher}" drawable="generic_camera" name="LMC8.3i" />
+  <item component="ComponentInfo{com.rajarsheechatterjee.LNReader/com.rajarsheechatterjee.LNReader.MainActivity}" drawable="lnreader" name="LNReader" />
   <item component="ComponentInfo{org.localsend.localsend_app/org.localsend.localsend_app.MainActivity}" drawable="localsend" name="LocalSend" />
   <item component="ComponentInfo{com.xfarrow.locatemydevice/com.xfarrow.locatemydevice.MainActivity}" drawable="generic_shell" name="Locate My Device" />
   <item component="ComponentInfo{name.seguri.android.lock/name.seguri.android.lock.MainActivity}" drawable="generic_lock" name="Lock" />
