@@ -1413,6 +1413,10 @@
   <item component="ComponentInfo{com.sec.android.app.camera/com.sec.android.app.camera.Camera launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 }}" drawable="samsung_camera" name="Camera" />
   <item component="ComponentInfo{com.sec.android.app.camera/com.sec.android.app.camera.Camera VirtualScreenParam=Params{mDisplayId=-1, null, mFlags=0x00000000)}}" drawable="samsung_camera" name="Camera" />
   <item component="ComponentInfo{com.sec.android.app.camera/com.sec.android.app.camera.Camera}" drawable="samsung_camera" name="Camera" />
+  <item component="ComponentInfo{com.dmobileapps.camera/com.dmobileapps.camera.MainActivity}" drawable="generic_camera" name="Camera" />
+  <item component="ComponentInfo{com.google.android.GoogleCamerb3/com.android.camera.CameraLauncher}" drawable="generic_camera" name="Camera" />
+  <item component="ComponentInfo{com.google.android.apps.googlecamera.fishfood/com.android.camera.CameraLauncher}" drawable="generic_camera" name="Camera" />
+  <item component="ComponentInfo{com.softwinner.camera/com.softwinner.camera.CameraLauncher}" drawable="generic_camera" name="Camera" />
   <item component="ComponentInfo{com.appmosaic.camerawatch/com.appmosaic.camerawatch.cameraxbasic.MainActivity}" drawable="generic_camera" name="CameraWatch" />
   <item component="ComponentInfo{dev.zwander.cameraxinfo/dev.zwander.cameraxinfo.MainActivity}" drawable="camerax_info" name="CameraX Info" />
   <item component="ComponentInfo{com.intsig.camscanner/com.intsig.camscanner.launcher.WelcomeDefaultActivity}" drawable="camscanner" name="CamScanner" />
@@ -1945,6 +1949,7 @@
   <item component="ComponentInfo{com.netflix.NGP.DeadCellsReturnToCastlevania/com.fiveplay.mod.RMS.Recovery}" drawable="dead_cells" name="Dead Cells" />
   <item component="ComponentInfo{com.playdigious.deadcells.epic/com.playdigious.deadcells.mobile.DeadCells}" drawable="dead_cells" name="Dead Cells" />
   <item component="ComponentInfo{com.playdigious.deadcells.mobile/com.an1.unpackdata.MainActivity}" drawable="dead_cells" name="Dead Cells" />
+  <item component="ComponentInfo{com.shisui.debloater/com.shisui.debloater.MainActivity}" drawable="generic_shell" name="Debloat-X Universal" />
   <item component="ComponentInfo{com.deepl.mobiletranslator/com.deepl.mobiletranslator.MainActivity}" drawable="deepl" name="DeepL" />
   <item component="ComponentInfo{com.example.deeplviewer/com.example.deeplviewer.MainActivity}" drawable="deepl" name="DeepL" />
   <item component="ComponentInfo{com.jamal2367.deepl/com.jamal2367.deepl.MainActivity}" drawable="deepl" name="DeepL" />
@@ -2076,6 +2081,7 @@
   <item component="ComponentInfo{com.discord/com.discord.main.MainZombie}" drawable="discord" name="Discord" />
   <item component="ComponentInfo{com.discord/com.discord.screens.ScreenAux}" drawable="discord" name="Discord" />
   <item component="ComponentInfo{com.discord/com.discord.main.MainMidnightPrism}" drawable="discord" name="Discord" />
+  <item component="ComponentInfo{com.discore/com.discord.main.MainDefault}" drawable="discord" name="Discord" />
   <item component="ComponentInfo{com.discovery.discoveryplus.mobile/com.discovery.plus.presentation.activities.LaunchActivity}" drawable="discoveryplus" name="discovery+" />
   <item component="ComponentInfo{com.discovery.dplay/com.discovery.app.LaunchActivity}" drawable="discoveryplus" name="discovery+" />
   <item component="ComponentInfo{com.discovery.dplay/com.discovery.plus.presentation.activities.LaunchActivity}" drawable="discoveryplus" name="discovery+" />
@@ -4638,6 +4644,7 @@
   <item component="ComponentInfo{com.wallpaper.liveloop/com.wallpaper.liveloop.splashScreen}" drawable="liveloop" name="LiveLoop" />
   <item component="ComponentInfo{com.wallpaper.liveloop/com.wallpaper.liveloop.StartActivity}" drawable="liveloop" name="LiveLoop" />
   <item component="ComponentInfo{mx.com.liverpool.shoppingapp/mx.com.liverpool.shoppingapp.icon.AppIcon}" drawable="liverpool" name="Liverpool" />
+  <item component="ComponentInfo{com.ss.android.ugc.aweme/com.android.camera.CameraLauncher}" drawable="generic_camera" name="LMC 8.4" />
   <item component="ComponentInfo{com.camera.lmc83r1i/com.android.camera.CameraLauncher}" drawable="generic_camera" name="LMC8.3i" />
   <item component="ComponentInfo{org.localsend.localsend_app/org.localsend.localsend_app.MainActivity}" drawable="localsend" name="LocalSend" />
   <item component="ComponentInfo{com.xfarrow.locatemydevice/com.xfarrow.locatemydevice.MainActivity}" drawable="generic_shell" name="Locate My Device" />
