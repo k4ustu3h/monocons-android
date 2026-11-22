@@ -226,6 +226,7 @@
   <item component="ComponentInfo{ahaflix.tv/com.viewlift.mobile.AppCMSLaunchActivity}" drawable="aha" name="aha" />
   <item component="ComponentInfo{facebook.video.downloader.savefrom.fb.saver.fast/com.atlasv.android.fbdownloader.ui.activity.StartupActivity}" drawable="generic_download_shelf" name="Ahafast" />
   <item component="ComponentInfo{facebook.video.downloader.savefrom.fb.saver.fast/com.atlasv.android.downloader.scaffold.ui.feature.splash.SplashActivity}" drawable="generic_download_shelf" name="Ahafast" />
+  <item component="ComponentInfo{com.webratech.ahirwarrishtey/com.webratech.ahirwarrishtey.activities.MainActivity}" drawable="ahirwar_rishtey" name="Ahirwar Rishtey" />
   <item component="ComponentInfo{com.gallery20/com.gallery20.activities.GalleryActivity}" drawable="generic_gallery" name="AI Gallery" />
   <item component="ComponentInfo{com.gallery20/com.gallery20.HomeActivity}" drawable="generic_gallery" name="AI Gallery" />
   <item component="ComponentInfo{com.foss.aihub/com.foss.aihub.MainActivity}" drawable="ai_hub" name="AI Hub" />
@@ -5804,6 +5805,10 @@
   <item component="ComponentInfo{com.wakdev.nfctools.pro/com.wakdev.nfctools.pro.views.MainActivityPro}" drawable="nfc_tools_pro" name="NFC Tools Pro" />
   <item component="ComponentInfo{com.wakdev.apps.nfctools.se/com.wakdev.apps.nfctools.se.MainActivitySE}" drawable="nfc_tools" name="NFC Tools SE" />
   <item component="ComponentInfo{com.wakdev.apps.nfctools.se/com.wakdev.apps.nfctools.se.views.MainActivitySe}" drawable="nfc_tools" name="NFC Tools SE" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.Pro}" drawable="niagara_launcher" name="Niagara Launcher" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.Settings}" drawable="niagara_launcher" name="Niagara Launcher" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.RecentlyInstalled}" drawable="niagara_launcher" name="Niagara Launcher" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.ui.HomeActivity}" drawable="niagara_launcher" name="Niagara Launcher" />
   <item component="ComponentInfo{one.plaza.nightwaveplaza/one.plaza.nightwaveplaza.MainActivity}" drawable="nightwave_plaza" name="Nightwave Plaza" />
   <item component="ComponentInfo{com.nike.india/com.fsn.nds.app.splash.LauncherActivity}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{br.com.gruposbf.nike/br.com.gruposbf.nike.MainActivity}" drawable="nike" name="Nike" />
@@ -7386,6 +7391,7 @@
   <item component="ComponentInfo{com.samsung.android.privateshare/com.samsung.android.privacy.view.MainActivity}" drawable="samsung_private_share" name="Samsung Private Share" />
   <item component="ComponentInfo{com.samsung.android.privateshare/com.samsung.android.privacy.view.MainActivity.launcher}" drawable="samsung_private_share" name="Samsung Private Share" />
   <item component="ComponentInfo{com.sec.android.app.fm/com.sec.android.app.fm.MainActivity}" drawable="generic_fm_radio" name="Samsung Radio" />
+  <item component="ComponentInfo{com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity}" drawable="samsung_reminder" name="Samsung Reminder" />
   <item component="ComponentInfo{com.samsung.android.app.routines/com.samsung.android.app.routines.ui.main.RoutineLaunchActivityDummy}" drawable="samsung_routines_plus" name="Samsung Routines +" />
   <item component="ComponentInfo{com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusSplashActivity}" drawable="samsung_routines_plus" name="Samsung Routines +" />
   <item component="ComponentInfo{com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusLauncher}" drawable="samsung_routines_plus" name="Samsung Routines +" />
@@ -8857,6 +8863,7 @@
   <item component="ComponentInfo{com.tozelabs.tvshowtime/com.tozelabs.tvshowtime.MainActivity}" drawable="tv_time" name="TV Time" />
   <item component="ComponentInfo{com.tvsm.connect/com.tvsm.connect.onboarding.ui.onBoarding.OnBoardingActivityNew}" drawable="tvs_motor" name="TVS Connect" />
   <item component="ComponentInfo{com.alphabetiq.tvtracker/com.alphabetiq.tvtracker.MainActivity}" drawable="tvtracker" name="TVTracker" />
+  <item component="ComponentInfo{com.urbandroid.lux/com.urbandroid.lux.MainActivity}" drawable="twilight" name="Twilight" />
   <item component="ComponentInfo{dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivity}" drawable="twine" name="Twine" />
   <item component="ComponentInfo{dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivityDarkJade}" drawable="twine" name="Twine" />
   <item component="ComponentInfo{com.twinndroid/com.twinndroid.LauncherTwinn}" drawable="twinndroid" name="TwinnDroid" />
