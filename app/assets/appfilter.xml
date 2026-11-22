@@ -6838,18 +6838,18 @@
   <item component="ComponentInfo{com.smmservice.printer/com.smmservice.printer.ui.activity.MainActivity}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{org.billthefarmer.print/org.billthefarmer.print.Print}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{com.dynamixsoftware.printershare/com.dynamixsoftware.printershare.ActivityMain}" drawable="generic_printer" name="PrinterShare" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.MainActivity}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSpectrum}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSolid}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLight}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconMidnight}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconDusk}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPaper}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconNeon}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPastel}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLine}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconGold}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconWave}" drawable="prism_wave" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.MainActivity}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSpectrum}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSolid}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLight}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconMidnight}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconDusk}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPaper}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconNeon}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPastel}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLine}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconGold}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconWave}" drawable="prism_music_wave" name="Prism" />
   <item component="ComponentInfo{com.prismgallery.app/com.example.amoledgallery.LauncherIos}" drawable="prism_gallery" name="Prism Gallery" />
   <item component="ComponentInfo{br.com.sisteplant.prismanetmobile/br.com.sisteplant.prismanetmobile.MainActivity}" drawable="prism_net_mobile_vivo" name="Prism@Net Mobile Vivo" />
   <item component="ComponentInfo{com.stoutner.privacybrowser.standard/com.stoutner.privacybrowser.activities.MainWebViewActivity}" drawable="privacy_browser" name="Privacy Browser" />
