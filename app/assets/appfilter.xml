@@ -9872,6 +9872,9 @@
   <item component="ComponentInfo{web1n.stopapp/web1n.stopapp.activity.MainActivity}" drawable="black_house" name="小黑屋 ~~ Black House" />
   <item component="ComponentInfo{com.alwaysrotate/com.alwaysrotate.alwaysrotate}" drawable="generic_rotation" name="屏幕旋轉 ~~ Screen Rotation" />
   <item component="ComponentInfo{cn.samsclub.app/cn.samsclub.app.ui.SplashActivity}" drawable="sams_club" name="山姆会员商店 ~~ Sam's Club" />
+  <item component="ComponentInfo{com.weico.international/com.weico.international.activity.LogoActivity}" drawable="weibo" name="微博 ~~ Weibo" />
+  <item component="ComponentInfo{com.weico.international/com.weico.international.appicon_white}" drawable="weibo" name="微博 ~~ Weibo" />
+  <item component="ComponentInfo{com.sina.weibocare/com.weico.international.activity.LogoActivity}" drawable="weibo" name="微博 ~~ Weibo" />
   <item component="ComponentInfo{com.sina.weibo/com.sina.weibo.SplashActivity}" drawable="weibo" name="微博 ~~ Weibo" />
   <item component="ComponentInfo{com.xunmeng.pinduoduo/com.xunmeng.pinduoduo.ui.activity.MainFrameActivity}" drawable="pinduoduo" name="拼多多 ~~ Pinduoduo" />
   <item component="ComponentInfo{com.taobao.taobao/com.taobao.tao.Welcome}" drawable="taobao" name="淘宝 ~~ Taobao" />
