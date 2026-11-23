@@ -887,6 +887,7 @@
   <item component="ComponentInfo{org.blokada.origin.alarm/ui.MainActivity}" drawable="blokada" name="Blokada" />
   <item component="ComponentInfo{org.blokada.sex/ui.MainActivity}" drawable="blokada" name="Blokada" />
   <item component="ComponentInfo{com.derdilla.bloodPressureApp/com.derdilla.blood_pressure_app.MainActivity}" drawable="blood_pressure_app" name="Blood pressure app" />
+  <item component="ComponentInfo{com.netease.newspike/com.netease.game.MessiahNativeActivity}" drawable="blood_strike" name="Blood Strike" />
   <item component="ComponentInfo{com.blufinance.android/com.blufinance.android.MainActivity}" drawable="blu" name="Blu" />
   <item component="ComponentInfo{com.bluecord/com.discord.app.AppActivity$Main}" drawable="discord" name="Bluecord" />
   <item component="ComponentInfo{com.bluecord/com.discord.app.AppActivity}" drawable="discord" name="Bluecord" />
@@ -1870,6 +1871,7 @@
   <item component="ComponentInfo{de.rki.coronawarnapp/de.rki.coronawarnapp.ui.launcher.LauncherActivity}" drawable="corona_warn" name="Corona-Warn" />
   <item component="ComponentInfo{de.rki.coronawarnapp/de.rki.coronawarnapp.ui.LauncherActivity}" drawable="corona_warn" name="Corona-Warn" />
   <item component="ComponentInfo{nl.rijksoverheid.ctr.holder/nl.rijksoverheid.ctr.holder.HolderMainActivity}" drawable="coronacheck" name="CoronaCheck" />
+  <item component="ComponentInfo{br.com.correios.preatendimento/br.com.correios.preatendimento.MainActivity}" drawable="correios" name="Correios" />
   <item component="ComponentInfo{so.cosmos.www/so.cosmos.www.LauncherActivity}" drawable="cosmos" name="Cosmos" />
   <item component="ComponentInfo{so.cosmos.www/so.cosmos.www.MainActivity}" drawable="cosmos" name="Cosmos" />
   <item component="ComponentInfo{org.coursera.android/org.coursera.android.MainActivity}" drawable="coursera" name="Coursera" />
@@ -4020,6 +4022,7 @@
   <item component="ComponentInfo{com.IndianBank.IndOASIS/com.IndianBank.IndOASIS.IndOASISPRODd}" drawable="indian_bank" name="IndOASIS" />
   <item component="ComponentInfo{sinet.startup.inDriver/sinet.startup.inDriver.MainActivity}" drawable="indrive" name="inDrive" />
   <item component="ComponentInfo{sinet.startup.inDriver/sinet.startup.inDriver.ui.splash.SplashActivity}" drawable="indrive" name="inDrive" />
+  <item component="ComponentInfo{com.iexceed.ib.digitalbankingprod/com.iexceed.SplashScreen}" drawable="indsmart" name="IndSMART" />
   <item component="ComponentInfo{com.xiaomi.market/com.xiaomi.market.ui.MarketTabActivity}" drawable="indus_appstore" name="Indus Appstore" />
   <item component="ComponentInfo{com.xiaomi.mipicks/com.xiaomi.mipicks.MiPicksAlias}" drawable="indus_appstore" name="Indus Appstore" />
   <item component="ComponentInfo{com.xiaomi.mipicks/com.xiaomi.mipicks.AppMallAlias}" drawable="indus_appstore" name="Indus Appstore" />
@@ -5883,6 +5886,21 @@
   <item component="ComponentInfo{com.noto/com.noto.app.Futuristic}" drawable="noto" name="Noto" />
   <item component="ComponentInfo{com.noto/com.noto.app.Purpleberry}" drawable="noto" name="Noto" />
   <item component="ComponentInfo{com.noto/com.noto.app.SanguineSun}" drawable="noto" name="Noto" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.exple.gexing.qianm.MainActivity}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.android.launcher2.Launcher}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.android.launcher3.LauncherWallpaperPickerActivity}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.android.launcher3.WallpaperCropActivity}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.duapps.ad.VdAd}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.squareup.leakcanary.internal.DisplayLeakActivity}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.ActivitiesShortcutActivity}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.IconThemePrompt}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutCreateActivity}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutHandler}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.RestoreBackupFileHandler}" drawable="nova_launcher" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/.preferences.SettingsActivity}" drawable="nova_launcher_settings" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/preferences.SettingsActivity}" drawable="nova_launcher_settings" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.preferences.SettingsActivity}" drawable="nova_launcher_settings" name="Nova Launcher" />
   <item component="ComponentInfo{mx.novacard/com.dynamic_bank.dynamic_bank.MainActivity}" drawable="novacard" name="Novacard" />
   <item component="ComponentInfo{com.invex.now/com.invex.now.ui.splash.view.SplashActivity}" drawable="now_bank" name="Now Bank" />
   <item component="ComponentInfo{com.google.android.apps.pixel.nowplaying/com.google.android.apps.pixel.nowplaying.mainscreen.NowPlayingMainActivity}" drawable="google_now_playing" name="Now Playing" />
@@ -7626,6 +7644,9 @@
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.ui.SettingsActivity}" drawable="settings_google_shortcuts_launcher" name="Settings (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{ch.sgkb.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="SGKB TWINT" />
   <item component="ComponentInfo{com.shaadi.android/com.shaadi.android.feature.splash.SplashScreenActivity}" drawable="shaadi" name="Shaadi" />
+  <item component="ComponentInfo{in.mohalla.sharechat/sharechat.ads.feature.eva.EvaActivity}" drawable="sharechat" name="ShareChat" />
+  <item component="ComponentInfo{in.mohalla.sharechat/in.mohalla.sharechat.EvaActivityDefault}" drawable="sharechat" name="ShareChat" />
+  <item component="ComponentInfo{in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity}" drawable="sharechat" name="ShareChat" />
   <item component="ComponentInfo{com.xiaomi.midrop/com.xiaomi.midrop.HomeActivity}" drawable="share_me" name="ShareMe" />
   <item component="ComponentInfo{com.xiaomi.midrop/com.xiaomi.midrop.SplashScreen}" drawable="share_me" name="ShareMe" />
   <item component="ComponentInfo{com.xiaomi.midrop.SplashScreen/com.xiaomi.midrop.activity.MainFragmentActivity}" drawable="share_me" name="ShareMe" />
