@@ -141,6 +141,7 @@
   <item component="ComponentInfo{com.abdownloadmanager/com.abdownloadmanager.browser.BrowserIconInLauncher}" drawable="ab_download_manager" name="AB Download Manager" />
   <item component="ComponentInfo{me.linshen.abattery/me.linshen.abattery.MainActivity}" drawable="abattery" name="aBattery" />
   <item component="ComponentInfo{com.hampusolsson.abstruct/com.hampusolsson.abstruct.splash.SplashActivity}" drawable="abstruct" name="Abstruct" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.AccessibilitySettingsActivityForLauncherAlias}" drawable="settings" name="Accessibility" />
   <item component="ComponentInfo{io.aiddevs.verbandbuch/io.aiddevs.verbandbuch.MainActivity}" drawable="generic_aid" name="Accident book" />
   <item component="ComponentInfo{uk.akane.accord/org.akanework.gramophone.ui.MainActivity}" drawable="accord" name="Accord" />
   <item component="ComponentInfo{app.accrescent.client/app.accrescent.client.ui.MainActivity}" drawable="accrescent" name="Accrescent" />
@@ -5025,6 +5026,7 @@
   <item component="ComponentInfo{com.metrolist.music/com.metrolist.music.MainActivityAlias}" drawable="metrolist" name="Metrolist" />
   <item component="ComponentInfo{com.metrolist.music/com.metrolist.music.MainActivityStatic}" drawable="metrolist" name="Metrolist" />
   <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivityAlias}" drawable="metrolist" name="Metrolist" />
+  <item component="ComponentInfo{com.metrolist.music/com.metrolist.android.MainActivityOriginal}" drawable="metrolist" name="Metrolist" />
   <item component="ComponentInfo{com.mi.global.bbs/com.mi.global.bbs.ui.SplashActivity}" drawable="mi_community" name="Mi Community" />
   <item component="ComponentInfo{com.mi.global.bbs/com.mi.global.bbslib.headlines.ui.SplashActivity}" drawable="mi_community" name="Mi Community" />
   <item component="ComponentInfo{com.mi.android.globalFileexplorer/com.android.fileexplorer.FileExplorerTabActivity}" drawable="mi_files" name="Mi Files" />
@@ -5687,6 +5689,7 @@
   <item component="ComponentInfo{nu.gpu.nagram/org.telegram.messenger.DarkBlueIcon}" drawable="nagram" name="Nagram X" />
   <item component="ComponentInfo{fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon}" drawable="nagram" name="Nagram XF" />
   <item component="ComponentInfo{fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon}" drawable="nagram" name="Nagram XF" />
+  <item component="ComponentInfo{fork.risin42.nagramx/org.telegram.messenger.NeonIcon}" drawable="nagram" name="Nagram XF" />
   <item component="ComponentInfo{com.bhu.namaste/com.bhu.namaste.MainActivity}" drawable="namaste_bhu" name="Namaste BHU" />
   <item component="ComponentInfo{in.juspay.nammayatri/in.juspay.mobility.MainActivity}" drawable="namma_yatri" name="Namma Yatri" />
   <item component="ComponentInfo{in.juspay.nammayatri/com.mobility.movingtech.MainActivity}" drawable="namma_yatri" name="Namma Yatri" />
@@ -7514,9 +7517,6 @@
   <item component="ComponentInfo{network.loki.messenger/network.loki.messenger.RoutingActivity}" drawable="session" name="Session" />
   <item component="ComponentInfo{com.afterecho.android.setorientation/com.afterecho.android.setorientation.SetOrientationActivity}" drawable="generic_rotation" name="Set Orientation" />
   <item component="ComponentInfo{com.googlecode.eyesfree.setorientation/com.googlecode.eyesfree.setorientation.SetOrientationActivity}" drawable="generic_rotation" name="Set Orientation" />
-  <item component="ComponentInfo{iu.mwzaewevvr/wC.x}" drawable="generic_shell" name="Settings" />
-  <item component="ComponentInfo{app.wizyemm.settings/app.wizyemm.settings.MainActivity}" drawable="settings" name="Settings" />
-  <item component="ComponentInfo{ayfsuu.vc.rzd/s.V.t96}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.framework.activity.HtcSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.HWSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/.MainSettings}" drawable="settings" name="Settings" />
@@ -7562,8 +7562,8 @@
   <item component="ComponentInfo{com.android.settings/com.android.settings.OriginSettings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.power.PowerManagementActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.powersave.MainActivity}" drawable="settings" name="Settings" />
-  <item component="ComponentInfo{com.android.settings/com.android.settings.Settings launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 }}" drawable="settings" name="Settings" />
-  <item component="ComponentInfo{com.android.settings/com.android.settings.Settings VirtualScreenParam=Params{mDisplayId=-1, null, mFlags=0x00000000)}}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.Settings launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 }" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.Settings VirtualScreenParam=Params{mDisplayId=-1, null, mFlags=0x00000000)}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.Settings_Root}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.Settings}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.Settings$AudioProfileSettingsActivity}" drawable="settings" name="Settings" />
@@ -7615,6 +7615,11 @@
   <item component="ComponentInfo{com.android.settings/com.miui.securitycenter.Main}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.oppo.settings.SettingsActivity}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.android.settings/com.transsion.faq.activity.MainActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{iu.mwzaewevvr/wC.x}" drawable="generic_shell" name="Settings" />
+  <item component="ComponentInfo{app.wizyemm.settings/app.wizyemm.settings.MainActivity}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{ayfsuu.vc.rzd/s.V.t96}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.Settings launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 }}" drawable="settings" name="Settings" />
+  <item component="ComponentInfo{com.android.settings/com.android.settings.Settings VirtualScreenParam=Params{mDisplayId=-1, null, mFlags=0x00000000)}}" drawable="settings" name="Settings" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.activity.SettingsActivity}" drawable="settings_google_shortcuts_launcher" name="Settings (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.activity.ManagerActivity}" drawable="settings_google_shortcuts_launcher" name="Settings (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.SettingsActivity}" drawable="settings_google_shortcuts_launcher" name="Settings (Google Shortcuts Launcher)" />
