@@ -557,6 +557,7 @@
   <item component="ComponentInfo{fr.dzx.audiosource/fr.dzx.audiosource.MainActivity}" drawable="generic_microphone" name="Audio Source" />
   <item component="ComponentInfo{com.audiobooks.androidapp/com.audiobooks.androidapp.core.MainActivity}" drawable="generic_player" name="Audiobooks.com" />
   <item component="ComponentInfo{org.lineageos.audiofx/org.lineageos.audiofx.activity.ActivityMusic}" drawable="audiofx" name="AudioFX" />
+  <item component="ComponentInfo{io.github.giuig.auraninja/io.github.giuig.auraninja.MainActivity}" drawable="auraninja" name="Auraninja" />
   <item component="ComponentInfo{com.aurora.store/com.aurora.store.activity.AuroraActivity}" drawable="aurora_store" name="Aurora Store" />
   <item component="ComponentInfo{com.aurora.store/com.aurora.store.ui.single.activity.SplashActivity}" drawable="aurora_store" name="Aurora Store" />
   <item component="ComponentInfo{com.aurora.store/com.aurora.store.view.ui.onboarding.OnboardingActivity}" drawable="aurora_store" name="Aurora Store" />
@@ -3338,6 +3339,7 @@
   <item component="ComponentInfo{com.garmin.connectiq/com.garmin.connectiq.ui.startup.StartupActivity}" drawable="garmin_connect_iq" name="Garmin Connect IQ" />
   <item component="ComponentInfo{com.garmin.connectiq/com.garmin.connectiq.ui.MainActivity}" drawable="garmin_connect_iq" name="Garmin Connect IQ" />
   <item component="ComponentInfo{com.garmin.connectiq/com.garmin.connectiq.ui.nav.MainActivity}" drawable="garmin_connect_iq" name="Garmin Connect IQ" />
+  <item component="ComponentInfo{com.gayosso.gayossocontigo/com.gayosso.gayossocontigo.MainActivity}" drawable="gayosso_contigo" name="Gayosso Contigo" />
   <item component="ComponentInfo{com.gbinsta.android/com.gbinsta.android.activity.MainTabActivity0}" drawable="instagram" name="GBInstagram" />
   <item component="ComponentInfo{com.google.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" drawable="gboard" name="Gboard" />
   <item component="ComponentInfo{com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.framework.core.LauncherActivity}" drawable="gboard" name="Gboard" />
@@ -6216,6 +6218,7 @@
   <item component="ComponentInfo{net.osmand/net.osmand.plus.activities.MapActivity}" drawable="osmand" name="OsmAnd" />
   <item component="ComponentInfo{net.osmand.plus/net.osmand.plus.activities.MainMenuActivity}" drawable="osmand_plus" name="OsmAnd+" />
   <item component="ComponentInfo{net.osmand.plus/net.osmand.plus.activities.MapActivity}" drawable="osmand_plus" name="OsmAnd+" />
+  <item component="ComponentInfo{com.akylas.documentscanner/com.akylas.documentscanner.MainActivity}" drawable="oss_document_scanner" name="OSS Document Scanner" />
   <item component="ComponentInfo{com.example.bluetoothconnect/com.example.bluetoothconnect.MainActivity}" drawable="generic_shell" name="OTG Keyboard" />
   <item component="ComponentInfo{com.piyush.music/com.piyush.music.activities.main.MainActivity}" drawable="oto_music" name="Oto Music" />
   <item component="ComponentInfo{de.moekadu.tuner/de.moekadu.tuner.MainActivity}" drawable="oto_music" name="Oto Music" />
@@ -6948,6 +6951,7 @@
   <item component="ComponentInfo{com.d2l.brightspace.student.android/com.d2l.brightspace.student.android.MainActivity}" drawable="pulse" name="Pulse" />
   <item component="ComponentInfo{dev.pulsewallpaper.app/dev.pulsewallpaper.app.activity.ActivitySplash}" drawable="pulse" name="Pulse" />
   <item component="ComponentInfo{com.puma.ecom.app/com.puma.MainActivity}" drawable="puma" name="Puma" />
+  <item component="ComponentInfo{com.catpuppyapp.puppygit.play.pro/com.catpuppyapp.puppygit.activity.MainActivity}" drawable="puppygit" name="PuppyGit" />
   <item component="ComponentInfo{pure.lite.browser/com.vs.browser.MainActivity}" drawable="pure_web_browser" name="Pure Web Browser" />
   <item component="ComponentInfo{pure.lite.browser/com.pure.browser.MainActivity}" drawable="pure_web_browser" name="Pure Web Browser" />
   <item component="ComponentInfo{com.draco.purr/com.draco.purr.views.PermissionActivity}" drawable="purr" name="Purr" />
@@ -7335,6 +7339,8 @@
   <item component="ComponentInfo{com.samsung.android.lool/com.samsung.android.sm.score.ui.ScoreBoardActivity}" drawable="samsung_device_care" name="Samsung Device Care" />
   <item component="ComponentInfo{com.samsung.android.lool/com.samsung.android.sm.ui.scoreboard.ScoreBoardActivity}" drawable="samsung_device_care" name="Samsung Device Care" />
   <item component="ComponentInfo{com.samsung.android.email.provider/com.samsung.android.email.ui.activity.MessageListXL}" drawable="samsung_email" name="Samsung Email" />
+  <item component="ComponentInfo{com.samsung.android.app.find/com.samsung.android.app.find.SplashActivity}" drawable="samsung_find" name="Samsung Find" />
+  <item component="ComponentInfo{com.samsung.android.app.find/com.samsung.android.app.find.MainActivity}" drawable="samsung_find" name="Samsung Find" />
   <item component="ComponentInfo{com.sec.android.gallery3d/.app.GalleryOpaqueActivity}" drawable="samsung_gallery" name="Samsung Gallery" />
   <item component="ComponentInfo{com.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity}" drawable="samsung_gallery" name="Samsung Gallery" />
   <item component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.Gallery}" drawable="samsung_gallery" name="Samsung Gallery" />
@@ -8113,6 +8119,7 @@
   <item component="ComponentInfo{com.transsion.scanningrecharger/com.transsion.scanningrecharger.view.activity.textrecognized.TextRecognizedActivity}" drawable="transsion_scanner" name="Smart Scanner" />
   <item component="ComponentInfo{app.smart.timetables/app.smart.timetables.MainActivity}" drawable="smart_timetable" name="Smart Timetable" />
   <item component="ComponentInfo{app.smart.timetable/app.smart.timetable.MainActivity}" drawable="smart_timetable" name="Smart Timetable" />
+  <item component="ComponentInfo{com.rsupport.rs.activity.rsupport.aas2/com.rsupport.rs.activity.edit.IntroActivity}" drawable="smart_tutor" name="Smart Tutor" />
   <item component="ComponentInfo{com.africa.smartcash/com.airtel.africa.selfcare.presentation.login.activity.LoginActivity}" drawable="my_airtel" name="Smartcash PSB" />
   <item component="ComponentInfo{com.kieronquinn.app.smartspacer/com.kieronquinn.app.smartspacer.ui.activities.MainActivity}" drawable="smartspacer" name="Smartspacer" />
   <item component="ComponentInfo{com.hutchison3g.sundae/com.hutchison3g.sundae.MainActivity}" drawable="smarty" name="SMARTY" />
