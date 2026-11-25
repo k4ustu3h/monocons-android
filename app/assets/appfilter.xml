@@ -140,6 +140,7 @@
   <item component="ComponentInfo{com.abdownloadmanager/com.abdownloadmanager.android.ui.MainActivity}" drawable="ab_download_manager" name="AB Download Manager" />
   <item component="ComponentInfo{com.abdownloadmanager/com.abdownloadmanager.browser.BrowserIconInLauncher}" drawable="ab_download_manager" name="AB Download Manager" />
   <item component="ComponentInfo{me.linshen.abattery/me.linshen.abattery.MainActivity}" drawable="abattery" name="aBattery" />
+  <item component="ComponentInfo{com.imavis.absolutafree/com.imavis.absolutafree.MainActivity}" drawable="absoluta" name="Absoluta" />
   <item component="ComponentInfo{com.hampusolsson.abstruct/com.hampusolsson.abstruct.splash.SplashActivity}" drawable="abstruct" name="Abstruct" />
   <item component="ComponentInfo{com.android.settings/com.android.settings.AccessibilitySettingsActivityForLauncherAlias}" drawable="settings" name="Accessibility" />
   <item component="ComponentInfo{io.aiddevs.verbandbuch/io.aiddevs.verbandbuch.MainActivity}" drawable="generic_aid" name="Accident book" />
@@ -4687,6 +4688,7 @@
   <item component="ComponentInfo{com.liteapks.androidapps/com.liteapks.ui.home.HomeActivity}" drawable="liteapks" name="Liteapks" />
   <item component="ComponentInfo{com.liteapks.androidapps/com.liteapks.androidapps.ui.home.HomeActivity}" drawable="liteapks" name="Liteapks" />
   <item component="ComponentInfo{com.literalword.mobile_app/com.literalword.mobile_app.MainActivity}" drawable="generic_bible" name="Literal Word" />
+  <item component="ComponentInfo{com.faultexception.reader/com.faultexception.reader.MainActivity}" drawable="lithium" name="Lithium" />
   <item component="ComponentInfo{com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.scribe.MainActivity}" drawable="live_transcribe" name="Live Transcribe" />
   <item component="ComponentInfo{com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.scribe.LauncherActivity}" drawable="live_transcribe" name="Live Transcribe" />
   <item component="ComponentInfo{com.graytsar.livewallpaper/com.graytsar.livewallpaper.ReibuActivity}" drawable="generic_player" name="Live Wallpaper" />
@@ -7458,6 +7460,10 @@
   <item component="ComponentInfo{com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusLauncher}" drawable="samsung_routines_plus" name="Samsung Routines +" />
   <item component="ComponentInfo{com.samsung.android.app.sprotect/com.samsung.android.app.sprotect.dashboard.DashBoard}" drawable="s_secure" name="Samsung S Secure" />
   <item component="ComponentInfo{com.samsung.voiceserviceplatform/com.samsung.voiceserviceplatform.ui.SVoiceMainActivity}" drawable="generic_microphone" name="Samsung S Voice" />
+  <item component="ComponentInfo{com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.SecureFolderShortcutActivity}" drawable="samsung_secure_folder" name="Samsung Secure Folder" />
+  <item component="ComponentInfo{com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.view.SecureFolderShortcutActivity}" drawable="samsung_secure_folder" name="Samsung Secure Folder" />
+  <item component="ComponentInfo{com.samsung.knox.securefolder/com.samsung.knox.securefolder.switcher.SecureFolderShortcutActivity}" drawable="samsung_secure_folder" name="Samsung Secure Folder" />
+  <item component="ComponentInfo{com.samsung.knox.securefolder/com.samsung.knox.securefolder.launcher.view.LauncherActivity}" drawable="samsung_secure_folder" name="Samsung Secure Folder" />
   <item component="ComponentInfo{com.samsung.android.galaxy/com.samsung.android.galaxy.MainActivity}" drawable="samsung_shop" name="Samsung Shop" />
   <item component="ComponentInfo{com.samsung.ecomm/com.samsung.ecomm.MainActivity}" drawable="samsung_shop" name="Samsung Shop" />
   <item component="ComponentInfo{com.samsung.ecomm/com.samsung.ecomm.global.shop_app.MainActivity}" drawable="samsung_shop" name="Samsung Shop" />
@@ -8727,6 +8733,9 @@
   <item component="ComponentInfo{com.weather.samsung/com.weather.corgikit.view.CorgiActivity}" drawable="the_weather_channel" name="The Weather Channel" />
   <item component="ComponentInfo{com.lafourchette.lafourchette/com.fork.android.app.launch.LaunchActivity}" drawable="thefork" name="TheFork" />
   <item component="ComponentInfo{com.oplus.themestore/com.nearme.themespace.activities.ThemeActivity}" drawable="theme_store" name="Theme Store" />
+  <item component="ComponentInfo{com.android.thememanager/com.android.thememanager.activities.ThemeManagerMainActivity}" drawable="themes" name="Themes" />
+  <item component="ComponentInfo{com.android.thememanager/com.android.thememanager.business.startup.view.StartupActivity}" drawable="themes" name="Themes" />
+  <item component="ComponentInfo{com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity}" drawable="themes" name="Themes" />
   <item component="ComponentInfo{com.bbk.theme/com.bbk.theme.Theme}" drawable="themes_by_vivo" name="Themes by vivo" />
   <item component="ComponentInfo{com.google.android.apps.pixel.health/com.google.android.apps.pixel.health.thermometer.ThermometerHomeActivity}" drawable="thermometer" name="Thermometer" />
   <item component="ComponentInfo{com.chris.tholotis/com.chris.tholotis.MainActivity}" drawable="tholotis" name="Tholotis" />
