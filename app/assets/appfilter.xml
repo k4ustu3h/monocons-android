@@ -2266,6 +2266,7 @@
   <item component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.TrampolineActivity}" drawable="generic_download_arrow" name="Downloads" />
   <item component="ComponentInfo{com.android.providers.downloads.ui/.DownloadList}" drawable="generic_download_arrow" name="Downloads" />
   <item component="ComponentInfo{pizza.dpe.globaldelivery/com.dominos.driver.presentation.DriverActivity}" drawable="dominos_pizza" name="DPE GPS Driver" />
+  <item component="ComponentInfo{com.qycrazypuzzledom.game/org.cocos2dx.javascript.AppActivity}" drawable="generic_wifi_off" name="Drawing Line" />
   <item component="ComponentInfo{apps.driefcase.com/apps.driefcase.com.activity.Splash}" drawable="driefcase_abha" name="Driefcase ABHA" />
   <item component="ComponentInfo{com.remind.drink.water.hourly/com.remind.drink.water.hourly.SplashActivity}" drawable="drink_water_reminder" name="Drink Water Reminder" />
   <item component="ComponentInfo{waterwala.com.prime/waterwala.com.prime.screens.StartActivity}" drawable="drinkprime" name="DrinkPrime" />
@@ -5924,6 +5925,9 @@
   <item component="ComponentInfo{com.teslacoilsw.launcher/.preferences.SettingsActivity}" drawable="nova_launcher_settings" name="Nova Launcher" />
   <item component="ComponentInfo{com.teslacoilsw.launcher/preferences.SettingsActivity}" drawable="nova_launcher_settings" name="Nova Launcher" />
   <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.preferences.SettingsActivity}" drawable="nova_launcher_settings" name="Nova Launcher" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher.prime/android.app.AppDetailsActivity}" drawable="nova_launcher_prime" name="Nova Launcher Prime" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.preferences.SettingsActivity}" drawable="nova_launcher_prime" name="Nova Launcher Prime" />
+  <item component="ComponentInfo{com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.prime.NovaLauncherPrimeActivity}" drawable="nova_launcher_prime" name="Nova Launcher Prime" />
   <item component="ComponentInfo{mx.novacard/com.dynamic_bank.dynamic_bank.MainActivity}" drawable="novacard" name="Novacard" />
   <item component="ComponentInfo{com.invex.now/com.invex.now.ui.splash.view.SplashActivity}" drawable="now_bank" name="Now Bank" />
   <item component="ComponentInfo{com.google.android.apps.pixel.nowplaying/com.google.android.apps.pixel.nowplaying.mainscreen.NowPlayingMainActivity}" drawable="google_now_playing" name="Now Playing" />
@@ -6009,6 +6013,11 @@
   <item component="ComponentInfo{io.github.subhamtyagi.ocr/io.github.subhamtyagi.ocr.MainActivity}" drawable="ocr" name="OCR" />
   <item component="ComponentInfo{it.octogram.android/org.telegram.messenger.DefaultIcon}" drawable="octogram" name="OctoGram" />
   <item component="ComponentInfo{com.vayunmathur.office/com.vayunmathur.office.MainActivity}" drawable="generic_description" name="Office" />
+  <item component="ComponentInfo{com.JindoBlu.OfflineGames/com.unity3d.player.UnityPlayerActivity}" drawable="generic_wifi_off" name="Offline Games" />
+  <item component="ComponentInfo{com.offline.games.two.player.games/com.unity3d.player.UnityPlayerActivity}" drawable="generic_wifi_off" name="Offline Games" />
+  <item component="ComponentInfo{com.JindoBlu.OfflineGames/com.google.android.archive.ReactivateActivity}" drawable="generic_wifi_off" name="Offline Games" />
+  <item component="ComponentInfo{net.bat.ahaofflinegame/net.bat.store.view.activity.OfflineMainActivity}" drawable="generic_wifi_off" name="Offline Games" />
+  <item component="ComponentInfo{com.minigamelab.offlinepack/com.google.firebase.MessagingUnityPlayerActivity}" drawable="generic_wifi_off" name="Offline Games Combo" />
   <item component="ComponentInfo{com.sdeteam.gsa/com.sdeteam.gsa.activity.MainActivity}" drawable="generic_microphone" name="OK Google Voice Commands Guide" />
   <item component="ComponentInfo{com.owkb.twint/ch.twint.payment.ui.activities.start.StartActivity}" drawable="twint" name="OKB TWINT" />
   <item component="ComponentInfo{com.cambyte.okenscan/com.intsig.camscanner.launcher.WelcomeDefaultActivity}" drawable="camscanner" name="OKEN Scanner" />
@@ -8080,6 +8089,7 @@
   <item component="ComponentInfo{com.maxrave.simpmusic/com.maxrave.simpmusic.ui.MainActivity}" drawable="simpmusic" name="SimpMusic" />
   <item component="ComponentInfo{com.maxrave.simpmusic/com.maxrave.simpmusic.MainActivity}" drawable="simpmusic" name="SimpMusic" />
   <item component="ComponentInfo{com.ea.games.simsfreeplay_na/com.ea.games.simsfreeplay.GameActivity}" drawable="the_sims" name="Sims FreePlay" />
+  <item component="ComponentInfo{com.infinitygames.singleplayergames/com.infinitygames.singleplayergames.MainActivity}" drawable="generic_wifi_off" name="Single Player: Offline Games" />
   <item component="ComponentInfo{com.sipnetic.app/app.sipcomm.phone.OnboardingActivity}" drawable="sipnetic" name="Sipnetic" />
   <item component="ComponentInfo{com.sirius/com.sirius.android.everest.welcome.WelcomeActivity}" drawable="siriusxm" name="SiriusXM" />
   <item component="ComponentInfo{com.sirius/com.sirius.AppStartActivity}" drawable="siriusxm" name="SiriusXM" />
