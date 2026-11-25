@@ -889,6 +889,7 @@
   <item component="ComponentInfo{org.blokada.sex/ui.MainActivity}" drawable="blokada" name="Blokada" />
   <item component="ComponentInfo{com.derdilla.bloodPressureApp/com.derdilla.blood_pressure_app.MainActivity}" drawable="blood_pressure_app" name="Blood pressure app" />
   <item component="ComponentInfo{com.netease.newspike/com.netease.game.MessiahNativeActivity}" drawable="blood_strike" name="Blood Strike" />
+  <item component="ComponentInfo{com.netease.newspikeme/com.netease.game.MessiahNativeActivity}" drawable="blood_strike" name="Blood Strike MENA" />
   <item component="ComponentInfo{com.blufinance.android/com.blufinance.android.MainActivity}" drawable="blu" name="Blu" />
   <item component="ComponentInfo{com.bluecord/com.discord.app.AppActivity$Main}" drawable="discord" name="Bluecord" />
   <item component="ComponentInfo{com.bluecord/com.discord.app.AppActivity}" drawable="discord" name="Bluecord" />
@@ -1124,6 +1125,7 @@
   <item component="ComponentInfo{com.bybit.app/com.bybit.pro.MainActivity}" drawable="bybit" name="Bybit" />
   <item component="ComponentInfo{com.bybit.eu/com.bybit.pro.MainActivity}" drawable="bybit" name="Bybit" />
   <item component="ComponentInfo{com.fullcodex.bible.abdj/com.fullcodex.bible.abdj.ui.SplashScreenActivity}" drawable="generic_bible" name="Bíblia de Jerusalém" />
+  <item component="ComponentInfo{org.universal.bibliafiel_comentada/org.universal.bibliafiel_comentada.screen.main.MainActivity}" drawable="generic_bible" name="Bíblia Fiel" />
   <item component="ComponentInfo{com.radinc.csharpshell/crc6435a96f15045e045c.MainActivity}" drawable="c_sharp_shell_dot_net_ide" name="C# Shell .NET IDE" />
   <item component="ComponentInfo{com.radinc.csharpshell/crc6483cd2bca369317c1.MainActivity}" drawable="c_sharp_shell_dot_net_ide" name="C# Shell .NET IDE" />
   <item component="ComponentInfo{com.hackerapps.c2k/com.hackerapps.c2k.ui.MainActivity}" drawable="c2k" name="C2K" />
@@ -1757,6 +1759,7 @@
   <item component="ComponentInfo{com.awesomedev.compress_pdf/com.awesomedev.compress_pdf.MainActivity}" drawable="generic_pdf_square" name="Compress PDF" />
   <item component="ComponentInfo{compress.joshattic.us/compress.joshattic.us.MainActivity}" drawable="compressor" name="Compressor" />
   <item component="ComponentInfo{com.bnyro.contacts/com.bnyro.contacts.ui.MainActivity}" drawable="generic_contacts" name="Connect You" />
+  <item component="ComponentInfo{com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity}" drawable="generic_contacts" name="Connect You" />
   <item component="ComponentInfo{org.connectbot/org.connectbot.ConsoleActivity}" drawable="connectbot" name="ConnectBot" />
   <item component="ComponentInfo{org.connectbot/org.connectbot.HostListActivity}" drawable="connectbot" name="ConnectBot" />
   <item component="ComponentInfo{org.connectbot/org.connectbot.ui.MainActivity}" drawable="connectbot" name="ConnectBot" />
@@ -2028,6 +2031,8 @@
   <item component="ComponentInfo{com.didiglobal.passenger/com.didi.sdk.splash.SplashActivity}" drawable="didi" name="DiDi" />
   <item component="ComponentInfo{com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity}" drawable="didi" name="DiDi" />
   <item component="ComponentInfo{com.sdu.didi.psnger/com.didi.sdk.splash.SplashActivity}" drawable="didi" name="DiDi" />
+  <item component="ComponentInfo{com.didi.global.rider/com.didi.rider.business.main.SplashActivity}" drawable="didi" name="DiDi Delivery" />
+  <item component="ComponentInfo{com.didiglobal.driver/com.didichuxing.driver.sdk.LauncherActivity}" drawable="didi" name="DiDi Driver" />
   <item component="ComponentInfo{com.didiglobal.cashloan/com.didiglobal.loan.launcher.SplashActivity}" drawable="didi" name="DiDi Finanzas" />
   <item component="ComponentInfo{org.digiyatra.org/org.digiyatra.org.MainActivity}" drawable="digi_yatra" name="Digi Yatra" />
   <item component="ComponentInfo{in.dataevolve.digiyatra/in.dataevolve.digiyatra.MainActivity}" drawable="digi_yatra" name="Digi Yatra" />
@@ -4018,6 +4023,8 @@
   <item component="ComponentInfo{com.csam.icici.bank.imobile/com.csam.icici.bank.imobile.IMOBILE}" drawable="imobile_pay" name="iMobile Pay" />
   <item component="ComponentInfo{com.csam.icici.bank.imobile/com.icici.v3.activation.presentation.welcome.activity.WelcomeActivity}" drawable="imobile_pay" name="iMobile Pay" />
   <item component="ComponentInfo{st.android.imsspublico/crc642176304cdb761b92.Splash}" drawable="imss" name="IMSS Digital" />
+  <item component="ComponentInfo{com.pnn.obdcardoctor/com.pnn.obdcardoctor_full.gui.activity.SplashActivity}" drawable="generic_engine" name="inCarDoc" />
+  <item component="ComponentInfo{com.pnn.obdcardoctor_full/com.pnn.obdcardoctor_full.presentation.MainScreen}" drawable="generic_engine_pro" name="inCarDoc Pro" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcuts.IncognitoShortcut}" drawable="incognito_google_shortcuts_launcher" name="Incognito (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcut.IncognitoShortcut}" drawable="incognito_google_shortcuts_launcher" name="Incognito (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{com.indeed.android.jobsearch/com.indeed.android.jobsearch.MainActivity}" drawable="indeed" name="Indeed" />
@@ -5844,6 +5851,7 @@
   <item component="ComponentInfo{com.nintendo.znca/md5e14d8df872e237c80839f608ad2933ea.MainActivity}" drawable="nintendo_switch" name="Nintendo Switch" />
   <item component="ComponentInfo{com.holybible.nivbible/org.mainsoft.newbible.activity.LaunchActivity}" drawable="generic_bible" name="NIV Bible" />
   <item component="ComponentInfo{new.king.james.version.bible.nkjv/org.mainsoft.newbible.activity.LaunchActivity}" drawable="generic_bible" name="NKJV Bible" />
+  <item component="ComponentInfo{org.bible.nltbible.newlivingtranslation/org.igvi.bible.MainActivity}" drawable="generic_bible" name="NLT Bible" />
   <item component="ComponentInfo{xyz.nextalone.nnngram/org.telegram.messenger.OFFICIAL}" drawable="nullgram" name="NMM File Manager" />
   <item component="ComponentInfo{xyz.nextalone.nnngram/org.telegram.messenger.DefaultIcon}" drawable="nullgram" name="Nnngram" />
   <item component="ComponentInfo{com.bashsoftware.boycott/com.bashsoftware.boycott.MainActivity}" drawable="no_thanks" name="No Thanks" />
@@ -5991,6 +5999,8 @@
   <item component="ComponentInfo{OCTech.Mobile.Applications.TouchScan/crc642308c43e766bd67c.MainActivity}" drawable="generic_engine" name="OBD Fusion" />
   <item component="ComponentInfo{com.chaoyue.obdpro/com.chaoyue.obdpro.app.SplashActivity}" drawable="generic_engine" name="OBD Home" />
   <item component="ComponentInfo{com.elm.elm327.obd2.eobd.obd.car.scanner.diagnostics.tool.dashboard.doctor.check.engine.torque.speed.trouble.codes.mary/com.scanner.obd.ui.activity.MainActivity}" drawable="generic_engine" name="Obd Mary" />
+  <item component="ComponentInfo{org.eobdfacile.android/org.eobdfacile.android.APG}" drawable="generic_engine" name="OBD2 Car Scanner" />
+  <item component="ComponentInfo{ai.metaverselabs.obdandroid/ai.metaverselabs.obdandroid.features.splash.SplashActivity}" drawable="generic_engine" name="OBD2 Scanner" />
   <item component="ComponentInfo{com.obilet.androidside/com.obilet.androidside.presentation.screen.splash.activity.SplashScreen}" drawable="obilet" name="obilet" />
   <item component="ComponentInfo{md.obsidian/md.obsidian.MainActivity}" drawable="obsidian" name="Obsidian" />
   <item component="ComponentInfo{dev.imranr.obtainium.fdroid/dev.imranr.obtainium.MainActivity}" drawable="obtainium" name="Obtainium" />
@@ -7466,6 +7476,7 @@
   <item component="ComponentInfo{com.sec.android.daemonapp/com.samsung.android.weather.app.AppLauncherActivity}" drawable="samsung_weather" name="Samsung Weather" />
   <item component="ComponentInfo{com.sec.android.daemonapp/com.sec.android.daemonapp.app.MainActivity}" drawable="samsung_weather" name="Samsung Weather" />
   <item component="ComponentInfo{com.samsung.android.spdfnote/spdfnote.control.ui.filemanager.MainHomeActivity}" drawable="generic_pdf_square" name="Samsung Write on PDF" />
+  <item component="ComponentInfo{org.reyfasoft.reinavalera1960/org.reyfasoft.reinavalera1960.activity.HomeActivity}" drawable="generic_bible" name="Santa Biblia" />
   <item component="ComponentInfo{no.santanderconsumer.mobilbank/com.netbankmobile.MainActivity}" drawable="santander" name="Santander" />
   <item component="ComponentInfo{uk.co.santander.santanderUK/es.bancosantander.apps.mobile.android.activities.PublicActivity}" drawable="santander" name="Santander" />
   <item component="ComponentInfo{com.santander.app/com.santander.app.splash.AppStartActivity}" drawable="santander" name="Santander" />
@@ -9635,6 +9646,7 @@
   <item component="ComponentInfo{com.sbi.SBIFreedomPlus/com.sbi.SBIFreedomPlus.SBIYonoLite}" drawable="yono_lite_sbi" name="Yono Lite SBI" />
   <item component="ComponentInfo{com.sbi.lotusintouch/com.sbi.lotusintouch.MainActivity}" drawable="yono_sbi" name="YONO SBI" />
   <item component="ComponentInfo{com.sbi.lotusintouch/com.sbi.yono.MainActivity}" drawable="yono_sbi" name="YONO SBI" />
+  <item component="ComponentInfo{yoruba.holy.bible.AOVGSFFIOTUFGGBTLU/king.james.bible.android.activity.LaunchActivity}" drawable="generic_bible" name="Yoruba Bible" />
   <item component="ComponentInfo{com.jndapp.pastel.material.you.iconpack/com.jndapp.pastel.material.you.iconpack.MainActivity}" drawable="you_icons" name="You Icons" />
   <item component="ComponentInfo{com.yousician.yousician/com.unity3d.player.UnityPlayerActivity}" drawable="yousician" name="Yousician" />
   <item component="ComponentInfo{com.yousician.yousician/com.unity3d.player.UnityPlayerNativeActivity}" drawable="yousician" name="Yousician" />
