@@ -1489,6 +1489,7 @@
   <item component="ComponentInfo{com.infrasofttech.CentralBank/com.infrasofttech.CentralBank.CentMobile}" drawable="cent" name="Cent" />
   <item component="ComponentInfo{com.infrasofttech.CentralBank/com.infrasofttech.centralbank.SplashActivity}" drawable="cent" name="Cent" />
   <item component="ComponentInfo{com.apcpdcl.customerapp/com.apcpdcl.customerapp.Splashscreen}" drawable="central_power" name="Central Power" />
+  <item component="ComponentInfo{air.com.cetesdirecto.cetesmobile/air.com.cetesdirecto.cetesmobile.PantallaBienvenida}" drawable="cetesdirecto" name="CetesDirecto" />
   <item component="ComponentInfo{com.openai.chatgpt/com.openai.chatgpt.MainActivity}" drawable="openai" name="ChatGPT" />
   <item component="ComponentInfo{com.openai.chatgpt/com.google.android.archive.ReactivateActivity}" drawable="openai" name="ChatGPT" />
   <item component="ComponentInfo{com.openai.chatgpt/md.elway.evo.screen.chat.ChatActivity}" drawable="openai" name="ChatGPT" />
@@ -3444,6 +3445,7 @@
   <item component="ComponentInfo{com.materiiapps.gloom.debug/com.materiiapps.gloom.ui.GloomActivity}" drawable="gloom" name="Gloom Debug" />
   <item component="ComponentInfo{com.glovo/com.glovoapp.onboarding.splash.SplashActivity}" drawable="glovo" name="Glovo" />
   <item component="ComponentInfo{com.glovo/glovoapp.splash.SplashActivity}" drawable="glovo" name="Glovo" />
+  <item component="ComponentInfo{com.nothing.glyph.composer/com.nothing.glyph.composer.ui.MainActivity}" drawable="glyph_composer" name="Glyph Composer" />
   <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.AutoSendActivity}" drawable="gmail" name="Gmail" />
   <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ComposeActivityGmail}" drawable="gmail" name="Gmail" />
   <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail launchParam=MultiScreenLaunchParams { mDisplayId=0 mBaseDisplayId=0 mFlags=0 }}" drawable="gmail" name="Gmail" />
@@ -9156,6 +9158,7 @@
   <item component="ComponentInfo{com.coloros.video/com.oppo.video.VideoListActivity}" drawable="generic_player" name="Videos" />
   <item component="ComponentInfo{com.vietnammm.android/com.takeaway.android.activity.Splash}" drawable="just_eat" name="Vietnammm" />
   <item component="ComponentInfo{com.vietnammm.android/com.takeaway.android.Startup}" drawable="just_eat" name="Vietnammm" />
+  <item component="ComponentInfo{com.facebook.viewpoints/com.facebook.anna.app.activities.MainActivity}" drawable="viewpoints" name="Viewpoints" />
   <item component="ComponentInfo{fr.vinted/com.vinted.activities.MDActivity}" drawable="vinted" name="Vinted" />
   <item component="ComponentInfo{fr.vinted/com.vinted.feature.shell.MDActivity}" drawable="vinted" name="Vinted" />
   <item component="ComponentInfo{com.llsl.viper4android/com.llsl.viper4android.ui.MainActivity}" drawable="viper4android" name="ViPER4Android" />
@@ -9258,6 +9261,7 @@
   <item component="ComponentInfo{adarshurs.android.vlcmobileremote/adarshurs.android.vlcmobileremote.MainActivity}" drawable="vlc" name="VLC Mobile Remote" />
   <item component="ComponentInfo{com.frontrow.vlog/com.frontrow.vlog.ui.splash.SplashActivity}" drawable="vn" name="VN" />
   <item component="ComponentInfo{com.vodafone.selfservis/com.vodafone.selfservis.YanimdaAlias}" drawable="my_vodafone" name="Vodafone" />
+  <item component="ComponentInfo{eu.reply.cordless/replycept.dma.ui.SplashScreen}" drawable="vodafone_station" name="Vodafone Station" />
   <item component="ComponentInfo{za.co.vodacom.vodapay/za.co.vodacom.vodapay.onboarding.splash.SplashActivity}" drawable="my_vodafone" name="VodaPay" />
   <item component="ComponentInfo{de.ph1b.audiobook/de.phib.audiobook.features.MainActivity}" drawable="voice" name="Voice" />
   <item component="ComponentInfo{de.ph1b.audiobook/de.ph1b.audiobook.features.coldStart.SplashActivity}" drawable="voice" name="Voice" />
