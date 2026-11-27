@@ -364,6 +364,7 @@
   <item component="ComponentInfo{in.amazon.mShop.android.shopping/com.amazon.twa.CustomTWALauncherActivity}" drawable="amazon_shopping" name="Amazon Shopping" />
   <item component="ComponentInfo{in.amazon.mShop.android.shopping/com.google.android.archive.ReactivateActivity}" drawable="amazon_shopping" name="Amazon Shopping" />
   <item component="ComponentInfo{com.kieronquinn.app.ambientmusicmod/com.kieronquinn.app.ambientmusicmod.ui.activities.MainActivity}" drawable="ambient_music_mod" name="Ambient Music Mod" />
+  <item component="ComponentInfo{com.jbgsoft.ambio/com.jbgsoft.ambio.MainActivity}" drawable="ambio" name="Ambio" />
   <item component="ComponentInfo{com.fox2code.mmm.fdroid/com.fox2code.mmm.MainActivity}" drawable="foxmmm" name="AMM" />
   <item component="ComponentInfo{com.fox2code.mmm.fdroid/com.fox2code.mmm.settings.SettingsActivity}" drawable="foxmmm" name="AMM" />
   <item component="ComponentInfo{com.innersloth.spacemafia/com.d.a}" drawable="among_us" name="Among Us" />
@@ -431,6 +432,7 @@
   <item component="ComponentInfo{com.apkupdater/com.apkupdater.activity.MainActivity_}" drawable="apkupdater" name="APKUpdater" />
   <item component="ComponentInfo{com.apkupdater/com.apkupdater.activity.MainActivity}" drawable="apkupdater" name="APKUpdater" />
   <item component="ComponentInfo{com.apkupdater.ci/com.apkupdater.ui.activity.MainActivity}" drawable="apkupdater" name="APKUpdater" />
+  <item component="ComponentInfo{org.nuclearfog.apollo/org.nuclearfog.apollo.ui.activities.HomeActivity}" drawable="apollo" name="Apollo" />
   <item component="ComponentInfo{com.apollo.patientapp/com.apollopatient.MainActivity}" drawable="apollo_247" name="Apollo 247" />
   <item component="ComponentInfo{net.west_hino.app_assist/net.west_hino.app_assist.ui.ActivityAssist}" drawable="ladb" name="App Assist" />
   <item component="ComponentInfo{net.west_hino.app_assist/net.west_hino.app_assist.ui.ActivityMain}" drawable="ladb" name="App Assist" />
@@ -2284,6 +2286,7 @@
   <item component="ComponentInfo{com.nemesis.droidcrypt/com.nemesis.droidcrypt.MainActivity}" drawable="generic_lock" name="DroidCrypt" />
   <item component="ComponentInfo{com.droiddeck.launcher/com.droiddeck.launcher.MainActivity}" drawable="droiddeck" name="DroidDeck" />
   <item component="ComponentInfo{com.antutu.benchmark.full/com.droiddeck.launcher.MainActivity}" drawable="droiddeck" name="DroidDeck" />
+  <item component="ComponentInfo{com.yakovlevegor.DroidRec/com.yakovlevegor.DroidRec.MainActivity}" drawable="droidrec" name="DroidRec" />
   <item component="ComponentInfo{com.droidspaces.app/com.droidspaces.app.MainActivity}" drawable="droidspaces" name="Droidspaces" />
   <item component="ComponentInfo{com.dronedeploy.beta/com.dronedeploy.beta.ui.MainActivity}" drawable="dronedeploy" name="DroneDeploy" />
   <item component="ComponentInfo{com.dropbox.android/com.dropbox.android.activity.DbxMainActivity}" drawable="dropbox" name="Dropbox" />
@@ -2574,6 +2577,15 @@
   <item component="ComponentInfo{eu.faircode.email/eu.faircode.email.ActivityMain}" drawable="fairemail" name="FairEmail" />
   <item component="ComponentInfo{org.fairscan.app/org.fairscan.app.MainActivity}" drawable="fairscan" name="FairScan" />
   <item component="ComponentInfo{com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity}" drawable="generic_power" name="Fake Power Off" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.OrangeBlueIconAlias}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.DefaultIconAlias}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.ui.onboarding.OnboardingActivity}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.ui.splash.SplashActivity}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.RcbIpl2025IconAlias}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.CloneDefaultIconAlias}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.DcIpl2025IconAlias}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.CskIpl2025IconAlias}" drawable="famapp" name="FamApp" />
+  <item component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.LsgIpl2025IconAlias}" drawable="famapp" name="FamApp" />
   <item component="ComponentInfo{org.familysearch.mobile/org.familysearch.mobile.tree.MainActivity}" drawable="family_tree" name="Family Tree" />
   <item component="ComponentInfo{org.familysearch.mobile/org.familysearch.mobile.ui.activity.LauncherActivity}" drawable="family_tree" name="FamilySearch Tree" />
   <item component="ComponentInfo{com.miraclegames.farlight84/com.epicgames.ue4.SplashActivity}" drawable="farlight_84" name="Farlight 84" />
@@ -3391,6 +3403,7 @@
   <item component="ComponentInfo{com.globe.gcash.android/com.globe.gcash.android.MerryGCash2023}" drawable="gcash" name="GCash" />
   <item component="ComponentInfo{com.globe.gcash.android/gcash.module.splashscreen.mvp.view.SplashScreenActivity}" drawable="gcash" name="GCash" />
   <item component="ComponentInfo{com.globe.gcash.android/com.google.android.archive.ReactivateActivity}" drawable="gcash" name="GCash" />
+  <item component="ComponentInfo{app.seb3thehacker.gearslip/app.seb3thehacker.gearslip.GearslipActivity}" drawable="gearslip" name="Gearslip" />
   <item component="ComponentInfo{free.programming.programming/free.programming.programming.MainActivityNew}" drawable="geeksforgeeks" name="GeeksforGeeks" />
   <item component="ComponentInfo{free.programming.programming/free.programming.programming.splashscreen.SplashActivity}" drawable="geeksforgeeks" name="GeeksforGeeks" />
   <item component="ComponentInfo{free.programming.programming/free.programming.programming.SaleIcon}" drawable="geeksforgeeks" name="GeeksforGeeks" />
@@ -7099,6 +7112,7 @@
   <item component="ComponentInfo{com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasForestLight}" drawable="quick_search" name="Quick Search" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcuts.QuickShareShortcut}" drawable="quick_share_google_shortcuts_launcher" name="Quick Share (Google Shortcuts Launcher)" />
   <item component="ComponentInfo{com.wstxda.gsl/com.wstxda.gsl.shortcut.QuickShareShortcut}" drawable="quick_share_google_shortcuts_launcher" name="Quick Share (Google Shortcuts Launcher)" />
+  <item component="ComponentInfo{com.spizganed.quickbuds/com.spizganed.quickbuds.ui.MainActivity}" drawable="quickbuds" name="QuickBuds" />
   <item component="ComponentInfo{com.rhmsoft.edit.pro/com.rhmsoft.edit.activity.MainActivity}" drawable="quickedit" name="QuickEdit" />
   <item component="ComponentInfo{com.rhmsoft.edit/com.rhmsoft.edit.activity.MainActivity}" drawable="quickedit" name="QuickEdit" />
   <item component="ComponentInfo{xyz.paphonb.quickstepswitcher/xyz.paphonb.quickstepswitcher.MainActivity}" drawable="quickswitch" name="QuickSwitch" />
@@ -8302,6 +8316,7 @@
   <item component="ComponentInfo{com.readdle.spark/com.readdle.spark.app.MainActivity}" drawable="spark_email" name="Spark Email" />
   <item component="ComponentInfo{com.readdle.spark/com.readdle.spark.ui.launch.LaunchActivity}" drawable="spark_email" name="Spark Email" />
   <item component="ComponentInfo{com.readdle.spark/com.readdle.spark.ui.MainActivity}" drawable="spark_email" name="Spark Email" />
+  <item component="ComponentInfo{com.codetrio.spatialflow/com.codetrio.spatialflow.MainActivityAliasDefault}" drawable="spatialflow" name="SpatialFlow" />
   <item component="ComponentInfo{dev.thomasbuilds.spectre/dev.thomasbuilds.spectre.MainActivity}" drawable="spectre" name="Spectre" />
   <item component="ComponentInfo{com.TWCableTV/com.twc.android.ui.login.SpectrumLoginActivity}" drawable="generic_player" name="Spectrum TV" />
   <item component="ComponentInfo{com.google.android.tts/com.google.android.tts.service.GoogleTTSService}" drawable="speech_recognition_and_synthesis" name="Speech Recognition and Synthesis" />
