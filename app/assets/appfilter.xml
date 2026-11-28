@@ -703,6 +703,7 @@
   <item component="ComponentInfo{notizen.basic.notes.notas.note.notepad/notizen.basic.notes.notas.note.notepad.main.SplashActivity}" drawable="generic_notes" name="BasicNote" />
   <item component="ComponentInfo{ru.g000sha256.bass_booster/g000sha256.bass_booster.MainActivity}" drawable="generic_voice" name="Bass Booster" />
   <item component="ComponentInfo{com.saha.batchuninstaller/com.saha.batchuninstaller.ui.SplashScreenActivity}" drawable="generic_trash_can" name="Batch Uninstaller" />
+  <item component="ComponentInfo{com.guiforge.bati/com.guiforge.bati.MainActivity}" drawable="bati" name="Bati" />
   <item component="ComponentInfo{com.paget96.batteryguru/com.paget96.batteryguru.activities.SplashScreen}" drawable="battery_guru" name="Battery Guru" />
   <item component="ComponentInfo{com.paget96.batteryguru/activities.MainActivity}" drawable="battery_guru" name="Battery Guru" />
   <item component="ComponentInfo{com.paget96.batterygurv/com.paget96.batterygurv.activities.SplashScreen}" drawable="battery_guru" name="Battery Guru" />
@@ -1899,6 +1900,7 @@
   <item component="ComponentInfo{org.coursera.android/org.coursera.android.launcher.DefaultIcon}" drawable="coursera" name="Coursera" />
   <item component="ComponentInfo{io.zimran.coursiv/io.zimran.coursiv.MainActivity}" drawable="coursiv" name="Coursiv" />
   <item component="ComponentInfo{de.rki.covpass.app/de.rki.covpass.app.main.MainActivity}" drawable="covpass" name="CovPass" />
+  <item component="ComponentInfo{app.clpro.app/com.sibodoit.app.ui.page.StartUpActivity}" drawable="cozylife" name="CozyLife" />
   <item component="ComponentInfo{com.cpuid.cpu_z/com.cpuid.cpu_z.MainActivity}" drawable="cpu_z" name="CPU Z" />
   <item component="ComponentInfo{com.kikyps.crackme/com.kikyps.crackme.MainActivity}" drawable="generic_shell" name="CrackME" />
   <item component="ComponentInfo{com.arumcomm.crashlogviewer/com.arumcomm.crashlogviewer.MainMenuActivity}" drawable="ladb" name="Crash Log Viewer" />
