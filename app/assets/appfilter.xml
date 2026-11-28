@@ -325,6 +325,7 @@
   <item component="ComponentInfo{org.alliant.mobile/org.alliant.mobile.MainActivity}" drawable="alliant" name="Alliant" />
   <item component="ComponentInfo{com.realme.as.music/com.allsaints.music.ui.splash.SplashActivity}" drawable="generic_album" name="AllSaints Music" />
   <item component="ComponentInfo{com.realme.as.music/com.nearme.music.splash.SplashActivity}" drawable="generic_album" name="AllSaints Music" />
+  <item component="ComponentInfo{com.voodoo.almanac/com.google.firebase.MessagingUnityPlayerActivity}" drawable="almanac" name="Almanac" />
   <item component="ComponentInfo{io.github.vvb2060.magisk/com.topjohnwu.magisk.ui.MainActivity}" drawable="magisk" name="alpha" />
   <item component="ComponentInfo{no.alt.www.twa/no.alt.www.twa.LauncherActivity}" drawable="alt" name="ALT" />
   <item component="ComponentInfo{io.github.domi04151309.alwayson/io.github.domi04151309.alwayson.activities.SplashActivity}" drawable="alwayson" name="AlwaysOn" />
@@ -503,6 +504,7 @@
   <item component="ComponentInfo{com.donnnno.arcticons.you/com.donnnno.arcticons.activities.MainActivity}" drawable="arcticons" name="Arcticons Material You Icons" />
   <item component="ComponentInfo{com.donnnno.arcticons.you/com.donnnno.arcticons.activities.SplashActivity}" drawable="arcticons" name="Arcticons Material You Icons" />
   <item component="ComponentInfo{app.areada/app.areada.MainActivity}" drawable="areada" name="Areada" />
+  <item component="ComponentInfo{com.ecffri.arrows/com.unity3d.player.UnityPlayerActivity}" drawable="arrows" name="Arrows" />
   <item component="ComponentInfo{com.oakever.arrows/com.beatles.unity.delegate.unity.DelegateActivity}" drawable="arrows_go" name="Arrows GO!" />
   <item component="ComponentInfo{com.bytestorm.artflow/com.bytestorm.artflow.Editor}" drawable="artflow" name="ArtFlow" />
   <item component="ComponentInfo{com.app_mo.splayer/com.app_mo.splayer.ui.main.MainActivityV2}" drawable="generic_player" name="ASD Player" />
@@ -8761,6 +8763,7 @@
   <item component="ComponentInfo{com.weather.Weather/com.weather.Weather.app.SplashScreenActivity}" drawable="the_weather_channel" name="The Weather Channel" />
   <item component="ComponentInfo{com.weather.Weather/com.weather.corgikit.view.CorgiActivity}" drawable="the_weather_channel" name="The Weather Channel" />
   <item component="ComponentInfo{com.weather.samsung/com.weather.corgikit.view.CorgiActivity}" drawable="the_weather_channel" name="The Weather Channel" />
+  <item component="ComponentInfo{com.huub.tiger/com.sliide.content.MainActivity}" drawable="thedaily" name="TheDaily" />
   <item component="ComponentInfo{com.lafourchette.lafourchette/com.fork.android.app.launch.LaunchActivity}" drawable="thefork" name="TheFork" />
   <item component="ComponentInfo{com.oplus.themestore/com.nearme.themespace.activities.ThemeActivity}" drawable="theme_store" name="Theme Store" />
   <item component="ComponentInfo{com.thegosa.miuithemes/com.thegosa.miuithemes.NewDesign}" drawable="themes" name="Themes" />
@@ -9644,6 +9647,7 @@
   <item component="ComponentInfo{com.gamepass.samsung/com.gamepass.MainActivity}" drawable="xbox_game_pass" name="Xbox Game Pass" />
   <item component="ComponentInfo{com.gamepass/com.gamepass.MainActivity}" drawable="xbox_game_pass" name="Xbox Game Pass" />
   <item component="ComponentInfo{com.gamepass.beta/com.gamepass.MainActivity}" drawable="xbox_game_pass" name="Xbox Game Pass Beta" />
+  <item component="ComponentInfo{com.trassion.infinix.xclub/com.trassion.infinix.xclub.ui.main.activity.SplashActivity}" drawable="xclub" name="XClub" />
   <item component="ComponentInfo{com.xda.labs.play/com.xda.labs.ForumLauncher}" drawable="xda" name="XDA" />
   <item component="ComponentInfo{com.xda.labs.play/com.xda.labs.one.ui.MainActivity}" drawable="xda" name="XDA" />
   <item component="ComponentInfo{com.xda.labs.play/host.exp.exponent.MainActivity}" drawable="xda" name="XDA" />
