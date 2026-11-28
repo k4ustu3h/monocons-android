@@ -503,6 +503,7 @@
   <item component="ComponentInfo{com.donnnno.arcticons.you/com.donnnno.arcticons.activities.MainActivity}" drawable="arcticons" name="Arcticons Material You Icons" />
   <item component="ComponentInfo{com.donnnno.arcticons.you/com.donnnno.arcticons.activities.SplashActivity}" drawable="arcticons" name="Arcticons Material You Icons" />
   <item component="ComponentInfo{app.areada/app.areada.MainActivity}" drawable="areada" name="Areada" />
+  <item component="ComponentInfo{com.oakever.arrows/com.beatles.unity.delegate.unity.DelegateActivity}" drawable="arrows_go" name="Arrows GO!" />
   <item component="ComponentInfo{com.bytestorm.artflow/com.bytestorm.artflow.Editor}" drawable="artflow" name="ArtFlow" />
   <item component="ComponentInfo{com.app_mo.splayer/com.app_mo.splayer.ui.main.MainActivityV2}" drawable="generic_player" name="ASD Player" />
   <item component="ComponentInfo{com.app_mo.splayer/com.app_mo.splayer.ui.main.MainActivity}" drawable="generic_player" name="ASD Player" />
@@ -4535,6 +4536,9 @@
   <item component="ComponentInfo{de.mm20.launcher2.release/de.mm20.launcher2.ui.launcher.LauncherActivity}" drawable="kvaesitso" name="Kvaesitso" />
   <item component="ComponentInfo{de.mm20.launcher2.release/de.mm20.launcher2.ui.legacy.activity.LauncherActivity}" drawable="kvaesitso" name="Kvaesitso" />
   <item component="ComponentInfo{de.mm20.launcher2.nightly/de.mm20.launcher2.ui.launcher.LauncherActivity}" drawable="kvaesitso" name="Kvaesitso Nightly" />
+  <item component="ComponentInfo{com.kwai.video/com.yxcorp.gifshow.HomeActivity}" drawable="kwai" name="Kwai" />
+  <item component="ComponentInfo{com.kwai.video/com.yxcorp.gifshow.tiny.TinyLaunchActivity}" drawable="kwai" name="Kwai" />
+  <item component="ComponentInfo{com.kwai.video/com.yxcorp.gifshow.homepage.HomeActivity}" drawable="kwai" name="Kwai" />
   <item component="ComponentInfo{org.kustom.widget/com.duapps.ad.DuAd}" drawable="kustom" name="KWGT" />
   <item component="ComponentInfo{org.kustom.widget/org.kustom.app.OnBoardingActivity}" drawable="kustom" name="KWGT" />
   <item component="ComponentInfo{org.kustom.widget/org.kustom.widget.picker.WidgetPicker}" drawable="kustom" name="KWGT" />
@@ -8604,6 +8608,7 @@
   <item component="ComponentInfo{com.book.tamilbible/com.book.tamilbible.SplashActivity}" drawable="generic_bible" name="Tamil Bible" />
   <item component="ComponentInfo{com.tamil.bible.audio/com.ryanheise.audioservice.AudioServiceActivity}" drawable="generic_bible" name="Tamil Bible" />
   <item component="ComponentInfo{lt.zet.tamo/lt.zet.tamo.ui.content.ContentActivity}" drawable="tamo_ismaniems" name="TAMO Ismaniems" />
+  <item component="ComponentInfo{net.tandem/net.tandem.ui.MainActivity}" drawable="tandem" name="Tandem" />
   <item component="ComponentInfo{com.kieronquinn.app.taptap/com.kieronquinn.app.taptap.ui.activities.MainActivity}" drawable="tap_tap" name="Tap, Tap" />
   <item component="ComponentInfo{com.kieronquinn.app.taptap/com.kieronquinn.app.taptap.ui.activities.SettingsActivity}" drawable="tap_tap" name="Tap, Tap" />
   <item component="ComponentInfo{com.quoord.tapatalkHD/com.quoord.tapatalkpro.activity.directory.ics.IcsEntryActivity}" drawable="tapatalk_pro" name="Tapatalk Pro" />
@@ -8935,10 +8940,10 @@
   <item component="ComponentInfo{com.tresorit.mobile/com.tresorit.android.activity.RootTresoritActivity}" drawable="tresorit" name="Tresorit" />
   <item component="ComponentInfo{com.canadiantire.triangle/ca.triangle.app.splash_screen.SplashActivity}" drawable="triangle" name="Triangle" />
   <item component="ComponentInfo{ai.holymolly.tripo3daimodel/com.godot.game.GodotApp}" drawable="tripo_ai" name="Tripo AI" />
-  <item component="ComponentInfo{com.truecaller/com.truecaller.messaging.MessagesActivity}" drawable="generic_dialer" name="Truecaller" />
-  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TruecallerInit}" drawable="generic_dialer" name="Truecaller" />
-  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TruecallerUI}" drawable="generic_dialer" name="Truecaller" />
-  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TrueCallerUI}" drawable="generic_dialer" name="Truecaller" />
+  <item component="ComponentInfo{com.truecaller/com.truecaller.messaging.MessagesActivity}" drawable="truecaller" name="Truecaller" />
+  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TruecallerInit}" drawable="truecaller" name="Truecaller" />
+  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TruecallerUI}" drawable="truecaller" name="Truecaller" />
+  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TrueCallerUI}" drawable="truecaller" name="Truecaller" />
   <item component="ComponentInfo{com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.app.AppActivity}" drawable="trust_wallet" name="Trust Wallet" />
   <item component="ComponentInfo{com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.splash.activity.SplashActivity}" drawable="trust_wallet" name="Trust Wallet" />
   <item component="ComponentInfo{com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.start.activity.RootHostActivity}" drawable="trust_wallet" name="Trust Wallet" />
