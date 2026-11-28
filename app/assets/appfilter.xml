@@ -6318,6 +6318,7 @@
   <item component="ComponentInfo{com.arn.scrobble/com.arn.scrobble.Main}" drawable="pano_scrobbler" name="Pano Scrobbler" />
   <item component="ComponentInfo{com.arn.scrobble/com.arn.scrobble.MainActivity}" drawable="pano_scrobbler" name="Pano Scrobbler" />
   <item component="ComponentInfo{com.anthonyla.paperize/com.anthonyla.paperize.presentation.MainActivity}" drawable="paperize" name="Paperize" />
+  <item component="ComponentInfo{com.anthonyla.paperize/com.anthonyla.paperize.feature.wallpaper.presentation.MainActivity}" drawable="paperize" name="Paperize" />
   <item component="ComponentInfo{com.cbs.ca/com.cbs.app.screens.startup.SplashActivity}" drawable="paramount_plus" name="Paramount+" />
   <item component="ComponentInfo{com.cbs.ca/com.paramount.android.pplus.splash.mobile.integration.SplashActivity}" drawable="paramount_plus" name="Paramount+" />
   <item component="ComponentInfo{com.cbs.ca/com.paramount.android.pplus.features.splash.mobile.integration.SplashActivity}" drawable="paramount_plus" name="Paramount+" />
@@ -8757,6 +8758,7 @@
   <item component="ComponentInfo{com.weather.samsung/com.weather.corgikit.view.CorgiActivity}" drawable="the_weather_channel" name="The Weather Channel" />
   <item component="ComponentInfo{com.lafourchette.lafourchette/com.fork.android.app.launch.LaunchActivity}" drawable="thefork" name="TheFork" />
   <item component="ComponentInfo{com.oplus.themestore/com.nearme.themespace.activities.ThemeActivity}" drawable="theme_store" name="Theme Store" />
+  <item component="ComponentInfo{com.thegosa.miuithemes/com.thegosa.miuithemes.NewDesign}" drawable="themes" name="Themes" />
   <item component="ComponentInfo{com.android.thememanager/com.android.thememanager.activities.ThemeManagerMainActivity}" drawable="themes" name="Themes" />
   <item component="ComponentInfo{com.android.thememanager/com.android.thememanager.business.startup.view.StartupActivity}" drawable="themes" name="Themes" />
   <item component="ComponentInfo{com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity}" drawable="themes" name="Themes" />
@@ -8936,6 +8938,7 @@
   <item component="ComponentInfo{com.truecaller/com.truecaller.messaging.MessagesActivity}" drawable="generic_dialer" name="Truecaller" />
   <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TruecallerInit}" drawable="generic_dialer" name="Truecaller" />
   <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TruecallerUI}" drawable="generic_dialer" name="Truecaller" />
+  <item component="ComponentInfo{com.truecaller/com.truecaller.ui.TrueCallerUI}" drawable="generic_dialer" name="Truecaller" />
   <item component="ComponentInfo{com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.app.AppActivity}" drawable="trust_wallet" name="Trust Wallet" />
   <item component="ComponentInfo{com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.splash.activity.SplashActivity}" drawable="trust_wallet" name="Trust Wallet" />
   <item component="ComponentInfo{com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.start.activity.RootHostActivity}" drawable="trust_wallet" name="Trust Wallet" />
@@ -9283,6 +9286,7 @@
   <item component="ComponentInfo{adarshurs.android.vlcmobileremote/adarshurs.android.vlcmobileremote.MainActivity}" drawable="vlc" name="VLC Mobile Remote" />
   <item component="ComponentInfo{com.frontrow.vlog/com.frontrow.vlog.ui.splash.SplashActivity}" drawable="vn" name="VN" />
   <item component="ComponentInfo{com.vodafone.selfservis/com.vodafone.selfservis.YanimdaAlias}" drawable="my_vodafone" name="Vodafone" />
+  <item component="ComponentInfo{eu.reply.cordless.uk/com.vodafone.gh.app.ui.StartAppActivity}" drawable="vodafone_station" name="Vodafone Station" />
   <item component="ComponentInfo{eu.reply.cordless/replycept.dma.ui.SplashScreen}" drawable="vodafone_station" name="Vodafone Station" />
   <item component="ComponentInfo{za.co.vodacom.vodapay/za.co.vodacom.vodapay.onboarding.splash.SplashActivity}" drawable="my_vodafone" name="VodaPay" />
   <item component="ComponentInfo{de.ph1b.audiobook/de.phib.audiobook.features.MainActivity}" drawable="voice" name="Voice" />
@@ -9740,6 +9744,8 @@
   <item component="ComponentInfo{app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_3}" drawable="morphe" name="YouTube Morphe" />
   <item component="ComponentInfo{com.google.android.youtube/app.morphe.android.youtube.morphe_black_1}" drawable="youtube" name="YouTube Morphe" />
   <item component="ComponentInfo{yt.morphe.noname.exe/yt.morphe.noname.exe.morphe_black_2}" drawable="morphe" name="YouTube Morphe" />
+  <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_4}" drawable="youtube_music" name="YouTube Music" />
+  <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_2}" drawable="youtube_music" name="YouTube Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_black_4}" drawable="morphe" name="YouTube Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_black_1}" drawable="morphe" name="YouTube Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_light_1}" drawable="morphe" name="YouTube Music" />
@@ -9758,6 +9764,8 @@
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_3}" drawable="morphe" name="YouTube Music Morphe" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2}" drawable="morphe" name="YouTube Music Morphe" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3}" drawable="morphe" name="YouTube Music Morphe" />
+  <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_3}" drawable="youtube_music" name="YouTube Music ReVanced" />
+  <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_rounded_4}" drawable="youtube_music" name="YouTube Music ReVanced" />
   <item component="ComponentInfo{app.revanced.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}" drawable="youtube_music" name="YouTube Music Revanced" />
   <item component="ComponentInfo{app.rvx.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}" drawable="youtube_music" name="YouTube Music ReVanced Extended" />
   <item component="ComponentInfo{com.google.android.youtube.pro/com.google.android.youtube.pro.MainActivity}" drawable="youtube" name="Youtube Pro" />
@@ -9805,9 +9813,9 @@
   <item component="ComponentInfo{no.nrk.yr/no.nrk.yr.StartActivity}" drawable="yr" name="Yr" />
   <item component="ComponentInfo{no.nrk.yr/no.nrk.yr.SplashScreenActivity}" drawable="yr" name="Yr" />
   <item component="ComponentInfo{no.nrk.yr/no.nrk.yr.MainActivity}" drawable="yr" name="Yr" />
+  <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_1}" drawable="youtube_music" name="YT Music" />
   <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_scaled_1}" drawable="youtube_music" name="YT Music" />
   <item component="ComponentInfo{app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_1}" drawable="youtube_music" name="YT Music" />
-  <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_1}" drawable="generic_player" name="YT Music" />
   <item component="ComponentInfo{app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_rounded_2}" drawable="youtube_revanced" name="YT Music ReVanced" />
   <item component="ComponentInfo{com.deniscerri.ytdl/com.deniscerri.ytdl.DarkIcon}" drawable="ytdlnis" name="YTDLnis" />
   <item component="ComponentInfo{com.deniscerri.ytdl/com.deniscerri.ytdl.LightIcon}" drawable="ytdlnis" name="YTDLnis" />
